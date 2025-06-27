@@ -14,8 +14,6 @@ import { TbExternalLink } from "react-icons/tb";
 function HomeHero() {
     return (
         <div className='w-screen overflow-x-hidden'>
-            {/* Hero */}
-
             <div aria-hidden="true" className="flex absolute top-44 start-1/2 transform -translate-x-1/2 -z-10">
                 <div className="bg-linear-to-l from-red-300/50 to-purple-100 blur-3xl w-100 h-175 rotate-[-60deg] transform -translate-x-40 dark:from-red-900/50 dark:to-purple-900"></div>
                 <div className="bg-linear-to-bl from-red-50 via-red-100 to-red-50 blur-3xl w-[1440px] h-200 rounded-fulls origin-top-left -rotate-12 -translate-x-60 dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-red-900/70"></div>
@@ -103,7 +101,6 @@ function HomeHero() {
                     </div>
                 </div>
             </div>
-            {/* End Hero */}
         </div>
     )
 }

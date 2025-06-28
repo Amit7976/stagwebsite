@@ -26,7 +26,7 @@ function HomeHero() {
                                         </HoverCardTrigger>
                                         <HoverCardContent>
                                             <Image
-                                                src={"/images/Logo/logo.svg"}
+                                                src={"/images/logo/logo.svg"}
                                                 alt="Jobboost logo"
                                                 width={800}
                                                 height={800}

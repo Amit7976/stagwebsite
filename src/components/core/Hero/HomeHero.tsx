@@ -102,7 +102,7 @@ function HomeHero() {
                             src="https://www.shadcnblocks.com/images/block/illustrations/tokyo-solar-system-around-a-smiley.svg"
                             alt=""
                         />
-                        <div className="z-10 size-32 rounded-full bg-neutral-200 p-7"></div>
+                        <div className="z-10 size-32 rounded-full bg-neutral-200 dark:bg-neutral-700 p-7"></div>
                     </div>
 
                     <div className="-bottom-80 -left-120 z-0 mt-32 -mb-24 flex h-full w-full items-center justify-center md:absolute md:w-240">
@@ -112,7 +112,7 @@ function HomeHero() {
                             src="https://www.shadcnblocks.com/images/block/illustrations/tokyo-solar-system-around-a-smiley.svg"
                             alt=""
                         />
-                        <div className="z-10 size-32 rounded-full bg-neutral-200 p-7"></div>
+                        <div className="z-10 size-32 rounded-full bg-neutral-200 dark:bg-neutral-700 p-7"></div>
                     </div>
                 </div>
             </section>

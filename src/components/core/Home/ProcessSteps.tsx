@@ -52,7 +52,7 @@ const steps = [
   
 export default function ProcessSteps() {
     return (
-        <section className="py-32">
+        <section>
             <div className="container px-10">
                 <div className="text-left">
                     <h2 className="mb-2 text-3xl font-semibold lg:text-4xl">
@@ -68,13 +68,13 @@ export default function ProcessSteps() {
                     {steps.map((step) => (
                         <div
                             key={step.id}
-                            className="flex flex-col border-r  [&:nth-child(3)]:border-r-0 last:border-r-0 border-gray-200 px-10 sm:mt-4 md:mt-6"
+                            className="flex flex-col border-r  [&:nth-child(3)]:border-r-0 last:border-r-0 border-gray-200 dark:border-neutral-900 px-10 sm:mt-4 md:mt-6"
                         >
                             <div className="relative">
-                                <h1 className="mb-16 text-9xl font-medium bg-gradient-to-r from-black to-transparent bg-clip-text text-transparent">
+                                <h1 className="mb-16 text-9xl font-medium bg-gradient-to-r from-black dark:from-white to-transparent bg-clip-text text-transparent">
                                     0{step.id}
                                 </h1>
-                                <div className="absolute inset-0 bg-gradient-to-r from-white to-transparent opacity-100"></div>
+                                <div className="absolute inset-0 bg-gradient-to-r from-white dark:from-neutral-950 to-transparent opacity-100"></div>
                             </div>
                             <p className="text-md mt-4 mb-2 font-semibold">{step.title}</p>
                             <p className="text-md mb-6 text-muted-foreground">{step.description}</p>

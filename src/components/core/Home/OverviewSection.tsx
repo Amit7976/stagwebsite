@@ -78,10 +78,10 @@ export const overviewData = [
 
 export default function SectionOverview() {
     return (
-        <section className="py-32">
+        <section>
             <div className="px-10">
                 <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 mb-20">
-                    <h2 className="mb-2 text-center text-3xl font-semibold lg:text-5xl">
+                    <h2 className="mb-2 text-center text-3xl font-semibold lg:text-6xl">
                         Build<span className="text-orange-600">.</span> Brand<span className="text-orange-600">.</span> Grow<span className="text-orange-600">.</span> <br /> All in One <span className="text-orange-600">Solution</span>
                     </h2>
                     <p className="text-center text-muted-foreground lg:text-lg">

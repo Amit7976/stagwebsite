@@ -13,7 +13,7 @@ const images = [
 
 export default function Showcase() {
     return (
-        <section className="py-5 overflow-hidden bg-white">
+        <section className="overflow-hidden bg-white dark:bg-neutral-950">
             <div className="px-0">
                 <div className="w-full overflow-hidden  relative [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
                     <div className="flex whitespace-nowrap animate-marquee gap-8">
@@ -37,7 +37,7 @@ export default function Showcase() {
             <style jsx>{`
 .animate-marquee {
     display: inline-flex;
-    animation: marquee 40s linear infinite;
+    animation: marquee 100s linear infinite;
     }
     
     @keyframes marquee {

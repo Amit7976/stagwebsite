@@ -53,7 +53,7 @@ export const testimonials = [
 
 export default function Testimonial() {
     return (
-        <section className="py-32 overflow-hidden bg-white">
+        <section className="overflow-hidden">
             <div className="max-w-5xl mx-auto flex flex-col items-center gap-6 px-4">
                 <h2 className="mb-2 text-center text-3xl font-semibold lg:text-5xl">
                     Our happy <span className="text-orange-600">Clients</span>
@@ -68,7 +68,7 @@ export default function Testimonial() {
             <div className="mt-16 w-full overflow-hidden">
                 <div className="flex whitespace-nowrap animate-marquee gap-8">
                     {testimonials.concat(testimonials).map((item, index) => (
-                        <Card key={index} className="shadow-sm min-w-96 py-6 px-0 select-none border-gray-300">
+                        <Card key={index} className="shadow-sm min-w-96 py-6 px-0 select-none border-gray-300 dark:border-neutral-800">
                             <CardContent className="mb-4 flex gap-4">
                                 <span data-slot="avatar" className="relative flex shrink-0 overflow-hidden h-9">
                                     <img
@@ -92,7 +92,7 @@ export default function Testimonial() {
             <div className="mt-6 w-full overflow-hidden">
                 <div className="flex whitespace-nowrap animate-marquee2 gap-8">
                     {testimonials.concat(testimonials).map((item, index) => (
-                        <Card key={index} className="shadow-sm min-w-96 py-6 px-0 select-none border-gray-300">
+                        <Card key={index} className="shadow-sm min-w-96 py-6 px-0 select-none border-gray-300 dark:border-neutral-800">
                             <CardContent className="mb-4 flex gap-4">
                                 <span data-slot="avatar" className="relative flex shrink-0 overflow-hidden h-9">
                                     <img

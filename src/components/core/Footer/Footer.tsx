@@ -171,7 +171,7 @@ function Footer() {
 
 
   return (
-    <footer className="mt-40 p-0 lg:p-10">
+    <footer className="mt-40 p-0 lg:p-10 border-t-2 border-gray-200 dark:border-neutral-900 rounded-t-4xl">
 
 
 

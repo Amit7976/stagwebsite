@@ -30,7 +30,7 @@ const blogPosts = [
   
 export default function BlogSection() {
     return (
-        <section className="bg-background py-32">
+        <section>
             <div className="px-10">
                 <h1 className="mb-12 max-w-xl font-sans text-3xl font-bold tracking-tight text-foreground md:text-6xl">
                     Our <span className="text-orange-600">Blogs</span>
@@ -51,9 +51,9 @@ export default function BlogSection() {
                             </div>
 
                             {/* Card */}
-                            <Card className="flex flex-col gap-6 border-none shadow-none bg-card text-card-foreground py-6 rounded-xl">
+                            <Card className="flex flex-col gap-6 border-none shadow-none bg-transparent text-card-foreground py-6 rounded-xl">
                                 <CardContent className="p-0">
-                                    <div className="mb-5 flex h-90 items-start border-b py-10 md:mb-0 lg:gap-32 md:border-t">
+                                    <div className="mb-5 flex h-90 items-start border-b py-10 md:mb-0 lg:gap-32 md:border-t border-neutral-800">
                                         <div className="flex h-full w-full flex-col items-start justify-between pr-8">
                                             <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground">
                                                 {post.title}

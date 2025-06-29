@@ -3,7 +3,7 @@ import React from 'react'
 function SampleProducts() {
   return (
       <>
-          <section className="relative border-b border-muted bg-background pt-10">
+          <section className="relative">
               <div className="px-10">
                   <div className="grid grid-cols-1 items-center gap-2 md:gap-4 lg:grid-cols-2">
 

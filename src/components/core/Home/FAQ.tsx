@@ -13,7 +13,7 @@ interface FaqItem {
   answer: string;
 }
 
-interface Faq3Props {
+interface FAQProps {
   heading?: string;
   description?: string;
   items?: FaqItem[];
@@ -69,7 +69,7 @@ const faqItems = [
   },
 ];
 
-const Faq3 = ({
+const FAQ = ({
   heading = "Frequently asked questions",
   description = "Find answers to common questions about our products. Can't find what you're looking for? Contact our support team.",
   items = faqItems,
@@ -79,12 +79,12 @@ const Faq3 = ({
   supportButtonUrl = "/contact",
   faqsButtonText = "More FAQs",
   faqsButtonUrl = "/faqs",
-}: Faq3Props) => {
+}: FAQProps) => {
   return (
-    <section className="pt-32 px-10">
+    <section className="px-10">
       <div className="container space-y-16">
         <div className="mx-auto flex max-w-3xl flex-col text-left md:text-center">
-          <h2 className="mb-3 text-3xl font-semibold md:mb-4 lg:mb-6 lg:text-4xl">
+          <h2 className="mb-3 text-3xl font-semibold md:mb-4 lg:mb-6 lg:text-5xl">
             {heading}
           </h2>
           <p className="text-muted-foreground lg:text-lg">{description}</p>
@@ -95,7 +95,7 @@ const Faq3 = ({
           className="mx-auto w-full lg:max-w-7xl"
         >
           {items.map((item) => (
-            <AccordionItem key={item.id} value={item.id} className=" border-gray-300">
+            <AccordionItem key={item.id} value={item.id} className=" border-gray-300 dark:border-neutral-800">
               <AccordionTrigger className="transition-opacity duration-200 hover:no-underline hover:opacity-60 cursor-pointer">
                 <div className="font-medium sm:py-1 lg:py-4 lg:text-lg">
                   {item.question}
@@ -109,7 +109,7 @@ const Faq3 = ({
             </AccordionItem>
           ))}
         </Accordion>
-        <div className="mx-auto flex max-w-6xl flex-col items-center rounded-lg bg-accent p-4 text-center md:rounded-xl md:p-6 lg:p-8">
+        <div className="mx-auto flex max-w-6xl flex-col items-center rounded-lg bg-accent dark:bg-neutral-900 p-4 text-center md:rounded-xl md:p-6 lg:p-8">
           <div className="relative">
             <Avatar className="absolute mb-4 size-16 origin-bottom -translate-x-[60%] scale-[80%] border md:mb-5">
               <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp" />
@@ -148,4 +148,4 @@ const Faq3 = ({
   );
 };
 
-export { Faq3 };
+export { FAQ };

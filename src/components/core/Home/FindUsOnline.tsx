@@ -57,7 +57,7 @@ const socials = [
 
 export default function FindUsOnline() {
     return (
-        <section className="py-32">
+        <section>
             <div className="container flex flex-col items-center justify-center">
                 <h2 className="mb-4 text-center text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
                     Find Us <span className="text-orange-600">On</span>

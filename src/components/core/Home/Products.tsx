@@ -3,7 +3,7 @@ import React from 'react'
 function Products() {
   return (
     <>
-          <section className="py-32">
+          <section>
               <div className="px-10">
                   <div className="flex flex-col space-y-10 md:space-y-16">
 

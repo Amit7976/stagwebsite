@@ -83,7 +83,7 @@ export default function Services() {
     const [activeService, setActiveService] = useState(services[0]);
 
     return (
-        <section className="py-32">
+        <section>
             <div className="container max-w-7xl mx-auto">
                 <h1 className="mb-10 text-4xl font-bold md:text-5xl lg:mb-20 lg:text-6xl">
                     Our <span className="text-orange-600">Services</span>

@@ -171,7 +171,7 @@ function Footer() {
 
 
   return (
-    <footer className="mt-40 p-0 lg:p-10 border-t-2 border-gray-200 dark:border-neutral-900 rounded-t-4xl">
+    <footer className="mt-40 p-0 lg:p-10 border-t-2 border-neutext-neutral-200 dark:border-neutral-900 rounded-t-4xl">
 
 
 
@@ -198,12 +198,12 @@ function Footer() {
                   {link ? (
                     <a
                       href={link}
-                      className="text-sm font-medium text-gray-500"
+                      className="text-sm font-medium text-neutral-500"
                     >
                       {text}
                     </a>
                   ) : (
-                    <span className="text-sm font-medium text-gray-500">
+                    <span className="text-sm font-medium text-neutral-500">
                       {text}
                     </span>
                   )}
@@ -225,12 +225,12 @@ function Footer() {
                       {link ? (
                         <Link
                           href={link}
-                          className="text-base font-semibold hover:underline text-gray-600 w-full h-full block py-2.5 pl-5"
+                          className="text-base font-semibold hover:underline text-neutral-600 w-full h-full block py-2.5 pl-5"
                         >
                           {text}
                         </Link>
                       ) : (
-                        <span className="text-base font-medium text-gray-600 w-full h-full block py-2.5 pl-5">{text}</span>
+                        <span className="text-base font-medium text-neutral-600 w-full h-full block py-2.5 pl-5">{text}</span>
                       )}
                     </div>
                   ))}
@@ -243,7 +243,7 @@ function Footer() {
 
 
         {/* Footer Bottom Section */}
-        <div className="bg-gray-100 dark:bg-neutral-900 rounded-xl p-9 my-10 ">
+        <div className="bg-neutext-neutral-100 dark:bg-neutral-900 rounded-xl p-9 my-10 ">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <Link href="/" className="flex flex-col items-center">
               <Image
@@ -255,7 +255,7 @@ function Footer() {
               />
               <div>
                 <h3 className="text-2xl font-bold text-[#ED1C24] sr-only">Hirebie</h3>
-                <p className="text-base mt-1 text-gray-400 dark:text-white font-medium">IT & Career Growth Platform</p>
+                <p className="text-base mt-1 text-neutral-400 dark:text-white font-medium">IT & Career Growth Platform</p>
               </div>
             </Link>
 
@@ -268,7 +268,7 @@ function Footer() {
                     render={({ field }) => (
                       <FormItem>
                         <h3 className="text-2xl font-bold text-black dark:text-white">Newsletter</h3>
-                        <FormDescription className="text-sm font-medium text-gray-500 mt-1 w-full">
+                        <FormDescription className="text-sm font-medium text-neutral-500 mt-1 w-full">
                           Subscribe to our newsletter to get latest updates and news
                         </FormDescription>
                         <div className="gap-4 items-center mt-3">
@@ -279,7 +279,7 @@ function Footer() {
                             <Input
                               type="email"
                               placeholder="What is your work email"
-                              className="text-base px-6 pt-5 pb-6 mt-2 rounded-full outline-none border-2 border-gray-500 shadow-none min-w-full lg:min-w-96 font-medium tracking-wider"
+                              className="text-base px-6 pt-5 pb-6 mt-2 rounded-full outline-none border-2 border-neutext-neutral-500 shadow-none min-w-full lg:min-w-96 font-medium tracking-wider"
                               {...field} />
                           </FormControl>
                         </div>
@@ -308,8 +308,8 @@ function Footer() {
         </div>
 
 
-        <div className="w-full border-t border-gray-600 py-10">
-          <p className="mt-2 font-medium text-sm text-gray-500">
+        <div className="w-full border-t border-neutral-800 py-10">
+          <p className="mt-2 font-medium text-sm text-neutral-500">
             © 2025 <Link href={"/"}>Hirebie</Link> Pvt. Ltd.{" "}
             <Link href={"/"}>Hirebie</Link> and the{" "}
             <Link href={"/"}>Hirebie</Link> logo are registered trademarks of
@@ -324,7 +324,7 @@ function Footer() {
             </Link>{" "}
             for more details.
           </p>
-          <p className="mt-5 font-medium text-sm text-gray-500">
+          <p className="mt-5 font-medium text-sm text-neutral-500">
             Read our{" "}
             <Link href={"/communityGuidelines"} className="text-[#FF4A02]">
               Community Guidelines

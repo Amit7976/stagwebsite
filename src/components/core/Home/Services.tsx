@@ -122,7 +122,7 @@ export default function Services() {
 
                     <div className="col-span-2">
                         <div className="sticky top-20">
-                            <Card className="p-4 flex items-center justify-center h-72 md:h-auto">
+                            <Card className="p-4 flex items-center justify-center h-72 md:h-auto border-gray-200 dark:border-neutral-900">
                                 <img
                                     src={activeService.image}
                                     alt={activeService.name}

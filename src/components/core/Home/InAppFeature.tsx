@@ -19,7 +19,7 @@ const featuresRight = [
 export default function InAppFeature() {
     return (
         <section>
-            <div className="relative container flex flex-col items-center overflow-hidden py-32">
+            <div className="relative container flex flex-col items-center overflow-hidden">
                 <div className="mx-auto max-w-2xl text-center">
                     <h1 className="text-5xl font-semibold tracking-tighter text-foreground md:text-6xl">
                         App Loaded with <span className="text-orange-600">Features</span>

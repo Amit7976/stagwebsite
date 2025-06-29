@@ -38,19 +38,19 @@ function Home() {
                 <HomeHeader />
                 <HomeHero />
                 <ServicesMarquee />
-                <Showcase />
-                <Products />
-                <InAppFeature />
-                <WebsiteSolutions />
-                <SampleProducts />
-                <SectionOverview />
-                <WhyChoose />
-                <Services />
-                <ProcessSteps />
-                <Testimonial />
-                <BlogSection />
-                <FindUsOnline />
-                <FAQ />
+                <div className='my-10'><Showcase /></div>
+                <div className='my-20'><Products /></div>
+                <div className='my-40'><WebsiteSolutions /></div>
+                <div className='my-40'><InAppFeature /></div>
+                <div className="my-40"><SampleProducts /></div>
+                <div className="my-40"><SectionOverview /></div>
+                <div className="my-40"><WhyChoose /></div>
+                <div className="my-40"><Services /></div>
+                <div className="my-40"><ProcessSteps /></div>
+                <div className="my-40"><Testimonial /></div>
+                <div className="my-40"><BlogSection /></div>
+                <div className="my-40"><FindUsOnline /></div>
+                <div className="my-40"><FAQ /></div>
                 <Footer />
             </main>
         </>

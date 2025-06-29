@@ -70,7 +70,6 @@ const faqItems = [
 ];
 
 const FAQ = ({
-  heading = "Frequently asked questions",
   description = "Find answers to common questions about our products. Can't find what you're looking for? Contact our support team.",
   items = faqItems,
   supportHeading = "Need more support?",
@@ -85,7 +84,7 @@ const FAQ = ({
       <div className="container space-y-16">
         <div className="mx-auto flex max-w-3xl flex-col text-left md:text-center">
           <h2 className="mb-3 text-3xl font-semibold md:mb-4 lg:mb-6 lg:text-5xl">
-            {heading}
+            FAQ<span className="text-orange-600">s</span>
           </h2>
           <p className="text-muted-foreground lg:text-lg">{description}</p>
         </div>

@@ -25,7 +25,7 @@ export default function HomeHero() {
                             height={800}
                             className="infinite absolute w-full rotate-12 animate-spin ease-linear opacity-25 invert-25"
                             style={{ animationDuration: "10s" }}
-                            src="/images/Home/home_hero_round_animation"
+                            src="/images/Home/home_hero_round_animation.svg"
                             alt=""
                         />
                         <div className="z-10 size-32 rounded-full bg-neutral-200 dark:bg-neutral-700 p-7"></div>
@@ -37,7 +37,7 @@ export default function HomeHero() {
                             height={800}
                             className="infinite absolute w-full rotate-12 animate-spin ease-linear opacity-25 invert-25"
                             style={{ animationDuration: "10s" }}
-                            src="/images/Home/home_hero_round_animation"
+                            src="/images/Home/home_hero_round_animation.svg"
                             alt=""
                         />
                         <div className="z-10 size-32 rounded-full bg-neutral-200 dark:bg-neutral-950 p-7"></div>

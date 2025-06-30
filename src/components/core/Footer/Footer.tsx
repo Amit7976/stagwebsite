@@ -256,7 +256,7 @@ function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <Link href="/" className="flex flex-col items-center">
               <Image
-                src="/images/Logo/logo.svg"
+                src="/images/logo/logo.svg"
                 alt="Hirebie Logo"
                 width={80}
                 height={80}

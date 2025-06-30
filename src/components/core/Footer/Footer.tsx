@@ -171,7 +171,7 @@ function Footer() {
 
 
   return (
-    <footer className="mt-40 p-0 lg:p-10 border-t-2 border-neutext-neutral-200 dark:border-neutral-900 rounded-t-4xl">
+    <footer className="mt-40 p-0 lg:p-10 border-t-2 border-neutral-200 text-neutral-200 dark:border-neutral-800 rounded-t-4xl">
 
 
 
@@ -180,7 +180,7 @@ function Footer() {
 
       {/* <Toaster /> */}
 
-      <div className="container mx-auto lg:px-4">
+      <div className="container mx-auto px-4">
         {/* Desktop View */}
         <div className="hidden md:grid md:grid-cols-5 gap-10">
           {Object.entries(menuItems).map(([section, items]) => (
@@ -214,18 +214,18 @@ function Footer() {
         </div>
 
         {/* Mobile View */}
-        <div className="md:hidden">
+        <div className="md:hidden p-5">
           {Object.entries(menuItems).map(([section, items]) => (
             <Accordion key={section} type="single" collapsible>
               <AccordionItem value="{section}">
-                <AccordionTrigger className="hover:no-underline text-base font-semibold text-black">{section}</AccordionTrigger>
+                <AccordionTrigger className="hover:no-underline text-base font-semibold text-black dark:text-white">{section}</AccordionTrigger>
                 <AccordionContent>
                   {items.map(({ text, link }) => (
                     <div key={text} className={`w-full ${link ? "opacity-100" : "opacity-40"}`}>
                       {link ? (
                         <Link
                           href={link}
-                          className="text-base font-semibold hover:underline text-neutral-600 w-full h-full block py-2.5 pl-5"
+                          className="text-base font-medium hover:underline text-neutral-500 w-full h-full block py-2.5 pl-5"
                         >
                           {text}
                         </Link>
@@ -243,7 +243,7 @@ function Footer() {
 
 
         {/* Footer Bottom Section */}
-        <div className="bg-neutext-neutral-100 dark:bg-neutral-900 rounded-xl p-9 my-10 ">
+        <div className="bg-neutral-100 text-neutral-100 dark:bg-neutral-900 rounded-xl p-9 my-10 ">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <Link href="/" className="flex flex-col items-center">
               <Image
@@ -279,7 +279,7 @@ function Footer() {
                             <Input
                               type="email"
                               placeholder="What is your work email"
-                              className="text-base px-6 pt-5 pb-6 mt-2 rounded-full outline-none border-2 border-neutext-neutral-500 shadow-none min-w-full lg:min-w-96 font-medium tracking-wider"
+                              className="text-base px-6 pt-5 pb-6 mt-2 rounded-full outline-none border-2 border-neutral-400 text-neutral-500 shadow-none min-w-full lg:min-w-96 font-medium tracking-wider"
                               {...field} />
                           </FormControl>
                         </div>

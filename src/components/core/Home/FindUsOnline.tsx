@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import {
     FaBehance,
@@ -65,40 +66,52 @@ export default function FindUsOnline() {
                 <p className="mb-8 max-w-2xl text-center text-lg font-normal text-muted-foreground md:text-xl">
                     Connect with us on your favorite creative and dev platforms.
                 </p>
-                <div className="mb-10 grid w-full grid-cols-1 gap-6 md:grid-cols-3">
-                    {socials.map((social) => (
-                        <div
-                            key={social.name}
-                            className="group flex flex-1 flex-col items-center gap-2 rounded-2xl border-0 bg-background p-8 transition-colors duration-200 hover:bg-muted"
-                        >
-                            <div className="flex flex-col items-center gap-2">
-                                <social.icon className="h-8 w-8 text-foreground/80" />
-                                <h5 className="mb-1 text-lg font-semibold">{social.name}</h5>
-                                <a
-                                    href={social.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="mb-1 text-xs break-all underline"
-                                >
-                                    {social.url}
-                                </a>
-                                <div className="mt-2 flex items-center justify-center gap-2">
-                                    <span
-                                        className={`h-2 w-2 rounded-full ${social.status === "Online"
+                <div className="mb-10 grid w-full grid-cols-2 gap-6 md:grid-cols-3">
+                    {socials.map((social, index) => (
+                        <div key={index}>
+                            <div
+                                className="group flex-1 flex-col items-center gap-2 rounded-2xl border-0 bg-background p-8 transition-colors duration-200 hover:bg-muted hidden md:flex"
+                            >
+                                <div className="flex flex-col items-center gap-2">
+                                    <social.icon className="h-8 w-8 text-foreground/80" />
+                                    <h5 className="mb-1 text-lg font-semibold">{social.name}</h5>
+                                    <a
+                                        href={social.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="mb-1 text-xs break-all underline"
+                                    >
+                                        {social.url}
+                                    </a>
+                                    <div className="mt-2 flex items-center justify-center gap-2">
+                                        <span
+                                            className={`h-2 w-2 rounded-full ${social.status === "Online"
                                                 ? "bg-green-500"
                                                 : "bg-gray-400"
-                                            }`}
-                                        title={social.status}
-                                    ></span>
-                                    <span className="text-xs text-muted-foreground">
-                                        {social.status}
-                                    </span>
-                                    <span className="mx-2 text-xs text-muted-foreground">•</span>
-                                    <span className="text-xs font-medium text-foreground">
-                                        {social.followers} followers
-                                    </span>
+                                                }`}
+                                            title={social.status}
+                                        ></span>
+                                        <span className="text-xs text-muted-foreground">
+                                            {social.status}
+                                        </span>
+                                        <span className="mx-2 text-xs text-muted-foreground">•</span>
+                                        <span className="text-xs font-medium text-foreground">
+                                            {social.followers} followers
+                                        </span>
+                                    </div>
                                 </div>
+
                             </div>
+                            <Link
+                                href={social.url}
+                                target="_blank"
+                                className="group flex flex-1 flex-col items-center gap-2 rounded-2xl border-0 bg-background p-8 transition-colors duration-200 hover:bg-muted md:hidden"
+                            >
+                                <div className="flex flex-col items-center gap-2">
+                                    <social.icon className="h-8 w-8 text-foreground/80" />
+                                    <h5 className="mb-1 text-lg font-semibold">{social.name}</h5>
+                                </div>
+                            </Link>
                         </div>
                     ))}
                 </div>

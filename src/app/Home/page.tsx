@@ -48,9 +48,9 @@ function Home() {
                 <div className="my-40"><Services /></div>
                 <div className="my-40"><ProcessSteps /></div>
                 <div className="my-40"><Testimonial /></div>
-                <div className="my-40"><BlogSection /></div>
-                <div className="my-40"><FindUsOnline /></div>
-                <div className="my-40"><FAQ /></div>
+                <div className="mt-40 mb-20 md:my-40"><BlogSection /></div>
+                <div className="my-20 md:my-40"><FindUsOnline /></div>
+                <div className="my-20 md:my-40"><FAQ /></div>
                 <Footer />
             </main>
         </>

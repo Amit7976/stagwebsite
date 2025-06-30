@@ -1,95 +1,139 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import gsap from "gsap";
 
 const services = [
     {
-        name: "SaaS Product Development",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-1.svg",
+        name: "Website Development",
+        image: "/images/work/services/website.svg",
     },
     {
-        name: "Web Development",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-2.svg",
+        name: "Web App Development",
+        image: "/images/work/services/web_app.svg",
     },
     {
         name: "Mobile App Development",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-1.svg",
+        image: "/images/work/services/mobile_app.svg",
     },
     {
-        name: "UI/UX Design",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-2.svg",
+        name: "UI/UX Design & Prototyping",
+        image: "/images/work/services/ui_ux.svg",
     },
     {
-        name: "Cloud & DevOps",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-1.svg",
+        name: "Game Development",
+        image: "/images/work/services/game_dev.svg",
     },
     {
-        name: "MVP Development",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-2.svg",
+        name: "API Development & Integration",
+        image: "/images/work/services/api.svg",
+    },
+    {
+        name: "Cybersecurity Solutions",
+        image: "/images/work/services/cyber_security.svg",
+    },
+    {
+        name: "Cloud Infrastructure & DevOps",
+        image: "/images/work/services/cloud_dev_ops.svg",
+    },
+    {
+        name: "SEO & Performance Optimization",
+        image: "/images/work/services/seo.svg",
+    },
+    {
+        name: "Database Design & Management",
+        image: "/images/work/services/database.svg",
+    },
+    {
+        name: "Website Redesign & Modernization",
+        image: "/images/work/services/website_redesign.svg",
+    },
+    {
+        name: "Legacy System Modernization",
+        image: "/images/work/services/system_update.svg",
+    },
+    {
+        name: "SaaS Product Development",
+        image: "/images/work/services/saas.svg",
+    },
+    {
+        name: "E-commerce Development",
+        image: "/images/work/services/ecommerce.svg",
+    },
+    {
+        name: "IT Consulting & Audits",
+        image: "/images/work/services/it_consulting.svg",
     },
     {
         name: "Maintenance & Support",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-1.svg",
+        image: "/images/work/services/support.svg",
     },
     {
-        name: "Branding & Identity",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-2.svg",
+        name: "Enterprise Software Solutions",
+        image: "/images/work/services/erp.svg",
     },
     {
-        name: "Startup Consulting",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-3.svg",
+        name: "Startup Tech Advisory",
+        image: "/images/work/services/startup.svg",
     },
     {
-        name: "Digital Marketing",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-2.svg",
-    },
-    {
-        name: "SEO & Content",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-1.svg",
-    },
-    {
-        name: "E-commerce Solutions",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-3.svg",
-    },
-    {
-        name: "Custom ERP",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-1.svg",
-    },
-    {
-        name: "CRM Solutions",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-1.svg",
-    },
-    {
-        name: "Business Analytics",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-3.svg",
-    },
-    {
-        name: "Cybersecurity",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-1.svg",
-    },
-    {
-        name: "API Development",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-2.svg",
-    },
-    {
-        name: "Investor Relations Support",
-        image: "https://www.shadcnblocks.com/images/block/placeholder-1.svg",
+        name: "Startup MVP Development",
+        image: "/images/work/services/mvp.svg",
     },
 ];
+  
 
 
 export default function Services() {
     const [activeService, setActiveService] = useState(services[0]);
+    const imageRef = useRef(null);
+    const listRef = useRef(null);
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            const items = gsap.utils.toArray(".service-item");
+
+            items.forEach((item) => {
+                const el = item as HTMLElement;
+                gsap.from(el, {
+                    opacity: 0,
+                    x: -50,
+                    duration: 1,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top 90%",
+                        toggleActions: "play none none reverse",
+                        scrub: true,
+                    },
+                });
+            });
+        }, listRef);
+
+        return () => ctx.revert();
+    }, []);
+
+
+    // === Animate image on change ===
+    useEffect(() => {
+        if (imageRef.current) {
+            gsap.fromTo(
+                imageRef.current,
+                { scale: 0.8, opacity: 0 },
+                { scale: 1, opacity: 1, duration: 0.6, ease: "power2.in" }
+            );
+        }
+    }, [activeService]);
 
     return (
         <section>
-            <div className="container max-w-7xl mx-auto">
+            <div className="w-full px-6 md:px-20">
                 <h1 className="mb-10 text-4xl font-bold md:text-5xl lg:mb-20 lg:text-6xl">
-                    Our <span className="text-orange-600">Services</span>
+                    IT <span className="text-orange-600">Services</span>
                 </h1>
+
                 <div className="md:grid md:grid-cols-5 gap-10 relative">
-                    <div className="col-span-3 pb-4"> {/* Force scroll */}
+                    <div ref={listRef} className="col-span-3 pb-4">
                         {services.map((service, index) => (
                             <React.Fragment key={service.name}>
                                 {index !== 0 && (
@@ -97,7 +141,7 @@ export default function Services() {
                                 )}
                                 <button
                                     onClick={() => setActiveService(service)}
-                                    className="w-full text-left"
+                                    className="w-full text-left service-item"
                                 >
                                     <div className="flex items-center py-3 gap-7 md:gap-16 lg:gap-20">
                                         <span
@@ -106,14 +150,14 @@ export default function Services() {
                                                 : "bg-muted"
                                                 }`}
                                         ></span>
-                                        <h2
+                                        <h3
                                             className={`text-[clamp(1.65rem,3vw,2.15rem)] cursor-pointer font-bold ${activeService.name === service.name
                                                 ? "text-primary"
                                                 : "text-muted-foreground"
                                                 }`}
                                         >
                                             {service.name}
-                                        </h2>
+                                        </h3>
                                     </div>
                                 </button>
                             </React.Fragment>
@@ -124,9 +168,11 @@ export default function Services() {
                         <div className="sticky top-20">
                             <Card className="p-4 flex items-center justify-center h-72 md:h-auto border-gray-200 dark:border-neutral-900">
                                 <img
+                                    ref={imageRef}
+                                    key={activeService.image} // force img re-render
                                     src={activeService.image}
                                     alt={activeService.name}
-                                    className="max-h-full"
+                                    className="max-h-full transition-transform"
                                 />
                             </Card>
                         </div>
@@ -134,6 +180,5 @@ export default function Services() {
                 </div>
             </div>
         </section>
-
     );
 }

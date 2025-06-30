@@ -66,10 +66,10 @@ export default function WhyChoose() {
                             className="p-8 lg:p-10 border-0 dark:bg-neutral-900 gap-1"
                         >
                             <p className="mb-1 flex items-center justify-center text-2xl font-semibold lg:text-3xl">
-                                <div className="relative">
+                                <span className="relative">
                                     <card.icon className={`h-4 ${card.iconColor}`} aria-hidden="true" />
-                                    <div className="w-full h-full bg-gradient-to-t from-white dark:from-neutral-900 to-transparent absolute top-0 left-0 z-50"></div>
-                               </div>
+                                    <span className="w-full h-full bg-gradient-to-t from-white dark:from-neutral-900 to-transparent absolute top-0 left-0 z-50"></span>
+                               </span>
                                 {card.value}
                             </p>
                             <p className="mb-5 text-lg font-medium text-gray-500 lg:text-xl">

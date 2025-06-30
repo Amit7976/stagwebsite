@@ -84,7 +84,7 @@ const services = [
 export default function WebsiteSolutions() {
     return (
         <section>
-            <div className="px-10">
+            <div className="px-5 md:px-10">
                 {/* Section Intro */}
                 <div className="mx-auto flex flex-col justify-between gap-3 md:flex-row md:items-end md:gap-12">
                     <div className="flex basis-1/2 flex-col gap-3">
@@ -105,13 +105,13 @@ export default function WebsiteSolutions() {
                         <a
                             href="#"
                             key={idx}
-                            className="group flex flex-col gap-1 rounded-lg transition-colors md:p-4 md:hover:bg-muted"
+                            className="group flex flex-col gap-1 rounded-lg transition-colors p-4 md:hover:bg-muted bg-neutral-100 dark:bg-neutral-900"
                         >
                             <div className="flex items-center gap-2">
                                 {service.icon}
                                 <div className="flex items-center gap-1">
-                                    <p className="text-lg font-medium">{service.title}</p>
-                                    <ChevronRight className="size-4 shrink-0 transition-transform md:group-hover:translate-x-0.5" />
+                                    <p className="text-xl md:text-lg font-medium">{service.title}</p>
+                                    <ChevronRight className="size-5 md:size-4 shrink-0 transition-transform md:group-hover:translate-x-0.5" />
                                 </div>
                             </div>
                             <p className="text-base text-muted-foreground">{service.desc}</p>

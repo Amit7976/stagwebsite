@@ -92,7 +92,7 @@ export default function SectionOverview() {
 
                 <div className="flex flex-col items-center justify-center">
                     {overviewData.map((section, idx) => (
-                        <div key={idx} className="w-full max-w-96 lg:max-w-none">
+                        <div key={idx} className="w-full lg:max-w-none">
                             {idx > 0 && (
                                 <div
                                     data-orientation="horizontal"

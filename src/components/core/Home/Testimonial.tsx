@@ -10,6 +10,7 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button";
+import { FaArrowRight } from "react-icons/fa6";
 
 // testimonialsData.js
 export const testimonials = [
@@ -54,15 +55,14 @@ export const testimonials = [
 export default function Testimonial() {
     return (
         <section className="overflow-hidden">
-            <div className="max-w-5xl mx-auto flex flex-col items-center gap-6 px-4">
-                <h2 className="mb-2 text-center text-3xl font-semibold lg:text-5xl">
+            <div className="max-w-5xl mx-auto flex flex-col items-start md:items-center gap-3 md:gap-6 px-4">
+                <h2 className="mb-2 text-center text-3xl font-semibold lg:text-6xl">
                     Our happy <span className="text-orange-600">Clients</span>
                 </h2>
                 <p className="text-muted-foreground text-center lg:text-lg">
                     All of our 1000+ clients are happy
                 </p>
-                <Button className="rounded-full bg-orange-600 p-1 h-auto px-8 py-2.5 text-base gap-2 text-white">Get A Quote</Button>
-
+                <Button className="rounded-full bg-orange-600 p-1 h-auto pl-8 text-base gap-2 text-white">Get A Quote <span><FaArrowRight className="size-10 bg-white rounded-full text-orange-600 p-2 -rotate-45" /></span> </Button>
             </div>
 
             <div className="mt-16 w-full overflow-hidden">

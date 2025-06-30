@@ -1,9 +1,8 @@
 "use client";
 import { Card } from "@/components/ui/card";
-import React from "react";
 
 // Importing icons from react-icons
-import { FaAnglesUp, FaArrowDown, FaInfinity } from "react-icons/fa6";
+import { FaAnglesUp, FaInfinity } from "react-icons/fa6";
 
 export default function WhyChoose() {
 

@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { FaArrowRight } from 'react-icons/fa6';
 import HomeHeroHeading from './HomeHeroHeading';
+import Image from 'next/image';
 export default function HomeHero() {
     return (
         <>
@@ -19,20 +20,24 @@ export default function HomeHero() {
                     </div>
                     {/* Spinning graphics */}
                     <div className="absolute -top-100 -right-120 z-0 hidden h-full w-240 items-center justify-center md:flex">
-                        <img
+                        <Image
+                            width={800}
+                            height={800}
                             className="infinite absolute w-full rotate-12 animate-spin ease-linear opacity-25 invert-25"
                             style={{ animationDuration: "10s" }}
-                            src="https://www.shadcnblocks.com/images/block/illustrations/tokyo-solar-system-around-a-smiley.svg"
+                            src="/images/Home/home_hero_round_animation"
                             alt=""
                         />
                         <div className="z-10 size-32 rounded-full bg-neutral-200 dark:bg-neutral-700 p-7"></div>
                     </div>
 
                     <div className="left-0 md::-bottom-80 md:-left-120 z-0 mt-32 -mb-24 flex h-full w-full items-center justify-center absolute md:w-240">
-                        <img
+                        <Image
+                            width={800}
+                            height={800}
                             className="infinite absolute w-full rotate-12 animate-spin ease-linear opacity-25 invert-25"
                             style={{ animationDuration: "10s" }}
-                            src="https://www.shadcnblocks.com/images/block/illustrations/tokyo-solar-system-around-a-smiley.svg"
+                            src="/images/Home/home_hero_round_animation"
                             alt=""
                         />
                         <div className="z-10 size-32 rounded-full bg-neutral-200 dark:bg-neutral-950 p-7"></div>

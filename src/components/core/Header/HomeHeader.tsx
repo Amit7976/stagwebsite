@@ -1,9 +1,6 @@
-import { ModeToggle } from '@/components/ui/ModeToggle'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import { CiMenuFries } from "react-icons/ci";
-import { IoCloseOutline } from "react-icons/io5";
+import { ModeToggle } from '@/components/ui/ModeToggle';
+import Image from 'next/image';
+import Link from 'next/link';
 import Hamburger from './Hamburger';
 
 

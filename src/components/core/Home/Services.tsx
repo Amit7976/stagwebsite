@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Card } from "@/components/ui/card";
 import gsap from "gsap";
+import Image from "next/image";
 
 const services = [
     {
@@ -167,7 +168,9 @@ export default function Services() {
                     <div className="col-span-2">
                         <div className="sticky top-20">
                             <Card className="p-4 flex items-center justify-center h-72 md:h-auto border-gray-200 dark:border-neutral-900">
-                                <img
+                                <Image
+                                    width={600}
+                                    height={600}
                                     ref={imageRef}
                                     key={activeService.image} // force img re-render
                                     src={activeService.image}

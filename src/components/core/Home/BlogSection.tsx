@@ -1,11 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 
 
 const blogPosts = [
     {
         title: "The Future of Web Development",
         date: "3rd Dec 2024",
-        image: "https://www.shadcnblocks.com/images/block/photos/nubelson-fernandes-tAJYoec13xk-unsplash.jpg",
+        image: "/images/Home/Blogs/nubelson-fernandes-tAJYoec13xk-unsplash.png",
         description: "Exploring the latest trends in frontend and backend technologies, including AI-powered coding tools and modern frameworks.",
         link: "#",
         alt: "Developer working on code",
@@ -13,7 +14,7 @@ const blogPosts = [
     {
         title: "Mastering React Performance Optimization",
         date: "5th Dec 2024",
-        image: "https://www.shadcnblocks.com/images/block/photos/jason-goodman-ZJlfUi5rTDU-unsplash.jpg",
+        image: "/images/Home/Blogs/jason-goodman-ZJlfUi5rTDU-unsplash.png",
         description: "A deep dive into memoization, lazy loading, and efficient state management techniques for faster React applications.",
         link: "#",
         alt: "Code on screen",
@@ -21,7 +22,7 @@ const blogPosts = [
     {
         title: "UI/UX Design Principles for 2025",
         date: "10th Dec 2024",
-        image: "https://www.shadcnblocks.com/images/block/photos/studio-republic-fotKKqWNMQ4-unsplash.jpg",
+        image: "/images/Home/Blogs/studio-republic-fotKKqWNMQ4-unsplash.png",
         description: "Key strategies for creating intuitive, beautiful interfaces that delight users and drive engagement in the coming year.",
         link: "#",
         alt: "UI/UX design sketches on paper",
@@ -43,7 +44,9 @@ export default function BlogSection() {
                         >
                             {/* Image */}
                             <div className="flex h-80 w-full md:w-140 items-center justify-center overflow-hidden rounded-3xl bg-muted">
-                                <img
+                                <Image
+                                    width={600}
+                                    height={600}
                                     src={post.image}
                                     alt={post.alt}
                                     className="h-full w-full object-cover"

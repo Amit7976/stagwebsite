@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,15 +12,6 @@ function Products() {
     useEffect(() => {
         if (!containerRef.current) return;
         const sections = containerRef.current.querySelectorAll('.reveal-section');
-
-        interface SectionElements {
-            leftPart: HTMLElement | null;
-            rightPart: HTMLElement | null;
-            headingLeft: HTMLElement | null;
-            headingRight: HTMLElement | null;
-            bodyElsLeft: NodeListOf<HTMLElement>;
-            bodyElsRight: NodeListOf<HTMLElement>;
-        }
 
         sections.forEach((section: Element) => {
             const leftPart = section.querySelector('.from-left') as HTMLElement | null;
@@ -142,12 +134,16 @@ function Products() {
                         <div className="reveal-section lg:flex lg:gap-x-4">
                             <div className="from-left lg:w-1/2">
                                 <div className="mb-6 md:mb-8 lg:mb-0">
-                                    <img
+                                    <Image
+                                        width={600}
+                                        height={600}
                                         src="/images/work/it_solution_light.svg"
                                         alt="IT Solutions"
                                         className="aspect-4/3 w-full rounded-md object-contain dark:hidden"
                                     />
-                                    <img
+                                    <Image
+                                        width={600}
+                                        height={600}
                                         src="/images/work/it_solution.svg"
                                         alt="IT Solutions"
                                         className="aspect-4/3 w-full rounded-md object-contain hidden dark:block"
@@ -178,12 +174,16 @@ function Products() {
                         <div className="reveal-section flex-row-reverse lg:flex lg:gap-x-4">
                             <div className="from-right lg:w-1/2">
                                 <div className="mb-6 md:mb-8 lg:mb-0">
-                                    <img
+                                    <Image
+                                        width={600}
+                                        height={600}
                                         src="/images/work/brand.png"
                                         alt="Brand Development"
                                         className="aspect-4/3 w-full rounded-md object-contain dark:hidden"
                                     />
-                                    <img
+                                    <Image
+                                        width={600}
+                                        height={600}
                                         src="/images/work/brand_light.png"
                                         alt="Brand Development"
                                         className="aspect-4/3 w-full rounded-md object-contain hidden dark:block"
@@ -213,7 +213,9 @@ function Products() {
                         <div className="reveal-section lg:flex lg:gap-x-4">
                             <div className="from-left lg:w-1/2">
                                 <div className="mb-6 md:mb-8 lg:mb-0">
-                                    <img
+                                    <Image
+                                        width={600}
+                                        height={600}
                                         src="/images/work/career.svg"
                                         alt="Internship Program"
                                         className="aspect-4/3 w-full rounded-md object-contain"

@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { FaArrowRight } from "react-icons/fa6";
-import { BsClock } from "react-icons/bs";
 import { LuClock } from "react-icons/lu";
 
 

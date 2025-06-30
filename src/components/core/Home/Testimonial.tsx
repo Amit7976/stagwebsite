@@ -1,15 +1,11 @@
 "use client";
-import React from "react";
+import { Button } from "@/components/ui/button";
 import {
     Card,
-    CardAction,
     CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
-import { Button } from "@/components/ui/button";
+    CardFooter
+} from "@/components/ui/card";
+import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
 
 // testimonialsData.js
@@ -71,7 +67,9 @@ export default function Testimonial() {
                         <Card key={index} className="shadow-sm min-w-96 py-6 px-0 select-none border-gray-300 dark:border-neutral-800">
                             <CardContent className="mb-4 flex gap-4">
                                 <span data-slot="avatar" className="relative flex shrink-0 overflow-hidden h-9">
-                                    <img
+                                    <Image
+                                        width={40}
+                                        height={40}
                                         src={item.image}
                                         alt={item.name}
                                         className="object-cover"
@@ -95,7 +93,9 @@ export default function Testimonial() {
                         <Card key={index} className="shadow-sm min-w-96 py-6 px-0 select-none border-gray-300 dark:border-neutral-800">
                             <CardContent className="mb-4 flex gap-4">
                                 <span data-slot="avatar" className="relative flex shrink-0 overflow-hidden h-9">
-                                    <img
+                                    <Image
+                                        width={40}
+                                        height={40}
                                         src={item.image}
                                         alt={item.name}
                                         className="object-cover"

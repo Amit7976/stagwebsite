@@ -19,17 +19,22 @@ import { FAQ } from '@/components/core/Home/FAQ';
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { useEffect, useRef } from 'react';
+import type { ILocomotiveScrollOptions } from 'locomotive-scroll';
 
 function Home() {
-    const scrollRef = useRef(null);
+    const scrollRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         if (!scrollRef.current) return;
 
-        new LocomotiveScroll({
+        const scroll = new LocomotiveScroll({
             el: scrollRef.current,
             smooth: true,
-        } as any);
+        } as ILocomotiveScrollOptions & { el: HTMLElement });
+
+        return () => {
+            scroll.destroy();
+        };
     }, []);
 
     return (

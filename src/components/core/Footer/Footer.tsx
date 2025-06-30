@@ -12,6 +12,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuCircleDashed } from "react-icons/lu";
 import { z } from "zod";
+import { AxiosError } from "axios";
 
 
 
@@ -62,20 +63,28 @@ function Footer() {
           description: responseData.msg,
         });
       }
-    } catch (error: any) {
-      if (error.response && error.response.status === 409) {
-        toast.error("Submission Failed", {
-          description: error.response.data.msg,
-        });
+    } catch (error) {
+      if (error && typeof error === "object") {
+        const err = error as AxiosError<{ msg: string }>;
+
+        if (err.response?.status === 409) {
+          toast.error("Submission Failed", {
+            description: err.response.data?.msg,
+          });
+        } else {
+          toast.error("An unexpected error occurred", {
+            description: err.message || "Failed to save FAQ",
+          });
+        }
+
+        console.error("Error saving FAQ:", err);
       } else {
-        toast.error("An unexpected error occurred", {
-          description: error.message || "Failed to save FAQ",
-        });
+        console.error("Unknown error:", error);
       }
-      console.error('Error saving FAQ:', error);
     } finally {
-      setLoading(false); // Reset loading state after form submission is completed
+      setLoading(false);
     }
+    
   }
 
 
@@ -351,4 +360,3 @@ function Footer() {
 }
 
 export default Footer;
-``

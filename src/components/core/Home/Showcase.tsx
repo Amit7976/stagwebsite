@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 const images = [
@@ -25,7 +26,9 @@ export default function Showcase() {
                         {images.concat(images).map((src, idx) => (
                             <div key={idx} className="px-4 w-72">
                                 <div className="w-72">
-                                    <img
+                                    <Image
+                                        width={800}
+                                        height={800}
                                         src={src}
                                         alt={`placeholder-${idx}`}
                                         className={`h-44 w-72 border-2 border-gray-200 dark:border-neutral-900 rounded-md object-fill ${idx % 2 === 0 ? "mt-16" : "mt-7"

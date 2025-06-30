@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,7 +27,7 @@ export default function InAppFeature() {
     const cardRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        let ctx = gsap.context(() => {
+        const ctx = gsap.context(() => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".feature-section",
@@ -164,7 +165,9 @@ export default function InAppFeature() {
                                 data-slot="card-content"
                                 className="size-full rounded-3xl border-background bg-muted"
                             >
-                                <img
+                                <Image
+                                    width={800}
+                                    height={800}
                                     src="/images/Home/Light_Dark_Mode.png"
                                     className="size-full rounded-3xl"
                                     alt="App Preview"

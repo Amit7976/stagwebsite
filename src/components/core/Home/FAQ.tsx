@@ -111,15 +111,15 @@ const FAQ = ({
         <div className="mx-auto flex max-w-6xl flex-col items-center rounded-lg bg-accent dark:bg-neutral-900 p-4 text-center md:rounded-xl md:p-6 lg:p-8">
           <div className="relative">
             <Avatar className="absolute mb-4 size-16 origin-bottom -translate-x-[60%] scale-[80%] border md:mb-5">
-              <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-2.webp" />
+              <AvatarImage src="/images/Home/avatar/avatar-2.webp" />
               <AvatarFallback>SU</AvatarFallback>
             </Avatar>
             <Avatar className="absolute mb-4 size-16 origin-bottom translate-x-[60%] scale-[80%] border md:mb-5">
-              <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-3.webp" />
+              <AvatarImage src="/images/Home/avatar/avatar-3.webp" />
               <AvatarFallback>SU</AvatarFallback>
             </Avatar>
             <Avatar className="mb-4 size-16 border md:mb-5">
-              <AvatarImage src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/avatar-1.webp" />
+              <AvatarImage src="/images/Home/avatar/avatar-1.webp" />
               <AvatarFallback>SU</AvatarFallback>
             </Avatar>
           </div>

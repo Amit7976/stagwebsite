@@ -2,15 +2,20 @@ import { ModeToggle } from '@/components/ui/ModeToggle'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { CiMenuFries } from "react-icons/ci";
+import { IoCloseOutline } from "react-icons/io5";
+import Hamburger from './Hamburger';
+
 
 function HomeHeader() {
     return (
         <>
-            <header className='flex items-center justify-between px-10 py-3 bg-transparent absolute top-0 z-50 w-full'>
+            <header className='flex items-center justify-between md:px-10 py-3 bg-transparent absolute top-0 z-50 w-full'>
                 <div>
                     <Image src={'/images/logo/logo.svg'} width={200} height={200} alt='Hirebie Logo' className='w-40' />
                 </div>
-                <div className="flex items-center justify-end gap-2">
+                <Hamburger />
+                <div className="hidden lg:flex items-center justify-end gap-2">
                     <div className='rounded-full text-gray-600 dark:text-gray-100 text-balance font-medium text-sm p-2 px-5 flex items-center bg-black/3 dark:bg-white/3 uppercase'>
                         <Link className='block py-1 pr-10' href={'#'}>Home</Link>
                         <Link className='block py-1 pr-10' href={'#'}>Our Services</Link>

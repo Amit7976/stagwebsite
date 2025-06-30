@@ -47,7 +47,7 @@ const services = [
     },
     {
         name: "Website Redesign & Modernization",
-        image: "/images/work/services/website_redesign.svg",
+        image: "/images/work/services/web_redesign.svg",
     },
     {
         name: "Legacy System Modernization",
@@ -82,7 +82,7 @@ const services = [
         image: "/images/work/services/mvp.svg",
     },
 ];
-  
+
 
 
 export default function Services() {

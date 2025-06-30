@@ -11,7 +11,7 @@ function Hamburger() {
     <>
       <div className='px-5 lg:hidden'>
         <CiMenuFries className='size-6' onClick={() => setOpen(true)} />
-        <div className={`${open ? 'fixed' : 'hidden'} top-0 left-0 bg-black h-screen w-full text-gray-600 dark:text-gray-100 text-balance font-medium text-4xl p-2 px-5 flex flex-col justify-evenly items-center uppercase`}>
+        <div className={`${open ? 'fixed' : 'hidden'} top-0 left-0 bg-white dark:bg-black h-screen w-full text-gray-600 dark:text-gray-100 text-balance font-medium text-4xl p-2 px-5 flex flex-col justify-evenly items-center uppercase`}>
           <Link href={'#'}>Home</Link>
           <Link href={'#'}>Our Services</Link>
           <Link href={'#'}>Pricing</Link>
@@ -24,7 +24,7 @@ function Hamburger() {
           <div className='rounded-full bg-orange-600 py-3 mb-10 px-10 flex items-center shadow'>
             <Link className='text-xl text-white font-medium block py-1 uppercase' href={'#'}>Get A Quote</Link>
           </div>
-          <div className='bg-neutral-800 p-2 rounded-full absolute top-4 right-4' onClick={() => setOpen(false)}>
+          <div className='bg-neutral-200 dark:bg-neutral-800 p-2 rounded-full absolute top-4 right-4' onClick={() => setOpen(false)}>
             <IoCloseOutline className='size-10 text-neutral-500' />
           </div>
         </div>

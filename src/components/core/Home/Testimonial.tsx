@@ -98,7 +98,7 @@ export default function Testimonial() {
                                         height={40}
                                         src={item.image}
                                         alt={item.name}
-                                        className="object-cover"
+                                        className="object-contain"
                                     />
                                 </span>
                                 <div className="text-sm">

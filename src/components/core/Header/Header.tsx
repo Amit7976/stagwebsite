@@ -4,10 +4,10 @@ import Link from 'next/link';
 import Hamburger from './Hamburger';
 
 
-function HomeHeader() {
+function Header() {
     return (
         <>
-            <header className='flex items-center justify-between md:px-10 py-3 bg-transparent z-50 w-full absolute top-0'>
+            <header className='flex items-center justify-between md:px-10 py-3 bg-transparent z-50 w-full shadow-lg relative'>
                 <div>
                     <Image src={'/images/logo/logo.svg'} width={200} height={200} alt='Hirebie Logo' className='w-40' />
                 </div>
@@ -31,4 +31,4 @@ function HomeHeader() {
     )
 }
 
-export default HomeHeader
+export default Header

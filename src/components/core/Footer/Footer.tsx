@@ -180,7 +180,7 @@ function Footer() {
 
 
   return (
-    <footer className="mt-40 p-0 lg:p-10 border-t-2 border-neutral-200 text-neutral-200 dark:border-neutral-800 rounded-t-4xl">
+    <footer className="mt-40 p-0 lg:p-10">
 
 
 

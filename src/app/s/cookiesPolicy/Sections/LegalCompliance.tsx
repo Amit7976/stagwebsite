@@ -1,4 +1,5 @@
 import { Separator } from '@/components/ui/separator'
+import Link from 'next/link'
 import React from 'react'
 
 function LegalCompliance() {
@@ -7,12 +8,12 @@ function LegalCompliance() {
           <Separator className="my-20 bg-gray-500 rounded-full" />
 <div className="p-10 space-y-10">
 <h3 className="font-bold text-4xl">8. Legal Compliance</h3>
-<p>In this section, we outline how JobBoost ensures that our Cookies Policy adheres to relevant legal standards and regulations. We also provide information on your rights under Indian privacy laws and international compliance practices.</p>
+        <p>In this section, we outline how <Link href={"/"} className='text-orange-600'>Hirebie</Link> ensures that our Cookies Policy adheres to relevant legal standards and regulations. As an IT Services provider, we respect global data privacy principles and ensure that our cookie practices are transparent and fair for all users.</p>
 
 <div className="space-y-6">
 <h4 className="font-bold text-2xl text-gray-800 mt-12">8.1. Compliance with Indian Laws</h4>
 <p><b>Overview</b></p>
-<p>JobBoost is committed to complying with all applicable Indian laws and regulations related to data privacy and the use of cookies. This section explains how our Cookies Policy aligns with Indian legal requirements and what steps we take to ensure compliance.</p>
+<p><Link href={"/"} className='text-orange-600'>Hirebie</Link> is committed to complying with all applicable Indian laws and regulations related to data privacy and the use of cookies. This section explains how our Cookies Policy aligns with Indian legal requirements and what steps we take to ensure compliance.</p>
 </div>
 <div className="space-y-6">
 <h5 className="font-bold text-xl text-gray-600 mt-10">8.1.1 Indian Information Technology Act, 2000</h5>
@@ -41,7 +42,7 @@ function LegalCompliance() {
 <div className="space-y-6">
 <h4 className="font-bold text-2xl text-gray-800 mt-12">8.2. International Compliance</h4>
 <p><b>Overview</b></p>
-<p>While our primary focus is on Indian regulations, JobBoost also ensures that our Cookies Policy aligns with international data protection standards. This section details how we adhere to global regulations and frameworks.</p>
+<p>While our primary focus is on Indian regulations, <Link href={"/"} className='text-orange-600'>Hirebie</Link> also ensures that our Cookies Policy aligns with international data protection standards. This section details how we adhere to global regulations and frameworks.</p>
 </div>
 <div className="space-y-6">
 <h5 className="font-bold text-xl text-gray-600 mt-10">8.2.1 General Data Protection Regulation (GDPR)</h5>
@@ -77,35 +78,35 @@ function LegalCompliance() {
 <h5 className="font-bold text-xl text-gray-600 mt-10">8.3.1 Right to Access Personal Data</h5>
 <p>You have the right to request access to the personal data we collect about you, including data collected through cookies.</p>
 <ul className="list-disc px-10 space-y-4">
-<li><b>How to Access:</b> You can request access to your personal data by contacting us via email at support@jobboost.in. We will provide you with a copy of the data we hold about you.</li>
+<li><b>How to Access:</b> You can request access to your personal data by contacting us via email at support@hirebie.com. We will provide you with a copy of the data we hold about you.</li>
 </ul>
 </div>
 <div className="space-y-6">
 <h5 className="font-bold text-xl text-gray-600 mt-10">8.3.2 Right to Correct and Update Personal Data</h5>
 <p>If you believe that the personal data we hold about you is incorrect or outdated, you have the right to request corrections or updates.</p>
 <ul className="list-disc px-10 space-y-4">
-<li><b>How to Update:</b> Submit your correction requests to support@jobboost.in. We will review your request and make the necessary changes.</li>
+<li><b>How to Update:</b> Submit your correction requests to support@hirebie.com. We will review your request and make the necessary changes.</li>
 </ul>
 </div>
 <div className="space-y-6">
 <h5 className="font-bold text-xl text-gray-600 mt-10">8.3.3 Right to Delete Personal Data</h5>
 <p>You have the right to request the deletion of your personal data collected through cookies.</p>
 <ul className="list-disc px-10 space-y-4">
-<li><b>How to Request Deletion:</b> Send a deletion request to support@jobboost.in. We will process your request in accordance with legal requirements.</li>
+<li><b>How to Request Deletion:</b> Send a deletion request to support@hirebie.com. We will process your request in accordance with legal requirements.</li>
 </ul>
 </div>
 <div className="space-y-6">
 <h5 className="font-bold text-xl text-gray-600 mt-10">8.3.4 Right to Restrict Processing of Personal Data</h5>
 <p>You can request restrictions on the processing of your personal data collected through cookies.</p>
 <ul className="list-disc px-10 space-y-4">
-<li><b>How to Restrict Processing:</b> Contact us at support@jobboost.in to request restrictions on the processing of your data.</li>
+<li><b>How to Restrict Processing:</b> Contact us at support@hirebie.com to request restrictions on the processing of your data.</li>
 </ul>
 </div>
 <div className="space-y-6">
 <h5 className="font-bold text-xl text-gray-600 mt-10">8.3.5 Right to Withdraw Consent</h5>
 <p>You have the right to withdraw your consent for cookie usage at any time.</p>
 <ul className="list-disc px-10 space-y-4">
-<li><b>How to Withdraw Consent:</b> You can manage your cookie preferences through your browser settings or by contacting us at support@jobboost.in.</li>
+<li><b>How to Withdraw Consent:</b> You can manage your cookie preferences through your browser settings or by contacting us at support@hirebie.com.</li>
 </ul>
 </div>
           </div>

@@ -22,7 +22,7 @@ function CookiePolicyForMobileApps() {
 <li><b>Session Cookies:</b> Temporary cookies that are used to remember your actions during a single session. These cookies are deleted when you close the app.</li>
 <li><b>Persistent Cookies:</b> Cookies that remain on your device after you close the app. They are used to remember your preferences for future sessions.</li>
 <li><b>First-Party Cookies:</b> Cookies set by the app you are using. These cookies are used for app functionalities such as login sessions and preferences.</li>
-<li><b>Third-Party Cookies:</b> Cookies set by entities other than JobBoost, such as advertising networks or analytics services. These cookies are used for tracking app usage and delivering targeted ads.</li>
+<li><b>Third-Party Cookies:</b> Cookies set by entities other than Hirebie, such as advertising networks or analytics services. These cookies are used for tracking app usage and delivering targeted ads.</li>
 </ul>
 </div>
 <div className="space-y-6">
@@ -52,7 +52,7 @@ function CookiePolicyForMobileApps() {
 </div>
 <div className='grid grid-cols-3 gap-3 divide-x-2 divide-gray-400 p-3'>
 <p className='col-span-1'>Analytics Cookie</p>
-<p className='col-span-2 pl-10'>divacks app usage for performance insights</p>
+<p className='col-span-2 pl-10'>Some app usage for performance insights</p>
 </div>
 <div className='grid grid-cols-3 gap-3 divide-x-2 divide-gray-400 p-3'>
 <p className='col-span-1'>Advertising Cookie</p>

@@ -1,4 +1,5 @@
 import { Separator } from '@/components/ui/separator'
+import Link from 'next/link'
 import React from 'react'
 
 function TypesOfCookiesWeUse() {
@@ -7,19 +8,18 @@ function TypesOfCookiesWeUse() {
           <Separator className="my-20 bg-gray-500 rounded-full" />
 <div className="p-10 space-y-10">
 <h3 className="font-bold text-4xl">2. Types of Cookies We Use</h3>
-<p>At JobBoost, we use various types of cookies to enhance your experience on our website. Each type of cookie serves a distinct purpose, and understanding these can help you make informed choices about your privacy. Below, we detail the different types of cookies we use, their functions, and their importance.</p>
+<p>At <Link href={"/"} className='text-orange-600'>Hirebie</Link>, we use various types of cookies to enhance your experience on our website. Each type of cookie serves a distinct purpose, and understanding these can help you make informed choices about your privacy. Below, we detail the different types of cookies we use, their functions, and their importance.</p>
 
 <div className="space-y-6">
 <h4 className="font-bold text-2xl text-gray-800 mt-12">2.1. Necessary Cookies</h4>
 <p><b>Definition and Purpose</b></p>
-<p>Necessary cookies are essential for the operation of our website. These cookies enable basic functions such as page navigation, user authentication, and secure access to various features. Without these cookies, JobBoost's website would not function properly, and you would be unable to access essential services.</p>
+<p>Necessary cookies are essential for the operation of our website. These cookies enable basic functions such as page navigation, user authentication, and secure access to various features. Without these cookies, <Link href={"/"} className='text-orange-600'>Hirebie</Link>'s website would not function properly, and you would be unable to access essential services.</p>
 <ul className="list-disc px-10 space-y-4">
 <li>Functions of Necessary Cookies</li>
 <ul className="list-disc px-10 space-y-4">
-<li><b>Session Management:</b> Necessary cookies help maintain your session as you navigate through different pages on our site. For example, they ensure that you remain logged in to your JobBoost account as you move from one page to another.</li>
+<li><b>Session Management:</b> Necessary cookies help maintain your session as you navigate through different pages on our site. For example, they ensure that you remain logged in to your <Link href={"/"} className='text-orange-600'>Hirebie</Link> account as you move from one page to another.</li>
 <li><b>Login Authentication:</b> These cookies store your login credentials temporarily to verify your identity and grant you access to your account. They ensure that you stay logged in during your visit without needing to re-enter your password on each page.</li>
 <li><b>Security Features:</b> Security cookies are used to protect your personal data and prevent fraudulent activities. They help detect suspicious activities, such as unauthorized access attempts or unusual behavior, and provide a secure browsing experience.</li>
-<li><b>Shopping Cart Management:</b> For candidates applying for jobs or companies posting job listings, necessary cookies manage your shopping cart or application status. They keep track of the items you have added to your cart and ensure that your selections are preserved during your session.</li>
 </ul>
 <li>Examples of Necessary Cookies</li>
 <ul className="list-disc px-10 space-y-4">
@@ -55,13 +55,12 @@ function TypesOfCookiesWeUse() {
 <div className="space-y-6">
 <h4 className="font-bold text-2xl text-gray-800 mt-12">2.3. Functionality Cookies</h4>
 <p><b>Definition and Purpose</b></p>
-<p>Functionality cookies enable our website to remember your preferences and provide a more personalized experience. They allow us to offer features that enhance your interaction with JobBoost and make your visit more enjoyable.</p>
+<p>Functionality cookies enable our website to remember your preferences and provide a more personalized experience. They allow us to offer features that enhance your interaction with <Link href={"/"} className='text-orange-600'>Hirebie</Link> and make your visit more enjoyable.</p>
 <ul className="list-disc px-10 space-y-4">
 <li>Functions of Functionality Cookies</li>
 <ul className="list-disc px-10 space-y-4">
 <li><b>User Preferences:</b> These cookies store your language preferences, theme settings, and other customizations. For example, if you choose a dark mode or a specific language, functionality cookies remember these preferences for future visits.</li>
 <li><b>Enhanced Features:</b> Functionality cookies enable features such as video playback, live chat support, and interactive content. They ensure that these features work smoothly and provide a seamless experience.</li>
-<li><b>Personalized Content:</b> These cookies help us deliver content that is relevant to your interests. For instance, if you frequently search for job opportunities in a specific field, functionality cookies may display related job postings.</li>
 </ul>
 <li>Examples of Functionality Cookies</li>
 <ul className="list-disc px-10 space-y-4">
@@ -76,13 +75,13 @@ function TypesOfCookiesWeUse() {
 <div className="space-y-6">
 <h4 className="font-bold text-2xl text-gray-800 mt-12">2.4. Targeting/Advertising Cookies</h4>
 <p><b>Definition and Purpose</b></p>
-<p>Targeting or advertising cookies are used to deliver personalized advertisements based on your browsing behavior. These cookies help us promote JobBoost’s services to potential users and measure the success of our advertising campaigns.</p>
+<p>Targeting or advertising cookies are used to deliver personalized advertisements based on your browsing behavior. These cookies help us promote <Link href={"/"} className='text-orange-600'>Hirebie</Link>’s services to potential users and measure the success of our advertising campaigns.</p>
 <ul className="list-disc px-10 space-y-4">
 <li>Functions of Targeting/Advertising Cookies</li>
 <ul className="list-disc px-10 space-y-4">
-<li><b>Behavioral Advertising:</b> These cookies track your browsing activities to display ads that are relevant to your interests. For example, if you search for job listings or company profiles, you might see targeted ads for JobBoost’s services on other websites.</li>
+<li><b>Behavioral Advertising:</b> These cookies track your browsing activities to display ads that are relevant to your interests. For example, if you search for service listings or company profiles, you might see targeted ads for <Link href={"/"} className='text-orange-600'>Hirebie</Link>’s services on other websites.</li>
 <li><b>Ad Performance Measurement:</b> Targeting cookies collect data on how users interact with our ads, including click-through rates and conversion rates. This information helps us evaluate the effectiveness of our advertising strategies and make adjustments.</li>
-<li><b>Retargeting:</b> Retargeting cookies help us reach users who have previously visited our site. For example, if you viewed job listings on JobBoost but didn’t apply, you might see follow-up ads encouraging you to return and complete your application.</li>
+              <li><b>Retargeting:</b> Retargeting cookies help us reach users who have previously visited our site. For example, if you viewed any service on <Link href={"/"} className='text-orange-600'>Hirebie</Link> but didn’t contact, you might see follow-up ads encouraging you to contact <Link href={"/"} className='text-orange-600'>Hirebie</Link>.</li>
 </ul>
 <li>Examples of Targeting/Advertising Cookies</li>
 <ul className="list-disc px-10 space-y-4">

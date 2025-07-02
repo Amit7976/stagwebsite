@@ -17,7 +17,7 @@ function CookiePolicyUpdates() {
 <p>The digital landscape and legal requirements surrounding cookies and data privacy are constantly evolving. We update our Cookies Policy to ensure compliance with new regulations and legal standards:</p>
 <ul className="list-disc px-10 space-y-4">
 <li><b>Adherence to New Regulations:</b> As data protection laws and cookie regulations evolve, we update our policy to meet new legal requirements. For example, updates to GDPR (General Data Protection Regulation), CCPA (California Consumer Privacy Act), or other relevant laws may necessitate changes in how we inform users about cookies and manage their data.</li>
-<li><b>International Legal Requirements:</b> As JobBoost serves users in different regions, we need to comply with international cookie laws. For example, the EU Cookie Law requires websites to obtain user consent before setting cookies, while different countries have their own regulations.</li>
+<li><b>International Legal Requirements:</b> As Hirebie serves users in different regions, we need to comply with international cookie laws. For example, the EU Cookie Law requires websites to obtain user consent before setting cookies, while different countries have their own regulations.</li>
 </ul>
 </div>
 <div className="space-y-6">

@@ -6,7 +6,7 @@ import TypesOfCookiesWeUse from "./Sections/TypesOfCookiesWeUse";
 import ThirdPartyCookies from "./Sections/ThirdPartyCookies";
 import HowToManageCookies from "./Sections/HowToManageCookies";
 import CookiePolicyUpdates from "./Sections/CookiePolicyUpdates";
-import CookiesPolicyForJobBoostServices from "./Sections/CookiesPolicyForJobBoostServices";
+import CookiesPolicyForHirebieServices from "./Sections/CookiesPolicyForHirebieServices";
 import ContactInformation from "./Sections/ContactInformation";
 import LegalCompliance from "./Sections/LegalCompliance";
 import CookiePolicyForMobileApps from "./Sections/CookiePolicyForMobileApps";
@@ -19,8 +19,8 @@ function MainContent() {
         <header className="space-y-10 ">
           <Link href={'/'}>
               <Image
-            src={"/images/logo/cut_logo_long.png"}
-            alt="Jobboost Logo"
+            src={"/images/logo/logo.svg"}
+            alt="Hirebie Logo"
             width={800}
             height={800}
             className="w-56 h-auto"
@@ -38,7 +38,7 @@ function MainContent() {
         <ThirdPartyCookies />
         <HowToManageCookies />
         <CookiePolicyUpdates />
-        <CookiesPolicyForJobBoostServices/>
+        <CookiesPolicyForHirebieServices/>
         <ContactInformation />
         <LegalCompliance />
         <CookiePolicyForMobileApps/>

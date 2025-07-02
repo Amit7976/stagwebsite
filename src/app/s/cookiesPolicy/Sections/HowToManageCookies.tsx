@@ -75,7 +75,7 @@ function HowToManageCookies() {
 <p><b>Effects of Disabling Cookies</b></p>
 <ul className="list-disc px-10 space-y-4">
 <li><b>Reduced Functionality:</b> Disabling cookies might prevent you from accessing features that require cookies, such as staying logged in to your account, managing your shopping cart, or saving your preferences.</li>
-<li><b>Limited Personalization:</b> Without cookies, you will not receive personalized content or advertisements. For example, you might see generic job listings instead of tailored recommendations based on your previous searches.</li>
+<li><b>Limited Personalization:</b> Without cookies, you will not receive personalized content or advertisements. For example, you might see generic services instead of tailored recommendations based on your previous searches.</li>
 <li><b>Ad Experience:</b> While you can opt out of targeted advertising, you will still see ads, but they will not be tailored to your interests. You might also experience more repetitive or irrelevant ads.</li>
 <li><b>Analytics and Performance:</b> Disabling analytics cookies means that we have less data to understand how our site is performing and how we can improve it. This may result in slower updates or fewer enhancements based on user feedback.</li>
 </ul>

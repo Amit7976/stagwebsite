@@ -33,30 +33,31 @@ function MainContent() {
 
   const popularQuestions = [
     {
-      title: "What is JobBoost?",
-      link: "/pages/faqs/What is JobBoost",
+      title: "What is Hirebie?",
+      link: "/pages/faqs/What is Hirebie",
     },
     {
-      title: "Is JobBoost free?",
-      link: "/pages/faqs/Is JobBoost free",
+      title: "How does Hirebie work?",
+      link: "/pages/faqs/How does Hirebie work",
     },
     {
-      title: "I am forget password",
-      link: "/pages/faqs/I am forget password",
+      title: "How do I get a custom quote on Hirebie?",
+      link: "/pages/faqs/How do I get a custom quote on Hirebie",
     },
     {
-      title: "My personal information is secure?",
-      link: "/pages/faqs/My personal information is secure",
+      title: "What services does Hirebie provide?",
+      link: "/pages/faqs/What services does Hirebie provide",
     },
     {
-      title: "Search jobs on JobBoost?",
-      link: "/pages/faqs/search jobs on JobBoost?",
+      title: "How can I contact the Hirebie team?",
+      link: "/pages/faqs/How can I contact the Hirebie team",
     },
     {
-      title: "How i update my profile on JobBoost?",
-      link: "/pages/faqs/how i update my profile on JobBoost",
+      title: "Does Hirebie offer project revisions?",
+      link: "/pages/faqs/Does Hirebie offer project revisions",
     },
   ];
+  
 
 
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -99,7 +100,7 @@ function MainContent() {
       title: "Getting Started",
       link: "/pages/gettingStarted",
       description:
-        "Begin your journey with Jobboost by learning the basics and setting up your account.",
+        "Begin your journey with Hirebie by learning the basics and setting up your account.",
       icon: <HiOutlineRocketLaunch className="w-1/4 h-auto p-3" />,
       image: "",
     },
@@ -107,7 +108,7 @@ function MainContent() {
       title: "Terms of Service",
       link: "/pages/terms",
       description:
-        "Read the terms of service to understand the rules and guidelines for using Jobboost.",
+        "Read the terms of service to understand the rules and guidelines for using Hirebie.",
       icon: <RxFileText className="w-1/4 h-auto p-3" />,
       image: "",
     },
@@ -130,14 +131,14 @@ function MainContent() {
       title: "Troubleshooting",
       link: "/pages/bugReport",
       description:
-        "Bug Reporting System for Improving Your Job Search Experience at Jobboost",
+        "Bug Reporting System for Improving Your Job Search Experience at Hirebie",
       icon: <IoHammerOutline className="w-1/4 h-auto p-3" />,
       image: "",
     },
     {
       title: "FAQ",
       link: "/pages/faqs",
-      description: "Explore frequently asked questions to get quick answers about using Jobboost.",
+      description: "Explore frequently asked questions to get quick answers about using Hirebie.",
       icon: <LuMessagesSquare className="w-1/4 h-auto p-3" />,
       image: "",
     },
@@ -152,14 +153,14 @@ function MainContent() {
     {
       title: "Mobile App",
       link: "/pages/mobileApp",
-      description: "Get started with the Jobboost mobile app and stay connected on the go.",
+      description: "Get started with the Hirebie mobile app and stay connected on the go.",
       icon: <MdOutlineInstallDesktop className="w-1/4 h-auto p-3" />,
       image: "",
     },
     {
       title: "Feature Updates",
       link: "/pages/announcement",
-      description: "Stay informed about the latest features and enhancements to Jobboost.",
+      description: "Stay informed about the latest features and enhancements to Hirebie.",
       icon: <CiViewList className="w-1/4 h-auto p-3" />,
       image: "",
     },
@@ -173,21 +174,21 @@ function MainContent() {
     {
       title: "Feedback",
       link: "/pages/feedback",
-      description: "Share your thoughts and suggestions to help us improve Jobboost.",
+      description: "Share your thoughts and suggestions to help us improve Hirebie.",
       icon: <VscFeedback className="w-1/4 h-auto p-3" />,
       image: "",
     },
     {
       title: "System Status",
       link: "/pages/systemStatus",
-      description: "Check the current operational status of Jobboost’s systems.",
+      description: "Check the current operational status of Hirebie’s systems.",
       icon: <GrSystem className="w-1/4 h-auto p-3" />,
       image: "",
     },
     {
       title: "Account Recovery",
       link: "/pages/accountRecovery",
-      description: "Recover your Jobboost account if you’ve lost access.",
+      description: "Recover your Hirebie account if you’ve lost access.",
       icon: <MdOutlineAccountCircle className="w-1/4 h-auto p-2" />,
       image: "",
     },
@@ -201,7 +202,7 @@ function MainContent() {
     {
       title: "Data Export",
       link: "/pages/dataExport",
-      description: "Export your data from Jobboost for your personal records.",
+      description: "Export your data from Hirebie for your personal records.",
       icon: <BsDatabase className="w-1/4 h-auto p-3" />,
       image: "",
     },
@@ -234,38 +235,38 @@ function MainContent() {
 
   return (
     <>
-      <section className="min-h-screen py-10 w-full pt-32">
+      <section className="min-h-screen py-10 w-full pt-32 dark:bg-neutral-950">
         <div className="w-full flex justify-center items-center flex-col gap-6">
-          <h2 className="text-2xl w-full text-center font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+          <h2 className="text-2xl w-full text-center font-bold leading-tight text-black dark:text-white sm:text-4xl lg:text-5xl">
             How we can help you
           </h2>
-          <p className="text-sm w-full max-w-7xl text-center font-medium leading-tight text-gray-500 sm:text-base lg:text-base">
+          <p className="text-sm w-full max-w-7xl text-center font-medium leading-tight text-gray-500 dark:text-neutral-400 sm:text-base lg:text-base">
             We are glad having you here looking for the answer.
           </p>
           <Input
             id="searchInput"
             type="text"
             placeholder="Frequently Asked Question Search...."
-            className="px-10 h-16 text-lg sm:mx-auto w-6/12 border-2 focus:outline-none m-auto rounded-full text-gray-800 mt-5"
+            className="px-4 md:px-10 h-16 text-lg sm:mx-auto w-11/12 md:w-8/12 lg:w-6/12 border-2 focus:outline-none m-auto md:rounded-full text-gray-800 dark:text-white mt-5"
           />
           <Button
             variant={"outline"}
             size={"lg"}
             title="Click to search in FAQ page"
-            className="w-fit h-12 mx-auto flex gap-1 items-center border-2"
+            className="h-12 flex gap-1 items-center border-2 px-20 border-gray-200 min-w-fit w-1/8"
             onClick={handleSearch}
           >
             <CiLink className="text-xl" />
             Click to Search
           </Button>
         </div>
-        <div className="w-full my-28 ">
+        <div className="w-full my-28 dark:contrast-[0.9]">
           <Image
             src={"/images/help_center/help.svg"}
             alt="Help graphics"
             width={800}
             height={800}
-            className="w-full h-auto"
+            className="w-full h-auto dark:invert dark:hue-rotate-[180deg] hidden md:block"
           />
         </div>
 
@@ -290,7 +291,7 @@ function MainContent() {
                     <Link
                       key={index}
                       href={question.link}
-                      className="no-underline bg-gray-100 px-6 py-2 h-auto rounded-lg flex-shrink-0 hover:bg-gray-300 duration-500 font-medium"
+                      className="no-underline bg-gray-100 dark:bg-neutral-900 px-6 py-2 h-auto rounded-lg flex-shrink-0 hover:bg-gray-300 duration-500 font-medium"
                     >
                       {question.title}
                     </Link>
@@ -301,12 +302,12 @@ function MainContent() {
           </Accordion>
         </div>
 
-        <div className="bg-blue-50 p-10 grid grid-cols-5 gap-10 my-20 px-10">
+        <div className="bg-red-50 dark:bg-neutral-900 p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 my-20 px-10">
           {popularLinks.map((item, index) => (
             <Link
               key={index}
               href={item.link}
-              className="bg-white col-span-1 p-6 hover:no-underline rounded-xl flex items-center flex-col gap-y-3 hover:scale-105 duration-500"
+              className="bg-white dark:bg-neutral-800 col-span-1 p-6 hover:no-underline rounded-xl flex items-center flex-col gap-y-3 hover:scale-105 duration-500"
             >
               <Image
                 src={item.image}
@@ -314,21 +315,21 @@ function MainContent() {
                 width={800}
                 height={800}
                 loading="lazy"
-                className="w-1/3 h-auto p-2"
+                className="w-1/3 h-auto p-2 dark:invert"
               />
               <h4 className="text-lg font-medium">{item.title}</h4>
             </Link>
           ))}
         </div>
 
-        <div id="importantLinks" className="space-y-10 mt-32 px-10">
-          <h3 className="text-4xl font-semibold mb-5 flex items-center gap-3">Important <span className="underline">Links</span><Link href={'#importantLinks'}><PiLinkSimpleBold className="hover:text-blue-500" /></Link></h3>
-          <div className="grid grid-cols-4 gap-20">
+        <div id="importantLinks" className="mt-32 px-10">
+          <h3 className="text-4xl font-semibold mb-10 flex items-center gap-3">Important <span className="underline">Links</span><Link href={'#importantLinks'}><PiLinkSimpleBold className="hover:text-blue-500" /></Link></h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
             {helpLinks.map((item, index) => (
               <Link
                 key={index}
                 href={item.link}
-                className="bg-gray-50 col-span-1 p-6 hover:no-underline rounded-xl flex items-center justify-center flex-col gap-y-3"
+                className="bg-gray-50 dark:bg-neutral-900 col-span-1 p-6 hover:no-underline rounded-xl flex items-center justify-center flex-col gap-y-3"
               >
                 {item.icon ? (
                   item.icon

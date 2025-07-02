@@ -132,7 +132,7 @@ function CandidateTestimonials() {
   return (
     <>
       <section className="w-full my-10 mb-0">
-        <div className="text-center">
+        <div className="text-center px-10">
           <p className="text-lg font-medium text-gray-600 dark:text-neutral-400">
             Testimonials from top companies
           </p>
@@ -145,7 +145,7 @@ function CandidateTestimonials() {
         <div className="relative">
           <div className="bg-gradient-to-b from-white dark:from-neutral-950 to-transparent w-full h-20 sticky top-0"></div>
           <div className="bg-gradient-to-t from-white dark:from-neutral-950 to-transparent w-full h-20 fixed bottom-0"></div>
-          <div className="w-full p-10 grid grid-cols-3 list-none gap-6 items-start bg-gray-50 dark:bg-neutral-950 pb-40">
+          <div className="w-full p-4 md:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 list-none gap-6 items-start bg-gray-50 dark:bg-neutral-950 pb-40">
             <div className="col-span-1 h-auto space-y-6">
               {testimonials.map((testimonial, index) => (
                 <CompanyTestimonialCard

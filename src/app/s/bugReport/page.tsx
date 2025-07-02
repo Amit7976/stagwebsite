@@ -1,8 +1,8 @@
-import Footer from "@/components/MainUi/Footer/Footer";
-import Header from "@/components/MainUi/Header/Header";
 import React from "react";
 import Hero from "./Hero";
 import BugForm from "./BugForm";
+import Header from "@/components/core/Header/Header";
+import Footer from "@/components/core/Footer/Footer";
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -12,7 +12,7 @@ import BugForm from "./BugForm";
 function page() {
   return (
     <>
-      <Header position="relative" />
+      <Header />
       <Hero />
       <BugForm />
       <Footer />

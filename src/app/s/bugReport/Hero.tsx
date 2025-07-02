@@ -11,13 +11,14 @@ import Link from "next/link";
 function Hero() {
   return (
     <>
-      <section className="min-h-screen flex justify-center items-center relative">
+      <section className="min-h-96 lg:min-h-screen py-10 px-4 lg:p-0 flex justify-center items-center relative">
         <div className="w-full max-w-4xl mx-auto">
-          <h2 className="text-5xl w-full font-bold flex flex-col gap-6 justify-center items-center text-[FE4904]">
-            <span>Easy-to-Use Bug Reporting</span>
-            <span>System for Improve Your Job search</span>
-            <span>Experience at Jobboost</span>
+          <h2 className="text-5xl w-full font-bold lg:flex lg:flex-col gap-6 justify-center items-center dark:text-white">
+            <span>Easy-to-Use Bug Reporting </span>
+            <span>System to Improve Your </span>
+            <span>Experience at Hirebie</span>
           </h2>
+
           <Image
             src={"/images/Random/underline.svg"}
             alt="underline"
@@ -27,9 +28,10 @@ function Hero() {
           />
 
           <p className="text-xl text-center font-medium mt-2 text-gray-500">
-            Use this page to report bugs and contribute to a better <br />{" "}
-            JobBoost Job search experience.
+            Use this page to report bugs and contribute to a better <br />
+            Hirebie experience for everyone.
           </p>
+
 
           <div className="flex flex-col w-max gap-6 mx-auto mt-10">
             <Link
@@ -42,7 +44,7 @@ function Hero() {
               <Tooltip>
                 <TooltipTrigger>
                   <Link
-                    href="mailto:jobboost20@gmail.com"
+                    href="mailto:support@hirebie.com"
                     target="_blank"
                     className="text-[#FD500A] border-2 border-[#FD500A] hover:text-white hover:bg-[#FD500A] rounded-lg duration-500 py-3 px-14 h-auto font-medium text-sm"
                   >
@@ -58,7 +60,7 @@ function Hero() {
             </TooltipProvider>
           </div>
         </div>
-        <div className="absolute bottom-1/2 left-10 w-20 b-20">
+        <div className="absolute bottom-1/2 left-10 w-20 b-20 hidden lg:block">
           <Image
             src={"/images/Random/profile/profile1.webp"}
             alt="profile pic"
@@ -70,7 +72,7 @@ function Hero() {
             Heading size is too small
           </p>
         </div>
-        <div className="absolute bottom-16 left-56 w-20 b-20">
+        <div className="absolute bottom-16 left-56 w-20 b-20 hidden lg:block">
           <Image
             src={"/images/Random/profile/profile2.webp"}
             alt="profile pic"
@@ -82,7 +84,7 @@ function Hero() {
             Text is not visible on the screen
           </p>
         </div>
-        <div className="absolute bottom-1/2 right-10 w-20 b-20">
+        <div className="absolute bottom-1/2 right-10 w-20 b-20 hidden lg:block">
           <Image
             src={"/images/Random/profile/profile3.webp"}
             alt="profile pic"
@@ -94,7 +96,7 @@ function Hero() {
             Button on Homepage not working
           </p>
         </div>
-        <div className="absolute bottom-16 right-56 w-20 b-20">
+        <div className="absolute bottom-16 right-56 w-20 b-20 hidden lg:block">
           <Image
             src={"/images/Random/profile/profile1.webp"}
             alt="profile pic"

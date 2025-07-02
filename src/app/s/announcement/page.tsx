@@ -1,7 +1,7 @@
-import Footer from '@/components/MainUi/Footer/Footer'
-import Header from '@/components/MainUi/Header/Header'
 import React from 'react'
 import MainContent from './MainContent'
+import Header from '@/components/core/Header/Header'
+import Footer from '@/components/core/Footer/Footer'
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -11,7 +11,7 @@ import MainContent from './MainContent'
 function page() {
   return (
       <>
-          <Header position='sticky' />
+          <Header />
           <MainContent />
           <Footer/>
       </>

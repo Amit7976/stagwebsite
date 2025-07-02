@@ -2,88 +2,87 @@ import React from 'react'
 
 export default function MainContent() {
     const menuItems = {
-        Explores: [
-            { text: "Jobs Listings", link: "/jobs" },
-            { text: "Companies", link: "" },
-            { text: "Job Seekers", link: "/candidates" },
-            { text: "Login/Sign Up", link: "" },
-            { text: "Employer Portal", link: "" },
+        Services: [
+            { text: "Idea Validation", link: "/services/idea-validation" },
+            { text: "MVP Development", link: "/services/mvp-development" },
+            { text: "Web & Mobile Apps", link: "/services/web-mobile-apps" },
+            { text: "UI/UX Design", link: "/services/ui-ux-design" },
+            { text: "Product Engineering", link: "/services/product-engineering" },
+            { text: "Cloud & DevOps", link: "/services/cloud-devops" },
+            { text: "Cybersecurity", link: "/services/cybersecurity" },
+            { text: "IT Consulting", link: "/services/it-consulting" },
         ],
-        Learn: [
-            { text: "Courses", link: "" },
-            { text: "Articles", link: "" },
-            { text: "Guides", link: "" },
-            { text: "Career Advice", link: "" },
+        Launch: [
+            { text: "Branding & Identity", link: "/launch/branding" },
+            { text: "Website Development", link: "/launch/website" },
+            { text: "E-commerce Solutions", link: "/launch/ecommerce" },
+            { text: "Custom SaaS Platforms", link: "/launch/saas" },
+            { text: "Marketplace Solutions", link: "/launch/marketplace" },
         ],
-        Resources: [
-            { text: "Blogs", link: "/blogs" },
-            { text: "Live Events", link: "" },
-            { text: "Webinars", link: "" },
-            { text: "Sitemap", link: "/sitemap" },
-        ],
-        Products: [
-            { text: "Resume Builder", link: "/resumeBuilder" },
-            { text: "ATS Tool", link: "/atsTool" },
-            { text: "Store", link: "/store" },
-            { text: "Idea Hub", link: "/ideaHub" },
-        ],
-        Help: [
-            { text: "Help Center", link: "/helpCenter" },
-            { text: "FAQs", link: "/faqs" },
-            { text: "Complain", link: "/complain" },
-            { text: "Bug Report", link: "/bugReport" },
-        ],
-        "For Job Seekers": [
-            { text: "Go Pro", link: "" },
-            { text: "Announcement", link: "" },
-            { text: "Job Alerts", link: "/jobAlerts" },
-            { text: "Testimonials", link: "/testimonials" },
-        ],
-        Social: [
-            { text: "Instagram", link: "https://www.instagram.com/jobboost_in/" },
-            {
-                text: "Facebook",
-                link: "https://www.facebook.com/profile.php?id=61558875241634&mibextid=ZbWKwL",
-            },
-            { text: "Tweeter(X)", link: "https://x.com/jobboost_20" },
-            {
-                text: "LinkedIn",
-                link: "https://www.linkedin.com/company/jobboost-india",
-            },
-            {
-                text: "Whatsapp",
-                link: "https://api.whatsapp.com/send/?phone=919660050909",
-            },
+        Growth: [
+            { text: "Digital Marketing", link: "/growth/digital-marketing" },
+            { text: "SEO & Content", link: "/growth/seo-content" },
+            { text: "Performance Marketing", link: "/growth/performance-marketing" },
+            { text: "CRM & Automation", link: "/growth/crm-automation" },
+            { text: "Business Analytics", link: "/growth/business-analytics" },
         ],
         Solutions: [
-            { text: "Human Resources", link: "" },
-            { text: "Sales & Marketing", link: "" },
-            { text: "Revenue", link: "" },
-            { text: "Investor", link: "" },
+            { text: "Startups", link: "/solutions/startups" },
+            { text: "SMBs", link: "/solutions/smbs" },
+            { text: "Enterprises", link: "/solutions/enterprises" },
+            { text: "Healthcare", link: "/solutions/healthcare" },
+            { text: "EdTech", link: "/solutions/edtech" },
+            { text: "FinTech", link: "/solutions/fintech" },
+        ],
+        Resources: [
+            { text: "Case Studies", link: "/resources/case-studies" },
+            { text: "Success Stories", link: "/resources/success-stories" },
+            { text: "Blog", link: "/resources/blog" },
+            { text: "Guides & Playbooks", link: "/resources/guides" },
+            { text: "Webinars", link: "/resources/webinars" },
         ],
         Company: [
-            { text: "Our Story", link: "/ourStory" },
-            { text: "Press", link: "" },
-            { text: "Contact", link: "/contact" },
-            { text: "Team", link: "/team" },
-            { text: "Career", link: "/career" },
+            { text: "About Hirebie", link: "/company/about" },
+            { text: "Our Mission", link: "/company/mission" },
+            { text: "Team & Culture", link: "/company/team" },
+            { text: "Careers", link: "/company/careers" },
+            { text: "Contact Us", link: "/company/contact" },
+            { text: "Investor Relations", link: "/company/investors" },
+        ],
+        Support: [
+            { text: "Help Center", link: "/support/help-center" },
+            { text: "Client Portal", link: "/support/client-portal" },
+            { text: "FAQs", link: "/support/faqs" },
+            { text: "Report an Issue", link: "/support/report-issue" },
         ],
         Policies: [
-            { text: "Terms and Conditions", link: "/terms" },
-            { text: "Privacy Policy", link: "/privacy" },
-            { text: "Community Guidelines", link: "" },
-            { text: "Legal", link: "" },
-            { text: "Cookies Policy", link: "" },
+            { text: "Terms & Conditions", link: "/legal/terms" },
+            { text: "Privacy Policy", link: "/legal/privacy" },
+            { text: "Security Policy", link: "/legal/security" },
+            { text: "Cookies Policy", link: "/legal/cookies" },
         ],
-    };
+        Community: [
+            { text: "Partner Program", link: "/community/partners" },
+            { text: "Events", link: "/community/events" },
+            { text: "Hirebie Forum", link: "/community/forum" },
+            { text: "Startup Accelerator", link: "/community/accelerator" },
+        ],
+        Social: [
+            { text: "LinkedIn", link: "https://www.linkedin.com/company/hirebie-india" },
+            { text: "Instagram", link: "https://www.instagram.com/Hirebie_in/" },
+            { text: "Facebook", link: "https://www.facebook.com/Hirebie.team" },
+            { text: "X (Twitter)", link: "https://x.com/Hirebie_20" },
+            { text: "WhatsApp", link: "https://api.whatsapp.com/send/?phone=919660050909" },
+        ],
+      };
     return (
         <>
             <div className="p-10">
-                <h2 className="text-base lg:text-9xl font-bold text-black dark:text-white select-none">
+                <h2 className="text-5xl lg:text-9xl font-bold text-black dark:text-white select-none">
                     Sitemap
                 </h2>
             </div>
-            <div className="w-full space-y-28 py-28 px-20">
+            <div className="w-full space-y-28 p-10 md:py-28 md:px-20">
                 {Object.entries(menuItems).map(([section, items]) => (
                     <div>
                         <h6 className="text-base lg:text-5xl font-bold text-gray-700 dark:text-neutral-400 select-none">

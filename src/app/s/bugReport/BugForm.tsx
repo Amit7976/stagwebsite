@@ -137,10 +137,10 @@ function BugForm() {
 
   return (
     <>
-      <section id="bugForm" className="w-full max-w-7xl mx-auto py-32 my-10">
+      <section id="bugForm" className="w-full max-w-7xl mx-auto px-4 lg:-0 py-10 lg:py-32 my-10">
         <h4 className="text-5xl font-semibold">Bug Report Form</h4>
 
-        <div className="mt-28">
+        <div className="mt-14 lg:mt-28">
           <h6 className="text-lg font-medium">Reason for reporting the bug?</h6>
 
           <div className="my-8">
@@ -150,7 +150,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Functionality Issue')}
                 value="Functionality Issue"
                 aria-label="Toggle Functionality Issue"
-                className="flex-shrink-0 bg-gray-200 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
               >
                 <span>Functionality Issue</span>
               </ToggleGroupItem>
@@ -159,7 +159,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Visual/Aesthetic')}
                 value="Visual/Aesthetic"
                 aria-label="Toggle Visual/Aesthetic"
-                className="flex-shrink-0 bg-gray-200 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
               >
                 <span>Visual/Aesthetic</span>
               </ToggleGroupItem>
@@ -168,7 +168,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Performance Issue')}
                 value="Performance Issue"
                 aria-label="Toggle Performance Issue"
-                className="flex-shrink-0 bg-gray-200 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
               >
                 <span>Performance Issue</span>
               </ToggleGroupItem>
@@ -177,7 +177,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Security Issue')}
                 value="Security Issue"
                 aria-label="Toggle Security Issue"
-                className="flex-shrink-0 bg-gray-200 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
               >
                 <span>Security Issue</span>
               </ToggleGroupItem>
@@ -186,7 +186,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Data/Content issue')}
                 value="Data/Content issue"
                 aria-label="Toggle Data/Content issue"
-                className="flex-shrink-0 bg-gray-200 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
               >
                 <span>Data/Content issue</span>
               </ToggleGroupItem>
@@ -195,7 +195,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Crash/Error Issue')}
                 value="Crash/Error Issue"
                 aria-label="Toggle Crash/Error Issue"
-                className="flex-shrink-0 bg-gray-200 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
               >
                 <span>Crash/Error Issue</span>
               </ToggleGroupItem>
@@ -204,7 +204,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Localization/Internationalization Issue')}
                 value="Localization/Internationalization Issue"
                 aria-label="Toggle Localization/Internationalization Issue"
-                className="flex-shrink-0 bg-gray-200 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
               >
                 <span>Localization/Internationalization Issue</span>
               </ToggleGroupItem>
@@ -213,7 +213,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Usability/UX Issue')}
                 value="Usability/UX Issue"
                 aria-label="Toggle Usability/UX Issue"
-                className="flex-shrink-0 bg-gray-200 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
               >
                 <span>Usability/UX Issue</span>
               </ToggleGroupItem>
@@ -222,7 +222,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Other')}
                 value="Other"
                 aria-label="Toggle Other"
-                className="flex-shrink-0 bg-gray-200 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
               >
                 <span>Other</span>
               </ToggleGroupItem>
@@ -317,7 +317,7 @@ function BugForm() {
             value={data.pageUrl}
             placeholder="Bugs appeared page URL"
             type="url"
-            className="h-14 w-1/2 mt-8 px-5 py-4 rounded-xl font-medium text-base border-[3px] border-gray-500 outline-none focus:outline-none focus:border-[3px] focus:ring-0"
+            className="h-14 w-full lg:w-1/2 mt-8 px-5 py-4 rounded-xl font-medium text-base border-[3px] border-gray-500 outline-none focus:outline-none focus:border-[3px] focus:ring-0"
           />
         </div>
         <div className="my-16">

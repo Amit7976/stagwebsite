@@ -55,13 +55,13 @@ function MainContent() {
 
   return (
     <>
-      <main className='px-8 pt-24 mx-auto md:px-12 lg:px-20'>
+      <main className='px-4 pt-14 md:pt-24 mx-auto md:px-12 lg:px-20'>
         <section>
           <div className="w-full">
-            <h2 className="text-4xl font-semibold tracking-tighter text-gray-900 lg:text-6xl text-balance">
+            <h2 className="text-4xl font-semibold tracking-tighter text-gray-900 dark:text-white lg:text-6xl text-balance">
               Announcement Center
             </h2>
-            <p className="mt-4 text-base font-medium text-gray-500 text-balance">
+            <p className="mt-4 text-lg font-medium text-neutral-500 text-balance">
               Welcome to the Announcement Center. Stay up-to-date with all the latest news and updates from JobBoost. Whether it's new features, maintenance alerts, or special offers, you’ll find everything you need to know right here.
             </p>
           </div>
@@ -69,7 +69,7 @@ function MainContent() {
 
 
 
-        <section className="w-full px-4 py-10 sm:px-6 lg:px-8 lg:pt-32">
+        <section className="w-full px-0 md:px-4 py-10 sm:px-6 lg:px-8 lg:pt-32">
 
           <div className="grid lg:grid-cols-1 lg:gap-y-16 gap-10">
             {announcementLoading ? (
@@ -84,7 +84,7 @@ function MainContent() {
                     <Image className="group-hover:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl" src={`/images/announcement${announcement.image}`} alt={announcement.title} width={800} height={800} />
                   </div>
 
-                  <div className="grow mt-4 sm:mt-0 sm:ms-6 px-4 sm:px-0 flex flex-col justify-between py-1">
+                  <div className="grow mt-4 sm:mt-0 sm:ms-6 px-0 md:px-4 sm:px-0 flex flex-col justify-between py-1">
                     <div>
                       <h4 className="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-neutral-300 dark:group-hover:text-white">
                         {announcement.title}
@@ -102,14 +102,14 @@ function MainContent() {
                         ) : ''}
                       </div>
                     </div>
-                    <div className='w-full flex items-center pr-10 gap-10'>
+                    <div className='w-full flex flex-col md:flex-row md:items-center pr-10 md:gap-10'>
                       <p className="mt-3 text-gray-700 font-medium dark:text-neutral-400">
-                        <span className='text-gray-500 font-normal'>Published: </span>
+                        <span className='text-gray-500 dark:text-neutral-500 font-normal'>Published: </span>
                         {new Date(announcement.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                       </p>
                       {announcement.updateDate && (
                         <p className="mt-3 text-gray-600 font-medium dark:text-neutral-400">
-                          <span className='text-gray-500 font-normal'>Updated: </span>
+                          <span className='text-gray-500 dark:text-neutral-500 font-normal'>Updated: </span>
                           {new Date(announcement.updateDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                         </p>
                       )}

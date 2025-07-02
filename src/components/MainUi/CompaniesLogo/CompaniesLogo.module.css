@@ -1,0 +1,19 @@
+.logo li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    pointer-events: none;
+    object-fit: contain;
+}
+.logo li{
+    width: 146px;
+    height: 60px;
+    margin: 0 20px 0px 0;
+    padding: 10px 8px;
+    display: flex;
+    background: white;
+    box-shadow: 0px 5px 20px rgba(7, 78, 176, 0.12);
+    align-items: center;
+    border-radius: 19px;
+    justify-content: center;
+}

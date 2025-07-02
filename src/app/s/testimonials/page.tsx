@@ -1,17 +1,15 @@
-import Header from "@/components/MainUi/Header/Header";
 import React from "react";
 import HeroSection from "./HeroSection";
-import CompaniesTestimonials from "./CompaniesTestimonials";
 import CandidateTestimonials from "./CandidateTestimonials";
-import Footer from "@/components/MainUi/Footer/Footer";
+import Header from "@/components/core/Header/Header";
+import Footer from "@/components/core/Footer/Footer";
 
 function page() {
   return (
     <>
-      <Header position="relative" />
+      <Header />
 
       <HeroSection />
-      <CompaniesTestimonials />
       <CandidateTestimonials />
       <Footer/>
     </>

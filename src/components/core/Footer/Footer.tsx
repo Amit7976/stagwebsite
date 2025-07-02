@@ -180,7 +180,7 @@ function Footer() {
 
 
   return (
-    <footer className="mt-40 p-0 lg:p-10">
+    <footer className="mt-10 p-0 lg:p-10">
 
 
 
@@ -254,13 +254,13 @@ function Footer() {
         {/* Footer Bottom Section */}
         <div className="bg-neutral-100 text-neutral-100 dark:bg-neutral-900 rounded-xl p-9 my-10 ">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-            <Link href="/" className="flex flex-col items-center">
+            <Link href="/" className="flex flex-col items-center gap-2">
               <Image
                 src="/images/logo/logo.svg"
                 alt="Hirebie Logo"
                 width={80}
                 height={80}
-                className="w-60 h-auto"
+                className="w-40 h-auto"
               />
               <div>
                 <h3 className="text-2xl font-bold text-[#ED1C24] sr-only">Hirebie</h3>

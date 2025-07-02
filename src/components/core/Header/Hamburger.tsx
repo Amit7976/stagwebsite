@@ -29,7 +29,7 @@ function Hamburger() {
   }, [open]);
 
   return (
-    <div className='px-5 lg:hidden z-[50]'>
+    <div className='lg:hidden z-[50]'>
       <CiMenuFries className='size-6' onClick={() => setOpen(true)} />
 
       <div className={`${open ? 'fixed' : 'hidden'} top-0 left-0 bg-white dark:bg-black h-screen w-full text-gray-600 dark:text-gray-100 text-balance font-medium text-4xl p-2 px-5 flex flex-col justify-evenly items-center uppercase`}>

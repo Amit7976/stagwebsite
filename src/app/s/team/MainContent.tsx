@@ -1,7 +1,6 @@
-import Team from "@/components/MainUi/Team/Team";
+// import Team from "@/components/MainUi/Team/Team";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
 function MainContent() {
@@ -192,16 +191,197 @@ function MainContent() {
       name: "krishna",
     },
   ];
-
+  const team = [
+    {
+      name: "Michael Andreuzza",
+      image:
+        "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80",
+      post: "Creator of Windstatic.com",
+      instagram: "sed",
+      tweeter: "serfd",
+      linkedin: "srf",
+      facebook: "sfdeg",
+    },
+    {
+      name: "Melonia Tusk",
+      image:
+        "https://images.unsplash.com/photo-1602434228300-a645bce6891b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1639&amp;q=80",
+      post: "Founder of Fesla",
+      instagram: "sed",
+      tweeter: "serfd",
+      linkedin: "srf",
+      facebook: "sfdeg",
+    },
+    {
+      name: "Michael Andreuzza",
+      image:
+        "https://images.unsplash.com/photo-1577202214328-c04b77cefb5d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2073&amp;q=80",
+      post: "Director at Pettersson Industries",
+      instagram: "sed",
+      tweeter: "serfd",
+      linkedin: "srf",
+      facebook: "sfdeg",
+    },
+    {
+      name: "Michael Andreuzza",
+      image:
+        "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80",
+      post: "Creator of Windstatic.com",
+      instagram: "sed",
+      tweeter: "serfd",
+      linkedin: "srf",
+      facebook: "sfdeg",
+    },
+    {
+      name: "Michael Andreuzza",
+      image:
+        "https://images.unsplash.com/photo-1577202214328-c04b77cefb5d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2073&amp;q=80",
+      post: "Director at Pettersson Industries",
+      instagram: "sed",
+      tweeter: "serfd",
+      linkedin: "srf",
+      facebook: "sfdeg",
+    },
+    {
+      name: "Michael Andreuzza",
+      image:
+        "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80",
+      post: "Creator of Windstatic.com",
+      instagram: "sed",
+      tweeter: "serfd",
+      linkedin: "srf",
+      facebook: "sfdeg",
+    },
+    {
+      name: "Melonia Tusk",
+      image:
+        "https://images.unsplash.com/photo-1602434228300-a645bce6891b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1639&amp;q=80",
+      post: "Founder of Fesla",
+      instagram: "sed",
+      tweeter: "serfd",
+      linkedin: "srf",
+      facebook: "sfdeg",
+    },
+    {
+      name: "Michael Andreuzza",
+      image:
+        "https://images.unsplash.com/photo-1577202214328-c04b77cefb5d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2073&amp;q=80",
+      post: "Director at Pettersson Industries",
+      instagram: "sed",
+      tweeter: "serfd",
+      linkedin: "srf",
+      facebook: "sfdeg",
+    },
+    {
+      name: "Michael Andreuzza",
+      image:
+        "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80",
+      post: "Creator of Windstatic.com",
+      instagram: "sed",
+      tweeter: "serfd",
+      linkedin: "srf",
+      facebook: "sfdeg",
+    },
+    {
+      name: "Melonia Tusk",
+      image:
+        "https://images.unsplash.com/photo-1602434228300-a645bce6891b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1639&amp;q=80",
+      post: "Founder of Fesla",
+      instagram: "sed",
+      tweeter: "serfd",
+      linkedin: "srf",
+      facebook: "sfdeg",
+    },
+    {
+      name: "Michael Andreuzza",
+      image:
+        "https://images.unsplash.com/photo-1577202214328-c04b77cefb5d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2073&amp;q=80",
+      post: "Director at Pettersson Industries",
+      instagram: "sed",
+      tweeter: "serfd",
+      linkedin: "srf",
+      facebook: "sfdeg",
+    },
+    {
+      name: "Michael Andreuzza",
+      image:
+        "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80",
+      post: "Creator of Windstatic.com",
+      instagram: "sed",
+      tweeter: "serfd",
+      linkedin: "srf",
+      facebook: "sfdeg",
+    },
+    {
+      name: "Melonia Tusk",
+      image:
+        "https://images.unsplash.com/photo-1602434228300-a645bce6891b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1639&amp;q=80",
+      post: "Founder of Fesla",
+      instagram: "sed",
+      tweeter: "serfd",
+      linkedin: "srf",
+      facebook: "sfdeg",
+    },
+    {
+      name: "Michael Andreuzza",
+      image:
+        "https://images.unsplash.com/photo-1577202214328-c04b77cefb5d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2073&amp;q=80",
+      post: "Director at Pettersson Industries",
+      instagram: "sed",
+      tweeter: "serfd",
+      linkedin: "srf",
+      facebook: "sfdeg",
+    },
+  ];
   return (
     <>
-      <section className="px-8 py-24 mx-auto md:px-12 lg:px-32 w-full">
-        <Team />
+      <section className="px-8 py-14 md:py-24 mx-auto md:px-12 lg:px-32 w-full">
+        <div>
+          <div className="text-start">
+            <h1 className="text-4xl font-semibold tracking-tighter text-gray-900 dark:text-neutral-300 lg:text-5xl">
+              Meet Our Team
+              <span className="block text-gray-600 dark:text-neutral-400">
+                Diverse. Skilled. United.
+              </span>
+            </h1>
+            <p className="mt-4 text-base font-medium text-gray-500 dark:text-neutral-500">
+              A group of passionate individuals working together to innovate and
+              excel in our industry.
+            </p>
+          </div>
+          <ul role="list" className="grid gap-12 mt-12 lg:grid-cols-4">
+            {team.map((team, index) => (
+              <li key={index}>
+                <div className="space-y-4">
+                  <div className="aspect-[3/2] overflow-hidden rounded-3xl">
+                    <Image
+                      className="object-cover w-full h-full rounded-2xl hover:scale-105 duration-500"
+                      src={team.image}
+                      alt={team.name}
+                      width={800}
+                      height={800}
+                    />
+                  </div>
+                  <div className="inline-flex items-start justify-between w-full">
+                    <div className="space-y-1">
+                      <h3 className="text-lg font-medium leading-6 text-black dark:text-white">
+                        {team.name}
+                      </h3>
+                      <p className="text-base text-gray-500 dark:text-neutral-500">{team.post}</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
-      <section className="py-12 bg-white sm:py-16 lg:py-40">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+
+
+      <section className="py-12 bg-white dark:bg-neutral-950 sm:py-16 lg:py-40">
+        <div className="px-4 mx-auto max-w-7xl md:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-neutral-200 sm:text-4xl xl:text-5xl font-pj">
               Our Investors & Board of Directors
             </h2>
           </div>
@@ -215,10 +395,10 @@ function MainContent() {
                 src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-1.png"
                 alt=""
               />
-              <p className="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">
+              <p className="mt-5 text-lg font-bold text-gray-900 dark:text-neutral-300 sm:text-xl sm:mt-8 font-pj">
                 Jerome Bell
               </p>
-              <p className="mt-2 text-base font-normal text-gray-600 font-pj">
+              <p className="mt-2 text-base font-normal text-gray-600 dark:text-neutral-400 font-pj">
                 Co founder, Chairman, Executive Director
               </p>
             </div>
@@ -231,10 +411,10 @@ function MainContent() {
                 src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-2.png"
                 alt=""
               />
-              <p className="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">
+              <p className="mt-5 text-lg font-bold text-gray-900 dark:text-neutral-300 sm:text-xl sm:mt-8 font-pj">
                 Jerome Bell
               </p>
-              <p className="mt-2 text-base font-normal text-gray-600 font-pj">
+              <p className="mt-2 text-base font-normal text-gray-600 dark:text-neutral-400 font-pj">
                 Co founder, Chairman, Executive Director
               </p>
             </div>
@@ -247,10 +427,10 @@ function MainContent() {
                 src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-3.png"
                 alt=""
               />
-              <p className="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">
+              <p className="mt-5 text-lg font-bold text-gray-900 dark:text-neutral-300 sm:text-xl sm:mt-8 font-pj">
                 Jerome Bell
               </p>
-              <p className="mt-2 text-base font-normal text-gray-600 font-pj">
+              <p className="mt-2 text-base font-normal text-gray-600 dark:text-neutral-400 font-pj">
                 Co founder, Chairman, Executive Director
               </p>
             </div>
@@ -263,169 +443,16 @@ function MainContent() {
                 src="https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-4.png"
                 alt=""
               />
-              <p className="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">
+              <p className="mt-5 text-lg font-bold text-gray-900 dark:text-neutral-300 sm:text-xl sm:mt-8 font-pj">
                 Jerome Bell
               </p>
-              <p className="mt-2 text-base font-normal text-gray-600 font-pj">
+              <p className="mt-2 text-base font-normal text-gray-600 dark:text-neutral-400 font-pj">
                 Co founder, Chairman, Executive Director
               </p>
             </div>
           </div>
 
-          <div className="mt-12 sm:mt-16">
-            <svg
-              className="w-auto h-4 mx-auto text-gray-300"
-              viewBox="0 0 172 16"
-              fill="none"
-              stroke="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 11 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 46 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 81 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 116 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 151 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 18 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 53 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 88 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 123 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 158 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 25 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 60 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 95 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 130 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 165 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 32 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 67 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 102 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 137 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 172 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 39 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 74 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 109 1)"
-              />
-              <line
-                y1="-0.5"
-                x2="18.0278"
-                y2="-0.5"
-                transform="matrix(-0.5547 0.83205 0.83205 0.5547 144 1)"
-              />
-            </svg>
-          </div>
+
 
           <div className="max-w-3xl mx-auto mt-12 space-y-8 sm:space-y-0 sm:flex sm:items-center sm:justify-center sm:mt-16 sm:gap-x-16">
             <div>
@@ -461,23 +488,23 @@ function MainContent() {
         </div>
       </section>
 
-      <section className="bg-gray-100 p-20 pb-40">
+      <section className="bg-gray-100 dark:bg-neutral-950 py-20 lg:p-20 pb-40">
         <div className="pb-14">
-          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold leading-tight text-center text-gray-600 sm:text-4xl lg:text-5xl">
+          <div className="px-4 mx-auto lg:max-w-7xl sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold leading-tight text-center text-gray-600 dark:text-neutral-300 sm:text-4xl lg:text-5xl">
               Other valued members
             </h2>
           </div>
         </div>
 
-        <div className="grid grid-cols-4 md:grid-cols-6 xl:grid-cols-8 rounded-3xl overflow-hidden">
+        <div className="grid grid-cols-3 md:grid-cols-6 xl:grid-cols-7 rounded-3xl overflow-hidden">
           {otherMembers.map((otherMember, index) => (
             <div key={index}>
               <div className="aspect-w-1 aspect-h-1">
                 <Image
                   width={800}
                   height={800}
-                  className="bg-gray-200 h-full aspect-square grayscale hover:grayscale-0 duration-1000 hover:scale-110 -z-[0] hover:z-50 relative hover:rounded-xl"
+                  className="bg-gray-200 dark:bg-neutral-800 h-full aspect-square grayscale hover:grayscale-0 duration-1000 hover:scale-110 -z-[0] hover:z-50 relative hover:rounded-xl"
                   src={otherMember.image}
                   alt={otherMember.name}
                 />
@@ -487,13 +514,13 @@ function MainContent() {
         </div>
       </section>
 
-      <section className="pt-10 bg-white sm:pt-16 lg:pt-24">
+      <section className="pt-10 bg-white dark:bg-neutral-950 sm:pt-16 lg:pt-24">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">
+            <h2 className="text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl lg:text-5xl lg:leading-tight">
               Real humans are here to help you building your brand
             </h2>
-            <p className="mt-6 text-lg text-gray-900">
+            <p className="mt-6 text-lg text-gray-900 dark:text-neutral-400">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint.
             </p>

@@ -7,9 +7,9 @@ import Hamburger from './Hamburger';
 function Header() {
     return (
         <>
-            <header className='flex items-center justify-between md:px-10 py-3 bg-transparent z-50 w-full shadow-lg relative dark:border-b-2 border-neutral-700 lg:border-neutral-900'>
+            <header className='flex items-center justify-between md:px-10 py-3 px-5 bg-transparent z-50 w-full shadow-lg relative dark:border-b-2 border-neutral-700 lg:border-neutral-900'>
                 <div>
-                    <Image src={'/images/logo/logo.svg'} width={200} height={200} alt='Hirebie Logo' className='w-40' />
+                    <Image src={'/images/logo/logo.svg'} width={200} height={200} alt='Hirebie Logo' className='w-30' />
                 </div>
                 <Hamburger />
                 <div className="hidden lg:flex items-center justify-end gap-2">

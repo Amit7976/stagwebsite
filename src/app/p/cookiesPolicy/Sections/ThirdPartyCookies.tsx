@@ -11,7 +11,7 @@ function ThirdPartyCookies() {
         <h3 className="font-bold text-4xl">3. Third-Party Cookies</h3>
 
         <div className="space-y-6">
-          <h4 className="font-bold text-2xl text-gray-800 mt-12">3.1. What Are Third-Party Cookies?</h4>
+          <h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">3.1. What Are Third-Party Cookies?</h4>
           <p><b>Definition and Overview</b></p>
           <p>Third-party cookies are cookies that are set by a domain other than the one you are currently visiting. While first-party cookies are created and managed by the website you are on, third-party cookies are created by external entities and are used for a variety of purposes beyond the scope of the current website. These cookies are often placed on your device through embedded content such as advertisements, social media widgets, or analytics tools.</p>
           <p><b>How Third-Party Cookies Are Set</b></p>
@@ -32,7 +32,7 @@ function ThirdPartyCookies() {
           </ul>
         </div>
         <div className="space-y-6">
-          <h4 className="font-bold text-2xl text-gray-800 mt-12">3.2. How Does <Link href={"/"} className='text-orange-600'>Hirebie</Link> Use Third-Party Cookies?</h4>
+          <h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">3.2. How Does <Link href={"/"} className='text-orange-600'>Hirebie</Link> Use Third-Party Cookies?</h4>
           <p><b>Advertising and Marketing</b></p>
           <p>At <Link href={"/"} className='text-orange-600'>Hirebie</Link>, we use third-party cookies to manage and optimize our advertising efforts. These cookies help us deliver relevant ads to users based on their interests and browsing behavior.</p>
           <ul className="list-disc px-10 space-y-4">
@@ -55,7 +55,7 @@ function ThirdPartyCookies() {
           </ul>
         </div>
         <div className="space-y-6">
-          <h4 className="font-bold text-2xl text-gray-800 mt-12">3.3. Managing Third-Party Cookies</h4>
+          <h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">3.3. Managing Third-Party Cookies</h4>
           <p><b>How to Manage Third-Party Cookies</b></p>
           <p>You have control over third-party cookies through various methods. These methods allow you to manage your cookie preferences and ensure that you are comfortable with the data being collected.</p>
           <ul className="list-disc px-10 space-y-4">

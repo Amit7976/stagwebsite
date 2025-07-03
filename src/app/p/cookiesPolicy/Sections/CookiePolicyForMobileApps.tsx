@@ -10,7 +10,7 @@ function CookiePolicyForMobileApps() {
 <h3 className="font-bold text-4xl">9. Cookie Policy for Mobile Apps</h3>
 <p>This section covers the specifics of our Cookie Policy as it applies to our mobile apps. It provides information about how we use cookies in mobile apps and how you can manage these cookies.</p>
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">9.1. Cookies in Mobile Apps</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">9.1. Cookies in Mobile Apps</h4>
 <p><b>Overview</b></p>
 <p>Cookies are not just limited to websites; they are also used in mobile apps to enhance user experience, analyze app performance, and offer personalized content. Here, we explain the types of cookies used in our mobile apps and their purposes.</p>
 </div>
@@ -37,7 +37,7 @@ function CookiePolicyForMobileApps() {
 </ul>
 <p><b>Examples of Cookies We Use:</b></p>
 <p><b>Cookie Type Purpose</b></p>
-<div className='border-4 rounded-3xl bg-gray-100 w-full px-10 py-5 space-y-5'>
+<div className='border-4 rounded-3xl bg-gray-100 dark:bg-neutral-900 dark:border-neutral-800 w-full px-10 py-5 space-y-5'>
 <div className='grid grid-cols-3 gap-5 p-3'>
 <h3 className='col-span-1 font-bold'>Cookie Type</h3>
 <h3 className='col-span-2 font-bold pl-10'>Purpose</h3>
@@ -61,7 +61,7 @@ function CookiePolicyForMobileApps() {
 </div>
 </div>
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">9.2. Managing Cookies in Mobile Apps</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">9.2. Managing Cookies in Mobile Apps</h4>
 <p><b>Overview</b></p>
 <p>You have control over the cookies used in our mobile apps. This section explains how you can manage your cookie preferences and provides information on the tools available for cookie management.</p>
 </div>

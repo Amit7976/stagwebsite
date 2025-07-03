@@ -15,7 +15,7 @@ import CookiePolicyForMobileApps from "./Sections/CookiePolicyForMobileApps";
 function MainContent() {
   return (
     <>
-      <div className="py-32 w-full max-w-6xl mx-auto font-sans leading-relaxed text-xl">
+      <div className="py-32 w-full max-w-6xl mx-auto font-sans leading-relaxed text-xl text-neutral-600 dark:text-neutral-400">
         <header className="space-y-10 ">
           <Link href={'/'}>
               <Image

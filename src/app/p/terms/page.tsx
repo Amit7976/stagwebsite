@@ -1,10 +1,8 @@
-import Footer from "@/components/MainUi/Footer/Footer";
-import Header from "@/components/MainUi/Header/Header";
 import { Separator } from "@/components/ui/separator";
 import React from "react";
 import MainContent from "./MainContent";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import style from "./style.module.css";
+import Footer from "@/components/core/Footer/Footer";
 
 function page() {
   return (

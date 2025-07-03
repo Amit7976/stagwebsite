@@ -11,7 +11,7 @@ function TypesOfCookiesWeUse() {
 <p>At <Link href={"/"} className='text-orange-600'>Hirebie</Link>, we use various types of cookies to enhance your experience on our website. Each type of cookie serves a distinct purpose, and understanding these can help you make informed choices about your privacy. Below, we detail the different types of cookies we use, their functions, and their importance.</p>
 
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">2.1. Necessary Cookies</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">2.1. Necessary Cookies</h4>
 <p><b>Definition and Purpose</b></p>
 <p>Necessary cookies are essential for the operation of our website. These cookies enable basic functions such as page navigation, user authentication, and secure access to various features. Without these cookies, <Link href={"/"} className='text-orange-600'>Hirebie</Link>'s website would not function properly, and you would be unable to access essential services.</p>
 <ul className="list-disc px-10 space-y-4">
@@ -32,7 +32,7 @@ function TypesOfCookiesWeUse() {
 <p>Necessary cookies are generally session-based and expire when you close your browser. However, some may have a short persistence period to maintain your session during your visit.</p>
 </div>
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">2.2. Performance Cookies</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">2.2. Performance Cookies</h4>
 <p><b>Definition and Purpose</b></p>
 <p>Performance cookies collect data about how visitors interact with our website. They help us understand which pages are popular, how users navigate through the site, and how we can improve our services. These cookies are crucial for analyzing site performance and enhancing user experience.</p>
 <ul className="list-disc px-10 space-y-4">
@@ -53,7 +53,7 @@ function TypesOfCookiesWeUse() {
 <p>Performance cookies may be persistent and can last for several months. They are used to gather data over time to track changes and improvements.</p>
 </div>
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">2.3. Functionality Cookies</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">2.3. Functionality Cookies</h4>
 <p><b>Definition and Purpose</b></p>
 <p>Functionality cookies enable our website to remember your preferences and provide a more personalized experience. They allow us to offer features that enhance your interaction with <Link href={"/"} className='text-orange-600'>Hirebie</Link> and make your visit more enjoyable.</p>
 <ul className="list-disc px-10 space-y-4">
@@ -73,7 +73,7 @@ function TypesOfCookiesWeUse() {
 <p>Functionality cookies can be either session-based or persistent, depending on the feature they support. They may last for the duration of your visit or for a specified period.</p>
 </div>
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">2.4. Targeting/Advertising Cookies</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">2.4. Targeting/Advertising Cookies</h4>
 <p><b>Definition and Purpose</b></p>
 <p>Targeting or advertising cookies are used to deliver personalized advertisements based on your browsing behavior. These cookies help us promote <Link href={"/"} className='text-orange-600'>Hirebie</Link>’s services to potential users and measure the success of our advertising campaigns.</p>
 <ul className="list-disc px-10 space-y-4">

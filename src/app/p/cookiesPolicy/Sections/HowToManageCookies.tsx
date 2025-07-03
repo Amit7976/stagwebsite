@@ -11,7 +11,7 @@ function HowToManageCookies() {
 <p>Managing cookies is an essential part of maintaining your online privacy and ensuring that your web experience aligns with your preferences. In this section, we explain how you can manage cookies through your browser settings, opt out of specific cookies, and understand the impact of disabling cookies.</p>
 
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">4.1. Managing Cookies Through Browser Settings</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">4.1. Managing Cookies Through Browser Settings</h4>
 <p><b>Overview</b></p>
 <p>Browsers provide built-in tools and settings to help you manage cookies. These settings allow you to view, delete, and block cookies, giving you control over what data is collected during your browsing sessions. Each browser has different methods for managing cookies, so it’s important to know how to access and use these features.</p>
 <p><b>Steps to Manage Cookies in Popular Browsers</b></p>
@@ -41,7 +41,7 @@ function HowToManageCookies() {
 <p>For more advanced cookie management, you might consider using browser extensions or privacy tools that provide additional features for controlling cookies. These tools can offer enhanced cookie management options and additional privacy features.</p>
 </div>
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">4.2. How to Opt-Out of Cookies</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">4.2. How to Opt-Out of Cookies</h4>
 <p><b>Overview</b></p>
 <p>Opting out of cookies involves taking steps to prevent cookies from being set on your device. This can include blocking cookies from specific sources, disabling third-party cookies, or using privacy tools.</p>
 <p><b>Ways to Opt-Out of Cookies</b></p>
@@ -69,7 +69,7 @@ function HowToManageCookies() {
 </ul>
 </div>
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">4.3. Impact of Disabling Cookies</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">4.3. Impact of Disabling Cookies</h4>
 <p><b>Overview</b></p>
 <p>Disabling cookies can have a significant impact on your browsing experience. While managing cookies can help protect your privacy, it may also affect your ability to use certain features on websites.</p>
 <p><b>Effects of Disabling Cookies</b></p>

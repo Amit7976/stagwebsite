@@ -1,7 +1,5 @@
 import { Separator } from '@/components/ui/separator';
 import Link from 'next/link';
-import React from 'react'
-import { FaAngleRight } from "react-icons/fa6";
 function Introduction() {
   return (
     <>

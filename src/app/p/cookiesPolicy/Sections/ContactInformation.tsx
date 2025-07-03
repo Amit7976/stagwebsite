@@ -11,7 +11,7 @@ function ContactInformation() {
         <p>Effective communication is essential for addressing any questions, concerns, or feedback related to our Cookies Policy. This section provides detailed information on how to contact <Link href={"/"} className='text-orange-600'>Hirebie</Link>, our contact details, and how users can provide feedback and suggestions.</p>
 
         <div className="space-y-6">
-          <h4 className="font-bold text-2xl text-gray-800 mt-12">7.1. How to Contact Us</h4>
+          <h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">7.1. How to Contact Us</h4>
           <p><b>Overview</b></p>
           <p>If you have questions or concerns about our Cookies Policy, we are here to help. We offer various ways for you to reach out to us, ensuring that your inquiries are addressed promptly and effectively.</p>
         </div>
@@ -52,7 +52,7 @@ function ContactInformation() {
           </ul>
         </div>
         <div className="space-y-6">
-          <h4 className="font-bold text-2xl text-gray-800 mt-12">7.2. Contact Details</h4>
+          <h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">7.2. Contact Details</h4>
           <p><b>Overview</b></p>
           <p>Providing clear and accurate contact details ensures that users can easily reach out to us for support or to provide feedback.</p>
         </div>
@@ -85,7 +85,7 @@ function ContactInformation() {
           </ul>
         </div>
         <div className="space-y-6">
-          <h4 className="font-bold text-2xl text-gray-800 mt-12">7.3. Feedback and Suggestions</h4>
+          <h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">7.3. Feedback and Suggestions</h4>
           <p><b>Overview</b></p>
           <p>We value your feedback and suggestions as they help us improve our services and Cookies Policy. Here’s how you can provide feedback and suggestions.</p>
         </div>

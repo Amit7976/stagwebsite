@@ -8,7 +8,7 @@ function CookiePolicyUpdates() {
 <div className="p-10 space-y-10">
 <h3 className="font-bold text-4xl">5. Cookie Policy Updates</h3>
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">5.1. Why We Update Our Cookies Policy</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">5.1. Why We Update Our Cookies Policy</h4>
 <p><b>Importance of Updating the Cookies Policy</b></p>
 <p>Updating our Cookies Policy is essential for ensuring transparency, compliance, and accuracy in how we handle cookies and user data. Here’s why it’s important to periodically review and update our Cookies Policy:</p>
 </div>
@@ -45,7 +45,7 @@ function CookiePolicyUpdates() {
 </ul>
 </div>
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">5.2. How We Notify Users of Changes</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">5.2. How We Notify Users of Changes</h4>
 <p><b>Methods for Communicating Policy Updates</b></p>
 <p>When we make changes to our Cookies Policy, we use various methods to ensure that users are aware of the updates:</p>
 </div>
@@ -81,7 +81,7 @@ function CookiePolicyUpdates() {
 </ul>
 </div>
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">5.3. User Responsibility to Review Policy</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">5.3. User Responsibility to Review Policy</h4>
 <p><b>Importance of Reviewing the Cookies Policy</b></p>
 <p>While we strive to communicate changes effectively, it is ultimately the user’s responsibility to review our Cookies Policy:</p>
 </div>

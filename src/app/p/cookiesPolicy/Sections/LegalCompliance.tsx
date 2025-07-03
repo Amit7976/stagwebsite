@@ -11,7 +11,7 @@ function LegalCompliance() {
         <p>In this section, we outline how <Link href={"/"} className='text-orange-600'>Hirebie</Link> ensures that our Cookies Policy adheres to relevant legal standards and regulations. As an IT Services provider, we respect global data privacy principles and ensure that our cookie practices are transparent and fair for all users.</p>
 
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">8.1. Compliance with Indian Laws</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">8.1. Compliance with Indian Laws</h4>
 <p><b>Overview</b></p>
 <p><Link href={"/"} className='text-orange-600'>Hirebie</Link> is committed to complying with all applicable Indian laws and regulations related to data privacy and the use of cookies. This section explains how our Cookies Policy aligns with Indian legal requirements and what steps we take to ensure compliance.</p>
 </div>
@@ -40,7 +40,7 @@ function LegalCompliance() {
 </ul>
 </div>
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">8.2. International Compliance</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">8.2. International Compliance</h4>
 <p><b>Overview</b></p>
 <p>While our primary focus is on Indian regulations, <Link href={"/"} className='text-orange-600'>Hirebie</Link> also ensures that our Cookies Policy aligns with international data protection standards. This section details how we adhere to global regulations and frameworks.</p>
 </div>
@@ -70,7 +70,7 @@ function LegalCompliance() {
 </ul>
 </div>
 <div className="space-y-6">
-<h4 className="font-bold text-2xl text-gray-800 mt-12">8.3. Your Rights Under Indian Privacy Laws</h4>
+<h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">8.3. Your Rights Under Indian Privacy Laws</h4>
 <p><b>Overview</b></p>
 <p>Under Indian privacy laws, you have specific rights related to your personal data and cookie usage. This section explains these rights and how you can exercise them.</p>
 </div>

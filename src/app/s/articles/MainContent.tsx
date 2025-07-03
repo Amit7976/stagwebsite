@@ -126,8 +126,8 @@ interface Article {
     category: string,
     tags: string,
     status: string,
-    priority: Boolean,
-    featured: Boolean,
+    priority: boolean,
+    featured: boolean,
     imageTitle: string,
     language: string,
     learn: string,
@@ -238,7 +238,11 @@ function MainContent() {
 
 
     // SEPARATE TAGS
-    function separateTags(data: any) {
+    interface SeparateTagsData {
+        tags?: string;
+    }
+
+    function separateTags(data: SeparateTagsData): string[] {
         const itemsString = data?.tags; // Safely access data.tags
         return itemsString ? itemsString.split(', ') : []; // Return an empty array if itemsString is falsy
     }
@@ -357,7 +361,7 @@ function MainContent() {
                                                 </p>
                                             </div>
                                             <div className='flex items-center gap-1 mt-3 line-clamp-1 overflow-scroll'>
-                                                {separateTags(article).map((tag: any, index: any) => (
+                                                {separateTags(article).map((tag: string, index: number) => (
                                                     <p key={index} className='text-sm font-semibold backdrop-blur-2xl text-gray-400 rounded-full pr-5 py-2 capitalize flex-shrink-0'>{tag}</p>
                                                 ))}
                                             </div>

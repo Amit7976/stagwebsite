@@ -13,7 +13,7 @@ function TypesOfCookiesWeUse() {
 <div className="space-y-6">
 <h4 className="font-bold text-2xl text-gray-800 dark:text-neutral-300 mt-12">2.1. Necessary Cookies</h4>
 <p><b>Definition and Purpose</b></p>
-<p>Necessary cookies are essential for the operation of our website. These cookies enable basic functions such as page navigation, user authentication, and secure access to various features. Without these cookies, <Link href={"/"} className='text-orange-600'>Hirebie</Link>'s website would not function properly, and you would be unable to access essential services.</p>
+          <p>Necessary cookies are essential for the operation of our website. These cookies enable basic functions such as page navigation, user authentication, and secure access to various features. Without these cookies, <Link href={"/"} className='text-orange-600'>Hirebie</Link>&#39;s website would not function properly, and you would be unable to access essential services.</p>
 <ul className="list-disc px-10 space-y-4">
 <li>Functions of Necessary Cookies</li>
 <ul className="list-disc px-10 space-y-4">

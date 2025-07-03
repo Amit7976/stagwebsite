@@ -12,7 +12,7 @@ function MainContent() {
                                 <h4 className='text-gray-800 font-medium text-base flex items-center gap-2 rounded-xl hover:bg-gray-100 duration-300 cursor-pointer py-2 px-5 h-auto'><FiHome className='w-6 h-6 text-gray-500 pl-1.5 mb-0.5' /> Getting Started</h4>
                                 <div className='pl-9 mt-0.5 space-y-0.5'>
                                     <TabsTrigger value="introduction" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>Introduction</TabsTrigger>
-                                    <TabsTrigger value="password" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>What's new?</TabsTrigger>
+                                    <TabsTrigger value="password" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>What&#39;s new?</TabsTrigger>
                                 </div>
                             </div>
                             <div>
@@ -22,16 +22,16 @@ function MainContent() {
                                     <TabsTrigger value="password" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>Introduction</TabsTrigger>
                                     <TabsTrigger value="password" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>Introduction</TabsTrigger>
                                     <TabsTrigger value="password" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>Introduction</TabsTrigger>
-                                    <TabsTrigger value="password" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>What's new?</TabsTrigger>
+                                    <TabsTrigger value="password" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>What&#39;s new?</TabsTrigger>
                                 </div>
                             </div>
                             <div>
                                 <h4 className='text-gray-800 font-medium text-base flex items-center gap-2 rounded-xl hover:bg-gray-100 duration-300 cursor-pointer py-2 px-5 h-auto'><FiHome className='w-6 h-6 text-gray-500 pl-1.5 mb-0.5' /> Getting Started</h4>
                                 <div className='pl-9 mt-0.5 space-y-0.5'>
                                     <TabsTrigger value="password" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>Introduction</TabsTrigger>
-                                    <TabsTrigger value="password" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>What's new?</TabsTrigger>
-                                    <TabsTrigger value="password" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>What's new?</TabsTrigger>
-                                    <TabsTrigger value="password" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>What's new?</TabsTrigger>
+                                    <TabsTrigger value="password" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>What&#39;s new?</TabsTrigger>
+                                    <TabsTrigger value="password" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>What&#39;s new?</TabsTrigger>
+                                    <TabsTrigger value="password" className='text-gray-500 text-sm font-normal hover:bg-gray-100 duration-300 cursor-pointer py-2 px-4 h-auto rounded-xl w-full text-start'>What&#39;s new?</TabsTrigger>
                                 </div>
                             </div>
                         </section>

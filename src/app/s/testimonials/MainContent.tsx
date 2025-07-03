@@ -1,15 +1,8 @@
 import Image from "next/image";
-import React from "react";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
 
-import { RiDoubleQuotesL } from "react-icons/ri";
 import Link from "next/link";
 
-function HeroSection() {
+function MainContent() {
   return (
     <>
       <section className="w-full py-20 lg:py-0 lg:h-screen flex items-center justify-center">
@@ -62,4 +55,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default MainContent;

@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import styles from "./CompaniesLogo.module.css";
+import Image from "next/image";
 
 function CompaniesLogo() {
   const logos = [
@@ -81,7 +82,7 @@ function CompaniesLogo() {
         >
           {logos.map((logo, index) => (
             <li key={index}>
-              <img src={logo.src} alt={logo.alt} />
+              <Image width={400} height={400} src={logo.src} alt={logo.alt} />
             </li>
           ))}
         </ul>

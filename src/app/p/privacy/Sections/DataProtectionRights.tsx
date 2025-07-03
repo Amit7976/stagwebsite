@@ -36,7 +36,7 @@ function DataProtectionRights() {
 </div>
 <div className="space-y-6">
 <h5 className="font-bold text-xl text-gray-600 mt-10">4.3.1 Explanation of the Right to Erasure</h5>
-<p>You have the right to request the deletion of your personal data under certain circumstances. This is also known as the "right to be forgotten." This right applies when your data is no longer necessary for the purposes for which it was collected, you withdraw your consent, or you object to the processing and there are no overriding legitimate grounds for the processing.</p>
+<p>You have the right to request the deletion of your personal data under certain circumstances. This is also known as the &#34;right to be forgotten.&#34; This right applies when your data is no longer necessary for the purposes for which it was collected, you withdraw your consent, or you object to the processing and there are no overriding legitimate grounds for the processing.</p>
 </div>
 <div className="space-y-6">
 <h5 className="font-bold text-xl text-gray-600 mt-10">4.3.2 How to Exercise Your Right to Erasure</h5>

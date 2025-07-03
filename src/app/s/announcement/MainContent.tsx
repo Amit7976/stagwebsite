@@ -62,7 +62,7 @@ function MainContent() {
               Announcement Center
             </h2>
             <p className="mt-4 text-lg font-medium text-neutral-500 text-balance">
-              Welcome to the Announcement Center. Stay up-to-date with all the latest news and updates from JobBoost. Whether it's new features, maintenance alerts, or special offers, you’ll find everything you need to know right here.
+              Welcome to the Announcement Center. Stay up-to-date with all the latest news and updates from JobBoost. Whether it&#39;s new features, maintenance alerts, or special offers, you’ll find everything you need to know right here.
             </p>
           </div>
         </section>

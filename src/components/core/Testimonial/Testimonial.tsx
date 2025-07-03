@@ -250,7 +250,6 @@ const testimonials2 = [
                       text={testimonial.text}
                       imgSrc={testimonial.imgSrc}
                       name={testimonial.name}
-                      jobTitle={testimonial.jobTitle}
                     />
                   ))}
                 </ul>
@@ -265,7 +264,6 @@ const testimonials2 = [
                       text={testimonial.text}
                       imgSrc={testimonial.imgSrc}
                       name={testimonial.name}
-                      jobTitle={testimonial.jobTitle}
                     />
                   ))}
                 </ul>

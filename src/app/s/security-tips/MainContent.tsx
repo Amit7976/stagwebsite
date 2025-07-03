@@ -1,8 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 function MainContent() {
   return (
@@ -15,7 +11,7 @@ function MainContent() {
 
         <h2 className="text-5xl mt-10 text-gray-900 dark:text-white font-semibold">Security Tips for user</h2>
         <p className="font-normal text-gray-500 dark:text-neutral-400 text-xl my-7 md:w-3/4">Please take a moment to review these important safety
-          tips before using online websites. In today's digital age, it's crucial for all users, regardless of the
+          tips before using online websites. In today&#39;s digital age, it&#39;s crucial for all users, regardless of the
           purpose, to acquaint themselves with these essential security guidelines.</p>
 
 
@@ -178,7 +174,7 @@ function MainContent() {
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Passphrase Creation:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">Crafting passphrases by combining unrelated
                   words, phrases, or sentences significantly boosts password strength. For instance,
-                  "PurpleBananaLamp$42" is more secure than a short, complex string of characters.</p>
+                  &#34;PurpleBananaLamp$42&#34; is more secure than a short, complex string of characters.</p>
               </li>
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Password Managers:</h6>
@@ -216,7 +212,7 @@ function MainContent() {
             <h3 className="text-4xl font-semibold mb-6 text-orange-600">#Be careful about wifi</h3>
 
             <div className="text-lg text-gray-700 dark:text-neutral-300 leading-relaxed mb-8">
-              <p>In today's interconnected world, Wi-Fi has become an indispensable part of our daily lives. It
+              <p>In today&#39;s interconnected world, Wi-Fi has become an indispensable part of our daily lives. It
                 provides us with the convenience of accessing the internet, connecting with friends and colleagues,
                 and even controlling smart devices in our homes. However, while Wi-Fi offers incredible convenience,
                 it also comes with potential risks to our digital privacy and security. In this article, we will
@@ -225,7 +221,7 @@ function MainContent() {
             </div>
 
             <ul className="mt-28 list-decimal text-2xl font-semibold text-gray-700 dark:text-neutral-300 ">
-              <h4 className="font-bold my-6 text-gray-800 dark:text-white">Before diving into Wi-Fi security measures, it's important to
+              <h4 className="font-bold my-6 text-gray-800 dark:text-white">Before diving into Wi-Fi security measures, it&#39;s important to
                 grasp the fundamentals:</h4>
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Wi-Fi Networks:</h6>
@@ -237,7 +233,7 @@ function MainContent() {
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Wi-Fi Security Protocols:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">Wi-Fi security protocols like WEP, WPA, and
-                  WPA2/WPA3 are designed to protect your data from unauthorized access. It's crucial to use the
+                  WPA2/WPA3 are designed to protect your data from unauthorized access. It&#39;s crucial to use the
                   latest, most secure protocol available.</p>
               </li>
             </ul>
@@ -291,7 +287,7 @@ function MainContent() {
               </li>
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Regularly Update Firmware:</h6>
-                <p className="max-w-6xl font-normal text-lg text-gray-500">Keep your router's firmware up to date to
+                <p className="max-w-6xl font-normal text-lg text-gray-500">Keep your router&#39;s firmware up to date to
                   patch any known security vulnerabilities.</p>
               </li>
               <li className=" ml-6 mt-8">
@@ -318,21 +314,21 @@ function MainContent() {
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Use HTTPS:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">When browsing websites, ensure the URL starts
-                  with "https://" to encrypt your data during transmission.</p>
+                  with &#34;https://&#34; to encrypt your data during transmission.</p>
               </li>
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Forget Public Networks:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">After using public Wi-Fi networks, always
-                  'forget' or disconnect from them to prevent automatic reconnection.</p>
+                  &#39;forget&#39; or disconnect from them to prevent automatic reconnection.</p>
               </li>
             </ul>
 
             <div className="my-28">
               <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Conclusion</h6>
               <p className="max-w-6xl font-normal text-lg text-gray-500">Wi-Fi has revolutionized the way we connect, but
-                it's essential to be vigilant about Wi-Fi security to protect your personal information and maintain
+                it&#39;s essential to be vigilant about Wi-Fi security to protect your personal information and maintain
                 your digital privacy. By following these tips and best practices, you can ensure a safer online
-                experience, whether you're at home or on the go. Remember that cybersecurity is an ongoing process,
+                experience, whether you&#39;re at home or on the go. Remember that cybersecurity is an ongoing process,
                 so stay informed about the latest threats and security measures to keep your digital world secure.
               </p>
             </div>
@@ -362,7 +358,7 @@ function MainContent() {
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Personal Security:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">For individuals, secure networks are
                   paramount in safeguarding personal information. From banking details and medical records to
-                  personal communications and sensitive data, the use of secure networks ensures that one's
+                  personal communications and sensitive data, the use of secure networks ensures that one&#39;s
                   private information remains confidential and protected from cyber threats such as hacking,
                   phishing, or identity theft.</p>
               </li>
@@ -425,9 +421,9 @@ function MainContent() {
             <div className="my-28">
               <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Conclusion</h6>
               <p className="max-w-6xl font-normal text-lg text-gray-500">Wi-Fi has revolutionized the way we connect, but
-                it's essential to be vigilant about Wi-Fi security to protect your personal information and maintain
+                it&#39;s essential to be vigilant about Wi-Fi security to protect your personal information and maintain
                 your digital privacy. By following these tips and best practices, you can ensure a safer online
-                experience, whether you're at home or on the go. Remember that cybersecurity is an ongoing process,
+                experience, whether you&#39;re at home or on the go. Remember that cybersecurity is an ongoing process,
                 so stay informed about the latest threats and security measures to keep your digital world secure.
               </p>
             </div>
@@ -436,9 +432,9 @@ function MainContent() {
             <h3 className="text-4xl font-semibold mb-6 text-orange-600">#Check Site Security</h3>
 
             <div className="text-lg text-gray-700 dark:text-neutral-300 leading-relaxed mb-8">
-              <p>In today's digital age, websites play a crucial role in personal, business, and organizational
+              <p>In today&#39;s digital age, websites play a crucial role in personal, business, and organizational
                 activities. However, the rise in cyber threats necessitates a thorough understanding of website
-                security. Ensuring your website is secure is not just an option; it's a necessity to protect
+                security. Ensuring your website is secure is not just an option; it&#39;s a necessity to protect
                 sensitive data, maintain the trust of users, and maintain the integrity of your online presence.
                 This article delves into the world of website security, covering essential aspects and strategies
                 for safeguarding your online platform.</p>
@@ -484,24 +480,24 @@ function MainContent() {
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Downtime and Reputation:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">Security incidents can lead to website
-                  downtime and damage your brand's reputation.</p>
+                  downtime and damage your brand&#39;s reputation.</p>
               </li>
             </ul>
 
-            <ul className="mt-28 list-decimal text-2xl font-semibold text-gray-700 dark:text-neutral-300 ">
+            <ul className="mt-28 list-decimal text-2xl font-semibold text-gray-700 dark:text-neutral-300">
               <h4 className="font-normal text-xl max-w-3xl my-6 text-gray-800 dark:text-white">Now that we understand why website security
-                is crucial let's explore the steps and best practices to ensure a secure online presence.</h4>
+                is crucial let&#39;s explore the steps and best practices to ensure a secure online presence.</h4>
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Use HTTPS</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">Secure Sockets Layer (SSL) certificates are
-                  crucial for establishing secure connections between users' browsers and your website. This helps
+                  crucial for establishing secure connections between users&#39; browsers and your website. This helps
                   encrypt data in transit, making it difficult for attackers to intercept and manipulate it.
-                  Secure websites use "https://" instead of "http://," and modern browsers may flag non-secure
+                  Secure websites use &#34;https://&#34; instead of &#34;http://,&#34; and modern browsers may flag non-secure
                   websites.</p>
               </li>
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Regular Updates</h6>
-                <p className="max-w-6xl font-normal text-lg text-gray-500">Keep your website's software, including the
+                <p className="max-w-6xl font-normal text-lg text-gray-500">Keep your website&#39;s software, including the
                   content management system (e.g., WordPress), plugins, and themes, up to date. Developers release
                   updates to fix security vulnerabilities. Ignoring updates can make your site an easy target.</p>
               </li>
@@ -519,7 +515,7 @@ function MainContent() {
               </li>
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Regular Backups</h6>
-                <p className="max-w-6xl font-normal text-lg text-gray-500">Regularly back up your website's data and
+                <p className="max-w-6xl font-normal text-lg text-gray-500">Regularly back up your website&#39;s data and
                   files. In the event of a security breach or data loss, backups are a lifeline for restoring your
                   site to a safe state.</p>
               </li>
@@ -631,7 +627,7 @@ function MainContent() {
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Preservation of Personal Data:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">For individuals, data backups protect
-                  cherished photos, documents, and memories, ensuring they're not lost due to device malfunctions
+                  cherished photos, documents, and memories, ensuring they&#39;re not lost due to device malfunctions
                   or accidents.</p>
               </li>
             </ul>
@@ -666,8 +662,8 @@ function MainContent() {
               <p className="max-w-6xl font-normal text-lg text-gray-500">Data backups are a fundamental component of
                 modern digital life. They serve as a safety net against an array of potential risks, from hardware
                 failures to cyber threats. Implementing a robust backup strategy is crucial for businesses and
-                individuals to ensure the security and integrity of their digital assets. It's not a matter of 'if'
-                but 'when' data loss may occur, making backups an essential practice for safeguarding our invaluable
+                individuals to ensure the security and integrity of their digital assets. It&#39;s not a matter of &#39;if&#39;
+                but &#39;when&#39; data loss may occur, making backups an essential practice for safeguarding our invaluable
                 information.</p>
               <p className="max-w-6xl font-normal text-lg text-gray-500 mt-5">By understanding the significance of backups
                 and adhering to best practices, individuals and organizations can proactively protect themselves
@@ -722,7 +718,7 @@ function MainContent() {
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Prevention of Identity Theft:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">Secure personal information to prevent
-                  identity theft, a crime that can lead to financial loss and long-term damage to one's
+                  identity theft, a crime that can lead to financial loss and long-term damage to one&#39;s
                   reputation.</p>
               </li>
               <li className=" ml-6 mt-8">
@@ -770,7 +766,7 @@ function MainContent() {
           <div className="w-full p-8 pt-48" id="PrivacyPreferenceCenter">
             <h3 className="text-4xl font-semibold mb-6 text-orange-600">#Privacy Preference Center</h3>
             <div className="text-lg text-gray-700 dark:text-neutral-300 leading-relaxed mb-8">
-              <p>In today's interconnected digital landscape, the management of personal data has become a paramount
+              <p>In today&#39;s interconnected digital landscape, the management of personal data has become a paramount
                 concern for both individuals and organizations. This is where the Privacy Preference Center, often
                 referred to as a PCC, emerges as a critical tool for maintaining control and transparency over how
                 personal data is collected, processed, and used.</p>
@@ -799,7 +795,7 @@ function MainContent() {
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Data Deletion and Erasure:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">Individuals can request the removal of their
-                  data, ensuring their 'right to be forgotten' is respected and implemented.</p>
+                  data, ensuring their &#39;right to be forgotten&#39; is respected and implemented.</p>
               </li>
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Data Security and Encryption:</h6>
@@ -869,7 +865,7 @@ function MainContent() {
             <h3 className="text-4xl font-semibold mb-6 text-orange-600">#Multi-Factor Authentication</h3>
 
             <div className="text-lg text-gray-700 dark:text-neutral-300 leading-relaxed mb-8">
-              <p>In today's interconnected digital landscape, the security of personal and organizational data is
+              <p>In today&#39;s interconnected digital landscape, the security of personal and organizational data is
                 paramount. As cyber threats continue to evolve, the need for robust authentication measures becomes
                 increasingly vital. This is where the concept of multi-factor authentication (MFA) plays a crucial
                 role.</p>
@@ -880,7 +876,7 @@ function MainContent() {
               <p className="max-w-6xl font-normal text-lg text-gray-500">Multi-factor authentication (MFA) is a security
                 process that requires multiple forms of verification to grant access to an account or system. It
                 goes beyond the traditional username and password combination, adding extra layers of authentication
-                to confirm the user's identity, thereby enhancing security.</p>
+                to confirm the user&#39;s identity, thereby enhancing security.</p>
             </div>
 
             <ul className="mt-28 list-decimal text-2xl font-semibold text-gray-700 dark:text-neutral-300 ">
@@ -893,13 +889,13 @@ function MainContent() {
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Something You Have:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">This factor refers to a physical item in the
-                  user's possession, such as a smartphone, token, or smart card, used for authentication through
+                  user&#39;s possession, such as a smartphone, token, or smart card, used for authentication through
                   codes or tokens.</p>
               </li>
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Something You Are:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">This factor involves biometric data, such as
-                  fingerprints, facial recognition, or iris scans, verifying the user's unique physical
+                  fingerprints, facial recognition, or iris scans, verifying the user&#39;s unique physical
                   characteristics.</p>
               </li>
             </ul>
@@ -961,7 +957,7 @@ function MainContent() {
             <div className="my-28">
               <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Conclusion</h6>
               <p className="max-w-6xl font-normal text-lg text-gray-500">Multi-factor authentication stands as a critical
-                defense mechanism in today's cyber landscape, offering heightened security against unauthorized
+                defense mechanism in today&#39;s cyber landscape, offering heightened security against unauthorized
                 access and data breaches. By employing a multi-layered approach to verify user identities, MFA
                 significantly enhances the protection of personal and sensitive information.</p>
               <p className="max-w-6xl font-normal text-lg text-gray-500 mt-5">Adopting and consistently evolving
@@ -1062,7 +1058,7 @@ function MainContent() {
             <h3 className="text-4xl font-semibold mb-6 text-orange-600">#Strong & Unique Passwords</h3>
 
             <div className="text-lg text-gray-700 dark:text-neutral-300 leading-relaxed mb-8">
-              <p>In today's digital landscape, where our lives intertwine with online platforms, the significance of
+              <p>In today&#39;s digital landscape, where our lives intertwine with online platforms, the significance of
                 robust and unique passwords cannot be overstated. From securing personal information to safeguarding
                 critical data, the strength and uniqueness of passwords play a pivotal role in fortifying our
                 digital presence.</p>
@@ -1216,7 +1212,7 @@ function MainContent() {
             <div className="my-28">
               <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Conclusion</h6>
               <p className="max-w-6xl font-normal text-lg text-gray-500">Regularly updating software is not just about
-                accessing new features; it's a critical step in maintaining a secure and efficient digital
+                accessing new features; it&#39;s a critical step in maintaining a secure and efficient digital
                 environment. By staying updated, users can benefit from improved security, performance, and
                 compatibility, ensuring a more robust and reliable software experience.</p>
               <p className="max-w-6xl font-normal text-lg text-gray-500 mt-5">Embracing the practice of timely software
@@ -1228,8 +1224,8 @@ function MainContent() {
             <h3 className="text-4xl font-semibold mb-6 text-orange-600">#Using a VPN (Virtual Private Network)</h3>
 
             <div className="text-lg text-gray-700 dark:text-neutral-300 leading-relaxed mb-8">
-              <p>In today's digitally interconnected world, using a Virtual Private Network (VPN) has become an
-                increasingly crucial practice for both individuals and businesses. It's a tool that enhances online
+              <p>In today&#39;s digitally interconnected world, using a Virtual Private Network (VPN) has become an
+                increasingly crucial practice for both individuals and businesses. It&#39;s a tool that enhances online
                 security and privacy, offering a range of benefits.</p>
             </div>
 
@@ -1237,7 +1233,7 @@ function MainContent() {
               <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">What is a VPN?</h6>
               <p className="max-w-6xl font-normal text-lg text-gray-500">A VPN is a service that creates a secure and
                 encrypted connection over the internet, allowing users to access the internet through a remote
-                server. This connection masks the user's IP address and encrypts data, safeguarding online
+                server. This connection masks the user&#39;s IP address and encrypts data, safeguarding online
                 activities from surveillance, hacking, or data interception.</p>
             </div>
 
@@ -1250,7 +1246,7 @@ function MainContent() {
               </li>
               <li className="ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Privacy Protection:</h6>
-                <p className="max-w-6xl font-normal text-lg text-gray-500">By masking the user's IP address and online
+                <p className="max-w-6xl font-normal text-lg text-gray-500">By masking the user&#39;s IP address and online
                   activities, a VPN safeguards privacy, preventing tracking or monitoring by ISPs, governments, or
                   malicious entities.</p>
               </li>
@@ -1314,7 +1310,7 @@ function MainContent() {
 
             <div className="my-28">
               <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Conclusion</h6>
-              <p className="max-w-6xl font-normal text-lg text-gray-500">Using a VPN is more than just a precaution; it's
+              <p className="max-w-6xl font-normal text-lg text-gray-500">Using a VPN is more than just a precaution; it&#39;s
                 a proactive step towards securing online activities and data. As the digital landscape evolves, the
                 significance of a VPN in maintaining privacy, security, and freedom in an interconnected world
                 cannot be overstated.</p>
@@ -1423,7 +1419,7 @@ function MainContent() {
             <h3 className="text-4xl font-semibold mb-6 text-orange-600">#Credit Card Safety</h3>
 
             <div className="text-lg text-gray-700 dark:text-neutral-300 leading-relaxed mb-8">
-              <p>In today's digital age, the use of credit cards is ubiquitous. While they offer convenience, they
+              <p>In today&#39;s digital age, the use of credit cards is ubiquitous. While they offer convenience, they
                 also pose security risks. Understanding and implementing credit card safety measures are crucial to
                 protect sensitive financial information.</p>
             </div>
@@ -1452,7 +1448,7 @@ function MainContent() {
               <li className="ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Secure Card Information:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">Never share credit card information via email
-                  or over the phone unless certain about the recipient's credibility. Additionally, don’t store
+                  or over the phone unless certain about the recipient&#39;s credibility. Additionally, don’t store
                   card information on easily accessible devices or platforms.</p>
               </li>
               <li className="ml-6 mt-8">
@@ -1575,7 +1571,7 @@ function MainContent() {
               <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">What is an SSL Certificate?</h6>
               <p className="max-w-6xl font-normal text-lg text-gray-500">An SSL certificate is a digital certificate that
                 authenticates the identity of a website and encrypts information sent to the server. It facilitates
-                a secure connection, indicated by the padlock symbol and 'https' in the URL.</p>
+                a secure connection, indicated by the padlock symbol and &#39;https&#39; in the URL.</p>
             </div>
 
             <ul className="mt-28 list-decimal text-2xl font-semibold text-gray-700 dark:text-neutral-300 ">
@@ -1583,7 +1579,7 @@ function MainContent() {
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Extended Validation (EV) SSL:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">Offers the highest level of authentication,
-                  displaying the company name in the browser's address bar.</p>
+                  displaying the company name in the browser&#39;s address bar.</p>
               </li>
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Wildcard SSL:</h6>
@@ -1623,7 +1619,7 @@ function MainContent() {
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Selecting the Right SSL Certificate:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">Choose the type of certificate that best
-                  suits your website's needs, considering factors like encryption strength and validation level.
+                  suits your website&#39;s needs, considering factors like encryption strength and validation level.
                 </p>
               </li>
               <li className=" ml-6 mt-8">
@@ -1635,7 +1631,7 @@ function MainContent() {
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Update URLs and Content:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">Ensure all internal links and resources are
-                  updated to 'https' to fully enable secure browsing.</p>
+                  updated to &#39;https&#39; to fully enable secure browsing.</p>
               </li>
             </ul>
 
@@ -1650,7 +1646,7 @@ function MainContent() {
           <div className="w-full p-8 pt-48" id="ReadTermsConditions">
             <h3 className="text-4xl font-semibold mb-6 text-orange-600">#Understanding Terms and Conditions</h3>
             <div className="text-lg text-gray-700 dark:text-neutral-300 leading-relaxed mb-8">
-              <p>In today's digitally connected world, we frequently encounter the phrase "Terms and Conditions"
+              <p>In today&#39;s digitally connected world, we frequently encounter the phrase &#34;Terms and Conditions&#34;
                 (T&C), often presented in small text boxes or as links that we rarely explore. Yet, these
                 agreements, which most users swiftly accept without a second glance, hold significant importance in
                 the online realm.</p>
@@ -1661,7 +1657,7 @@ function MainContent() {
               <p className="max-w-6xl font-normal text-lg text-gray-500">Terms and Conditions, also known as Terms of
                 Service or Terms of Use, are legal agreements between users and a service provider or website. These
                 documents outline the rules, guidelines, rights, and responsibilities that govern the relationship
-                between the user and the service or platform they're engaging with.</p>
+                between the user and the service or platform they&#39;re engaging with.</p>
             </div>
 
             <ul className="mt-28 list-decimal text-2xl font-semibold text-gray-700 dark:text-neutral-300 ">
@@ -1688,17 +1684,17 @@ function MainContent() {
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Understanding Your Rights:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">Reading the T&C provides insight into your
-                  rights as a user, helping you understand how your data is used and what you're agreeing to when
+                  rights as a user, helping you understand how your data is used and what you&#39;re agreeing to when
                   using a service.</p>
               </li>
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Security and Privacy:</h6>
-                <p className="max-w-6xl font-normal text-lg text-gray-500">It's crucial for understanding how your data
-                  is handled and secured, ensuring you're aware of potential risks or privacy implications.</p>
+                <p className="max-w-6xl font-normal text-lg text-gray-500">It&#39;s crucial for understanding how your data
+                  is handled and secured, ensuring you&#39;re aware of potential risks or privacy implications.</p>
               </li>
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Legal and Financial Implications:</h6>
-                <p className="max-w-6xl font-normal text-lg text-gray-500">By knowing the terms, you're informed about
+                <p className="max-w-6xl font-normal text-lg text-gray-500">By knowing the terms, you&#39;re informed about
                   your responsibilities and liabilities, safeguarding you from unexpected legal or financial
                   repercussions.</p>
               </li>
@@ -1726,7 +1722,7 @@ function MainContent() {
             <div className="my-28">
               <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Conclusion</h6>
               <p className="max-w-6xl font-normal text-lg text-gray-500">The seemingly mundane task of reading the T&C is
-                paramount in today's digital landscape. It's a practice that safeguards users' rights, privacy, and
+                paramount in today&#39;s digital landscape. It&#39;s a practice that safeguards users&#39; rights, privacy, and
                 security. Taking the time to understand the terms ensures informed consent and empowers users in
                 their digital interactions.</p>
               <p className="max-w-6xl font-normal text-lg text-gray-500 mt-5">By engaging with T&C mindfully, users not
@@ -1756,7 +1752,7 @@ function MainContent() {
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Keep Software Updated:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">Regularly update device operating systems,
                   applications, and antivirus software. Updates often contain patches for security
-                  vulnerabilities, strengthening your device's defenses.</p>
+                  vulnerabilities, strengthening your device&#39;s defenses.</p>
               </li>
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Strong Passwords and Authentication:</h6>
@@ -1820,7 +1816,7 @@ function MainContent() {
             <div className="my-28">
               <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Conclusion</h6>
               <p className="max-w-6xl font-normal text-lg text-gray-500">Securing your devices is not just a suggestion
-                but a necessity in today's digital landscape. Implementing robust security measures protects not
+                but a necessity in today&#39;s digital landscape. Implementing robust security measures protects not
                 just your data but your identity and privacy. By staying vigilant, keeping devices updated, and
                 following best practices, you can fortify your digital life against potential threats.</p>
               <p className="max-w-6xl font-normal text-lg text-gray-500 mt-5">Ensuring device security is an ongoing
@@ -1835,7 +1831,7 @@ function MainContent() {
               <p>In our rapidly evolving digital age, online shopping has become an integral part of our lives. It
                 offers convenience, a wide range of products, and the ability to shop from the comfort of your home.
                 However, as online shopping grows, so do the risks associated with it. To ensure a safe and
-                enjoyable online shopping experience, it's crucial to understand how to shop safely.</p>
+                enjoyable online shopping experience, it&#39;s crucial to understand how to shop safely.</p>
             </div>
             <div className="mt-8">
               <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Understanding Online Shopping Safety</h6>
@@ -1881,7 +1877,7 @@ function MainContent() {
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Beware of Phishing Scams:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">Watch out for unsolicited emails or messages
                   asking for your personal information or urging you to click on suspicious links. Legitimate
-                  retailers won't request such information via email.</p>
+                  retailers won&#39;t request such information via email.</p>
               </li>
               <li className="ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Keep Records:</h6>
@@ -1900,10 +1896,10 @@ function MainContent() {
             <div className="my-28">
               <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Conclusion</h6>
               <p className="max-w-6xl font-normal text-lg text-gray-500">Online shopping can be a convenient and enjoyable
-                experience, but it's essential to prioritize safety and security. By following these tips and
+                experience, but it&#39;s essential to prioritize safety and security. By following these tips and
                 staying vigilant, you can protect your personal and financial information while enjoying the
                 convenience of online retail. Remember, a safe shopping experience is a happy one!</p>
-              <p className="max-w-6xl font-normal text-lg text-gray-500 mt-5">Whether you're shopping for the latest
+              <p className="max-w-6xl font-normal text-lg text-gray-500 mt-5">Whether you&#39;re shopping for the latest
                 fashion trends, electronics, or everyday essentials, shopping safely online should always be a top
                 priority. With the right precautions in place, you can shop with confidence and peace of mind.</p>
             </div>

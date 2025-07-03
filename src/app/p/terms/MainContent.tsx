@@ -43,7 +43,7 @@ function MainContent() {
         <Separator className="my-20 bg-gray-500 rounded-full" />
         <div className="p-10 space-y-10">
           <p className="font-medium">
-            Welcome to JobBoost! These Terms and Conditions ("Terms") govern
+            Welcome to JobBoost! These Terms and Conditions (&#34;Terms&#34;) govern
             your use of the JobBoost website and services. By accessing or using
             our services, you agree to these Terms. If you do not agree with
             these Terms, please do not use our services.
@@ -53,7 +53,7 @@ function MainContent() {
             provides a comprehensive suite of services designed to connect job
             seekers with employers across various industries. These Terms and
             Conditions outline the legal agreement between you (referred to as
-            "User," "Client," or "You") and JobBoost regarding the use of our
+            &#34;User,&#34; &#34;Client,&#34; or &#34;You&#34;) and JobBoost regarding the use of our
             website, located at jobboost.in, and all associated services
             provided therein.
           </p>

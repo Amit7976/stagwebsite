@@ -19,8 +19,8 @@ interface Article {
     category: string,
     tags: string,
     status: string,
-    priority: Boolean,
-    featured: Boolean,
+    priority: boolean,
+    featured: boolean,
     imageTitle: string,
     language: string,
     learn: string,
@@ -101,11 +101,14 @@ function NewPublishedArticles() {
 
 
     // SEPARATE TAGS
-    function separateTags(data: any) {
+    interface SeparateTagsData {
+        tags?: string;
+    }
+
+    function separateTags(data: SeparateTagsData): string[] {
         const itemsString = data?.tags; // Safely access data.tags
         return itemsString ? itemsString.split(', ') : []; // Return an empty array if itemsString is falsy
     }
-
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -123,7 +126,7 @@ function NewPublishedArticles() {
                                 <LatestArticlePlaceholder key={index} />
                             </div>
                         ))
-                    ) : (latestArticles.map((article:any, index:number) => (
+                    ) : (latestArticles.map((article: Article, index:number) => (
                         <Link key={index} href={`/articles/${article.category}/${article._id}`} className={`mt-8 lg:flex lg:items-center gap-5 ${(index % 2) ? 'flex-row-reverse' : ''}`}>
                             <Image width={800} height={800} className="object-cover w-full lg:w-1/2 rounded-3xl h-72 lg:h-[22rem]" src={`/images/articles${article.image}`} alt={article.title} />
 
@@ -147,7 +150,7 @@ function NewPublishedArticles() {
                                         </p>
                                     </div>
                                     <div className='flex items-center gap-5 line-clamp-1 overflow-scroll'>
-                                        {separateTags(article).map((tag: any, index: any) => (
+                                        {separateTags(article).map((tag: string, index: number) => (
                                             <p key={index} className='text-sm font-semibold bg-gray-100 text-gray-600 rounded-full px-5 py-2 capitalize flex-shrink-0'>{tag}</p>
                                         ))}
                                     </div>

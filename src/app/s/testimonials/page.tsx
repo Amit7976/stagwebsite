@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "./HeroSection";
+import MainContent from "./MainContent";
 import CandidateTestimonials from "./CandidateTestimonials";
 import Header from "@/components/core/Header/Header";
 import Footer from "@/components/core/Footer/Footer";
@@ -8,10 +8,9 @@ function page() {
   return (
     <>
       <Header />
-
-      <HeroSection />
+      <MainContent />
       <CandidateTestimonials />
-      <Footer/>
+      <Footer />
     </>
   );
 }

@@ -43,7 +43,7 @@ function UserRegistration() {
                 <li>
                   <b>Access the Registration Page:</b> Visit the JobBoost
                   website and navigate to the candidate registration page. This
-                  page can be accessed from the home page or the "Sign Up"
+                  page can be accessed from the home page or the &#34;Sign Up&#34;
                   section.
                 </li>
                 <li>
@@ -157,8 +157,8 @@ function UserRegistration() {
               <ul className="list-disc px-10 space-y-4">
                 <li>
                   <b>Visit the Company Registration Page:</b> Access the company
-                  registration page from the JobBoost homepage or the "Sign Up
-                  for Companies" section.
+                  registration page from the JobBoost homepage or the &#34;Sign Up
+                  for Companies&#34; section.
                 </li>
                 <li>
                   <b>Enter Company Details:</b> Provide the required company

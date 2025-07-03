@@ -24,7 +24,7 @@ function Miscellaneous() {
 <p>The Severability clause deals with situations where a part of the agreement is deemed unenforceable or invalid by a court of law. This legal safeguard ensures that the remaining provisions of the Terms and Conditions continue to be effective and enforceable.</p>
 <p><b>15.2.1. Invalid Provisions:</b> If a court finds any provision of these Terms to be invalid, illegal, or unenforceable, that specific provision will be severed from the rest of the agreement. The rest of the Terms and Conditions will remain in full force and effect.</p>
 <p><b>15.2.2. Preserving Intent:</b> This clause ensures that the removal of a problematic provision does not undermine the overall intent of the Terms and Conditions. The remaining provisions are intended to continue operating in accordance with the original intent of the agreement.</p>
-<p><b>15.2.3. Legal Compliance:</b> Severability helps maintain the agreement's compliance with applicable laws and regulations. It ensures that the agreement as a whole remains valid and enforceable even if one part is struck down.</p>
+<p><b>15.2.3. Legal Compliance:</b> Severability helps maintain the agreement&#39;s compliance with applicable laws and regulations. It ensures that the agreement as a whole remains valid and enforceable even if one part is struck down.</p>
 <p><b>15.2.4. Replacing Invalid Terms:</b> In the case of invalid terms, JobBoost may, at its discretion, attempt to replace them with valid and enforceable terms that reflect the original intent of the agreement.</p>
 </div>
 <div className="space-y-6">

@@ -63,7 +63,7 @@ const FAQSearch: React.FC = () => {
       const terms = query.split(/\s+/); // Tokenize the query into terms
 
       // Function to count matches of search terms in a given text
-      const countMatches = (text: any) => {
+      const countMatches = (text: string) => {
         const lowerText = text.toLowerCase();
         return terms.reduce((count, term) => {
           if (lowerText.includes(term)) {

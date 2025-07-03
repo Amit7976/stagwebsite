@@ -84,7 +84,7 @@ export default function MainContent() {
             </div>
             <div className="w-full space-y-28 p-10 md:py-28 md:px-20">
                 {Object.entries(menuItems).map(([section, items]) => (
-                    <div>
+                    <div key={section}>
                         <h6 className="text-base lg:text-5xl font-bold text-gray-700 dark:text-neutral-400 select-none">
                             {section}
                         </h6>

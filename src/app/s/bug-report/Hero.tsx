@@ -53,7 +53,7 @@ function Hero() {
                 </TooltipTrigger>
                 <TooltipContent>
                   <p className="text-base font-medium">
-                    Use this option when the UI doesn't work
+                    Use this option when the UI doesn&#39;t work
                   </p>
                 </TooltipContent>
               </Tooltip>

@@ -107,10 +107,10 @@ function MainContent() {
               <TfiAnnouncement className="flex-shrink-0 size-6 mt-1.5 text-gray-800 dark:text-neutral-200" />
               <Link href={"/career"} className="grow">
                 <h3 className="font-semibold text-gray-800 dark:text-neutral-200">
-                  We're hiring
+                  We&#39;re hiring
                 </h3>
                 <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">
-                  We're thrilled to announce that we're expanding our team and
+                  We&#39;re thrilled to announce that we&#39;re expanding our team and
                   looking for talented individuals like you to join us.
                 </p>
                 <p className="group inline-flex items-center gap-x-2 font-medium text-sm text-[#FD4D05] decoration-2 hover:underline focus:outline-none focus:underline mt-2">
@@ -124,7 +124,7 @@ function MainContent() {
         <div className="col-span-3 bg-gray-100 dark:bg-neutral-900 rounded-3xl my-5 py-6 p-4 md:p-16">
           <div className="mb-10 space-y-3">
             <h2 className="text-4xl font-white font-semibold">
-              Want Service? <span className="text-orange-600">We have</span> skilled <span className="text-orange-600">Professionals</span>. Let's get in <span className="text-orange-600">touch</span>
+              Want Service? <span className="text-orange-600">We have</span> skilled <span className="text-orange-600">Professionals</span>. Let&#39;s get in <span className="text-orange-600">touch</span>
             </h2>
             <p className="text-lg font-medium text-gray-400">
               Get in touch with our team for any assistance or information you

@@ -93,8 +93,14 @@ function BugForm() {
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-  // POST BUG REPORT DATA WHEN FORM SUBMIT
-  const onSubmitHandler = async (e: any) => {
+  interface BugReportResponse {
+    success: boolean;
+    key: string;
+  }
+
+  const onSubmitHandler = async (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ): Promise<void> => {
     e.preventDefault();
     console.log(data);
 
@@ -108,12 +114,10 @@ function BugForm() {
       formData.append('file', file);
     }
 
-
-    const response = await axios.post('/api/bugReport', formData); // Post the data
+    const response = await axios.post<BugReportResponse>('/api/bugReport', formData); // Post the data
 
     if (response.data.success) {
       alert('Success')
-
 
       location.reload();
       setFile(null);

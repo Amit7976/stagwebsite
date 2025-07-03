@@ -101,76 +101,76 @@ function Footer() {
   // FOOTER ALL LINKS
   const menuItems = {
     Services: [
-      { text: "Idea Validation", link: "/services/idea-validation" },
-      { text: "MVP Development", link: "/services/mvp-development" },
-      { text: "Web & Mobile Apps", link: "/services/web-mobile-apps" },
-      { text: "UI/UX Design", link: "/services/ui-ux-design" },
-      { text: "Product Engineering", link: "/services/product-engineering" },
-      { text: "Cloud & DevOps", link: "/services/cloud-devops" },
-      { text: "Cybersecurity", link: "/services/cybersecurity" },
-      { text: "IT Consulting", link: "/services/it-consulting" },
+      { text: "Idea Validation", link: "" },
+      { text: "MVP Development", link: "" },
+      { text: "Web & Mobile Apps", link: "" },
+      { text: "UI/UX Design", link: "" },
+      { text: "Product Engineering", link: "" },
+      { text: "Cloud & DevOps", link: "" },
+      { text: "Cybersecurity", link: "" },
+      { text: "IT Consulting", link: "" },
     ],
     Launch: [
-      { text: "Branding & Identity", link: "/launch/branding" },
-      { text: "Website Development", link: "/launch/website" },
-      { text: "E-commerce Solutions", link: "/launch/ecommerce" },
-      { text: "Custom SaaS Platforms", link: "/launch/saas" },
-      { text: "Marketplace Solutions", link: "/launch/marketplace" },
+      { text: "Branding & Identity", link: "" },
+      { text: "Website Development", link: "" },
+      { text: "E-commerce Solutions", link: "" },
+      { text: "Custom SaaS Platforms", link: "" },
+      { text: "Marketplace Solutions", link: "" },
     ],
     Growth: [
-      { text: "Digital Marketing", link: "/growth/digital-marketing" },
-      { text: "SEO & Content", link: "/growth/seo-content" },
-      { text: "Performance Marketing", link: "/growth/performance-marketing" },
-      { text: "CRM & Automation", link: "/growth/crm-automation" },
-      { text: "Business Analytics", link: "/growth/business-analytics" },
+      { text: "Digital Marketing", link: "" },
+      { text: "SEO & Content", link: "" },
+      { text: "Performance Marketing", link: "" },
+      { text: "CRM & Automation", link: "" },
+      { text: "Business Analytics", link: "" },
     ],
     Solutions: [
-      { text: "Startups", link: "/solutions/startups" },
-      { text: "SMBs", link: "/solutions/smbs" },
-      { text: "Enterprises", link: "/solutions/enterprises" },
-      { text: "Healthcare", link: "/solutions/healthcare" },
-      { text: "EdTech", link: "/solutions/edtech" },
-      { text: "FinTech", link: "/solutions/fintech" },
+      { text: "Startups", link: "" },
+      { text: "SMBs", link: "" },
+      { text: "Enterprises", link: "" },
+      { text: "Healthcare", link: "" },
+      { text: "EdTech", link: "" },
+      { text: "FinTech", link: "" },
     ],
     Resources: [
-      { text: "Case Studies", link: "/resources/case-studies" },
-      { text: "Success Stories", link: "/resources/success-stories" },
-      { text: "Blog", link: "/resources/blog" },
-      { text: "Guides & Playbooks", link: "/resources/guides" },
-      { text: "Webinars", link: "/resources/webinars" },
+      { text: "Success Stories", link: "" },
+      { text: "Blog", link: "" },
+      { text: "Webinars", link: "/s/webinars" },
+      { text: "Security Tips", link: "/resources/security-tips" },
+      { text: "Store", link: "/s/store" },
     ],
     Company: [
-      { text: "About Hirebie", link: "/company/about" },
-      { text: "Our Mission", link: "/company/mission" },
-      { text: "Team & Culture", link: "/company/team" },
-      { text: "Careers", link: "/company/careers" },
-      { text: "Contact Us", link: "/company/contact" },
-      { text: "Investor Relations", link: "/company/investors" },
+      { text: "Our Story", link: "/s/our-story" },
+      { text: "Team & Culture", link: "/s/team" },
+      { text: "Careers", link: "" },
+      { text: "Press & Media", link: "/pages/press-media" },
+      { text: "Contact Us", link: "/s/contact" },
     ],
     Support: [
-      { text: "Help Center", link: "/support/help-center" },
-      { text: "Client Portal", link: "/support/client-portal" },
-      { text: "FAQs", link: "/support/faqs" },
-      { text: "Report an Issue", link: "/support/report-issue" },
+      { text: "Help Center", link: "/s/help-center" },
+      { text: "Client Portal", link: "" },
+      { text: "FAQs", link: "/s/faqs" },
+      { text: "Report an Issue", link: "/s/bug-report" },
+      { text: "Testimonials", link: "/s/testimonials" },
     ],
     Policies: [
-      { text: "Terms & Conditions", link: "/legal/terms" },
-      { text: "Privacy Policy", link: "/legal/privacy" },
-      { text: "Security Policy", link: "/legal/security" },
-      { text: "Cookies Policy", link: "/legal/cookies" },
+      { text: "Terms & Conditions", link: "/p/terms" },
+      { text: "Privacy Policy", link: "/p/privacy" },
+      { text: "Security Policy", link: "" },
+      { text: "Cookies Policy", link: "/p/cookies" },
     ],
     Community: [
-      { text: "Partner Program", link: "/community/partners" },
-      { text: "Events", link: "/community/events" },
-      { text: "Hirebie Forum", link: "/community/forum" },
-      { text: "Startup Accelerator", link: "/community/accelerator" },
+      { text: "Announcement", link: "/s/announcement" },
+      { text: "Events", link: "/s/events" },
+      { text: "Hirebie Forum", link: "" },
+      { text: "Startup Accelerator", link: "" },
     ],
     Social: [
-      { text: "LinkedIn", link: "https://www.linkedin.com/company/hirebie-india" },
-      { text: "Instagram", link: "https://www.instagram.com/Hirebie_in/" },
+      { text: "LinkedIn", link: "https://www.linkedin.com/company/hirebie" },
+      { text: "Instagram", link: "https://www.instagram.com/hirebie_team" },
       { text: "Facebook", link: "https://www.facebook.com/Hirebie.team" },
-      { text: "X (Twitter)", link: "https://x.com/Hirebie_20" },
-      { text: "WhatsApp", link: "https://api.whatsapp.com/send/?phone=919660050909" },
+      { text: "X (Twitter)", link: "https://x.com/hirebie_it" },
+      { text: "WhatsApp", link: "https://api.whatsapp.com/send/?phone=918000344468" },
     ],
   };
   
@@ -195,7 +195,7 @@ function Footer() {
           {Object.entries(menuItems).map(([section, items]) => (
             <ul key={section} className="">
               <li>
-                <h6 className="text-base font-bold text-black dark:text-white select-none">
+                <h6 className="text-base font-semibold text-black dark:text-white select-none">
                   {section}
                 </h6>
               </li>
@@ -207,12 +207,12 @@ function Footer() {
                   {link ? (
                     <a
                       href={link}
-                      className="text-sm font-medium text-neutral-500"
+                      className="text-sm font-medium font-sans2 text-neutral-500"
                     >
                       {text}
                     </a>
                   ) : (
-                    <span className="text-sm font-medium text-neutral-500">
+                    <span className="text-sm font-medium font-sans2 text-neutral-500">
                       {text}
                     </span>
                   )}
@@ -318,7 +318,7 @@ function Footer() {
 
 
         <div className="w-full border-t border-neutral-800 py-10">
-          <p className="mt-2 font-medium text-sm text-neutral-500">
+          <p className="mt-2 font-normal font-sans2 text-sm text-neutral-500">
             © 2025 <Link href={"/"}>Hirebie</Link> Pvt. Ltd.{" "}
             <Link href={"/"}>Hirebie</Link> and the{" "}
             <Link href={"/"}>Hirebie</Link> logo are registered trademarks of
@@ -333,7 +333,7 @@ function Footer() {
             </Link>{" "}
             for more details.
           </p>
-          <p className="mt-5 font-medium text-sm text-neutral-500">
+          <p className="mt-5 font-normal font-sans2 text-sm text-neutral-500">
             Read our{" "}
             <Link href={"/communityGuidelines"} className="text-[#FF4A02]">
               Community Guidelines

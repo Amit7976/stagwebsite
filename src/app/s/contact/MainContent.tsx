@@ -65,7 +65,7 @@ function MainContent() {
                 <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">
                   Explore all our social media platforms
                 </p>
-                <p className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200">
+                <p className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium font-sans2 font-sans2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200">
                   Explore Now
                   <FaArrowRightLong className="flex-shrink-0 size-4 transition ease-in-out group-hover:translate-x-1" />
                 </p>
@@ -81,7 +81,7 @@ function MainContent() {
                 <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">
                   Search our FAQ for answers to anything you might ask.
                 </p>
-                <p className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200">
+                <p className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium font-sans2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200">
                   Visit FAQ
                   <FaArrowRightLong className="flex-shrink-0 size-4 transition ease-in-out group-hover:translate-x-1" />
                 </p>
@@ -97,7 +97,7 @@ function MainContent() {
                 <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">
                   If you wish to write us an email instead please use
                 </p>
-                <p className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200">
+                <p className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium font-sans2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200">
                   contact@hirebie.com
                 </p>
               </Link>
@@ -121,10 +121,10 @@ function MainContent() {
             </div>
           </div>
         </div>
-        <div className="col-span-3 bg-gray-50 dark:bg-neutral-900 rounded-3xl my-5 py-6 p-4 md:p-16">
+        <div className="col-span-3 bg-gray-100 dark:bg-neutral-900 rounded-3xl my-5 py-6 p-4 md:p-16">
           <div className="mb-10 space-y-3">
             <h2 className="text-4xl font-white font-semibold">
-              Want Service? We have skilled Professionals. Let's get in touch
+              Want Service? <span className="text-orange-600">We have</span> skilled <span className="text-orange-600">Professionals</span>. Let's get in <span className="text-orange-600">touch</span>
             </h2>
             <p className="text-lg font-medium text-gray-400">
               Get in touch with our team for any assistance or information you

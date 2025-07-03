@@ -1,16 +1,12 @@
-import Footer from "@/components/MainUi/Footer/Footer";
-import Header from "@/components/MainUi/Header/Header";
-import { Separator } from "@/components/ui/separator";
-import React from "react";
+import Footer from "@/components/core/Footer/Footer";
 import MainContent from "./MainContent";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import style from "./style.module.css";
+import Header from "@/components/core/Header/Header";
 
 function page() {
   return (
     <>
-      <div className={`h-screen w-full bg-gray-100 ${style.scroll}`}>
-        {/* <Header position="sticky" /> */}
+      <div>
+        <Header />
         <MainContent />
         <Footer />
       </div>

@@ -135,15 +135,16 @@ function Footer() {
     Resources: [
       { text: "Success Stories", link: "" },
       { text: "Blog", link: "" },
+      { text: "Articles", link: "/s/articles" },
       { text: "Webinars", link: "/s/webinars" },
-      { text: "Security Tips", link: "/resources/security-tips" },
+      { text: "Security Tips", link: "/s/security-tips" },
       { text: "Store", link: "/s/store" },
     ],
     Company: [
       { text: "Our Story", link: "/s/our-story" },
       { text: "Team & Culture", link: "/s/team" },
       { text: "Careers", link: "" },
-      { text: "Press & Media", link: "/pages/press-media" },
+      { text: "Press & Media", link: "/s/press-media" },
       { text: "Contact Us", link: "/s/contact" },
     ],
     Support: [
@@ -324,31 +325,31 @@ function Footer() {
             <Link href={"/"}>Hirebie</Link> logo are registered trademarks of
             the company. All services are currently available only within
             India. For any inquiries or support, please contact us through our{" "}
-            <Link href={"/contact"} className="text-[#FF4A02]">
+            <Link href={"/s/contact"} className="text-[#FF4A02]">
               Contact Page
             </Link>
             . Please see our{" "}
-            <Link href={"/terms"} className="text-[#FF4A02]">
+            <Link href={"/p/terms"} className="text-[#FF4A02]">
               Terms of Service
             </Link>{" "}
             for more details.
           </p>
           <p className="mt-5 font-normal font-sans2 text-sm text-neutral-500">
             Read our{" "}
-            <Link href={"/communityGuidelines"} className="text-[#FF4A02]">
-              Community Guidelines
+            <Link href={"/p/cookies"} className="text-[#FF4A02]">
+              Cookies Policy
             </Link>{" "}
             and{" "}
-            <Link href={"/privacy"} className="text-[#FF4A02]">
+            <Link href={"/p/privacy"} className="text-[#FF4A02]">
               Privacy Policy
             </Link>{" "}
             to understand how we operate and manage your information. For
             detailed information on how we protect your data, visit our{" "}
-            <Link href={"/privacy"} className="text-[#FF4A02]">
+            <Link href={"/p/privacy"} className="text-[#FF4A02]">
               Privacy Policy
             </Link>
             . By using our services, you agree to our{" "}
-            <Link href={"/terms"} className="text-[#FF4A02]">
+            <Link href={"/p/terms"} className="text-[#FF4A02]">
               Terms of Service
             </Link>{" "}
             . Thank you for choosing Hirebie.

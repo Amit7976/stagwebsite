@@ -1,6 +1,4 @@
 import React from 'react'
-import FeaturedStories from './FeaturedStories'
-
 function MainContent() {
   return (
       <>
@@ -11,7 +9,7 @@ function MainContent() {
                   <p className='text-xl font-medium text-gray-500 w-full max-w-5xl text-center mx-auto'>Stay updated with the newest information about JobBoost through our press releases and media highlights, offering you a comprehensive view of our latest news and advancements.</p>
               </section>
 
-              <FeaturedStories />
+              {/* <FeaturedStories /> */}
               
                <section className="my-40">
                   <h3 className="font-semibold text-4xl text-center w-full">Recent News</h3>

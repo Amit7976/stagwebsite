@@ -23,7 +23,7 @@ function MainContent() {
         <header className="space-y-10 ">
           <Link href={'/'}>
               <Image
-            src={"/images/logo/cut_logo_long.png"}
+            src={"/images/logo/logo.svg"}
             alt="Jobboost Logo"
             width={800}
             height={800}
@@ -31,7 +31,7 @@ function MainContent() {
           />
           </Link>
           <h2 className="text-[9rem] leading-[8rem] font-bold text-gray-400">
-            <span className="text-5xl text-black">Privacy</span>
+            <span className="text-5xl text-black dark:text-white">Privacy</span>
             <br />
             Policy
           </h2>

@@ -27,7 +27,7 @@ function MainContent() {
         <header className="space-y-10">
           <Link href={'/'}>
               <Image
-            src={"/images/logo/cut_logo_long.png"}
+            src={"/images/logo/logo.svg"}
             alt="Jobboost Logo"
             width={800}
             height={800}

@@ -73,7 +73,7 @@ export default function WorkRolesSection() {
 
     return (
         <section className="">
-            <div className="px-30">
+            <div className="px-10">
                 <div className="grid lg:grid-cols-2 border-2 border-gray-200 dark:border-neutral-800 divide-gray-200 dark:divide-neutral-800 rounded-xl divide-x-2">
                     {workRoles.map((role, i) => (
                         <div key={i} className="p-6 md:p-12 md:pb-5 flex flex-col gap-6">

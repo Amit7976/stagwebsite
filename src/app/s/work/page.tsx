@@ -16,25 +16,27 @@ import HirebieHowWeWork from './HirebieHowWeWork'
 import WorkRolesSection from './WorkRolesSection'
 import ProcessSteps from '@/components/core/Home/ProcessSteps'
 import WorkLinks from './WorkLinks'
+import Projects from './Projects'
 
 function page() {
     return (
         <div>
             <Header />
-            {/* <SampleProducts />
-            <ServicesMarquee /> */}
+            <SampleProducts />
+            <ServicesMarquee />
             <div className='w-full overflow-hidden'>
-                {/* <div className='mt-40 mb-44 scale-200'><Showcase /></div> */}
+                <div className='mt-40 mb-44 scale-200'><Showcase /></div>
             </div>
-            {/* <div className='my-40'><WebsiteSolutions /></div> */}
-            {/* <div className='my-40'><HirebieHowWeWork /></div> */}
-            {/* <div className='my-40'><MainContent /></div> */}
+            <div className='my-40'><WebsiteSolutions /></div>
+            <div className='my-40'><HirebieHowWeWork /></div>
+            <div className='my-40'><MainContent /></div>
+            <div className='my-40'><Projects /></div>
             <div className='my-40'><WorkLinks /></div>
-            {/* <div className='my-40'><WorkRolesSection /></div> */}
-            {/* <div className='my-40' id='processSteps'><ProcessSteps /></div> */}
-            {/* <div className="my-40"><WhyChoose /></div> */}
-            {/* <div className="mt-40 mb-20 md:my-40"><BlogSection /></div> */}
-            {/* <div className="my-20 md:my-40"><FAQ /></div> */}
+            <div className='my-40'><WorkRolesSection /></div>
+            <div className='my-40' id='processSteps'><ProcessSteps /></div>
+            <div className="my-40"><WhyChoose /></div>
+            <div className="mt-40 mb-20 md:my-40"><BlogSection /></div>
+            <div className="my-20 md:my-40"><FAQ /></div>
             <Footer />
         </div>
     )

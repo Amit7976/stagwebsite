@@ -34,9 +34,9 @@ function Hamburger() {
 
       <div className={`${open ? 'fixed' : 'hidden'} top-0 left-0 bg-white dark:bg-black h-screen w-full text-gray-600 dark:text-gray-100 text-balance font-medium text-4xl p-2 px-5 flex flex-col justify-evenly items-center uppercase`}>
         <Link href={'/'}>Home</Link>
-        <Link href={'#'}>Our Services</Link>
+        <Link href={'/s/services'}>Our Services</Link>
         <Link href={'#'}>Pricing</Link>
-        <Link href={'#'}>Our Work</Link>
+        <Link href={'/s/work'}>Our Work</Link>
         <Link href={'#'}>Blogs</Link>
         <Link className='py-1' href={'/s/our-story'}>About Us</Link>
         <div className='scale-200'>

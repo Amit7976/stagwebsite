@@ -15,9 +15,9 @@ function Header() {
                 <div className="hidden lg:flex items-center justify-end gap-2">
                     <div className='rounded-full text-gray-600 dark:text-gray-100 text-balance font-medium text-sm p-2 px-5 flex items-center bg-black/3 dark:bg-white/3 uppercase'>
                         <Link className='block py-1 pr-10' href={'/'}>Home</Link>
-                        <Link className='block py-1 pr-10' href={'#'}>Our Services</Link>
+                        <Link className='block py-1 pr-10' href={'/s/services'}>Our Services</Link>
                         <Link className='block py-1 pr-10' href={'#'}>Pricing</Link>
-                        <Link className='block py-1 pr-10' href={'#'}>Our Work</Link>
+                        <Link className='block py-1 pr-10' href={'/s/work'}>Our Work</Link>
                         <Link className='block py-1 pr-10' href={'#'}>Blogs</Link>
                         <Link className='block py-1' href={'/s/our-story'}>About Us</Link>
                     </div>

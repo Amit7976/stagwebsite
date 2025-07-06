@@ -1,5 +1,5 @@
 // components/WorkRolesSection.jsx
-import { Workflow, Cable, Atom, Repeat, Wrench, ShieldCheck, ArrowRight, Handshake, Users, BarChart3, MessageCircle, PanelsLeftRight, CalendarCheck } from "lucide-react";
+import { ArrowRight, Atom, BarChart3, Cable, CalendarCheck, Handshake, MessageCircle, PanelsLeftRight, Repeat, ShieldCheck, Users, Workflow, Wrench } from "lucide-react";
 
 export default function WorkRolesSection() {
     const workRoles = [
@@ -74,6 +74,10 @@ export default function WorkRolesSection() {
     return (
         <section className="">
             <div className="px-10">
+                <div className="mb-12 text-center gap-10 px-5">
+                    <h2 className="text-3xl md:text-6xl font-medium">Tech & <span className="text-orange-600 font-semibold">Support</span></h2>
+                    <p className="mt-4 text-muted-foreground text-xl">From agile development to continuous updates and dedicated support</p>
+                </div>
                 <div className="grid lg:grid-cols-2 border-2 border-gray-200 dark:border-neutral-800 divide-gray-200 dark:divide-neutral-800 rounded-xl divide-x-2">
                     {workRoles.map((role, i) => (
                         <div key={i} className="p-6 md:p-12 md:pb-5 flex flex-col gap-6">

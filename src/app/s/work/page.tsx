@@ -1,22 +1,18 @@
-import React from 'react'
-import MainContent from './MainContent'
-import Header from '@/components/core/Header/Header'
 import Footer from '@/components/core/Footer/Footer'
+import Header from '@/components/core/Header/Header'
+import BlogSection from '@/components/core/Home/BlogSection'
 import { FAQ } from '@/components/core/Home/FAQ'
-import Showcase from '@/components/core/Home/Showcase'
+import ProcessSteps from '@/components/core/Home/ProcessSteps'
 import SampleProducts from '@/components/core/Home/SampleProducts'
-import Services from '@/components/core/Home/Services'
-import SectionOverview from '@/components/core/Home/OverviewSection'
 import ServicesMarquee from '@/components/core/Home/ServicesMarquee'
+import Showcase from '@/components/core/Home/Showcase'
 import WebsiteSolutions from '@/components/core/Home/WebsiteSolutions'
 import WhyChoose from '@/components/core/Home/WhyChoose'
-import BlogSection from '@/components/core/Home/BlogSection'
-import HirebieWorkSection from '../../../components/core/Services/Tactics'
-import HirebieHowWeWork from './HirebieHowWeWork'
-import WorkRolesSection from './WorkRolesSection'
-import ProcessSteps from '@/components/core/Home/ProcessSteps'
-import WorkLinks from './WorkLinks'
-import Projects from './Projects'
+import HirebieHowWeWork from '../../../components/core/Work/HirebieHowWeWork'
+import Projects from '../../../components/core/Work/Projects'
+import Section1 from '../../../components/core/Work/Section1'
+import WorkLinks from '../../../components/core/Work/WorkLinks'
+import WorkRolesSection from '../../../components/core/Work/WorkRolesSection'
 
 function page() {
     return (
@@ -29,7 +25,7 @@ function page() {
             </div>
             <div className='my-40'><WebsiteSolutions /></div>
             <div className='my-40'><HirebieHowWeWork /></div>
-            <div className='my-40'><MainContent /></div>
+            <div className='my-40'><Section1 /></div>
             <div className='my-40'><Projects /></div>
             <div className='my-40'><WorkLinks /></div>
             <div className='my-40'><WorkRolesSection /></div>

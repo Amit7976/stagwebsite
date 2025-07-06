@@ -1,13 +1,19 @@
+import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import { FaArrowRight } from 'react-icons/fa6'
 
 export default function Projects() {
     return (
         <>
-            <section className="">
-
-                <div className="relative z-10 px-10 mt-8 grid grid-cols-1 gap-6 md:grid-cols-5">
+            <section className="px-10">
+                <div className="text-left mb-14">
+                    <h2 className="mb-4 text-3xl font-semibold lg:text-6xl">
+                        Top <span className="text-orange-600">Details</span>
+                    </h2>
+                    <Button variant={'ghost'} className="rounded-full bg-orange-600 p-1 h-auto pl-8 text-base gap-2 text-white">Get A Quote <span><FaArrowRight className="size-10 bg-white rounded-full text-orange-600 p-2 -rotate-45" /></span> </Button>
+                </div>
+                <div className="relative z-10 mt-8 grid grid-cols-1 gap-6 md:grid-cols-5">
 
                     {/* === Geo Radius News Application === */}
                     <div className="bg-gray-100 dark:bg-neutral-900 border-gray-200 dark:border-neutral-800 text-card-foreground rounded-xl border-2 col-span-1 shadow-xl flex flex-col pl-6 py-6 overflow-hidden md:col-span-3 md:flex-row gap-6 md:gap-12">

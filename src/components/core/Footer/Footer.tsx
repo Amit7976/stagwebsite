@@ -171,7 +171,7 @@ function Footer() {
       { text: "Instagram", link: "https://www.instagram.com/hirebie_team" },
       { text: "Facebook", link: "https://www.facebook.com/Hirebie.team" },
       { text: "X (Twitter)", link: "https://x.com/hirebie_it" },
-      { text: "WhatsApp", link: "https://api.whatsapp.com/send/?phone=918000344468" },
+      { text: "WhatsApp", link: "https://api.whatsapp.com/send/?phone=919099006909" },
     ],
   };
   

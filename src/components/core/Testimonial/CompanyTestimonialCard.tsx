@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaStar } from "react-icons/fa6";
 
 interface Testimonial {
@@ -32,7 +33,9 @@ function CompanyTestimonialCard({ stars, text, imgSrc, name }: Testimonial) {
           </div>
 
           <div className="flex items-center mt-5 w-40 h-14 overflow-hidden rounded-xl object-cover p-2">
-            <img
+            <Image
+              width={200}
+              height={200}
               className="flex-shrink-0 w-full h-auto"
               src={imgSrc}
               alt={name}

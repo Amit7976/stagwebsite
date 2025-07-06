@@ -1,6 +1,6 @@
-import { Button } from '@/components/ui/button'
-import Link from 'next/link'
-import React from 'react'
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { FaArrowRight } from 'react-icons/fa6';
 
 function WorkLinks() {
     const works = [
@@ -59,7 +59,16 @@ function WorkLinks() {
     return (
         <section className="">
             <div className="px-10">
-                <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-2">
+                <div className="text-left mb-14">
+                    <h2 className="mb-2 text-3xl font-semibold lg:text-6xl">
+                        Our <span className="text-orange-600">Work</span>
+                    </h2>
+                    <p className="mb-6 text-xl font-medium lg:text-2xl text-gray-400">
+                        Some of our quality work samples.
+                    </p>
+                    <Button variant={'ghost'} className="rounded-full bg-orange-600 p-1 h-auto pl-8 text-base gap-2 text-white">Get A Quote <span><FaArrowRight className="size-10 bg-white rounded-full text-orange-600 p-2 -rotate-45" /></span> </Button>
+                </div>
+                <div className="grid gap-5 md:grid-cols-2">
                     {works.map((work, i) => (
                         <Link
                             key={i}

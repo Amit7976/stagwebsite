@@ -11,27 +11,27 @@ export default function WorkRolesSection() {
             ],
             iconBlocks: [
                 {
-                    icon: <Workflow className="w-8 h-8 shrink-0 text-primary" />,
+                    icon: <Workflow className="w-5 h-5 md:w-8 md:h-8 shrink-0 text-primary" />,
                     title: "Agile & Collaborative",
                 },
                 {
-                    icon: <Cable className="w-8 h-8 shrink-0 text-primary" />,
+                    icon: <Cable className="w-5 h-5 md:w-8 md:h-8 shrink-0 text-primary" />,
                     title: "Integrated with Your Workflow",
                 },
                 {
-                    icon: <Atom className="w-8 h-8 shrink-0 text-primary" />,
+                    icon: <Atom className="w-5 h-5 md:w-8 md:h-8 shrink-0 text-primary" />,
                     title: "Quality at Every Stage",
                 },
                 {
-                    icon: <MessageCircle className="w-8 h-8 shrink-0 text-primary" />,
+                    icon: <MessageCircle className="w-5 h-5 md:w-8 md:h-8 shrink-0 text-primary" />,
                     title: "Transparent Communication",
                 },
                 {
-                    icon: <PanelsLeftRight className="w-8 h-8 shrink-0 text-primary" />,
+                    icon: <PanelsLeftRight className="w-5 h-5 md:w-8 md:h-8 shrink-0 text-primary" />,
                     title: "Scalable Architecture Planning",
                 },
                 {
-                    icon: <CalendarCheck className="w-8 h-8 shrink-0 text-primary" />,
+                    icon: <CalendarCheck className="w-5 h-5 md:w-8 md:h-8 shrink-0 text-primary" />,
                     title: "On-Time Delivery Guarantees",
                 },
             ],
@@ -44,27 +44,27 @@ export default function WorkRolesSection() {
             ],
             iconBlocks: [
                 {
-                    icon: <Repeat className="w-8 h-8 shrink-0 text-primary" />,
+                    icon: <Repeat className="w-5 h-5 md:w-8 md:h-8 shrink-0 text-primary" />,
                     title: "Proactive Updates",
                 },
                 {
-                    icon: <Wrench className="w-8 h-8 shrink-0 text-primary" />,
+                    icon: <Wrench className="w-5 h-5 md:w-8 md:h-8 shrink-0 text-primary" />,
                     title: "Ongoing Maintenance",
                 },
                 {
-                    icon: <ShieldCheck className="w-8 h-8 shrink-0 text-primary" />,
+                    icon: <ShieldCheck className="w-5 h-5 md:w-8 md:h-8 shrink-0 text-primary" />,
                     title: "Security & Compliance",
                 },
                 {
-                    icon: <Handshake className="w-8 h-8 shrink-0 text-primary" />,
+                    icon: <Handshake className="w-5 h-5 md:w-8 md:h-8 shrink-0 text-primary" />,
                     title: "Long-Term Partnership",
                 },
                 {
-                    icon: <Users className="w-8 h-8 shrink-0 text-primary" />,
+                    icon: <Users className="w-5 h-5 md:w-8 md:h-8 shrink-0 text-primary" />,
                     title: "Dedicated Support Team",
                 },
                 {
-                    icon: <BarChart3 className="w-8 h-8 shrink-0 text-primary" />,
+                    icon: <BarChart3 className="w-5 h-5 md:w-8 md:h-8 shrink-0 text-primary" />,
                     title: "Monthly Performance Reviews",
                 },
             ],
@@ -73,20 +73,20 @@ export default function WorkRolesSection() {
 
     return (
         <section className="">
-            <div className="px-10">
-                <div className="mb-12 text-center gap-10 px-5">
+            <div className="px-4 md:px-10">
+                <div className="mb-12 text-center gap-10 md:px-5">
                     <h2 className="text-3xl md:text-6xl font-medium">Tech & <span className="text-orange-600 font-semibold">Support</span></h2>
                     <p className="mt-4 text-muted-foreground text-xl">From agile development to continuous updates and dedicated support</p>
                 </div>
                 <div className="grid lg:grid-cols-2 border-2 border-gray-200 dark:border-neutral-800 divide-gray-200 dark:divide-neutral-800 rounded-xl divide-x-2">
                     {workRoles.map((role, i) => (
                         <div key={i} className="p-6 md:p-12 md:pb-5 flex flex-col gap-6">
-                            <h2 className="text-3xl font-semibold md:text-4xl">{role.title}</h2>
-                            <p className="text-lg text-muted-foreground">{role.desc}</p>
+                            <h2 className="text-2xl font-semibold md:text-4xl">{role.title}</h2>
+                            <p className="text-base md:text-lg text-muted-foreground">{role.desc}</p>
 
                             <div className="flex flex-col gap-4">
                                 {role.links.map((link, i) => (
-                                    <a key={i} href={link.href} className="flex items-center gap-2 text-lg font-medium">
+                                    <a key={i} href={link.href} className="flex items-center gap-2 text-base md:text-lg font-medium">
                                         {link.text} <ArrowRight className="w-4 h-4" />
                                     </a>
                                 ))}

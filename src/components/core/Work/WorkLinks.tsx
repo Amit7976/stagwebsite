@@ -58,7 +58,7 @@ function WorkLinks() {
 
     return (
         <section className="">
-            <div className="px-10">
+            <div className="px-4 md:px-10">
                 <div className="text-left mb-14">
                     <h2 className="mb-2 text-3xl font-semibold lg:text-6xl">
                         Our <span className="text-orange-600">Work</span>
@@ -75,7 +75,7 @@ function WorkLinks() {
                             href={work.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="before:content-[] relative min-h-auto w-full overflow-hidden rounded-3xl bg-cover bg-top bg-no-repeat p-5 transition-all duration-500 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:bg-black/10 before:transition-all before:duration-300 hover:before:bg-black/40 h-96 border-2 border-gray-200 hover:border-black dark:border-neutral-800 dark:hover:border-white"
+                            className="before:content-[] relative min-h-auto w-full overflow-hidden rounded-xl md:rounded-3xl bg-cover bg-top bg-no-repeat p-5 transition-all duration-500 before:absolute before:top-0 before:left-0 before:z-10 before:block before:size-full before:bg-black/10 before:transition-all before:duration-300 hover:before:bg-black/40 h-60 md:h-96 border-2 border-gray-200 hover:border-black dark:border-neutral-800 dark:hover:border-white"
                             style={{ backgroundImage: `url(${work.image})` }}
                         >
                             <div className="relative z-20 flex size-full flex-col justify-end">

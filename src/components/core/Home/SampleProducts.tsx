@@ -71,14 +71,14 @@ export default function SampleProducts() {
 
     return (
         <>
-            <section ref={containerRef} className="relative">
-                <div className="px-10">
-                    <div className="grid grid-cols-1 items-center gap-2 md:gap-4 lg:grid-cols-2">
+            <section ref={containerRef} className="relative overflow-hidden">
+                <div className="px-4 md:px-10">
+                    <div className="grid grid-cols-1 items-center gap-2 md:gap-4 lg:grid-cols-2 pt-10">
                         {/* Text Content */}
                         <div className="text-block flex w-full max-w-[31.25rem] flex-col gap-9 lg:max-w-[37.5rem] lg:py-[20%] xl:py-[26%]">
-                            <p className="font-mono text-[clamp(0.875rem,0.875vw,1rem)] text-muted-foreground">
+                            {/* <p className="font-mono text-[clamp(0.875rem,0.875vw,1rem)] text-muted-foreground">
                                 Sample Products
-                            </p>
+                            </p> */}
                             <h1 className="font-bebas_neue text-[clamp(3.5rem,calc(6.5vw+2.3rem),9.5rem)] leading-[0.85] tracking-[-0.03em] text-foreground">
                                 See It<span className="text-orange-600">.</span>
                                 <br />

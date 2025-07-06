@@ -45,7 +45,7 @@ const slides = [
 
 export default function CarouselSection() {
     return (
-        <section className="p-12 w-full overflow-hidden">
+        <section className="p-0 md:p-12 w-full overflow-hidden">
             <div className="hover:scale-110 duration-500">
                 <Swiper
                     modules={[Navigation, Autoplay]}
@@ -63,14 +63,14 @@ export default function CarouselSection() {
                 >
                     {slides.map((slide, index) => (
                         <SwiperSlide key={index}>
-                            <div className="relative flex h-[700px] flex-col items-end justify-between pb-10 px-20 rounded-xl overflow-hidden bg-muted">
+                            <div className="relative flex h-96 lg:h-[700px] flex-col items-end justify-between pb-10 px-10 md:px-20 lg:rounded-xl overflow-hidden bg-muted">
                                 <Image
                                     src={slide.image}
                                     alt={slide.title}
                                     fill
                                     className="absolute top-0 left-0 h-full w-full object-cover z-0"
                                 />
-                                <div className="relative z-10 mt-40 text-right text-white">
+                                <div className="relative z-10 mt-20 md:mt-40 text-right text-white">
                                     <h1 className="max-w-lg text-4xl md:text-6xl font-medium tracking-tight">
                                         {slide.title}
                                     </h1>

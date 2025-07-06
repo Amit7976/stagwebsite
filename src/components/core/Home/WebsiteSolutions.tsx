@@ -84,7 +84,7 @@ const services = [
 export default function WebsiteSolutions() {
     return (
         <section>
-            <div className="px-5 md:px-10">
+            <div className="px-4 md:px-10">
                 {/* Section Intro */}
                 <div className="mx-auto flex flex-col justify-between gap-3 md:flex-row md:items-end md:gap-12">
                     <div className="flex basis-1/2 flex-col gap-3">

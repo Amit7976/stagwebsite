@@ -21,9 +21,9 @@ function page() {
             <SampleProducts />
             <ServicesMarquee />
             <div className='w-full overflow-hidden'>
-                <div className='mt-40 mb-44 scale-200'><Showcase /></div>
+                <div className='lg:mt-40 lg:mb-44 md:scale-200'><Showcase /></div>
             </div>
-            <div className='my-40'><WebsiteSolutions /></div>
+            <div className='mt-20 mb-40 lg:my-40'><WebsiteSolutions /></div>
             <div className='my-40'><HirebieHowWeWork /></div>
             <div className='my-40'><Section1 /></div>
             <div className='my-40'><Projects /></div>

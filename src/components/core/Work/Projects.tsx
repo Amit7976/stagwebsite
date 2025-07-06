@@ -6,7 +6,7 @@ import { FaArrowRight } from 'react-icons/fa6'
 export default function Projects() {
     return (
         <>
-            <section className="px-10">
+            <section className="px-4 md:px-10">
                 <div className="text-left mb-14">
                     <h2 className="mb-4 text-3xl font-semibold lg:text-6xl">
                         Top <span className="text-orange-600">Details</span>

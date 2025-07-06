@@ -80,7 +80,7 @@ const FAQ = ({
   faqsButtonUrl = "/faqs",
 }: FAQProps) => {
   return (
-    <section className="px-10">
+    <section className="px-4 md:px-10">
       <div className="container space-y-16">
         <div className="mx-auto flex max-w-3xl flex-col text-left md:text-center">
           <h2 className="mb-3 text-3xl font-semibold md:mb-4 lg:mb-6 lg:text-6xl">

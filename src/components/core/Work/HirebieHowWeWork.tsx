@@ -2,14 +2,14 @@
 export default function HirebieHowWeWork() {
     return (
         <section className="">
-            <div className="px-10">
+            <div className="px-4 md:px-10">
                 <div className="mb-14 px-5 text-center w-full">
                     <h2 className="text-3xl md:text-6xl font-medium">Process of <span className="text-orange-600 font-bold">Growth</span></h2>
                 </div>
                 <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
                     {/* Big Featured Card */}
-                    <div className="col-span-2">
-                        <div className="group lg:col-span-2 lg:row-span-2 text-card-foreground flex flex-col gap-6 rounded-xl shadow-sm h-full items-start border-2 border-transparent bg-gray-100 dark:bg-neutral-900 p-12 duration-500 hover:border-primary lg:p-20">
+                    <div className="col-span-1 lg:col-span-2">
+                        <div className="group lg:col-span-2 lg:row-span-2 text-card-foreground flex flex-col gap-6 rounded-xl shadow-sm h-full items-start border-2 border-transparent bg-gray-100 dark:bg-neutral-900 p-5 duration-500 hover:border-primary md:p-20">
                             <div className="flex flex-col gap-6">
                                 <span className="inline-flex items-center justify-center rounded border-2 px-5 py-1 text-xs font-medium font-sans2 bg-transparent w-fit text-orange-600">
                                     Research
@@ -18,7 +18,7 @@ export default function HirebieHowWeWork() {
                                     <h3 className="text-2xl font-medium lg:text-6xl leading-tight">
                                         Deep Discovery
                                     </h3>
-                                    <p className="text-lg lg:text-xl lg:font-medium text-muted-foreground">
+                                    <p className="text-base md:text-xl lg:font-medium text-muted-foreground">
                                         Before we start building anything, we dive deep to understand your business
                                         from every angle, your goals, target audience, industry trends, and your unique challenges.
                                         This discovery phase helps us uncover real opportunities and align our strategy
@@ -45,7 +45,7 @@ export default function HirebieHowWeWork() {
                             },
                         ].map((item, idx) => (
                             <div key={idx} className="flex-1">
-                                <div className="group text-card-foreground flex flex-col gap-6 rounded-xl shadow-sm h-full items-start border-2 border-transparent bg-gray-100 dark:bg-neutral-900 p-12 duration-500 hover:border-primary">
+                                <div className="group text-card-foreground flex flex-col gap-6 rounded-xl shadow-sm h-full items-start border-2 border-transparent bg-gray-100 dark:bg-neutral-900 p-5 duration-500 hover:border-primary">
                                     <div className="flex flex-col gap-6">
                                         <span className="inline-flex items-center justify-center rounded border-2 px-5 py-1 text-xs font-medium font-sans2 bg-transparent w-fit text-orange-600">
                                             {item.badge}
@@ -78,7 +78,7 @@ export default function HirebieHowWeWork() {
 
                     ].map((item, idx) => (
                         <div key={idx}>
-                            <div className="group text-card-foreground flex flex-col gap-6 rounded-xl shadow-sm h-full items-start border-2 border-transparent bg-gray-100 dark:bg-neutral-900 p-12 duration-500 hover:border-primary">
+                            <div className="group text-card-foreground flex flex-col gap-6 rounded-xl shadow-sm h-full items-start border-2 border-transparent bg-gray-100 dark:bg-neutral-900 p-5 duration-500 hover:border-primary">
                                 <div className="flex flex-col gap-6">
                                     <span className="inline-flex items-center justify-center rounded border-2 px-5 py-1 text-xs font-medium font-sans2 bg-transparent w-fit text-orange-600">
                                         {item.badge}

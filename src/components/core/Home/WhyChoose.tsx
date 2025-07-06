@@ -54,7 +54,7 @@ export default function WhyChoose() {
 
     return (
         <section>
-            <div className="px-10">
+            <div className="px-4 md:px-10">
                 <h1 className="text-center text-4xl font-semibold lg:text-5xl">
                     Why Choose <span className="text-orange-600">Us</span>
                 </h1>

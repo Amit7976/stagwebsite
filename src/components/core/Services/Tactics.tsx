@@ -6,7 +6,7 @@ import { ImFlag } from "react-icons/im";
 export default function Tactics() {
     return (
         <section className="py-32">
-            <div className="container">
+            <div className="px-4 md:px-10">
                 <div className="relative py-20 md:py-24 lg:py-28">
                     <h2 className="mx-auto max-w-5xl text-center text-5xl font-medium sm:text-6xl lg:text-7xl xl:text-[85px]">
                         <span className="text-muted-foreground">

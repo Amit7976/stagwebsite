@@ -21,16 +21,16 @@ function page() {
             <SampleProducts />
             <ServicesMarquee />
             <div className='w-full overflow-hidden'>
-                <div className='lg:mt-40 lg:mb-44 md:scale-200'><Showcase /></div>
+                <div className='mt-12 lg:mt-40 lg:mb-44 md:scale-200'><Showcase /></div>
             </div>
-            <div className='mt-20 mb-40 lg:my-40'><WebsiteSolutions /></div>
-            <div className='my-40'><HirebieHowWeWork /></div>
-            <div className='my-40'><Section1 /></div>
-            <div className='my-40'><Projects /></div>
-            <div className='my-40'><WorkLinks /></div>
-            <div className='my-40'><WorkRolesSection /></div>
-            <div className='my-40' id='processSteps'><ProcessSteps /></div>
-            <div className="my-40"><WhyChoose /></div>
+            <div className='my-28 lg:my-40'><WebsiteSolutions /></div>
+            <div className='my-28 lg:my-40'><HirebieHowWeWork /></div>
+            <div className='my-28 lg:my-40'><Section1 /></div>
+            <div className='my-28 lg:my-40'><Projects /></div>
+            <div className='my-28 lg:my-40'><WorkLinks /></div>
+            <div className='my-28 lg:my-40'><WorkRolesSection /></div>
+            <div className='my-28 lg:my-40' id='processSteps'><ProcessSteps /></div>
+            <div className="my-28 lg:my-40"><WhyChoose /></div>
             <div className="mt-40 mb-20 md:my-40"><BlogSection /></div>
             <div className="my-20 md:my-40"><FAQ /></div>
             <Footer />

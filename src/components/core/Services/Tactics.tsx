@@ -5,9 +5,9 @@ import { ImFlag } from "react-icons/im";
 
 export default function Tactics() {
     return (
-        <section className="py-32">
+        <section>
             <div className="px-4 md:px-10">
-                <div className="relative py-20 md:py-24 lg:py-28">
+                <div className="relative py-0 md:py-24 lg:py-28">
                     <h2 className="mx-auto max-w-5xl text-center text-5xl font-medium sm:text-6xl lg:text-7xl xl:text-[85px]">
                         <span className="text-muted-foreground">
                             Real solutions for real growth.
@@ -17,7 +17,7 @@ export default function Tactics() {
                     </h2>
 
                     {/* Mobile View */}
-                    <div className="lg:hidden">
+                    <div className="lg:hidden mt-5">
                         <div className="grid translate-y-4 justify-items-center gap-4">
                             {/* IT Solutions */}
                             <Card className="bg-card text-card-foreground flex-col border flex max-w-lg transform items-center gap-4 rounded-2xl p-6 shadow-lg transition-transform hover:scale-105">

@@ -88,7 +88,7 @@ export default function WebsiteSolutions() {
                 {/* Section Intro */}
                 <div className="mx-auto flex flex-col justify-between gap-3 md:flex-row md:items-end md:gap-12">
                     <div className="flex basis-1/2 flex-col gap-3">
-                        <h2 className="text-3xl font-semibold md:text-6xl">
+                        <h2 className="text-4xl font-semibold md:text-6xl">
                             Websites We Can <br /> Build For <span className="text-orange-600">You</span>
                         </h2>
                     </div>

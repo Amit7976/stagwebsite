@@ -183,11 +183,6 @@ function Footer() {
   return (
     <footer className="mt-10 p-0 lg:p-10">
 
-
-
-
-
-
       {/* <Toaster /> */}
 
       <div className="container mx-auto px-4">

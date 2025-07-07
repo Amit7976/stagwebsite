@@ -7,7 +7,7 @@ import Hamburger from './Hamburger';
 function HomeHeader() {
     return (
         <>
-            <header className='flex items-center justify-between md:px-10 py-3 bg-transparent z-50 w-full absolute top-0'>
+            <header className='flex items-center justify-between md:px-10 py-3 px-5 bg-transparent z-50 w-full absolute top-0'>
                 <div>
                     <Image src={'/images/logo/logo.svg'} width={200} height={200} alt='Hirebie Logo' className='w-40' />
                 </div>

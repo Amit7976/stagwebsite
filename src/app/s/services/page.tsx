@@ -14,12 +14,12 @@ function page() {
         <div>
             <Header />
             <MainContent />
-            <div className='my-40'><WebsiteSolutions /></div>
-            <div className="my-40"><SectionOverview /></div>
-            <div className="my-40"><Services /></div>
-            <div className="my-40"><Tactics /></div>
-            <div className="my-40"><WhyChoose /></div>
-            <div className="mt-40 mb-20 md:my-40"><BlogSection /></div>
+            <div className='my-28 lg:my-40'><WebsiteSolutions /></div>
+            <div className="my-28 lg:my-40"><SectionOverview /></div>
+            <div className="my-28 lg:my-40"><Services /></div>
+            <div className="my-28 lg:my-40"><Tactics /></div>
+            <div className="my-28 lg:my-40"><WhyChoose /></div>
+            <div className="mt-28 mb-20 md:my-40"><BlogSection /></div>
             <div className="my-20 md:my-40"><FAQ /></div>
             <Footer />
         </div>

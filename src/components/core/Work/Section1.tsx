@@ -8,7 +8,7 @@ export default function Section1() {
         <>
             <section className="px-4 md:px-10">
                 <div className="mb-12 flex flex-col lg:flex-row items-center lg:gap-10 lg:px-5">
-                    <h2 className="text-3xl md:text-6xl font-medium">Digital Solutions That Grow <span className="text-orange-600 font-semibold">With You</span></h2>
+                    <h2 className="text-4xl md:text-6xl font-medium text-balance">Digital Solutions That Grow <span className="text-orange-600 font-semibold">With You</span></h2>
                     <p className="mt-4 text-muted-foreground text-xl">
                         From custom-built products to long-term partnerships and future-proof architectures, we ensure your business stays ready for what’s next - every step of the way.
                     </p>

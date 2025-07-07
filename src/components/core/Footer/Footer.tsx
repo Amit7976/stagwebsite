@@ -135,7 +135,6 @@ function Footer() {
     Resources: [
       { text: "Success Stories", link: "" },
       { text: "Blog", link: "" },
-      { text: "Articles", link: "/s/articles" },
       { text: "Webinars", link: "/s/webinars" },
       { text: "Security Tips", link: "/s/security-tips" },
       { text: "Store", link: "/s/store" },
@@ -143,7 +142,7 @@ function Footer() {
     Company: [
       { text: "Our Story", link: "/s/our-story" },
       { text: "Team & Culture", link: "/s/team" },
-      { text: "Careers", link: "" },
+      { text: "Careers", link: "/s/career" },
       { text: "Press & Media", link: "/s/press-media" },
       { text: "Contact Us", link: "/s/contact" },
     ],
@@ -198,17 +197,17 @@ function Footer() {
               {items.map(({ text, link }) => (
                 <li
                   key={text}
-                  className={`my-2.5  ${link ? "opacity-100" : "opacity-40"}`}
+                  className={`my-2.5  ${link ? "opacity-100" : "opacity-30"}`}
                 >
                   {link ? (
                     <a
                       href={link}
-                      className="text-sm font-medium font-sans2 text-neutral-500"
+                      className="text-sm font-medium font-sans2 text-neutral-500 dark:text-neutral-400"
                     >
                       {text}
                     </a>
                   ) : (
-                    <span className="text-sm font-medium font-sans2 text-neutral-500">
+                    <span className="text-sm font-medium font-sans2 text-black dark:text-white">
                       {text}
                     </span>
                   )}
@@ -230,12 +229,12 @@ function Footer() {
                       {link ? (
                         <Link
                           href={link}
-                          className="text-base font-medium hover:underline text-neutral-500 w-full h-full block py-2.5 pl-5"
+                          className="text-base font-medium hover:underline text-neutral-600 dark:text-neutral-300 w-full h-full block py-2.5 pl-5"
                         >
                           {text}
                         </Link>
                       ) : (
-                        <span className="text-base font-medium text-neutral-600 w-full h-full block py-2.5 pl-5">{text}</span>
+                        <span className="text-base font-medium text-black dark:text-white w-full h-full block py-2.5 pl-5">{text}</span>
                       )}
                     </div>
                   ))}

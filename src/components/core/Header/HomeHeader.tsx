@@ -8,9 +8,9 @@ function HomeHeader() {
     return (
         <>
             <header className='flex items-center justify-between md:px-10 py-3 px-5 bg-transparent z-50 w-full absolute top-0'>
-                <div>
-                    <Image src={'/images/logo/logo.svg'} width={200} height={200} alt='Hirebie Logo' className='w-40' />
-                </div>
+                <Link href={"/"}>
+                    <Image src={'/images/logo/logo.svg'} width={200} height={200} alt='Hirebie Logo' className='w-30' />
+                </Link>
                 <Hamburger />
                 <div className="hidden lg:flex items-center justify-end gap-2">
                     <div className='rounded-full text-gray-600 dark:text-gray-100 text-balance font-medium text-sm p-2 px-5 flex items-center bg-black/3 dark:bg-white/3 uppercase'>

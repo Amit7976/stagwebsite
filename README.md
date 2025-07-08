@@ -16,3 +16,4 @@ Announcement
 Events
 Webinars
 Store
+companies

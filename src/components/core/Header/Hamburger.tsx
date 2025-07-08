@@ -37,7 +37,7 @@ function Hamburger() {
         <Link href={'/s/services'}>Our Services</Link>
         <Link href={'#'}>Pricing</Link>
         <Link href={'/s/work'}>Our Work</Link>
-        <Link href={'#'}>Blogs</Link>
+        <Link href={'/s/blogs'}>Blogs</Link>
         <Link className='py-1' href={'/s/our-story'}>About Us</Link>
         <div className='scale-200'>
           <ModeToggle />

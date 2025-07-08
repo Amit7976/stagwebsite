@@ -18,7 +18,7 @@ function HomeHeader() {
                         <Link className='block py-1 pr-10' href={'/s/services'}>Our Services</Link>
                         <Link className='block py-1 pr-10' href={'#'}>Pricing</Link>
                         <Link className='block py-1 pr-10' href={'/s/work'}>Our Work</Link>
-                        <Link className='block py-1 pr-10' href={'#'}>Blogs</Link>
+                        <Link className='block py-1 pr-10' href={'/s/blogs'}>Blogs</Link>
                         <Link className='block py-1' href={'/s/our-story'}>About Us</Link>
                     </div>
                     <ModeToggle />

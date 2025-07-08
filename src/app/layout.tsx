@@ -4,7 +4,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner"
 import SmoothScrollProvider from "./SmoothScrollProvider";
-
+import { GoogleAnalytics } from '@next/third-parties/google'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -114,9 +115,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon/android-icon-192x192.png" type="image/png" sizes="192x192" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="/favicon/android-icon-192x192.png" />
         <meta property="og:updated_time" content={updatedTime} />
 
         {/* Schema.org JSON-LD */}
@@ -149,6 +148,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -160,6 +160,8 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-JX9QKCDYX0" />
+      <SpeedInsights />
     </html>
   );
 }

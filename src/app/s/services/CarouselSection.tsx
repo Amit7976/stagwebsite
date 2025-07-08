@@ -11,31 +11,31 @@ import "swiper/css/pagination";
 
 const slides = [
     {
-        image: "/images/services/web_app.jpg",
+        image: "/images/Services/web_app.jpg",
         title: "Web App Development",
         description:
             "Custom, scalable web applications built to elevate your business and delight your users.",
     },
     {
-        image: "/images/services/mobile_app.jpg",
+        image: "/images/Services/mobile_app.jpg",
         title: "Mobile App Solutions",
         description:
             "Intuitive, high-performance mobile apps for iOS and Android to keep you connected on the go.",
     },
     {
-        image: "/images/services/ui_ux.jpg",
+        image: "/images/Services/ui_ux.jpg",
         title: "UI/UX Design",
         description:
             "Pixel-perfect user interfaces and seamless user experiences that keep people coming back.",
     },
     {
-        image: "/images/services/seo.jpg",
+        image: "/images/Services/seo.jpg",
         title: "SEO & Digital Marketing",
         description:
             "Drive traffic, rank higher, and grow your audience with our result-oriented SEO strategies.",
     },
     {
-        image: "/images/services/analytics.jpg",
+        image: "/images/Services/analytics.jpg",
         title: "Data Analytics",
         description:
             "Unlock powerful insights with our analytics services to make smarter, data-driven decisions.",

@@ -1,5 +1,4 @@
 "use client"
-import { Skeleton } from '@/components/ui/skeleton';
 import axios from 'axios';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
@@ -12,25 +11,6 @@ import Link from 'next/link';
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-// PLACEHOLDER FOR LATEST BLOGS
-function LatestBlogPlaceholder() {
-    return (
-        <div className="flex items-center space-x-4 w-full overflow-hidden">
-            <Skeleton className="w-full size-20 rounded-xl flex-shrink-0" />
-            <div className="w-full">
-                <div className="space-y-2 w-full">
-                    <Skeleton className="h-3 w-full rounded-full" />
-                    <Skeleton className="h-3 w-1/2 rounded-full" />
-                </div>
-                <div className="space-y-2 w-full pt-1">
-                    <Skeleton className="h-2 w-full rounded-full" />
-                    <Skeleton className="h-2 w-2/3 rounded-full" />
-                </div>
-            </div>
-        </div>
-    );
-}
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -39,7 +19,6 @@ export default function BlogSection() {
 
     // FETCH 5 LATEST BLOGS
     const [latestBlogs, setLatestBlogs] = useState<Blog[]>([])
-    const [latestBlogsLoading, setLatestBlogsLoading] = useState(true);
 
     const fetchLatestBlogs = async () => {
         try {
@@ -49,8 +28,6 @@ export default function BlogSection() {
 
         } catch (error) {
             console.error('Error fetching blogs:', error);
-        } finally {
-            setLatestBlogsLoading(false);
         }
     }
 

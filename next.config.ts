@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
       "i.ibb.co",
       "www.shadcnblocks.com",
       "img.freepik.com",
+      "res.cloudinary.com",
     ],
   },
 };

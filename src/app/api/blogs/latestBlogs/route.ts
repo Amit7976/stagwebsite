@@ -23,7 +23,7 @@ export async function GET() {
   const latestBlogs = await BlogModel.find({ status: { $ne: "draft" } })
     .sort({ date: -1 })
     .limit(5)
-    .select("title image category shortDescription _id");
+    .select("title image category shortDescription _id created_at");
 
   return NextResponse.json({ latestBlogs });
 }

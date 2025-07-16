@@ -96,7 +96,7 @@ function RelatedBlogs({ resolvedParams }: RelatedBlogsProps) {
                                 <RelatedBlogPlaceholder key={index} />
                             ))
                         ) : (relatedBlogs.map((RelatedBlog, index) => (
-                            <div key={index} className="w-full lg:basis-1/3 lg:pl-5 lg:flex-grow">
+                            <div key={index} className="w-full lg:basis-1/3 lg:pl-5">
                                 <div
                                     data-aos="fade-up"
                                     data-aos-offset="0"

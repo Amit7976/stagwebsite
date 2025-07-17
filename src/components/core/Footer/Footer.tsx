@@ -188,7 +188,7 @@ function Footer() {
         {/* Desktop View */}
         <div className="hidden md:grid md:grid-cols-5 gap-10">
           {Object.entries(menuItems).map(([section, items]) => (
-            <ul key={section} className="">
+            <ul key={section} className="list-none">
               <li>
                 <h6 className="text-base font-semibold text-black dark:text-white select-none">
                   {section}

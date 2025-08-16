@@ -1,53 +1,43 @@
 import mongoose from "mongoose";
 
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-type ConnectionObject = {
-  isConnected?: number;
-};
+let connection = global.mongoose_main_conn;
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-const connection: ConnectionObject = {};
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 async function connect(): Promise<void> {
-
-
-  // Check if we are already connected or currently connecting
-  if (connection.isConnected === 1) {
-    console.log("Already connected to the database");
+  if (connection && connection.readyState === 1) {
     return;
   }
 
-
-  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+  // ---------------------------------------------------------------------------------------------------------
 
   try {
-    // Attempt to connect to the database
-    await mongoose.connect(process.env.MONGO_URI!, {});
-  
-    connection.isConnected = mongoose.connection.readyState;
+    const db = await mongoose.connect(process.env.MONGO_URI!, {});
 
-    mongoose.connection.on("connected", () => {
-      console.log("MongoDB connected");
+    // ---------------------------------------------------------------------------------------------------------
+
+    connection = db.connection;
+    global.mongoose_main_conn = db.connection;
+
+    // ---------------------------------------------------------------------------------------------------------
+
+    connection.on("connected", () => {
+      console.log("✅ Main DB connected");
     });
 
-    mongoose.connection.on("error", (err) => {
-      console.log("MongoDB connection error: " + err);
+    // ---------------------------------------------------------------------------------------------------------
+
+    connection.on("error", (err) => {
+      console.log("❌ Main DB connection error: " + err);
       process.exit();
     });
-
-    console.log("Database connected successfully");
   } catch (error) {
-    console.log("Something went wrong in connecting to the DB");
-    console.log(error);
-  
+    console.log("❌ Error connecting to Main DB:", error);
     process.exit(1);
   }
 }

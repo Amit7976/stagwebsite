@@ -15,6 +15,7 @@ import axios from "axios";
 function BugForm() {
 
   const [file, setFile] = useState<File | null>(null);
+  const [loading, setLoading] = useState(false);
 
 
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -48,12 +49,21 @@ function BugForm() {
 
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-  
+
   // HANDLE FILE UPLOADING
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
-      const file = e.target.files[0];
-      setFile(file);
+      const selectedFile = e.target.files[0];
+      const fileSizeInMB = selectedFile.size / (1024 * 1024);
+
+      if (fileSizeInMB > 10) {
+        alert("File size exceeds 10MB. Please upload a smaller file.");
+        e.target.value = ""; // clear the input
+        setFile(null);
+        return;
+      }
+
+      setFile(selectedFile);
     }
   };
 
@@ -92,48 +102,39 @@ function BugForm() {
 
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-  interface BugReportResponse {
-    success: boolean;
-    key: string;
-  }
-
   const onSubmitHandler = async (
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ): Promise<void> => {
     e.preventDefault();
-    console.log(data);
 
-    const formData = new FormData(); // Store all Data in formData
-    formData.append('reason', data.reason);
-    formData.append('explain', data.explain);
-    formData.append('priority', data.priority);
-    formData.append('pageUrl', data.pageUrl);
-    formData.append('addInfo', data.addInfo);
-    if (file) {
-      formData.append('file', file);
+    setLoading(true); // Start loading
+
+    try {
+      const formData = new FormData();
+      formData.append('reason', data.reason);
+      formData.append('explain', data.explain);
+      formData.append('priority', data.priority);
+      formData.append('pageUrl', data.pageUrl);
+      formData.append('addInfo', data.addInfo);
+      if (file) {
+        formData.append('file', file);
+      }
+
+      const response = await axios.post('/api/bugReport', formData);
+
+      if (response.data.success) {
+        alert('Success');
+        location.reload();
+      } else {
+        alert('Error! Please fill all details correctly and upload supported file types.');
+      }
+    } catch (error) {
+      console.error("Submission failed:", error);
+      alert("Something went wrong!");
+    } finally {
+      setLoading(false); // End loading
     }
-
-    const response = await axios.post<BugReportResponse>('/api/bugReport', formData); // Post the data
-
-    if (response.data.success) {
-      alert('Success')
-
-      location.reload();
-      setFile(null);
-
-      setData({
-        reason: "",
-        explain: "",
-        priority: "",
-        pageUrl: "",
-        addInfo: "",
-      })
-
-    } else {
-      alert('Error! Please fill all details Correctly \nSupported file type: JPEG, JPG, PNG, PDF, MP4, WebM, or Ogg file.')
-    }
-  }
+  };
 
 
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -154,7 +155,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Functionality Issue')}
                 value="Functionality Issue"
                 aria-label="Toggle Functionality Issue"
-                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
               >
                 <span>Functionality Issue</span>
               </ToggleGroupItem>
@@ -163,7 +164,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Visual/Aesthetic')}
                 value="Visual/Aesthetic"
                 aria-label="Toggle Visual/Aesthetic"
-                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
               >
                 <span>Visual/Aesthetic</span>
               </ToggleGroupItem>
@@ -172,7 +173,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Performance Issue')}
                 value="Performance Issue"
                 aria-label="Toggle Performance Issue"
-                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
               >
                 <span>Performance Issue</span>
               </ToggleGroupItem>
@@ -181,7 +182,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Security Issue')}
                 value="Security Issue"
                 aria-label="Toggle Security Issue"
-                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
               >
                 <span>Security Issue</span>
               </ToggleGroupItem>
@@ -190,7 +191,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Data/Content issue')}
                 value="Data/Content issue"
                 aria-label="Toggle Data/Content issue"
-                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
               >
                 <span>Data/Content issue</span>
               </ToggleGroupItem>
@@ -199,7 +200,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Crash/Error Issue')}
                 value="Crash/Error Issue"
                 aria-label="Toggle Crash/Error Issue"
-                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
               >
                 <span>Crash/Error Issue</span>
               </ToggleGroupItem>
@@ -208,7 +209,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Localization/Internationalization Issue')}
                 value="Localization/Internationalization Issue"
                 aria-label="Toggle Localization/Internationalization Issue"
-                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
               >
                 <span>Localization/Internationalization Issue</span>
               </ToggleGroupItem>
@@ -217,7 +218,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Usability/UX Issue')}
                 value="Usability/UX Issue"
                 aria-label="Toggle Usability/UX Issue"
-                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
               >
                 <span>Usability/UX Issue</span>
               </ToggleGroupItem>
@@ -226,7 +227,7 @@ function BugForm() {
                 onClick={() => onReasonToggleHandler('Other')}
                 value="Other"
                 aria-label="Toggle Other"
-                className="flex-shrink-0 bg-neutral-200 hover:bg-neutral-300 dark:bg-neutral-900 dark:hover:bg-neutral-800 hover:text-orange-600 border-2 bg-border-gray-400 dark:border-neutral-800 active:scale-95 duration-300 rounded-full px-10 py-4 h-auto font-medium"
+                className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
               >
                 <span>Other</span>
               </ToggleGroupItem>
@@ -265,7 +266,7 @@ function BugForm() {
                 onClick={() => onPriorityToggleHandler('Basic')}
                 value="Basic"
                 aria-label="Toggle Basic"
-                className="flex-shrink-0 bg-transparent border-2 border-[#FD500A] rounded-full px-14 py-3.5 h-auto font-medium"
+                className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
               >
                 <span>Basic</span>
               </ToggleGroupItem>
@@ -274,7 +275,7 @@ function BugForm() {
                 onClick={() => onPriorityToggleHandler('Update')}
                 value="Update"
                 aria-label="Toggle Update"
-                className="flex-shrink-0 bg-transparent border-2 border-[#FD500A] rounded-full px-14 py-3.5 h-auto font-medium"
+                className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
               >
                 <span>Update</span>
               </ToggleGroupItem>
@@ -283,7 +284,7 @@ function BugForm() {
                 onClick={() => onPriorityToggleHandler('Low Priority')}
                 value="Low Priority"
                 aria-label="Toggle Low Priority"
-                className="flex-shrink-0 bg-transparent border-2 border-[#FD500A] rounded-full px-14 py-3.5 h-auto font-medium"
+                className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
               >
                 <span>Low Priority</span>
               </ToggleGroupItem>
@@ -292,7 +293,7 @@ function BugForm() {
                 onClick={() => onPriorityToggleHandler('Medium Priority')}
                 value="Medium Priority"
                 aria-label="Toggle Medium Priority"
-                className="flex-shrink-0 bg-transparent border-2 border-[#FD500A] rounded-full px-14 py-3.5 h-auto font-medium"
+                className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
               >
                 <span>Medium Priority</span>
               </ToggleGroupItem>
@@ -301,7 +302,7 @@ function BugForm() {
                 onClick={() => onPriorityToggleHandler('High Priority')}
                 value="High Priority"
                 aria-label="Toggle High Priority"
-                className="flex-shrink-0 bg-transparent border-2 border-[#FD500A] rounded-full px-14 py-3.5 h-auto font-medium"
+                className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
               >
                 <span>High Priority</span>
               </ToggleGroupItem>
@@ -335,7 +336,7 @@ function BugForm() {
             <Input
               id="file"
               name="file"
-              type="file"
+              type="file" accept=".jpeg,.jpg,.png,.pdf,.mp4,.webm,.ogg"
               onChange={handleFileUpload}
               className="flex-shrink-0 bg-gray-200 border-gray-400 border-2 rounded-full px-10 py-4 h-auto font-medium text-red-500 cursor-pointer pl-12"
             />
@@ -368,13 +369,22 @@ function BugForm() {
           >
             Cancel
           </Button>
-          <Button
-            variant={"default"}
-            onClick={onSubmitHandler}
-            className="min-w-40 px-16 py-3 font-semibold rounded-full h-auto hover:bg-black bg-[#FD500A] duration-500 shadow-xl hover:shadow-lg"
-          >
-            Submit your Report
-          </Button>
+          {
+            loading ? (
+              <div className="flex items-center justify-center h-96 col-span-5">
+                <div className="loader text-xl font-medium">Loading...</div>
+              </div>
+            ) : (
+              <Button
+                variant={"default"}
+                onClick={onSubmitHandler}
+                className="min-w-40 px-16 py-3 font-semibold rounded-full h-auto hover:bg-black bg-[#FD500A] duration-500 shadow-xl hover:shadow-lg"
+              >
+                Submit your Report
+              </Button>
+            )
+          }
+
         </div>
       </section>
     </>

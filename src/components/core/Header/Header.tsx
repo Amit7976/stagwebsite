@@ -1,6 +1,6 @@
+import { LoaderLink } from '@/components/ui/loaderLinks';
 import { ModeToggle } from '@/components/ui/ModeToggle';
 import Image from 'next/image';
-import Link from 'next/link';
 import Hamburger from './Hamburger';
 
 
@@ -8,22 +8,22 @@ function Header() {
     return (
         <>
             <header className='flex items-center justify-between md:px-10 py-3 px-5 bg-transparent z-50 w-full shadow-lg relative dark:border-b-2 border-neutral-700 lg:border-neutral-900'>
-                <Link href={"/"}>
+                <LoaderLink href={"/"}>
                     <Image src={'/images/logo/logo.svg'} width={200} height={200} alt='Hirebie Logo' className='w-30' />
-                </Link>
+                </LoaderLink>
                 <Hamburger />
                 <div className="hidden lg:flex items-center justify-end gap-2">
                     <div className='rounded-full text-gray-600 dark:text-gray-100 text-balance font-medium text-sm p-2 px-5 flex items-center bg-black/3 dark:bg-white/3 uppercase'>
-                        <Link className='block py-1 pr-10' href={'/'}>Home</Link>
-                        <Link className='block py-1 pr-10' href={'/s/services'}>Our Services</Link>
-                        <Link className='block py-1 pr-10' href={'#'}>Pricing</Link>
-                        <Link className='block py-1 pr-10' href={'/s/work'}>Our Work</Link>
-                        <Link className='block py-1 pr-10' href={'/s/blogs'}>Blogs</Link>
-                        <Link className='block py-1' href={'/s/our-story'}>About Us</Link>
+                        <LoaderLink className='block py-1 pr-10' href={'/'}>Home</LoaderLink>
+                        <LoaderLink className='block py-1 pr-10' href={'/s/services'}>Our Services</LoaderLink>
+                        <LoaderLink className='block py-1 pr-10' href={'#'}>Pricing</LoaderLink>
+                        <LoaderLink className='block py-1 pr-10' href={'/s/work'}>Our Work</LoaderLink>
+                        <LoaderLink className='block py-1 pr-10' href={'/s/blogs'}>Blogs</LoaderLink>
+                        <LoaderLink className='block py-1' href={'/s/our-story'}>About Us</LoaderLink>
                     </div>
                     <ModeToggle />
                     <div className='rounded-full bg-orange-600 py-1.5 px-5 flex items-center shadow'>
-                        <Link className='text-xs text-white font-medium block py-1 uppercase' href={'/s/contact'}>Get A Quote</Link>
+                        <LoaderLink className='text-xs text-white font-medium block py-1 uppercase' href={'/s/contact'}>Get A Quote</LoaderLink>
                     </div>
                 </div>
             </header>

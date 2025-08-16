@@ -29,7 +29,7 @@ function MainContent() {
 
           <div className="w-full">
             <h2 className="text-4xl font-bold text-black dark:text-white sm:text-9xl text-left space-y-6 flex flex-col">
-              <span className="text-gray-500 sm:text-6xl">Hirebie Store</span>{" "}
+              <span className="text-gray-500 sm:text-6xl">Projects Store</span>{" "}
               <span>Coming Soon</span>
             </h2>
           </div>

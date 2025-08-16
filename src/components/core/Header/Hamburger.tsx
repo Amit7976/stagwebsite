@@ -1,7 +1,7 @@
 "use client";
+import { LoaderLink } from '@/components/ui/loaderLinks';
 import { ModeToggle } from '@/components/ui/ModeToggle';
-import Link from 'next/link';
-import React, { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react';
 import { CiMenuFries } from "react-icons/ci";
 import { IoCloseOutline } from "react-icons/io5";
 
@@ -33,17 +33,17 @@ function Hamburger() {
       <CiMenuFries className='size-6' onClick={() => setOpen(true)} />
 
       <div className={`${open ? 'fixed' : 'hidden'} top-0 left-0 bg-white dark:bg-black h-screen w-full text-gray-600 dark:text-gray-100 text-balance font-medium text-4xl p-2 px-5 flex flex-col justify-evenly items-center uppercase`}>
-        <Link href={'/'}>Home</Link>
-        <Link href={'/s/services'}>Our Services</Link>
-        <Link href={'#'}>Pricing</Link>
-        <Link href={'/s/work'}>Our Work</Link>
-        <Link href={'/s/blogs'}>Blogs</Link>
-        <Link className='py-1' href={'/s/our-story'}>About Us</Link>
+        <LoaderLink href={'/'}>Home</LoaderLink>
+        <LoaderLink href={'/s/services'}>Our Services</LoaderLink>
+        <LoaderLink href={'#'}>Pricing</LoaderLink>
+        <LoaderLink href={'/s/work'}>Our Work</LoaderLink>
+        <LoaderLink href={'/s/blogs'}>Blogs</LoaderLink>
+        <LoaderLink className='py-1' href={'/s/our-story'}>About Us</LoaderLink>
         <div className='scale-200'>
           <ModeToggle />
         </div>
         <div className='rounded-full bg-orange-600 py-3 mb-10 px-10 flex items-center shadow'>
-          <Link className='text-xl text-white font-medium block py-1 uppercase' href={'/s/contact'}>Get A Quote</Link>
+          <LoaderLink className='text-xl text-white font-medium block py-1 uppercase' href={'/s/contact'}>Get A Quote</LoaderLink>
         </div>
         <div className='bg-neutral-200 dark:bg-neutral-800 p-2 rounded-full absolute top-4 right-4' onClick={() => setOpen(false)}>
           <IoCloseOutline className='size-10 text-neutral-500' />

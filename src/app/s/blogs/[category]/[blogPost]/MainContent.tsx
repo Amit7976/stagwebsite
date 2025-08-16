@@ -126,7 +126,7 @@ function MainContent({ resolvedParams }: blogsProps) {
                                             {data && (<div dangerouslySetInnerHTML={{ __html: data.description }} />)}
                                         </section>
 
-                                        <div className="grid lg:flex lg:items-center gap-2 pt-5">
+                                        <div className="grid lg:flex lg:items-center flex-wrap gap-2 pt-5">
 
                                             {itemsArray && itemsArray.map((item, index) => (
                                                 <p

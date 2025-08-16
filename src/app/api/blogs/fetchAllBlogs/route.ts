@@ -1,6 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import connect from "@/dbConfig/dbConfig";
-import BlogModel from "@/models/blogModel";
+import connect3 from "@/dbConfig/dbConfig3";
+import { getBlogModel } from "@/models/blogModel";
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const conn = await connect3();
+const BlogModel = getBlogModel(conn);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -21,7 +27,7 @@ LoadDb();
 // GET BLOG DATA
 export async function GET(request: NextRequest) {
   const blogID = request.nextUrl.searchParams.get("blogPost");
-  
+
   if (blogID) {
     //-----------------------------------------------------------------------
 

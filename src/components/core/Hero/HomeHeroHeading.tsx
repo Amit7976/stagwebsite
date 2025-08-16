@@ -2,37 +2,10 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from 'next/image';
-import { useEffect } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function HomeHeroHeading() {
-    useEffect(() => {
-        gsap.utils.toArray(".hero-word").forEach((word) => {
-            const el = word as HTMLElement;
-            const isSpecial = el.classList.contains("hero-word-special");
-
-            gsap.fromTo(
-                el,
-                { y: 0 },
-                {
-                    y: isSpecial ? -20 : 0,
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: ".hero-words-wrapper",
-                        start: "top 15%",
-                        end: "bottom top",
-                        scrub: true,
-                        immediateRender: false,
-                        // markers: true,
-                    },
-
-                }
-            );
-        });
-    }, []);
-
-
     return (
         <>
             <h2 className='sr-only'>We(Hirebie) Create IT Solutions thatHelpGrow Your Business</h2>

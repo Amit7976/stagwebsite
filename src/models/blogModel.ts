@@ -1,11 +1,11 @@
-import mongoose from 'mongoose';
+import mongoose, { Connection, InferSchemaType, Model } from 'mongoose';
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 // DEFINE THE BLOG SCHEMA
-const blogSchema = new mongoose.Schema({
+const BlogSchema = new mongoose.Schema({
     title: {
         type: String,
         default: ""
@@ -52,11 +52,20 @@ const blogSchema = new mongoose.Schema({
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
 // SAVE THE MODEL
-const BlogModel = mongoose.models.blog || mongoose.model("blog", blogSchema)
-
+// const BlogModel = mongoose.models.blog || mongoose.model("blog", blogSchema)
+// export default BlogModel;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-export default BlogModel;
+// Type inference from schema
+export type BlogType = InferSchemaType<typeof BlogSchema>;
+
+// Dynamic model getter
+export const getBlogModel = (
+  conn: Connection
+): Model<BlogType> => {
+  return (
+    conn.models.blog || conn.model<BlogType>("blog", BlogSchema)
+  );
+};

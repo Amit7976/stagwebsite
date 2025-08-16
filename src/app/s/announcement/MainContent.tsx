@@ -70,7 +70,6 @@ function MainContent() {
 
 
         <section className="w-full px-0 md:px-4 py-10 sm:px-6 lg:px-8 lg:pt-32">
-
           <div className="grid lg:grid-cols-1 lg:gap-y-16 gap-10">
             {announcementLoading ? (
               <div className="flex items-center justify-center h-96">
@@ -119,7 +118,7 @@ function MainContent() {
                   </div>
                 </div>
               </div>
-
+              
             )))}
           </div>
         </section>

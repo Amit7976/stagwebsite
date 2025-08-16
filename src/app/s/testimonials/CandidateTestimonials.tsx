@@ -1,134 +1,44 @@
+"use client"
 import CompanyTestimonialCard from "@/components/core/Testimonial/CompanyTestimonialCard";
+import { TestimonialType } from "@/models/TestimonialModel";
+import { useEffect, useState } from "react";
 
 function CandidateTestimonials() {
-  const testimonials = [
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/WedwebaiLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 4,
-      text: "The service was excellent. The site looks amazing and works perfectly.",
-      imgSrc: "/images/CompaniesLogos/FrisconSolutionLogo.png",
-      name: "Jane Doe",
-      jobTitle: "Product Manager",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/WedwebaiLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/WedwebaiLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 4,
-      text: "The service was excellent. The site looks amazing and works perfectly.",
-      imgSrc: "/images/CompaniesLogos/FrisconSolutionLogo.png",
-      name: "Jane Doe",
-      jobTitle: "Product Manager",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/WedwebaiLogo.png",
-      name: "Leslie Alexander",
-    },
-  ];
-  const testimonials2 = [
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/FrisconSolutionLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/WedwebaiLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/WedwebaiLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/FrisconSolutionLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/WedwebaiLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/WedwebaiLogo.png",
-      name: "Leslie Alexander",
-    },
-  ];
-  const testimonials3 = [
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/FrisconSolutionLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/WedwebaiLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/WedwebaiLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/FrisconSolutionLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/FrisconSolutionLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/WedwebaiLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/WedwebaiLogo.png",
-      name: "Leslie Alexander",
-    },
-    {
-      stars: 5,
-      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-      imgSrc: "/images/CompaniesLogos/FrisconSolutionLogo.png",
-      name: "Leslie Alexander",
-    },
-  ];
+  const [testimonials, setTestimonials] = useState<TestimonialType[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  const fetchTestimonials = async () => {
+    try {
+      const res = await fetch("/api/testimonials");
+      const data = await res.json();
+      if (data.success) {
+        setTestimonials(data.data);
+      }
+    } catch (error) {
+      console.error("Error fetching Testimonials:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchTestimonials();
+  }, []);
+
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-96 col-span-2">
+        <div className="loader"></div>
+      </div>
+    )
+  }
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
   return (
     <>
       <section className="w-full my-10 mb-0">
@@ -146,41 +56,19 @@ function CandidateTestimonials() {
           <div className="bg-gradient-to-b from-white dark:from-neutral-950 to-transparent w-full h-20 sticky top-0"></div>
           <div className="bg-gradient-to-t from-white dark:from-neutral-950 to-transparent w-full h-20 fixed bottom-0"></div>
           <div className="w-full p-4 md:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 list-none gap-6 items-start bg-gray-50 dark:bg-neutral-950 pb-40">
-            <div className="col-span-1 h-auto space-y-6">
-              {testimonials.map((testimonial, index) => (
+            {testimonials.map((testimonial, index) => (
+              <div className="col-span-1 h-auto space-y-6">
                 <CompanyTestimonialCard
                   key={index}
-                  stars={testimonial.stars}
-                  text={testimonial.text}
-                  imgSrc={testimonial.imgSrc}
-                  name={testimonial.name}
+                  stars={testimonial.star}
+                  text={testimonial.content}
+                  imgSrc={testimonial.companyLogo}
+                  name={testimonial.authorName}
                 />
-              ))}
-            </div>
-            <div className="col-span-1 h-auto space-y-6">
-              {testimonials2.map((testimonial, index) => (
-                <CompanyTestimonialCard
-                  key={index}
-                  stars={testimonial.stars}
-                  text={testimonial.text}
-                  imgSrc={testimonial.imgSrc}
-                  name={testimonial.name}
-                />
-              ))}
-            </div>
-            <div className="col-span-1 h-auto space-y-6">
-              {testimonials3.map((testimonial, index) => (
-                <CompanyTestimonialCard
-                  key={index}
-                  stars={testimonial.stars}
-                  text={testimonial.text}
-                  imgSrc={testimonial.imgSrc}
-                  name={testimonial.name}
-                />
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
-         </div>
+        </div>
       </section>
     </>
   );

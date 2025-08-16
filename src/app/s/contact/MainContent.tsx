@@ -9,6 +9,11 @@ import { GoMail } from "react-icons/go";
 import { PiChatsDuotone } from "react-icons/pi";
 import { TfiAnnouncement } from "react-icons/tfi";
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 function MainContent() {
 
   const [allEmails, setAllEmails] = useState<ICompanyMail[]>([]);
@@ -49,7 +54,7 @@ function MainContent() {
   return (
     <>
       <section className="h-fit w-full grid grid-cols-1 lg:grid-cols-5 gap-2 p-5 md:p-10">
-        <div className="col-span-2 p-0 p-4 md:p-16 md:px-10 order-last lg:order-first">
+        <div className="col-span-2 p-4 md:p-16 md:px-10 order-last lg:order-first">
           <div className="divide-y divide-gray-200 dark:divide-neutral-800">
             <div className="flex gap-x-7 py-6">
               <FaRss className="flex-shrink-0 size-6 mt-1.5 text-gray-800 dark:text-neutral-200" />
@@ -60,7 +65,7 @@ function MainContent() {
                 <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">
                   Explore all our social media platforms
                 </p>
-                <p className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium font-sans2 font-sans2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200">
+                <p className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium font-sans2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200">
                   Explore Now
                   <FaArrowRightLong className="flex-shrink-0 size-4 transition ease-in-out group-hover:translate-x-1" />
                 </p>

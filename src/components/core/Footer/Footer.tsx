@@ -165,7 +165,7 @@ function Footer() {
       { text: "Cookies Policy", link: "/p/cookies" },
     ],
     Community: [
-      { text: "Blog", link: "/blogs" },
+      { text: "Blog", link: "/s/blogs" },
       { text: "Announcement", link: "/s/announcement" },
       { text: "Events", link: "/s/events" },
       { text: "Hirebie Forum", link: "" },

@@ -8,7 +8,7 @@ const CompanyMailModel = getCompanyMailModel(conn);
 export async function GET() {
   await connect2();
   try {
-    const emails = await CompanyMailModel.find({ isActive: true })
+    const emails = await CompanyMailModel.find({ active: true })
       .sort({
         createdAt: -1,
       })

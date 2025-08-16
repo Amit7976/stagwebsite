@@ -7,6 +7,8 @@ const TestimonialModel = getTestimonialModel(conn);
 await connect3();
 
 export async function GET() {
-  const data = await TestimonialModel.find().sort({ _id: -1 });
+  const data = await TestimonialModel.find({ isActive: true }).sort({
+    _id: -1,
+  });
   return NextResponse.json({ success: true, data: data });
 }

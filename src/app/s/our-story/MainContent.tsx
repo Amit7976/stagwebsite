@@ -178,19 +178,19 @@ function MainContent() {
 
         <div className="col-span-1 lg:col-span-2 w-full py-4 lg:py-20 space-y-12">
           <div className="space-y-3 text-center">
-            <p className="text-6xl font-semibold">250+</p>
+            <p className="text-6xl font-semibold">20+</p>
             <p className="text-xl font-normal text-neutral-500 dark:text-neutral-400">
               Successful projects delivered
             </p>
           </div>
           <div className="space-y-3 text-center">
-            <p className="text-6xl font-semibold">100+</p>
+            <p className="text-6xl font-semibold">10+</p>
             <p className="text-xl font-normal text-neutral-500 dark:text-neutral-400">
               Clients served worldwide
             </p>
           </div>
           <div className="space-y-3 text-center">
-            <p className="text-6xl font-semibold">5+</p>
+            <p className="text-6xl font-semibold">~1</p>
             <p className="text-xl font-normal text-neutral-500 dark:text-neutral-400">
               Years of empowering businesses
             </p>
@@ -202,16 +202,16 @@ function MainContent() {
       <section className="borer-2 p-10 md:pt-20">
         <Image
           src={
-            "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+            "/images/logo/logo.svg"
           }
           alt="Jobboost Team"
           width={800}
           height={800}
-          className="w-full lg:h-[600px] rounded-3xl object-cover"
+          className="w-full rounded-3xl object-contain"
         />
       </section>
 
-      <section className="my-10 lg:my-40 relative isolate px-6 py-14 md:py-24 sm:py-2 overflow-hidden lg:px-14">
+      <section className="my-10 lg:my-10 relative isolate px-6 py-14 md:py-24 sm:py-2 overflow-hidden lg:px-14">
         <div className="w-full max-w-4xl space-y-4">
           <h3 className="text-5xl font-bold text-black dark:text-white">Our Values</h3>
           <p className="text-[1.35rem] font-normal text-neutral-500 dark:text-neutral-400 leading-10">

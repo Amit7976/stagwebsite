@@ -34,27 +34,27 @@ function MainContent() {
   const popularQuestions = [
     {
       title: "What is Hirebie?",
-      link: "/pages/faqs/What is Hirebie",
+      link: "/s/faqs/What is Hirebie",
     },
     {
       title: "How does Hirebie work?",
-      link: "/pages/faqs/How does Hirebie work",
+      link: "/s/faqs/How does Hirebie work",
     },
     {
       title: "How do I get a custom quote on Hirebie?",
-      link: "/pages/faqs/How do I get a custom quote on Hirebie",
+      link: "/s/faqs/How do I get a custom quote on Hirebie",
     },
     {
       title: "What services does Hirebie provide?",
-      link: "/pages/faqs/What services does Hirebie provide",
+      link: "/s/faqs/What services does Hirebie provide",
     },
     {
       title: "How can I contact the Hirebie team?",
-      link: "/pages/faqs/How can I contact the Hirebie team",
+      link: "/s/faqs/How can I contact the Hirebie team",
     },
     {
       title: "Does Hirebie offer project revisions?",
-      link: "/pages/faqs/Does Hirebie offer project revisions",
+      link: "/s/faqs/Does Hirebie offer project revisions",
     },
   ];
   
@@ -66,27 +66,27 @@ function MainContent() {
   const popularLinks = [
     {
       title: "FAQs",
-      link: "/pages/faqs",
+      link: "/s/faqs",
       image: "/images/help_center/icons/faq.png",
     },
     {
       title: "Articles",
-      link: "/pages/articles",
+      link: "/s/articles",
       image: "/images/help_center/icons/article.png",
     },
     {
       title: "Contact US",
-      link: "/pages/contact",
+      link: "/s/contact",
       image: "/images/help_center/icons/contact.png",
     },
     {
       title: "Blogs",
-      link: "/pages/blogs",
+      link: "/s/blogs",
       image: "/images/help_center/icons/blog.png",
     },
     {
       title: "Full Guides",
-      link: "/pages/guides",
+      link: "/s/guides",
       image: "/images/help_center/icons/guide.png",
     },
   ];
@@ -98,7 +98,7 @@ function MainContent() {
   const helpLinks = [
     {
       title: "Getting Started",
-      link: "/pages/gettingStarted",
+      link: "/s/gettingStarted",
       description:
         "Begin your journey with Hirebie by learning the basics and setting up your account.",
       icon: <HiOutlineRocketLaunch className="w-1/4 h-auto p-3" />,
@@ -106,7 +106,7 @@ function MainContent() {
     },
     {
       title: "Terms of Service",
-      link: "/pages/terms",
+      link: "/s/terms",
       description:
         "Read the terms of service to understand the rules and guidelines for using Hirebie.",
       icon: <RxFileText className="w-1/4 h-auto p-3" />,
@@ -114,14 +114,14 @@ function MainContent() {
     },
     {
       title: "Privacy Policy",
-      link: "/pages/privacy",
+      link: "/s/privacy",
       description: "Review our privacy policy to learn how we protect and manage your personal information.",
       icon: <MdOutlinePolicy className="w-1/4 h-auto p-3" />,
       image: "",
     },
     {
       title: "Billing",
-      link: "/pages/billing",
+      link: "/s/billing",
       description:
         "Access your billing information, manage payment methods, and view transaction history.",
       icon: <CiMoneyBill className="w-1/4 h-auto p-3" />,
@@ -129,7 +129,7 @@ function MainContent() {
     },
     {
       title: "Troubleshooting",
-      link: "/pages/bugReport",
+      link: "/s/bugReport",
       description:
         "Bug Reporting System for Improving Your Job Search Experience at Hirebie",
       icon: <IoHammerOutline className="w-1/4 h-auto p-3" />,
@@ -137,14 +137,14 @@ function MainContent() {
     },
     {
       title: "FAQ",
-      link: "/pages/faqs",
+      link: "/s/faqs",
       description: "Explore frequently asked questions to get quick answers about using Hirebie.",
       icon: <LuMessagesSquare className="w-1/4 h-auto p-3" />,
       image: "",
     },
     {
       title: "Security",
-      link: "/pages/security",
+      link: "/s/security",
       description:
         "Learn about the measures we take to keep your account and data secure.",
       icon: <MdSecurity className="w-1/4 h-auto p-3" />,
@@ -152,56 +152,56 @@ function MainContent() {
     },
     {
       title: "Mobile App",
-      link: "/pages/mobileApp",
+      link: "/s/mobileApp",
       description: "Get started with the Hirebie mobile app and stay connected on the go.",
       icon: <MdOutlineInstallDesktop className="w-1/4 h-auto p-3" />,
       image: "",
     },
     {
       title: "Feature Updates",
-      link: "/pages/announcement",
+      link: "/s/announcement",
       description: "Stay informed about the latest features and enhancements to Hirebie.",
       icon: <CiViewList className="w-1/4 h-auto p-3" />,
       image: "",
     },
     {
       title: "Live Chat",
-      link: "/pages/liveChat",
+      link: "/s/liveChat",
       description: "Chat live with our support team for immediate assistance.",
       icon: <BsChatDots className="w-1/4 h-auto p-3" />,
       image: "",
     },
     {
       title: "Feedback",
-      link: "/pages/feedback",
+      link: "/s/feedback",
       description: "Share your thoughts and suggestions to help us improve Hirebie.",
       icon: <VscFeedback className="w-1/4 h-auto p-3" />,
       image: "",
     },
     {
       title: "System Status",
-      link: "/pages/systemStatus",
+      link: "/s/systemStatus",
       description: "Check the current operational status of Hirebie’s systems.",
       icon: <GrSystem className="w-1/4 h-auto p-3" />,
       image: "",
     },
     {
       title: "Account Recovery",
-      link: "/pages/accountRecovery",
+      link: "/s/accountRecovery",
       description: "Recover your Hirebie account if you’ve lost access.",
       icon: <MdOutlineAccountCircle className="w-1/4 h-auto p-2" />,
       image: "",
     },
     {
       title: "Password Reset",
-      link: "/pages/passwordReset",
+      link: "/s/passwordReset",
       description: "Reset your password if you’ve forgotten it or want to update it.",
       icon: <PiPassword className="w-1/4 h-auto p-3" />,
       image: "",
     },
     {
       title: "Data Export",
-      link: "/pages/dataExport",
+      link: "/s/dataExport",
       description: "Export your data from Hirebie for your personal records.",
       icon: <BsDatabase className="w-1/4 h-auto p-3" />,
       image: "",

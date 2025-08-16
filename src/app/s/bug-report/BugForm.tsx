@@ -6,6 +6,9 @@ import { Input } from "@/components/ui/input";
 import { BsFileEarmarkImage } from "react-icons/bs";
 import { Button } from "@/components/ui/button";
 import axios from "axios";
+import { z } from "zod";
+import { bugFormSchema } from "./bugFormSchema";
+import { toast } from "sonner";
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -101,38 +104,50 @@ function BugForm() {
 
 
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+  
   const onSubmitHandler = async (
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ): Promise<void> => {
     e.preventDefault();
 
-    setLoading(true); // Start loading
+    setLoading(true);
+
+
 
     try {
-      const formData = new FormData();
-      formData.append('reason', data.reason);
-      formData.append('explain', data.explain);
-      formData.append('priority', data.priority);
-      formData.append('pageUrl', data.pageUrl);
-      formData.append('addInfo', data.addInfo);
-      if (file) {
-        formData.append('file', file);
-      }
+      // validate with Zod
+      const parsedData = bugFormSchema.parse({
+        ...data,
+        file: file || undefined,
+      });
 
-      const response = await axios.post('/api/bugReport', formData);
+      // create formData
+      const formData = new FormData();
+      formData.append("reason", parsedData.reason);
+      formData.append("explain", parsedData.explain);
+      formData.append("priority", parsedData.priority);
+      formData.append("pageUrl", parsedData.pageUrl);
+      if (parsedData.addInfo) formData.append("addInfo", parsedData.addInfo);
+      if (file) formData.append("file", file);
+
+      // send
+      const response = await axios.post("/api/bugReport", formData);
 
       if (response.data.success) {
-        alert('Success');
-        location.reload();
+        toast.success("Success");
+        clearForm();
       } else {
-        alert('Error! Please fill all details correctly and upload supported file types.');
+        toast.error("Error! Please fill all details correctly.");
       }
     } catch (error) {
-      console.error("Submission failed:", error);
-      alert("Something went wrong!");
+      if (error instanceof z.ZodError) {
+        console.log(error.issues); // array of validation issues
+        toast.error("Please Fill all Details");
+      } else {
+        console.error(error);
+      }
     } finally {
-      setLoading(false); // End loading
+      setLoading(false);
     }
   };
 
@@ -371,14 +386,15 @@ function BugForm() {
           </Button>
           {
             loading ? (
-              <div className="flex items-center justify-center h-96 col-span-5">
-                <div className="loader text-xl font-medium">Loading...</div>
+              <div className="min-w-40 px-10 cursor-progress select-none font-semibold rounded-full h-auto border-2 duration-500 shadow-xl hover:shadow-lg flex items-center gap-3">
+                <div className="loader scale-50"></div>
+                <p>Submitting</p>
               </div>
             ) : (
               <Button
-                variant={"default"}
+                variant={"outline"}
                 onClick={onSubmitHandler}
-                className="min-w-40 px-16 py-3 font-semibold rounded-full h-auto hover:bg-black bg-[#FD500A] duration-500 shadow-xl hover:shadow-lg"
+                  className="min-w-40 px-16 py-3 font-semibold rounded-full h-auto hover:bg-black hover:text-white border-[3px] border-black hover:border-black duration-500"
               >
                 Submit your Report
               </Button>

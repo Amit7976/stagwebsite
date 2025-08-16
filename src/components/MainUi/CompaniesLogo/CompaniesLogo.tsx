@@ -17,22 +17,22 @@ function CompaniesLogo() {
       src: "/images/CompaniesLogos/company-logo-ekapde.png",
       alt: "Ekapde",
     },
-    {
-      src: "/images/CompaniesLogos/FrisconSolutionLogo.png",
-      alt: "Friscon Solution",
-    },
+    // {
+    //   src: "/images/CompaniesLogos/FrisconSolutionLogo.png",
+    //   alt: "Friscon Solution",
+    // },
     {
       src: "/images/CompaniesLogos/WedwebaiLogo.png",
       alt: "Wedwebai",
     },
-    {
-      src: "/images/CompaniesLogos/wishfin-logo.svg",
-      alt: "Wishfin",
-    },
-    {
-      src: "/images/CompaniesLogos/k4-media-and-technologies-logo.png",
-      alt: "K4 Media and Technologies",
-    },
+    // {
+    //   src: "/images/CompaniesLogos/wishfin-logo.svg",
+    //   alt: "Wishfin",
+    // },
+    // {
+    //   src: "/images/CompaniesLogos/k4-media-and-technologies-logo.png",
+    //   alt: "K4 Media and Technologies",
+    // },
     {
       src: "/images/CompaniesLogos/CashplayLogo.png",
       alt: "Cashplay",
@@ -46,21 +46,21 @@ function CompaniesLogo() {
       alt: "Ekapde",
     },
     {
-      src: "/images/CompaniesLogos/FrisconSolutionLogo.png",
-      alt: "Friscon Solution",
+      src: "/images/CompaniesLogos/taxplore.png",
+      alt: "Taxplore Solution",
     },
     {
       src: "/images/CompaniesLogos/WedwebaiLogo.png",
       alt: "Wedwebai",
     },
-    {
-      src: "/images/CompaniesLogos/wishfin-logo.svg",
-      alt: "Wishfin",
-    },
-    {
-      src: "/images/CompaniesLogos/k4-media-and-technologies-logo.png",
-      alt: "K4 Media and Technologies",
-    },
+    // {
+    //   src: "/images/CompaniesLogos/wishfin-logo.svg",
+    //   alt: "Wishfin",
+    // },
+    // {
+    //   src: "/images/CompaniesLogos/k4-media-and-technologies-logo.png",
+    //   alt: "K4 Media and Technologies",
+    // },
   ];
 
   return (

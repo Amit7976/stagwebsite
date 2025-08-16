@@ -150,7 +150,7 @@ function MainContent() {
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3">Uniqueness:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">Each account should have a unique password.
-                  Reusing passwords across multiple platforms increases vulnerability—if one account is
+                  Reusing passwords across multiple platforms increases vulnerability-if one account is
                   compromised, all others sharing the same password are at risk.</p>
               </li>
               <li className=" ml-6 mt-8">
@@ -365,8 +365,8 @@ function MainContent() {
               <li className=" ml-6 mt-8">
                 <h6 className="text-xl font-semibold text-gray-700 dark:text-neutral-300 mb-3"> Business and Organizational Front:</h6>
                 <p className="max-w-6xl font-normal text-lg text-gray-500">In the corporate realm, the reliance on
-                  secure networks is non-negotiable. Businesses handle an array of sensitive information—financial
-                  records, customer data, proprietary knowledge—making them prime targets for cyber attacks.
+                  secure networks is non-negotiable. Businesses handle an array of sensitive information-financial
+                  records, customer data, proprietary knowledge-making them prime targets for cyber attacks.
                   Secure networks are the shield that fortifies these entities against breaches, maintaining trust
                   with stakeholders and securing proprietary information.</p>
               </li>

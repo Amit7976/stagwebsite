@@ -44,29 +44,29 @@ export default function RootMainLayout({
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     //TURN OFF INSPECT
-    useEffect(() => {
-        const printConsoleWarning = () => {
-            console.clear();
-            console.log(
-                "%cSTOP!",
-                "color:red;font-size:80px;font-family:monospace;font-weight:bold;background:transparent;padding:25px 0px;border-radius:15px;"
-            );
-            console.log(
-                "%cThis section is only for Hirebie developers.\nDo NOT paste anything here. It may compromise your account or data security!\n©Hirebie Pvt Ltd - All Rights Reserved.",
-                "color:red;font-family:monospace;font-size:18px;padding:10px 0px;"
-            );
-        };
+    // useEffect(() => {
+    //     const printConsoleWarning = () => {
+    //         console.clear();
+    //         console.log(
+    //             "%cSTOP!",
+    //             "color:red;font-size:80px;font-family:monospace;font-weight:bold;background:transparent;padding:25px 0px;border-radius:15px;"
+    //         );
+    //         console.log(
+    //             "%cThis section is only for Hirebie developers.\nDo NOT paste anything here. It may compromise your account or data security!\n©Hirebie Pvt Ltd - All Rights Reserved.",
+    //             "color:red;font-family:monospace;font-size:18px;padding:10px 0px;"
+    //         );
+    //     };
 
-        // ------------------------------------------------------------------------------------------------------
+    //     // ------------------------------------------------------------------------------------------------------
 
-        const interval = setInterval(printConsoleWarning, 3000);
+    //     const interval = setInterval(printConsoleWarning, 3000);
 
-        // ------------------------------------------------------------------------------------------------------
+    //     // ------------------------------------------------------------------------------------------------------
 
-        return () => {
-            clearInterval(interval);
-        };
-    }, []);
+    //     return () => {
+    //         clearInterval(interval);
+    //     };
+    // }, []);
 
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -84,16 +84,15 @@ export default function RootMainLayout({
                                 // src="/images/logo_icons/icon.svg"
                                 src="/images/logo/logo.svg"
                                 alt="Logo"
-                                width={300}
-                                height={300}
-                                // className="w-[20vw]"
+                                width={200}
+                                height={200}
                             />
                             <Image
                                 // src="/images/logo_icons/icon.svg"
                                 src="/images/logo/logo.svg"
                                 alt="Logo"
-                                width={300}
-                                height={300}
+                                width={200}
+                                height={200}
                                 className="logo h-full w-full object-cover object-right opacity-90 brightness-40 absolute top-0 right-0 z-10"
                             />
                         </div>

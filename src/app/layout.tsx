@@ -76,7 +76,7 @@ export const metadata: Metadata = {
         url: "https://hirebie.com/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Hirebie — IT Services & Solutions",
+        alt: "Hirebie - IT Services & Solutions",
       },
     ],
     locale: "en_US",

@@ -5,13 +5,11 @@ import { Connection, InferSchemaType, Model, Schema } from "mongoose";
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-const NewsletterSchema = new Schema(
-  {
-    email: { type: String, required: true, unique: true },
-    active: { type: Boolean, default: true },
-  },
-  { timestamps: true }
-);
+const NewsletterSchema = new Schema({
+  email: { type: String, required: true, unique: true },
+  createdAt: { type: Date, default: Date.now },
+});
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

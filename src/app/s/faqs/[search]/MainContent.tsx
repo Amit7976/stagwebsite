@@ -39,9 +39,9 @@ const MainContent = ({ search }: { search: string }) => {
 
     const fetchFaqs = async () => {
         try {
-            const response = await axios.get("/api/faq/faqs");
-            setFaqs(response.data.faqs);
-            setFilteredFaqs(response.data.faqs); // Set initial filtered FAQs
+            const response = await axios.get("/api/faqs");
+            setFaqs(response.data);
+            setFilteredFaqs(response.data); // Set initial filtered FAQs
         } catch (error) {
             console.error("Error fetching Faqs:", error);
         } finally {

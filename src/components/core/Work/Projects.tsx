@@ -29,7 +29,7 @@ export default function Projects() {
                                 Geo Radius News is more than just a news platform; it gives voice to local people and
                                 makes sure people in power notice and make required changes. Real-time reporting and
                                 verifications keep people informed, and inaccurate info is filtered easily. From sudden
-                                road closures to lost pets or emergency alerts — the app ensures vital information reaches
+                                road closures to lost pets or emergency alerts - the app ensures vital information reaches
                                 those who need it most, saving time and money.
                             </p>
                             <Link

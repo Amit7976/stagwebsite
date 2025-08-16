@@ -36,7 +36,7 @@ export default function Section1() {
                             <MdOutlineSupportAgent className='size-6' />
                             <h4 className="text-xl font-semibold">Long Term Support</h4>
                             <p className="text-base font-normal text-muted-foreground">
-                                We stay connected after delivery — offering regular updates, improvements & support to help you keep growing.
+                                We stay connected after delivery - offering regular updates, improvements & support to help you keep growing.
                             </p>
                         </div>
                     </div>

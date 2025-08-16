@@ -1,8 +1,7 @@
 "use client"
-import axios from 'axios';
-import Image from 'next/image'
+import Image from 'next/image';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -100,7 +99,6 @@ function MainContent() {
                       <div className='mt-6'>
                         {announcement.link ? (
                           <Link href={announcement.link} className="inline-flex items-center gap-x-1 text-orange-600 decoration-2 hover:underline font-medium">
-                            {announcement.linkTitle}
                             View Details
                             <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                           </Link>

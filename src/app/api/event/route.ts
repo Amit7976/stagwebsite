@@ -1,14 +1,13 @@
 import connect3 from "@/dbConfig/dbConfig3";
-import { getTestimonialModel } from "@/models/TestimonialModel";
+import { getEventModel } from "@/models/EventModel";
 import { NextResponse } from "next/server";
 
 const conn = await connect3();
-const TestimonialModel = getTestimonialModel(conn);
+const EventModel = getEventModel(conn);
+
 await connect3();
 
 export async function GET() {
-  const data = await TestimonialModel.find({ active: true }).sort({
-    _id: -1,
-  });
+  const data = await EventModel.find({ active: true }).sort({ createdAt: -1 });
   return NextResponse.json({ success: true, data: data });
 }

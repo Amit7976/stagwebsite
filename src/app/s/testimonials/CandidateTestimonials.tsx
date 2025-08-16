@@ -57,7 +57,7 @@ function CandidateTestimonials() {
           <div className="bg-gradient-to-t from-white dark:from-neutral-950 to-transparent w-full h-20 fixed bottom-0"></div>
           <div className="w-full p-4 md:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 list-none gap-6 items-start bg-gray-50 dark:bg-neutral-950 pb-40">
             {testimonials.map((testimonial, index) => (
-              <div className="col-span-1 h-auto space-y-6">
+              <div key={index} className="col-span-1 h-auto space-y-6">
                 <CompanyTestimonialCard
                   key={index}
                   stars={testimonial.star}

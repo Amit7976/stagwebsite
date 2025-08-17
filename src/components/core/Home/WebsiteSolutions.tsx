@@ -100,21 +100,21 @@ export default function WebsiteSolutions() {
                 </div>
 
                 {/* Services Grid */}
-                <div className="mx-auto mt-16 grid gap-6 sm:grid-cols-2 sm:gap-8 md:mt-32 md:gap-y-6 lg:grid-cols-3 lg:gap-x-4 lg:gap-y-10 xl:grid-cols-4">
+                <div className="mx-auto mt-16 grid gap-6 grid-cols-2 sm:gap-8 md:mt-32 md:gap-y-6 lg:grid-cols-3 lg:gap-x-4 lg:gap-y-10 xl:grid-cols-4">
                     {services.map((service, idx) => (
                         <a
                             href="#"
                             key={idx}
                             className="group flex flex-col gap-1 rounded-lg transition-colors p-4 md:hover:bg-muted bg-neutral-100 dark:bg-neutral-900"
                         >
-                            <div className="flex items-center gap-2">
-                                {service.icon}
-                                <div className="flex items-center gap-1">
-                                    <p className="text-xl md:text-lg font-medium">{service.title}</p>
+                            <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
+                                <div className="w-10 h-10 sm:w-auto sm:h-auto flex items-center scale-150 sm:scale-100 ml-2.5 sm:ml-0"> {service.icon}</div>
+                                <div className="flex items-center justify-start gap-1">
+                                    <p className="text-[4vw] sm:text-[2.5vw] lg:text-[1.1vw] font-medium">{service.title}</p>
                                     <ChevronRight className="size-5 md:size-4 shrink-0 transition-transform md:group-hover:translate-x-0.5" />
                                 </div>
                             </div>
-                            <p className="text-base text-muted-foreground">{service.desc}</p>
+                            <p className="text-[3.5vw] sm:text-[2vw] lg:text-[1vw] text-muted-foreground">{service.desc}</p>
                         </a>
                     ))}
                 </div>

@@ -1,7 +1,7 @@
-import { Button } from '@/components/ui/button';
+import { LoaderLink } from '@/components/ui/loaderLinks';
+import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa6';
 import HomeHeroHeading from './HomeHeroHeading';
-import Image from 'next/image';
 export default function HomeHero() {
     return (
         <>
@@ -12,9 +12,9 @@ export default function HomeHero() {
 
                             <HomeHeroHeading />
 
-                            <p className="md:text-balance text-center text-lg md:text-2xl text-neutral-700 dark:text-neutral-400 font-medium">We craft exceptional digital solutions that help brands stand out and make a lasting impact in the digital landscape.</p>
+                            <p className="md:text-balance text-center text-lg md:text-2xl text-neutral-700 dark:text-neutral-400 font-medium font-sans2">We craft exceptional digital solutions that help brands stand out and make a lasting impact in the digital landscape.</p>
                             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-                                <Button className="rounded-full bg-orange-600 p-1 h-auto pl-8 text-base gap-2 hover:bg-orange-700 text-white">Get A Quote <span><FaArrowRight className="size-10 bg-white rounded-full text-orange-600 p-2 -rotate-45" /></span> </Button>
+                                <LoaderLink href='/s/contact' className="flex items-center rounded-full bg-orange-600 p-1 h-auto pl-8 text-base gap-2 hover:bg-orange-700 text-white">Get A Quote <span><FaArrowRight className="size-10 bg-white rounded-full text-orange-600 p-2 -rotate-45" /></span> </LoaderLink>
                             </div>
                         </div>
                     </div>

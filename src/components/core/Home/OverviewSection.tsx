@@ -81,10 +81,10 @@ export default function SectionOverview() {
         <section>
             <div className="px-4 md:px-10">
                 <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 mb-10 lg:mb-20">
-                    <h2 className="mb-2 text-center text-3xl font-semibold lg:text-6xl">
+                    <h2 className="mb-2 text-center text-4xl font-semibold lg:text-6xl">
                         Build<span className="text-orange-600">.</span> Brand<span className="text-orange-600">.</span> Grow<span className="text-orange-600">.</span> <br /> All in One <span className="text-orange-600">Solution</span>
                     </h2>
-                    <p className="text-center text-muted-foreground lg:text-lg">
+                    <p className="text-center text-muted-foreground text-lg font-medium font-sans2">
                         From custom development to stunning branding and smart promotion,
                         Hirebie helps you launch, scale, and stand out.
                     </p>
@@ -110,7 +110,7 @@ export default function SectionOverview() {
                                     {section.features.map((feature, featureIdx) => (
                                         <li
                                             key={featureIdx}
-                                            className="flex gap-1 text-muted-foreground"
+                                            className="flex gap-1 text-muted-foreground text-lg font-sans2"
                                         >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"

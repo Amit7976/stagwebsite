@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { LoaderLink } from "@/components/ui/loaderLinks";
 import { FaArrowRight } from "react-icons/fa6";
 import { LuClock } from "react-icons/lu";
 
@@ -60,14 +60,14 @@ export default function ProcessSteps() {
                     <p className="mb-6 text-xl font-medium lg:text-2xl text-gray-400">
                         How We Deliver Your Project
                     </p>
-                    <Button className="rounded-full bg-orange-600 p-1 h-auto pl-8 text-base gap-2 text-white">Get A Quote <span><FaArrowRight className="size-10 bg-white rounded-full text-orange-600 p-2 -rotate-45" /></span> </Button>
+                    <LoaderLink href="/s/contact" className="flex items-center rounded-full bg-orange-600 p-1 h-auto pl-8 text-base gap-2 text-white">Get A Quote <span><FaArrowRight className="size-10 bg-white rounded-full text-orange-600 p-2 -rotate-45" /></span> </LoaderLink>
                 </div>
 
-                <div className="mt-14 grid grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 md:gap-y-6">
+                <div className="mt-14 flex flex-nowrap lg:grid lg:grid-cols-3 gap-x-6 gap-y-12 md:gap-y-6 w-full overflow-x-scroll pb-5 lg:w-auto lg:overflow-auto lg:pb-0">
                     {steps.map((step) => (
                         <div
                             key={step.id}
-                            className="flex flex-col lg:border-r lg:[&:nth-child(3)]:border-r-0 last:border-r-0 border-gray-200 dark:border-neutral-900 px-0 lg:px-10 sm:mt-4 md:mt-6"
+                            className="flex flex-col lg:border-r shrink-0 lg:shrink w-3/4 lg:w-full lg:[&:nth-child(3)]:border-r-0 last:border-r-0 border-gray-200 dark:border-neutral-900 px-0 lg:px-10 sm:mt-4 md:mt-6"
                         >
                             <div className="relative">
                                 <h1 className="mb-16 text-9xl font-medium bg-gradient-to-r from-black dark:from-white to-transparent bg-clip-text text-transparent">
@@ -75,8 +75,8 @@ export default function ProcessSteps() {
                                 </h1>
                                 <div className="absolute inset-0 bg-gradient-to-r from-white dark:from-neutral-950 to-transparent opacity-100"></div>
                             </div>
-                            <p className="text-md mt-4 mb-2 font-semibold">{step.title}</p>
-                            <p className="text-md mb-6 text-muted-foreground">{step.description}</p>
+                            <p className="text-lg font-sans2 mt-4 mb-2 font-semibold">{step.title}</p>
+                            <p className="text-lg font-sans2 mb-6 text-muted-foreground">{step.description}</p>
                             <span className="inline-flex items-center justify-center rounded-md border-2 border-gray-200 dark:border-neutral-700 px-4 text-xs font-semibold whitespace-nowrap w-fit gap-1.5 py-2.5">
                                 <LuClock className="scale-115" />
                                 {step.time}

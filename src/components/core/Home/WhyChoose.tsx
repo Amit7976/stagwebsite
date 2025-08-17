@@ -58,7 +58,7 @@ export default function WhyChoose() {
                 <h1 className="text-center text-4xl font-semibold lg:text-5xl">
                     Why Choose <span className="text-orange-600">Us</span>
                 </h1>
-                <div className="grid gap-6 pt-9 text-center md:grid-cols-3 lg:pt-20">
+                <div className="grid gap-6 pt-9 text-center grid-cols-2 md:grid-cols-3 lg:pt-20">
                     {cardData.map((card, index) => (
                         <Card
                             key={index}
@@ -66,15 +66,15 @@ export default function WhyChoose() {
                         >
                             <p className="mb-1 flex items-center justify-center text-2xl font-semibold lg:text-3xl">
                                 <span className="relative">
-                                    <card.icon className={`h-4 ${card.iconColor}`} aria-hidden="true" />
+                                    <card.icon className={`h-4 mr-1 ${card.iconColor}`} aria-hidden="true" />
                                     <span className="w-full h-full bg-gradient-to-t from-white dark:from-neutral-900 to-transparent absolute top-0 left-0 z-50"></span>
                                </span>
                                 {card.value}
                             </p>
-                            <p className="mb-5 text-lg font-medium text-gray-500 lg:text-xl">
+                            <p className="sm:mb-5 text-lg font-medium text-gray-500 lg:text-xl">
                                 {card.sabValue}
                             </p>
-                            <p className="text-muted-foreground">{card.description}</p>
+                            <p className="text-muted-foreground hidden sm:block">{card.description}</p>
                         </Card>
                     ))}
                 </div>

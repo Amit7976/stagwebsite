@@ -228,19 +228,19 @@ function Footer() {
           {Object.entries(menuItems).map(([section, items]) => (
             <Accordion key={section} type="single" collapsible>
               <AccordionItem value="{section}">
-                <AccordionTrigger className="hover:no-underline text-base font-semibold text-black dark:text-white">{section}</AccordionTrigger>
+                <AccordionTrigger className="hover:no-underline text-xl font-semibold text-black dark:text-white/70">{section}</AccordionTrigger>
                 <AccordionContent>
                   {items.map(({ text, link }) => (
                     <div key={text} className={`w-full ${link ? "opacity-100" : "opacity-40"}`}>
                       {link ? (
                         <LoaderLink
                           href={link}
-                          className="text-base font-medium hover:underline text-neutral-600 dark:text-neutral-300 w-full h-full block py-2.5 pl-5"
+                          className="text-xl text-left font-medium hover:underline text-neutral-600 dark:text-neutral-300 w-full h-full block py-2.5 pl-5"
                         >
                           {text}
                         </LoaderLink>
                       ) : (
-                        <span className="text-base font-medium text-black dark:text-white w-full h-full block py-2.5 pl-5">{text}</span>
+                        <span className="text-xl font-medium text-black dark:text-white w-full h-full block py-2.5 pl-5">{text}</span>
                       )}
                     </div>
                   ))}
@@ -255,7 +255,7 @@ function Footer() {
         {/* Footer Bottom Section */}
         <div className="bg-neutral-100 text-neutral-100 dark:bg-neutral-900 rounded-xl p-9 my-10 ">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-            <LoaderLink href="/" className="flex flex-col items-start gap-2">
+            <LoaderLink href="/" className="flex-col items-start gap-2 hidden md:flex">
               <Image
                 src="/images/logo/logo.svg"
                 alt="Hirebie Logo"
@@ -277,19 +277,19 @@ function Footer() {
                     name="newsletter"
                     render={({ field }) => (
                       <FormItem>
-                        <h3 className="text-2xl font-bold text-black dark:text-white">Newsletter</h3>
-                        <FormDescription className="text-sm font-medium text-neutral-500 mt-1 w-full">
+                        <h3 className="text-3xl lg:text-2xl font-bold text-black dark:text-white">Newsletter</h3>
+                        <FormDescription className="text-xl lg:text-lg font-medium text-neutral-500 mt-1 w-full">
                           Subscribe to our newsletter to get latest updates and news
                         </FormDescription>
                         <div className="gap-4 items-center mt-3">
-                          <div className="px-3 text-sm relative">
+                          <div className="px-3 text-lg relative">
                             <FormMessage className="bg-white dark:bg-neutral-900 px-10 py-2 rounded-lg absolute bottom-2 shadow-xl" />
                           </div>
                           <FormControl>
                             <Input
                               type="email"
                               placeholder="What is your work email"
-                              className="text-base px-6 h-12 rounded-full outline-none border-2 border-neutral-400 text-white shadow-none min-w-full lg:min-w-96 font-medium tracking-wider"
+                              className="text-base px-6 h-14 lg:h-12 rounded-full outline-none border-2 border-neutral-400 text-white shadow-none min-w-full lg:min-w-96 font-medium tracking-wider"
                               {...field} />
                           </FormControl>
                         </div>
@@ -298,12 +298,12 @@ function Footer() {
                   />
                   <Button
                     type="submit"
-                    className="bg-[#FC4C02] border-orange-900 border-2 font-medium font-sans2 rounded-full py-2 mt-2 w-fit h-11 disabled:opacity-90"
+                    className="bg-[#FC4C02] border-orange-900 border-2 font-medium font-sans2 rounded-full items-center text-lg lg:text-base py-2 mt-2 w-full lg:w-fit h-14 lg:h-11 disabled:opacity-90"
                     disabled={loading} // Disable the button when loading
                   >
                     {loading ? (
                       <>
-                        <div className="flex items-end gap-2 px-5">
+                        <div className="flex items-center gap-2 px-5 text-white">
                           <LuCircleDashed className="h-4 w-4 animate-spin font-bold mb-0.5" /> Please wait...
                         </div>
                       </>
@@ -319,7 +319,7 @@ function Footer() {
 
 
         <div className="w-full border-t border-neutral-800 py-10">
-          <p className="mt-2 font-normal font-sans2 text-sm text-neutral-500">
+          <p className="mt-2 font-normal font-sans2 text-base text-neutral-500">
             © 2025 <LoaderLink href={"/"}>Hirebie</LoaderLink> Pvt. Ltd.{" "}
             <LoaderLink href={"/"}>Hirebie</LoaderLink> and the{" "}
             <LoaderLink href={"/"}>Hirebie</LoaderLink> logo are registered trademarks of
@@ -334,7 +334,7 @@ function Footer() {
             </LoaderLink>{" "}
             for more details.
           </p>
-          <p className="mt-5 font-normal font-sans2 text-sm text-neutral-500">
+          <p className="mt-5 font-normal font-sans2 text-base text-neutral-500">
             Read our{" "}
             <LoaderLink href={"/p/cookies"} className="text-[#FF4A02]">
               Cookies Policy

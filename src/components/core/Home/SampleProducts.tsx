@@ -1,8 +1,9 @@
 "use client";
-import React, { useEffect, useRef } from "react";
-import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,7 +21,7 @@ export default function SampleProducts() {
                 ease: "power4.out",
                 scrollTrigger: {
                     trigger: ".text-block",
-                    start: "top 80%",
+                    start: "top 90%",
                     toggleActions: "play none none reverse",
                     scrub: true,
                 },
@@ -33,7 +34,7 @@ export default function SampleProducts() {
                 ease: "power4.out",
                 scrollTrigger: {
                     trigger: ".tablet-image",
-                    start: "top 80%",
+                    start: "top 90%",
                     toggleActions: "play none none reverse",
                     scrub: true,
                 },
@@ -46,7 +47,7 @@ export default function SampleProducts() {
                 ease: "power4.out",
                 scrollTrigger: {
                     trigger: ".pc-image",
-                    start: "top 80%",
+                    start: "top 90%",
                     toggleActions: "play none none reverse",
                     scrub: true,
                 },
@@ -59,7 +60,7 @@ export default function SampleProducts() {
                 ease: "power4.out",
                 scrollTrigger: {
                     trigger: ".mobile-image",
-                    start: "top 80%",
+                    start: "top 90%",
                     toggleActions: "play none none reverse",
                     scrub: true,
                 },
@@ -84,7 +85,7 @@ export default function SampleProducts() {
                                 <br />
                                 Touch It<span className="text-orange-600">.</span>
                             </h1>
-                            <p className="text-[clamp(1.125rem,1.125vw,1.4rem)] leading-normal text-muted-foreground">
+                            <p className="font-medium font-sans2 text-xl leading-normal text-muted-foreground">
                                 Experience the quality and features of our sample products
                                 before you commit. Get inspired to build your next big project
                                 with real, tangible examples.
@@ -92,7 +93,7 @@ export default function SampleProducts() {
                         </div>
 
                         {/* Overlapping Images */}
-                        <div>
+                        <Link href="https://roadmint.hirebie.com" target="_blank">
                             <div className="relative ml-8 aspect-square w-full max-w-[56.25rem] lg:absolute lg:right-0 lg:bottom-0 lg:w-1/2">
                                 {/* Big Image - Tablet */}
                                 <div className="tablet-image absolute right-0 bottom-0 w-[85%] overflow-hidden border-4 border-white dark:border-neutral-950 rounded-3xl">
@@ -139,7 +140,7 @@ export default function SampleProducts() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </section>

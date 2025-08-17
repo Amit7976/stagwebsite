@@ -28,8 +28,8 @@ function Home() {
                 <div className='my-10'><Showcase /></div>
                 <div className='my-20'><Products /></div>
                 <div className='my-40'><WebsiteSolutions /></div>
-                <div className='my-40'><InAppFeature /></div>
-                <div className="my-40"><SampleProducts /></div>
+                <div className='mb-20 mt-40 sm:my-40'><InAppFeature /></div>
+                <div className="mt-20 mb-40 sm:my-40"><SampleProducts /></div>
                 <div className="my-40"><SectionOverview /></div>
                 <div className="my-40"><WhyChoose /></div>
                 <div className="my-40"><Services /></div>

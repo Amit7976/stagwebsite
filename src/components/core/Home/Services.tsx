@@ -165,7 +165,7 @@ export default function Services() {
                         ))}
                     </div>
 
-                    <div className="col-span-2">
+                    <div className="col-span-2 hidden lg:block">
                         <div className="sticky top-20">
                             <Card className="p-4 flex items-center justify-center h-72 md:h-auto border-gray-200 dark:border-neutral-900">
                                 <Image

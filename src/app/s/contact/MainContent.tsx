@@ -1,6 +1,4 @@
 "use client"
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { ICompanyMail } from "@/models/companyMailModel";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -8,6 +6,7 @@ import { FaArrowRightLong, FaRss } from "react-icons/fa6";
 import { GoMail } from "react-icons/go";
 import { PiChatsDuotone } from "react-icons/pi";
 import { TfiAnnouncement } from "react-icons/tfi";
+import ContactForm from "./ContactForm";
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -17,39 +16,39 @@ import { TfiAnnouncement } from "react-icons/tfi";
 function MainContent() {
 
   const [allEmails, setAllEmails] = useState<ICompanyMail[]>([]);
-    const [loading, setLoading] = useState(true);
-    
-    const fetchAllEmails = async () => {
-      try {
-        const res = await fetch("/api/companyMails");
-        const data = await res.json();
-        if (data.success) {
-          setAllEmails(data.data);
-        }
-      } catch (error) {
-        console.error("Error fetching Emails:", error);
-      } finally {
-        setLoading(false);
+  const [loading, setLoading] = useState(true);
+
+  const fetchAllEmails = async () => {
+    try {
+      const res = await fetch("/api/companyMails");
+      const data = await res.json();
+      if (data.success) {
+        setAllEmails(data.data);
       }
-    };
-  
-    useEffect(() => {
-      fetchAllEmails();
-    }, []);
-  
-  
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  
-    if (loading) {
-      return (
-        <div className="flex items-center justify-center h-96 col-span-2">
-          <div className="loader"></div>
-        </div>
-      )
+    } catch (error) {
+      console.error("Error fetching Emails:", error);
+    } finally {
+      setLoading(false);
     }
-  
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  
+  };
+
+  useEffect(() => {
+    fetchAllEmails();
+  }, []);
+
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-96 col-span-2">
+        <div className="loader"></div>
+      </div>
+    )
+  }
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
   return (
     <>
@@ -115,105 +114,14 @@ function MainContent() {
                 </p>
                 <p className="group inline-flex items-center gap-x-2 font-medium text-sm text-[#FD4D05] decoration-2 hover:underline focus:outline-none focus:underline mt-2">
                   Job openings
-                  <FaArrowRightLong className="flex-shrink-0 size-4 transition group-hover:translate-x-0.5 group-hover:translate-x-0 group-focus:translate-x-0.5 group-focus:translate-x-0" />
+                  <FaArrowRightLong className="flex-shrink-0 size-4 transition group-hover:translate-x-0.5 group-focus:translate-x-0.5" />
                 </p>
               </Link>
             </div>
           </div>
         </div>
-        <div className="col-span-3 bg-gray-100 dark:bg-neutral-900 rounded-3xl my-5 py-6 p-4 md:p-16">
-          <div className="mb-10 space-y-3">
-            <h2 className="text-4xl font-white font-semibold">
-              Want Service? <span className="text-orange-600">We have</span> skilled <span className="text-orange-600">Professionals</span>. Let&#39;s get in <span className="text-orange-600">touch</span>
-            </h2>
-            <p className="text-lg font-medium text-gray-400">
-              Get in touch with our team for any assistance or information you
-              require
-            </p>
-          </div>
-          <form>
-            <div className="space-y-4">
-              <div className="relative">
-                <Input
-                  type="text"
-                  id="hs-tac-input-name"
-                  className="peer p-4 block w-full bg-transparent  border-0 dark:bg-neutral-800 border-b-2 dark:border-0 dark:rounded-xl rounded-none border-black text-base text-black font-medium tracking-wide placeholder:text-transparent focus:outline-none focus:ring-0 disabled:opacity-50 disabled:pointer-events-none capitalize h-16 focus:pt-6 focus:pb-4 [&:not(:placeholder-shown)]:pt-6 [&:not(:placeholder-shown)]:pb-4 autofill:pt-6 autofill:pb-4"
-                  autoComplete="name"
-                  placeholder="Name"
-                />
-                <label
-                  className="absolute top-0 start-0 p-4 h-full text-gray-500 text-base font-medium truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none peer-focus:text-xs peer-focus:-translate-y-2 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:-translate-y-2"
-                >
-                  Name
-                </label>
-              </div>
 
-              <div className="relative">
-                <Input
-                  type="tel"
-                  id="hs-tac-input-number"
-                  className="peer h-16 p-4 block w-full bg-transparent  border-0 dark:bg-neutral-800 border-b-2 dark:border-0 dark:rounded-xl rounded-none border-black text-base text-black font-medium tracking-wide placeholder:text-transparent focus:outline-none focus:ring-0 disabled:opacity-50 disabled:pointer-events-none lowercase focus:pt-6 focus:pb-4 [&:not(:placeholder-shown)]:pt-6 [&:not(:placeholder-shown)]:pb-4 autofill:pt-6 autofill:pb-4"
-                  placeholder="Phone Number"
-                />
-                <label
-                  className="absolute top-0 start-0 p-4 h-full text-gray-500 text-base font-medium truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none peer-focus:text-xs peer-focus:-translate-y-2 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:-translate-y-2"
-                >
-                  Phone Number
-                </label>
-              </div>
-
-              <div className="relative">
-                <Input
-                  type="email"
-                  id="hs-tac-input-email"
-                  className="peer h-16 p-4 block w-full bg-transparent  border-0 dark:bg-neutral-800 border-b-2 dark:border-0 dark:rounded-xl rounded-none border-black text-base text-black font-medium tracking-wide placeholder:text-transparent focus:outline-none focus:ring-0 disabled:opacity-50 disabled:pointer-events-none lowercase focus:pt-6 focus:pb-4 [&:not(:placeholder-shown)]:pt-6 [&:not(:placeholder-shown)]:pb-4 autofill:pt-6 autofill:pb-4"
-                  placeholder="Email"
-                />
-                <label
-                  className="absolute top-0 start-0 p-4 h-full text-gray-500 text-base font-medium truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none peer-focus:text-xs peer-focus:-translate-y-2 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:-translate-y-2"
-                >
-                  Email
-                </label>
-              </div>
-              <div className="relative">
-                <Input
-                  type="text"
-                  id="hs-tac-input-company"
-                  className="peer h-16 p-4 block w-full bg-transparent  border-0 dark:bg-neutral-800 border-b-2 dark:border-0 dark:rounded-xl rounded-none border-black text-base text-black font-medium tracking-wide placeholder:text-transparent focus:outline-none focus:ring-0 disabled:opacity-50 disabled:pointer-events-none capitalize focus:pt-6 focus:pb-4 [&:not(:placeholder-shown)]:pt-6 [&:not(:placeholder-shown)]:pb-4 autofill:pt-6 autofill:pb-4"
-                  placeholder="Company"
-                />
-                <label
-                  className="absolute top-0 start-0 p-4 h-full text-gray-500 text-base font-medium truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none peer-focus:text-xs peer-focus:-translate-y-2 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:-translate-y-2"
-                >
-                  Company (Optional)
-                </label>
-              </div>
-
-              <div className="relative">
-                <textarea
-                  id="hs-tac-message"
-                  className="peer h-40 p-4 block w-full bg-transparent border-0 dark:bg-neutral-800 border-b-2 dark:border-0 dark:rounded-xl rounded-none border-black text-base text-black font-medium tracking-wide placeholder:text-transparent focus:outline-none focus:ring-0 disabled:opacity-50 disabled:pointer-events-none focus:pt-6 focus:pb-4 [&:not(:placeholder-shown)]:pt-6 [&:not(:placeholder-shown)]:pb-4 autofill:pt-6 autofill:pb-4"
-                  placeholder="This is a textarea placeholder"
-                ></textarea>
-                <label
-                  className="absolute top-0 start-0 p-4 h-full text-gray-500 text-base font-medium truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none peer-focus:text-xs peer-focus:-translate-y-2 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:-translate-y-2"
-                >
-                  Why do you want to contact us?
-                </label>
-              </div>
-            </div>
-
-            <div className="mt-10">
-              <Button
-                variant={"outline"}
-                className="flex items-center gap-x-2 py-4 md:py-3 w-full md:w-1/2 h-auto bg-orange-600 dark:bg-orange-600 hover:bg-orange-700 dark:hover:bg-orange-700 hover:text-white active:scale-95 duration-300 text-base text-gray-100 font-medium rounded-full focus:outline-none"
-              >
-                Submit
-                <FaArrowRightLong className="flex-shrink-0 size-4 transition group-hover:translate-x-0.5 group-hover:translate-x-0 group-focus:translate-x-0.5 group-focus:translate-x-0" />
-              </Button>
-            </div>
-          </form>
-        </div>
+        <ContactForm />
       </section>
 
       <section className="mt-10">

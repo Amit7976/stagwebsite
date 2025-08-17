@@ -1,8 +1,7 @@
 "use client"
-import axios from 'axios';
-import Image from 'next/image'
+import Image from 'next/image';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -17,8 +16,8 @@ interface ANNOUNCEMENT {
   linkTitle: string,
   image: string,
   _id: string,
-  date: Date,
-  updateDate: Date,
+  createdAt: Date,
+  updatedAt: Date,
 }
 
 
@@ -34,8 +33,11 @@ function MainContent() {
 
   const fetchAnnouncements = async () => {
     try {
-      const response = await axios.get('/api/announcement');
-      setAnnouncements(response.data.announcements);
+      const response = await fetch('/api/announcement');
+      const data = await response.json();
+      if (data.success) {
+        setAnnouncements(data.data);
+      }
     } catch (error) {
       console.error('Error fetching Announcements:', error);
     } finally {
@@ -75,13 +77,15 @@ function MainContent() {
               <div className="flex items-center justify-center h-96">
                 <Image src="/images/gif/loader.gif" alt="Loading" width={100} height={100} />
               </div>
-            ) : (announcements.map((announcement, index) => (
+            ) : (announcements && announcements.map((announcement, index) => (
 
-              <div key={index} className="group rounded-xl overflow-hidden hover:border-gray-200 border-2 border-transparent duration-500 p-2">
+              <div key={index} className="group rounded-xl overflow-hidden hover:border-gray-200 border-2 duration-500 p-2">
                 <div className="sm:flex">
-                  <div className="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 aspect-video">
-                    <Image className="group-hover:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl" src={`/images/announcement${announcement.image}`} alt={announcement.title} width={800} height={800} />
-                  </div>
+                  {announcement.image &&
+                    <div className="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 aspect-video">
+                      <Image className="group-hover:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl" src={`${announcement.image}`} alt={announcement.title} width={800} height={800} />
+                    </div>
+                  }
 
                   <div className="grow mt-4 sm:mt-0 sm:ms-6 px-0 md:px-4 sm:px-0 flex flex-col justify-between py-1">
                     <div>
@@ -95,7 +99,7 @@ function MainContent() {
                       <div className='mt-6'>
                         {announcement.link ? (
                           <Link href={announcement.link} className="inline-flex items-center gap-x-1 text-orange-600 decoration-2 hover:underline font-medium">
-                            {announcement.linkTitle}
+                            View Details
                             <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
                           </Link>
                         ) : ''}
@@ -104,12 +108,24 @@ function MainContent() {
                     <div className='w-full flex flex-col md:flex-row md:items-center pr-10 md:gap-10'>
                       <p className="mt-3 text-gray-700 font-medium dark:text-neutral-400">
                         <span className='text-gray-500 dark:text-neutral-500 font-normal'>Published: </span>
-                        {new Date(announcement.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                        {announcement.createdAt
+                          ? new Date(announcement.createdAt).toLocaleDateString("en-IN", {
+                            year: "numeric",
+                            month: "long",
+                            day: "numeric",
+                          })
+                          : "N/A"}
                       </p>
-                      {announcement.updateDate && (
+                      {announcement.updatedAt && (
                         <p className="mt-3 text-gray-600 font-medium dark:text-neutral-400">
                           <span className='text-gray-500 dark:text-neutral-500 font-normal'>Updated: </span>
-                          {new Date(announcement.updateDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                          {announcement.updatedAt
+                            ? new Date(announcement.updatedAt).toLocaleDateString("en-IN", {
+                              year: "numeric",
+                              month: "long",
+                              day: "numeric",
+                            })
+                            : "N/A"}
                         </p>
                       )}
                     </div>
@@ -118,7 +134,7 @@ function MainContent() {
                   </div>
                 </div>
               </div>
-              
+
             )))}
           </div>
         </section>

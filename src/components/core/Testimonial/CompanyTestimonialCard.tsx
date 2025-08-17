@@ -32,7 +32,7 @@ function CompanyTestimonialCard({ stars, text, imgSrc, name }: Testimonial) {
             </blockquote>
           </div>
 
-          <div className="flex items-center mt-5 w-40 h-14 overflow-hidden rounded-xl object-cover p-2">
+          <div className="flex items-center mt-5 w-40 h-14 overflow-hidden rounded-xl p-2">
             <Image
               width={200}
               height={200}

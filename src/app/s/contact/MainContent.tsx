@@ -1,71 +1,71 @@
+"use client"
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { ICompanyMail } from "@/models/companyMailModel";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { FaArrowRightLong, FaRss } from "react-icons/fa6";
 import { GoMail } from "react-icons/go";
 import { PiChatsDuotone } from "react-icons/pi";
 import { TfiAnnouncement } from "react-icons/tfi";
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 function MainContent() {
-  const allEmails = [
-    {
-      title: "Contact",
-      email: "contact@hirebie.com",
-      description: "For general communication and queries.",
-    },
-    {
-      title: "Help",
-      email: "help@hirebie.com",
-      description: "Assistance and support for any issues or questions.",
-    },
-    {
-      title: "Say hello",
-      email: "hello@hirebie.com",
-      description: "For greeting or general mail.",
-    },
-    {
-      title: "Support Team",
-      email: "support@hirebie.com",
-      description: "For resolving issues and answering questions.",
-    },
-    {
-      title: "General Inquiries",
-      email: "info@hirebie.com",
-      description: "General information about Us and our services.",
-    },
-    {
-      title: "Join our team",
-      email: "career@hirebie.com",
-      description: "Inquiries about job openings and career opportunities.",
-    },
-    {
-      title: "Legal work",
-      email: "legal@hirebie.com",
-      description: "Legal inquiries and compliance matters.",
-    },
-    {
-      title: "Customer Feedback",
-      email: "feedback@hirebie.com",
-      description:
-        "For Share your experiences and provide feedback on our services.",
-    },
-  ];
+
+  const [allEmails, setAllEmails] = useState<ICompanyMail[]>([]);
+    const [loading, setLoading] = useState(true);
+    
+    const fetchAllEmails = async () => {
+      try {
+        const res = await fetch("/api/companyMails");
+        const data = await res.json();
+        if (data.success) {
+          setAllEmails(data.data);
+        }
+      } catch (error) {
+        console.error("Error fetching Emails:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+  
+    useEffect(() => {
+      fetchAllEmails();
+    }, []);
+  
+  
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+    if (loading) {
+      return (
+        <div className="flex items-center justify-center h-96 col-span-2">
+          <div className="loader"></div>
+        </div>
+      )
+    }
+  
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
 
   return (
     <>
       <section className="h-fit w-full grid grid-cols-1 lg:grid-cols-5 gap-2 p-5 md:p-10">
-        <div className="col-span-2 p-0 p-4 md:p-16 md:px-10 order-last lg:order-first">
+        <div className="col-span-2 p-4 md:p-16 md:px-10 order-last lg:order-first">
           <div className="divide-y divide-gray-200 dark:divide-neutral-800">
             <div className="flex gap-x-7 py-6">
               <FaRss className="flex-shrink-0 size-6 mt-1.5 text-gray-800 dark:text-neutral-200" />
-              <Link href={"/social"} className="grow">
+              <Link href={"/s/social"} className="grow">
                 <h3 className="font-semibold text-gray-800 dark:text-neutral-200">
                   Social Media
                 </h3>
                 <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">
                   Explore all our social media platforms
                 </p>
-                <p className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium font-sans2 font-sans2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200">
+                <p className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium font-sans2 text-gray-600 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200">
                   Explore Now
                   <FaArrowRightLong className="flex-shrink-0 size-4 transition ease-in-out group-hover:translate-x-1" />
                 </p>
@@ -74,7 +74,7 @@ function MainContent() {
 
             <div className="flex gap-x-7 py-6">
               <PiChatsDuotone className="flex-shrink-0 size-6 mt-1.5 text-gray-800 dark:text-neutral-200" />
-              <Link href={"/faqs"} className="grow">
+              <Link href={"/s/faqs"} className="grow">
                 <h3 className="font-semibold text-gray-800 dark:text-neutral-200">
                   FAQ
                 </h3>
@@ -105,7 +105,7 @@ function MainContent() {
 
             <div className=" flex gap-x-7 py-6">
               <TfiAnnouncement className="flex-shrink-0 size-6 mt-1.5 text-gray-800 dark:text-neutral-200" />
-              <Link href={"/career"} className="grow">
+              <Link href={"/s/career"} className="grow">
                 <h3 className="font-semibold text-gray-800 dark:text-neutral-200">
                   We&#39;re hiring
                 </h3>
@@ -235,7 +235,7 @@ function MainContent() {
                   href={"mailto::" + email.email}
                   className="space-y-3 pb-0 w-full"
                 >
-                  <h5 className="text-lg font-semibold">{email.title}</h5>
+                  <h5 className="text-lg font-semibold">{email.name}</h5>
                   <p className="text-base font-normal text-orange-500">
                     {email.email}
                   </p>

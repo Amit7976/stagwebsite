@@ -165,7 +165,7 @@ function Footer() {
       { text: "Cookies Policy", link: "/p/cookies" },
     ],
     Community: [
-      { text: "Blog", link: "/blogs" },
+      { text: "Blog", link: "/s/blogs" },
       { text: "Announcement", link: "/s/announcement" },
       { text: "Events", link: "/s/events" },
       { text: "Hirebie Forum", link: "" },
@@ -176,7 +176,7 @@ function Footer() {
       { text: "Instagram", link: "https://www.instagram.com/hirebie_team" },
       { text: "Facebook", link: "https://www.facebook.com/Hirebie.team" },
       { text: "X (Twitter)", link: "https://x.com/hirebie_it" },
-      { text: "WhatsApp", link: "https://api.whatsapp.com/send/?phone=919099006909" },
+      { text: "WhatsApp", link: "https://www.whatsapp.com/channel/0029Vb6D884C1FuGbIvocK38" },
     ],
   };
 

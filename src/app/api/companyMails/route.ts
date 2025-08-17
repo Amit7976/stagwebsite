@@ -2,13 +2,20 @@ import connect2 from "@/dbConfig/dbConfig2";
 import { getCompanyMailModel } from "@/models/companyMailModel";
 import { NextResponse } from "next/server";
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 const conn = await connect2();
 const CompanyMailModel = getCompanyMailModel(conn);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 export async function GET() {
   await connect2();
   try {
-    const emails = await CompanyMailModel.find({ active: true })
+    const emails = await CompanyMailModel.find({ isActive: true })
       .sort({
         createdAt: -1,
       })

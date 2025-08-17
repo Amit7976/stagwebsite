@@ -7,6 +7,7 @@ import SmoothScrollProvider from "./SmoothScrollProvider";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import RootMainLayout from "./RootMainLayout";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -158,6 +159,7 @@ export default function RootLayout({
         >
           <SmoothScrollProvider />
           <Toaster />
+          <Analytics />
           <RootMainLayout>
             {children}
           </RootMainLayout>

@@ -28,22 +28,22 @@ function Products() {
             const leftPart = section.querySelector('.from-left') as HTMLElement | null;
             const rightPart = section.querySelector('.from-right') as HTMLElement | null;
 
-            if (leftPart) {
-                gsap.fromTo(
-                    leftPart,
-                    { x: -100, opacity: 0 },
-                    {
-                        x: 0,
-                        opacity: 1,
-                        ease: 'power2.out',
-                        scrollTrigger: {
-                            trigger: section,
-                            start: 'top 100%',
-                            scrub: true,
-                        } as gsap.plugins.ScrollTriggerInstanceVars,
-                    }
-                );
-            }
+            // if (leftPart) {
+            //     gsap.fromTo(
+            //         leftPart,
+            //         { x: -100, opacity: 0 },
+            //         {
+            //             x: 0,
+            //             opacity: 1,
+            //             ease: 'power2.out',
+            //             scrollTrigger: {
+            //                 trigger: section,
+            //                 start: 'top 100%',
+            //                 scrub: true,
+            //             } as gsap.plugins.ScrollTriggerInstanceVars,
+            //         }
+            //     );
+            // }
 
             if (rightPart) {
                 // 👇 TIMELINE for rightPart with heading + body stagger
@@ -56,18 +56,18 @@ function Products() {
                 });
 
                 // 1️⃣ Slide container from right
-                tl.fromTo(
-                    rightPart,
-                    { x: -40, opacity: 0 },
-                    {
-                        x: 0,
-                        opacity: 1,
-                        stagger: 0.5,
-                        ease: "power3.out",
-                        duration: 1,
-                    },
-                    0
-                );
+                // tl.fromTo(
+                //     rightPart,
+                //     { x: -40, opacity: 0 },
+                //     {
+                //         x: 0,
+                //         opacity: 1,
+                //         stagger: 0.5,
+                //         ease: "power3.out",
+                //         duration: 1,
+                //     },
+                //     0
+                // );
 
                 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

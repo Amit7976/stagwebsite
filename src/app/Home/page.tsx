@@ -2,11 +2,11 @@
 import Footer from '@/components/core/Footer/Footer';
 import HomeHeader from '@/components/core/Header/HomeHeader';
 import HomeHero from '@/components/core/Hero/HomeHero';
+import Banner from '@/components/core/Home/Banner';
 import BlogSection from '@/components/core/Home/BlogSection';
 import { FAQ } from '@/components/core/Home/FAQ';
 import FindUsOnline from '@/components/core/Home/FindUsOnline';
 import InAppFeature from '@/components/core/Home/InAppFeature';
-import SectionOverview from '@/components/core/Home/OverviewSection';
 import ProcessSteps from '@/components/core/Home/ProcessSteps';
 import Products from '@/components/core/Home/Products';
 import SampleProducts from '@/components/core/Home/SampleProducts';
@@ -30,7 +30,8 @@ function Home() {
                 <div className='my-40'><WebsiteSolutions /></div>
                 <div className='mb-20 mt-40 sm:my-40'><InAppFeature /></div>
                 <div className="mt-20 mb-40 sm:my-40"><SampleProducts /></div>
-                <div className="my-40"><SectionOverview /></div>
+                <div className="my-40"><Banner /></div>
+                {/* <div className="my-40"><SectionOverview /></div> */}
                 <div className="my-40"><WhyChoose /></div>
                 <div className="my-40"><Services /></div>
                 <div className="my-40"><ProcessSteps /></div>

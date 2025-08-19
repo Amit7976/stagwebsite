@@ -83,7 +83,7 @@ function MainContent() {
                 <div className="sm:flex">
                   {announcement.image &&
                     <div className="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 aspect-video">
-                      <Image className="group-hover:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover rounded-xl" src={`${announcement.image}`} alt={announcement.title} width={800} height={800} />
+                      <Image className="group-hover:scale-105 transition-transform duration-500 ease-in-out size-full absolute top-0 start-0 object-cover object-top rounded-xl" src={`${announcement.image}`} alt={announcement.title} width={800} height={800} />
                     </div>
                   }
 

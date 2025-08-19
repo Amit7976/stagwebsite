@@ -59,11 +59,11 @@ const socials = [
 export default function FindUsOnline() {
     return (
         <section>
-            <div className="container flex flex-col items-center justify-center">
+            <div className="lg:px-10 flex flex-col items-center justify-center">
                 <h2 className="mb-4 text-center text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
                     Find Us <span className="text-orange-600">On</span>
                 </h2>
-                <p className="mb-8 max-w-2xl text-center text-lg font-normal text-muted-foreground text-xl font-medium">
+                <p className="mb-8 max-w-2xl text-center text-muted-foreground text-xl font-medium">
                     Connect with us on your favorite creative and dev platforms.
                 </p>
                 <div className="mb-10 grid w-full gap-6 grid-cols-3">

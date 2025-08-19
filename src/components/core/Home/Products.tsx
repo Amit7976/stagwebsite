@@ -72,20 +72,20 @@ function Products() {
                 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
                 // 2️⃣ Animate heading and body with slight offset
-                const headingRight = rightPart.querySelector('h3') as HTMLElement | null;
+                // const headingRight = rightPart.querySelector('h3') as HTMLElement | null;
                 const bodyElsRight = rightPart.querySelectorAll('p, ul') as NodeListOf<HTMLElement>;
 
-                if (headingRight) {
-                    tl.from(
-                        headingRight,
-                        {
-                            y: 10,
-                            opacity: 1,
-                            ease: "power3.out",
-                            duration: 1,
-                        },
-                    );
-                }
+                // if (headingRight) {
+                //     tl.from(
+                //         headingRight,
+                //         {
+                //             y: 10,
+                //             opacity: 1,
+                //             ease: "power3.out",
+                //             duration: 1,
+                //         },
+                //     );
+                // }
 
                 if (bodyElsRight.length) {
                     tl.fromTo(
@@ -105,20 +105,20 @@ function Products() {
 
                 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-                const headingLeft = leftPart?.querySelector('h3') as HTMLElement | null;
+                // const headingLeft = leftPart?.querySelector('h3') as HTMLElement | null;
                 const bodyElsLeft = leftPart?.querySelectorAll('p, ul') as NodeListOf<HTMLElement>;
 
-                if (headingLeft) {
-                    tl.from(
-                        headingLeft,
-                        {
-                            y: 10,
-                            opacity: 1,
-                            ease: "power3.out",
-                            duration: 1,
-                        },
-                    );
-                }
+                // if (headingLeft) {
+                //     tl.from(
+                //         headingLeft,
+                //         {
+                //             y: 10,
+                //             opacity: 1,
+                //             ease: "power3.out",
+                //             duration: 1,
+                //         },
+                //     );
+                // }
 
                 if (bodyElsLeft && bodyElsLeft.length) {
                     tl.fromTo(
@@ -172,7 +172,7 @@ function Products() {
                             </div>
                             <div className="from-right lg:flex lg:w-1/2 lg:items-center lg:pl-24 2xl:pl-32">
                                 <div>
-                                    <h3 className="opacity-0 mb-3 text-2xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
+                                    <h3 className="mb-3 text-2xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
                                         Complete IT Solutions
                                     </h3>
                                     <p className="font-medium text-muted-foreground font-sans2 text-lg mb-3">
@@ -212,7 +212,7 @@ function Products() {
                             </div>
                             <div className="from-left lg:flex lg:w-1/2 lg:items-center lg:pr-24 2xl:pr-32">
                                 <div>
-                                    <h3 className="opacity-0 mb-3 text-2xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
+                                    <h3 className="mb-3 text-2xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
                                         Brand Development
                                     </h3>
                                     <p className="font-medium text-muted-foreground font-sans2 text-lg mb-3">
@@ -244,7 +244,7 @@ function Products() {
                             </div>
                             <div className="from-right lg:flex lg:w-1/2 lg:items-center lg:pl-24 2xl:pl-32">
                                 <div>
-                                    <h3 className="opacity-0 mb-3 text-2xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
+                                    <h3 className="mb-3 text-2xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
                                         Internship Opportunities
                                     </h3>
                                     <p className="font-medium text-muted-foreground font-sans2 text-lg mb-3">

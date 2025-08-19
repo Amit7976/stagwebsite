@@ -177,7 +177,7 @@ function Banner() {
             {/* Features Box with Slide Down Animation */}
             {bodyContent.length > 0 && (
                 <div
-                    className={`bg-neutral-900 p-10 max-w-7xl mx-auto rounded-3xl transform transition-all duration-700 ease-out 
+                    className={`bg-neutral-100 dark:bg-neutral-900 p-10 max-w-7xl mx-auto rounded-3xl transform transition-all duration-700 ease-out 
           ${showBox ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}`}
                 >
                     <h3 className="text-2xl font-medium font-sans2 lg:text-3xl text-center mb-10">

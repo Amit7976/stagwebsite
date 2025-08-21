@@ -3,9 +3,6 @@ export default function Content() {
     return (
         <section className="dark:bg-black/20 py-20">
             <div className="px-4 md:px-10">
-                <div className="mb-14 px-5 text-center w-full">
-                    <h2 className="text-3xl md:text-6xl font-medium">Process of <span className="text-orange-600 font-bold">Growth</span></h2>
-                </div>
                 <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
                     {/* Big Featured Card */}
                     <div className="col-span-1 lg:col-span-2">

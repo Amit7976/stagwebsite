@@ -5,19 +5,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-
 const stacks = [
-    "React.js",
-    "Next.js",
-    "TypeScript",
-    "Tailwind CSS",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "PostgreSQL",
-    "GraphQL",
-    "Docker",
+    "Lightning-Fast Websites",
+    "SEO-Optimized Apps",
+    "Custom Dashboards",
+    "eCommerce Platforms",
+    "Booking Systems",
+    "Real-Time Chat Apps",
+    "Payment Gateways",
+    "Analytics & Insights",
+    "AI Chatbots",
+    "API Integrations",
 ];
+
 
 const Hero: React.FC = () => {
     const [index, setIndex] = React.useState(0);
@@ -30,12 +30,12 @@ const Hero: React.FC = () => {
     }, []);
 
     return (
-        <section className="dark relative h-svh max-h-[1400px] w-full bg-[url(https://www.shadcnblocks.com/images/block/full-width-backgrounds/andrew-kliatskyi-uBg4k82xnI4-unsplash.jpg)] bg-cover bg-[100%] bg-no-repeat before:absolute before:left-0 before:top-0 before:size-full before:bg-[radial-gradient(circle_at_100%_-100%,transparent_40%,rgba(0,0,0,.75)_85%)] before:content-['']">
+        <section className="dark relative h-svh max-h-screen w-full bg-transparent pointer-events-none">
             <div className="container relative z-10 flex size-full max-w-[103.125rem] flex-col justify-between pb-14 pt-24 md:justify-end">
-                <div className="flex h-full flex-col justify-between gap-6 md:justify-end px-10 pb-10">
+                <div className="flex h-full flex-col justify-between gap-6 md:justify-end px-10 pb-0">
                     {/* Heading */}
                     <h1 className="text-foreground lg:leading-[3rem]! xl:leading-[5.5rem]! text-4xl font-bold leading-[2.25rem] lg:text-5xl xl:text-7xl">
-                        <div className="mb-2">Web Development</div>
+                        <div className="mb-2">Web <span className="text-red-600">Development</span></div>
                         <div className="relative h-[calc(2.25rem*3)] md:h-[2.25rem] lg:h-[3rem] xl:h-[5.5rem] overflow-hidden">
                             <AnimatePresence mode="wait">
                                 <motion.div
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
                                     animate={{ opacity: 1, y: "0%" }}
                                     exit={{ opacity: 0, y: "-100%" }}
                                     transition={{ duration: 0.5, ease: "easeInOut" }}
-                                    className="absolute left-0 top-0 w-full"
+                                    className="absolute left-0 top-0 w-full text-neutral-600"
                                 >
                                     {stacks[index]}
                                 </motion.div>

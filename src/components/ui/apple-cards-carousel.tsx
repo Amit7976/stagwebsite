@@ -1,5 +1,4 @@
 "use client";
-import { useOutsideClick } from "@/hooks/use-outside-click";
 import { cn } from "@/lib/utils";
 import {
   IconArrowNarrowLeft,
@@ -10,6 +9,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { ImageProps } from "next/image";
 import React, {
   createContext,
+  RefObject,
   useContext,
   useEffect,
   useRef,
@@ -19,7 +19,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { LoaderLink } from "./loaderLinks";
 
 interface CarouselProps {
-  items: JSX.Element[];
+  items: React.ReactNode[];
   initialScroll?: number;
 }
 
@@ -34,9 +34,32 @@ export const CarouselContext = createContext<{
   onCardClose: (index: number) => void;
   currentIndex: number;
 }>({
-  onCardClose: () => {},
+  onCardClose: () => { },
   currentIndex: 0,
 });
+
+
+
+
+function useOutsideClick<T extends HTMLElement>(
+  ref: RefObject<T | null>,
+  handler: () => void
+) {
+  useEffect(() => {
+    function listener(event: MouseEvent) {
+      if (!ref.current || ref.current.contains(event.target as Node)) {
+        return;
+      }
+      handler();
+    }
+
+    document.addEventListener("mousedown", listener);
+    return () => {
+      document.removeEventListener("mousedown", listener);
+    };
+  }, [ref, handler]);
+}
+
 
 export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   const carouselRef = React.useRef<HTMLDivElement>(null);
@@ -71,6 +94,12 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     }
   };
 
+
+  const containerRef = useRef<HTMLDivElement>(null);
+
+
+
+
   const handleCardClose = (index: number) => {
     if (carouselRef.current) {
       const cardWidth = isMobile() ? 230 : 384; // (md:w-96)
@@ -83,6 +112,11 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
       setCurrentIndex(index);
     }
   };
+
+
+  useOutsideClick(containerRef as RefObject<HTMLElement>, () => handleCardClose(0));
+
+
 
   const isMobile = () => {
     return window && window.innerWidth < 768;
@@ -167,13 +201,21 @@ export const Card = ({
 }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const { onCardClose, currentIndex } = useContext(CarouselContext);
+  const { onCardClose } = useContext(CarouselContext);
+
+  const handleOpen = () => setOpen(true);
+
+  const handleClose = () => {
+    setOpen(false);
+    onCardClose(index);
+  };
+
+  // 👇 Yahi par useOutsideClick use karo
+  useOutsideClick(containerRef, handleClose);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        handleClose();
-      }
+      if (event.key === "Escape") handleClose();
     }
 
     if (open) {
@@ -185,17 +227,6 @@ export const Card = ({
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [open]);
-
-  useOutsideClick(containerRef, () => handleClose());
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-    onCardClose(index);
-  };
 
   return (
     <>
@@ -209,10 +240,10 @@ export const Card = ({
               className="fixed inset-0 h-full w-full bg-black/80 backdrop-blur-lg"
             />
             <motion.div
+              ref={containerRef} // ✅ ref lagana mat bhulna
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
               className="relative z-[60] mx-auto my-10 h-fit max-w-5xl rounded-3xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900"
             >
@@ -223,24 +254,25 @@ export const Card = ({
               >
                 <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
               </button>
-              <motion.p
-                layoutId={layout ? `category-${card.title}` : undefined}
-                className="text-base font-medium text-black dark:text-white"
-              >
+              <motion.p className="text-base font-medium text-black dark:text-white">
                 {card.category}
               </motion.p>
-              <motion.p
-                layoutId={layout ? `title-${card.title}` : undefined}
-                className="mt-4 text-2xl font-semibold text-neutral-700 md:text-5xl dark:text-white"
-              >
+              <motion.p className="mt-4 text-2xl font-semibold text-neutral-700 md:text-5xl dark:text-white">
                 {card.title}
               </motion.p>
 
-              <LoaderLink href={card.href} className="py-4 px-10 rounded-4xl bg-neutral-950 mt-10 flex items-center gap-2">Go to {card.title} <FaArrowRightLong/></LoaderLink>
+              <LoaderLink
+                href={card.href}
+                className="py-4 px-10 rounded-4xl bg-neutral-950 mt-10 flex items-center gap-2"
+              >
+                Go to {card.title} <FaArrowRightLong />
+              </LoaderLink>
             </motion.div>
           </div>
         )}
       </AnimatePresence>
+
+      {/* Thumbnail button */}
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
@@ -248,29 +280,23 @@ export const Card = ({
       >
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" />
         <div className="relative z-0 p-8">
-          <motion.p
-            layoutId={layout ? `category-${card.category}` : undefined}
-            className="text-left font-sans text-sm font-medium text-white md:text-base"
-          >
+          <motion.p className="text-left font-sans text-sm font-medium text-white md:text-base">
             {card.category}
           </motion.p>
-          <motion.p
-            layoutId={layout ? `title-${card.title}` : undefined}
-            className="mt-2 max-w-xs text-left font-sans text-xl font-semibold [text-wrap:balance] text-white md:text-3xl"
-          >
+          <motion.p className="mt-2 max-w-xs text-left font-sans text-xl font-semibold text-white md:text-3xl">
             {card.title}
           </motion.p>
         </div>
         <BlurImage
           src={card.src}
           alt={card.title}
-          fill
           className="absolute inset-0 z-10 object-cover"
         />
       </motion.button>
     </>
   );
 };
+
 
 export const BlurImage = ({
   height,
@@ -294,7 +320,6 @@ export const BlurImage = ({
       height={height}
       loading="lazy"
       decoding="async"
-      blurDataURL={typeof src === "string" ? src : undefined}
       alt={alt ? alt : "Background of a beautiful view"}
       {...rest}
     />

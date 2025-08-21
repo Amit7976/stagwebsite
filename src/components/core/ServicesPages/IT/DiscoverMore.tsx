@@ -2,17 +2,6 @@ import { LoaderLink } from "@/components/ui/loaderLinks";
 import { Megaphone, Rocket, Bug, Search, Code2, Database, Server, ShieldCheck } from "lucide-react";
 
 export default function DiscoverMore() {
-    const services = [
-        { icon: Megaphone, label: "Marketing" },
-        { icon: Rocket, label: "Deployment" },
-        { icon: Bug, label: "Testing" },
-        { icon: Search, label: "SEO" },
-        { icon: Code2, label: "Development" },
-        { icon: Database, label: "Database" },
-        { icon: Server, label: "Hosting" },
-        { icon: ShieldCheck, label: "Security" },
-    ];
-
     return (
         <section className="relative bg-background py-24 md:py-40">
             <div className="relative z-0 container">

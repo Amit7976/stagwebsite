@@ -1,4 +1,4 @@
-import { Check, X, Moon, Globe, Cpu, LayoutDashboard, Settings2, Type, Recycle, Search, Smartphone } from "lucide-react";
+import { Check, LayoutDashboard, Moon, Recycle, Search, Settings2, Smartphone, Type, X } from "lucide-react";
 
 export default function CompareUs() {
     const features = [

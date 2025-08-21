@@ -21,7 +21,7 @@ const CaseStudy = () => {
                             <div className="flex h-full flex-col justify-between gap-10">
                                 <q className="sm:text-xl">
                                     This productivity tool transformed how we collaborate. Our
-                                    team's workflow improved dramatically, and we've cut meeting
+                                    team&#39;s workflow improved dramatically, and we&#39;ve cut meeting
                                     time by half while increasing output.
                                 </q>
                                 <div className="flex items-end gap-6">

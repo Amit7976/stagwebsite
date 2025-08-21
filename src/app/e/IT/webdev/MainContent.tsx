@@ -25,7 +25,7 @@ function ManiContent() {
 
       <div><Hero /></div>
 
-      <div className="mt-20 mb-0"><Content /></div>
+      <div id='main' className="mt-20 mb-0"><Content /></div>
       <div className="mt-0 mb-40"><ServicesSection /></div>
       <div className="my-40"><AiInclude /></div>
       <div className="my-20"><ScrollBasedVelocity text={" Web Development "} /></div>

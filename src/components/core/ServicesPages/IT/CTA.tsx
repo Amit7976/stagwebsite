@@ -26,7 +26,7 @@ export default function CTA() {
                                 </p>
 
                                 <h1 className="mt-3 text-9xl font-bold tracking-tighter text-foreground">
-                                    Let's Create Something{" "}
+                                    Let&#39;s Create Something{" "}
                                     <span className="bg-linear-to-b from-background to-foreground bg-clip-text text-transparent">
                                         Amazing!
                                     </span>

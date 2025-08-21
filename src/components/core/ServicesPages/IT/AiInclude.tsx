@@ -17,7 +17,7 @@ const AiInclude = () => {
                     <div className="flex flex-col items-center justify-center gap-12 text-center">
                         <div className="flex max-w-3xl flex-col gap-8">
                             <h2 className="text-2xl tracking-tight text-white md:text-7xl scale-105 font-medium">
-                                "Optional AI-powered feature or tools"
+                                &#34;Optional AI-powered feature or tools&#34;
                             </h2>
                             <div className="text-2xl font-medium tracking-tight text-neutral-300">
                                 You can request to add optional AI features and tools in your web application as per your needs.

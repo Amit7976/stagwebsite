@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, ArrowRight, Code, PenTool, Bug, Rocket, Search } from "lucide-react";
+import { CheckCircle2, ArrowRight, Code, PenTool, Bug, Rocket, LucideIcon } from "lucide-react";
 
 const StepCard = ({
     icon: Icon,
@@ -11,7 +11,7 @@ const StepCard = ({
     price,
     ctaVariant = "outline",
 }: {
-    icon: any;
+    icon: LucideIcon;
     title: string;
     duration?: string;
     description: string;
@@ -38,7 +38,7 @@ const StepCard = ({
 
             <div className="mt-6 space-y-4">
                 <div>
-                    <h4 className="mb-3 text-sm font-medium">What's included:</h4>
+                    <h4 className="mb-3 text-sm font-medium">What&#39;s included:</h4>
                     <ul className="space-y-2 text-sm">
                         {items.map((item, idx) => (
                             <li key={idx} className="flex items-center gap-3">

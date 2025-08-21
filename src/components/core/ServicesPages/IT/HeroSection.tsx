@@ -1,10 +1,9 @@
 "use client";
 
-import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import React from "react";
 const stacks = [
     "Lightning-Fast Websites",
     "SEO-Optimized Apps",
@@ -59,7 +58,7 @@ const Hero: React.FC = () => {
                         </p>
 
                         <div className="flex flex-wrap items-center justify-end gap-5 h-20 pl-10">
-                            <div className="flex flex-wrap items-center gap-5 fixed bottom-10 left-10 z-[999999]">
+                            <div className="flex flex-wrap items-center gap-5 fixed bottom-10 left-10 z-[999999] pointer-events-auto">
                                 <Link
                                     href="#"
                                     data-slot="button"
@@ -77,14 +76,14 @@ const Hero: React.FC = () => {
                             </div>
 
                             {/* Scroll Button */}
-                            <Button
+                            <Link
+                                href={"#main"}
                                 data-slot="button"
-                                className="font-medium font-sans2 text-xl text-white"
-                                variant={"ghost"}
+                                className="font-medium font-sans2 text-xl text-white pointer-events-auto flex items-center gap-2"
                             >
                                 <div>Scroll to explore</div>
-                                <ArrowDown className="size-3! lg:size-4! stroke-white animate-bounce ease-in" />
-                            </Button>
+                                <ArrowDown className="size-3! lg:size-4! stroke-white animate-bounce ease-in mt-2" />
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -111,7 +111,7 @@ const MainContent = () => {
                 {images.map((img, i) => (
                     <motion.div
                         key={i}
-                        className="mb-4 overflow-hidden rounded-2xl cursor-pointer border-4 border-gray-100 dark:border-neutral-800 hover:border-foreground dark:hover:border-foreground duration-500 break-inside-avoid"
+                        className="mb-4 overflow-hidden rounded-2xl cursor-pointer border-4 border-gray-100 dark:border-neutral-800 hover:border-foreground dark:hover:border-foreground duration-500 break-inside-avoid hover:scale-105"
                         initial={{ opacity: 0, y: i % 2 === 0 ? 50 : -50, scale: 0.9 }}
                         whileInView={{ opacity: 1, y: 0, scale: 1 }}
                         transition={{ duration: 0.6, delay: i * 0.1 }}

@@ -1,8 +1,45 @@
 import React from "react";
-import { Keyboard, Volume2, Eye } from "lucide-react";
-
+import { Eye, Clock, Wallet, TrendingUp, Users, Layers, BadgeCheck } from "lucide-react";
 
 const AiInclude = () => {
+    const features = [
+        {
+            icon: <Clock className="stroke-muted-foreground size-7" />,
+            title: "24/7 Online Presence",
+            desc: "Your customers can learn about your business, explore your services, and even make purchases—anytime, anywhere—without being restricted by store hours or location."
+        },
+        {
+            icon: <Eye className="stroke-muted-foreground size-7" />,
+            title: "First Impressions Matter",
+            desc: "A sleek, fast-loading, and well-designed website builds trust instantly. In fact, studies show that users form an opinion about a site within 0.05 seconds—make it count."
+        },
+        {
+            icon: <BadgeCheck className="stroke-muted-foreground size-7" />,
+            title: "Increased Credibility & Brand Value",
+            desc: "An outdated or poorly designed site sends the wrong message. A professionally developed platform positions your brand as modern, reliable, and trustworthy."
+        },
+        {
+            icon: <TrendingUp className="stroke-muted-foreground size-7" />,
+            title: "Wider Reach & Market Expansion",
+            desc: "Unlike physical stores, a website can reach global audiences without the need for a physical presence—opening up entirely new revenue streams."
+        },
+        {
+            icon: <Users className="stroke-muted-foreground size-7" />,
+            title: "Better Customer Engagement",
+            desc: "Web apps allow for personalized user experiences, chat support, feedback systems, and interactive tools that increase customer satisfaction."
+        },
+        {
+            icon: <Layers className="stroke-muted-foreground size-7" />,
+            title: "Scalability & Flexibility",
+            desc: "Custom web development ensures your site/app can evolve as your business grows—adding new features, integrating third-party tools, or handling more users."
+        },
+        {
+            icon: <Wallet className="stroke-muted-foreground size-7" />,
+            title: "Cost Efficiency in the Long Run",
+            desc: "While there is an upfront investment, a well-built website or app reduces long-term costs by automating processes, minimizing errors, and increasing sales conversions."
+        }
+    ];
+
     return (
         <section className="px-20 w-full">
             {/* Hero Section */}
@@ -17,10 +54,10 @@ const AiInclude = () => {
                     <div className="flex flex-col items-center justify-center gap-12 text-center">
                         <div className="flex max-w-3xl flex-col gap-8">
                             <h2 className="text-2xl tracking-tight text-white md:text-7xl scale-105 font-medium">
-                                &#34;Optional AI-powered feature or tools&#34;
+                                &#34;Business <span className="text-orange-600">Benefits </span>&#34;
                             </h2>
                             <div className="text-2xl font-medium tracking-tight text-neutral-300">
-                                You can request to add optional AI features and tools in your web application as per your needs.
+                                A high-quality website or web app can be a game-changer for any business. Here’s why:
                             </div>
                         </div>
                     </div>
@@ -29,43 +66,43 @@ const AiInclude = () => {
 
             {/* Features Section */}
             <div className="container">
-                <div className="grid items-start gap-8 py-20 lg:grid-cols-3">
-                    <div className="flex flex-col items-center justify-center gap-4">
-                        <Keyboard className="stroke-muted-foreground size-7" />
-                        <div className="max-w-xs text-center text-xl font-semibold">
-                            Keyboard Navigation
+                <div className="grid items-stretch gap-8 py-20 md:gid-cols-2 lg:grid-cols-4">
+                    {features.slice(0,4).map((item, idx) => (
+                        <div
+                            key={idx}
+                            className="group relative overflow-hidden rounded-xl border-2 transition-all duration-300 hover:-translate-y-1 hover:border-black dark:hover:border-white border-primary/20 bg-muted/0 p-6"
+                        >
+                            <div className="flex flex-col items-center justify-center gap-4">
+                                {item.icon}
+                                <div className="max-w-xs text-center text-xl font-semibold">
+                                    {item.title}
+                                </div>
+                                <div className="text-muted-foreground max-w-lg text-center text-base">
+                                    {item.desc}
+                                </div>
+                            </div>
                         </div>
-                        <div className="text-muted-foreground max-w-lg text-center text-base">
-                            Ensure all interactive elements are accessible via keyboard alone,
-                            allowing users with motor impairments to navigate easily and
-                            efficiently without a mouse.
-                        </div>
-                    </div>
-
-                    <div className="flex flex-col items-center justify-center gap-4">
-                        <Volume2 className="stroke-muted-foreground size-7" />
-                        <div className="max-w-xs text-center text-xl font-semibold">
-                            Screen Reader Friendly
-                        </div>
-                        <div className="text-muted-foreground max-w-lg text-center text-base">
-                            Use semantic HTML and proper ARIA labels to help screen readers
-                            convey structure and meaning clearly to users with visual
-                            impairments.
-                        </div>
-                    </div>
-
-                    <div className="flex flex-col items-center justify-center gap-4">
-                        <Eye className="stroke-muted-foreground size-7" />
-                        <div className="max-w-xs text-center text-xl font-semibold">
-                            Color Contrast Check
-                        </div>
-                        <div className="text-muted-foreground max-w-lg text-center text-base">
-                            Maintain strong color contrast between text and background to
-                            support users with low vision and improve readability across
-                            different lighting conditions.
-                        </div>
-                    </div>
+                    ))}
                 </div>
+                <div className=" grid justify-between items-stretch sm:grid-cols-2 md:grid-cols-3 gap-8 ">
+                    {features.slice(4).map((item, idx) => (
+                        <div
+                            key={idx}
+                            className="group relative overflow-hidden rounded-xl border-2 transition-all duration-300 hover:-translate-y-1 hover:border-black dark:hover:border-white border-primary/20 bg-muted/0 p-6"
+                        >
+                            <div className="flex flex-col items-center justify-center gap-4">
+                                {item.icon}
+                                <div className="max-w-xs text-center text-xl font-semibold">
+                                    {item.title}
+                                </div>
+                                <div className="text-muted-foreground max-w-lg text-center text-base">
+                                    {item.desc}
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
             </div>
         </section>
     );

@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
                 <div className="flex h-full flex-col justify-between gap-6 md:justify-end px-10 pb-0">
                     {/* Heading */}
                     <h1 className="text-foreground lg:leading-[3rem]! xl:leading-[5.5rem]! text-4xl font-bold leading-[2.25rem] lg:text-5xl xl:text-7xl">
-                        <div className="mb-2">Web <span className="text-red-600">Development</span></div>
+                        <div className="mb-2">Websites & Web <span className="text-orange-600">Development </span></div>
                         <div className="relative h-[calc(2.25rem*3)] md:h-[2.25rem] lg:h-[3rem] xl:h-[5.5rem] overflow-hidden">
                             <AnimatePresence mode="wait">
                                 <motion.div

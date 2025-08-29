@@ -1,4 +1,4 @@
-
+import React from "react";
 export default function Content() {
     return (
         <section className="dark:bg-black/20 py-20">
@@ -13,13 +13,16 @@ export default function Content() {
                                 </span>
                                 <div className="flex flex-col gap-6">
                                     <h3 className="text-2xl font-medium lg:text-6xl leading-tight">
-                                        Deep Discovery
+                                        What It Is
                                     </h3>
                                     <p className="text-base md:text-xl lg:font-medium text-muted-foreground">
-                                        Before we start building anything, we dive deep to understand your business
-                                        from every angle, your goals, target audience, industry trends, and your unique challenges.
-                                        This discovery phase helps us uncover real opportunities and align our strategy
-                                        with your long-term vision, so we lay a rock-solid foundation for everything that follows.
+                                        In today’s digital-first world, a business without a strong online presence is like a store without an entrance. Website & Web App Development Services refer to the complete process of designing, developing, and deploying websites and web-based applications that are tailored to meet the specific needs of businesses, organizations, and individuals.
+                                    </p>
+                                    <p className="text-base md:text-xl lg:font-medium text-muted-foreground">
+                                        A website is often the first touchpoint for potential customers—it showcases your brand, products, and services. A web application, on the other hand, is an interactive platform built to perform specific functions, such as e-commerce portals, booking systems, dashboards, CRMs, or custom tools.
+                                    </p><p className="text-base md:text-xl lg:font-medium text-muted-foreground">
+                                        At its core, web development involves multiple stages:
+
                                     </p>
                                 </div>
 
@@ -32,14 +35,19 @@ export default function Content() {
                         {[
                             {
                                 badge: "Strategy",
-                                title: "Smart Strategy",
-                                desc: "We plan custom solutions that actually work for you.",
+                                title: "Planning & Strategy",
+                                desc: "Understanding your business objectives, target audience, and goals.",
                             },
                             {
                                 badge: "Design",
-                                title: "Creative Design",
-                                desc: "We craft beautiful designs that stand out and convert.",
+                                title: "UI/UX Design",
+                                desc: "Creating an intuitive and visually appealing interface that engages users.",
                             },
+                            {
+                                badge: "Frontend",
+                                title: "Frontend Development",
+                                desc: "Building the client-facing side using technologies like HTML, CSS, JavaScript, React, Vue, or Angular."
+                            }
                         ].map((item, idx) => (
                             <div key={idx} className="flex-1">
                                 <div className="group text-card-foreground flex flex-col gap-6 rounded-xl shadow-sm h-full items-start border-2 border-transparent bg-gray-100 dark:bg-neutral-950 p-5 duration-500 hover:border-primary">
@@ -57,21 +65,23 @@ export default function Content() {
                         ))}
                     </div>
                     {[
+
                         {
-                            badge: "Develop",
-                            title: "Agile Development",
-                            desc: "Our  build robust, scalable digital solutions tailored to your evolving business needs. From custom web apps to complex system integrations, we work in agile sprints to deliver faster, adapt quickly, and keep you involved every step of the way."
+                            badge: "Backend",
+                            title: "Backend Development",
+                            desc: "Implementing server-side logic with languages such as Node.js, Python, PHP, or Java, and integrating databases like MySQL, MongoDB, or PostgreSQL."
                         },
                         {
-                            badge: "Marketing",
-                            title: "Data-Driven Marketing",
-                            desc: "Our team tracks audience insights, optimizes ad spend, and fine-tunes strategies to maximize ROI. The result? Marketing that reaches the right people and delivers measurable growth for your brand."
+                            badge: "Testing",
+                            title: "Testing & Optimization",
+                            desc: "Ensuring the website/app works seamlessly on all devices and browsers."
                         },
                         {
-                            badge: "Support",
-                            title: "Ongoing Support & Growth",
-                            desc: "We stay by your side with dedicated support, regular performance reviews, and proactive updates to keep your digital products secure, up-to-date, and growing along with your business ambitions."
+                            badge: "Deployment",
+                            title: "Deployment & Maintenance",
+                            desc: "Launching the project and keeping it up-to-date for security, performance, and scalability."
                         }
+
 
                     ].map((item, idx) => (
                         <div key={idx}>

@@ -1,9 +1,7 @@
 import { Connection, InferSchemaType, Model, Schema } from "mongoose";
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 const AnnouncementSchema = new Schema(
   {
@@ -14,7 +12,7 @@ const AnnouncementSchema = new Schema(
     active: { type: Boolean, default: true },
     timestamp: { type: Date, default: Date.now },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -30,7 +28,7 @@ export type AnnouncementType = InferSchemaType<typeof AnnouncementSchema>;
 
 // Dynamic model getter
 export const getAnnouncementModel = (
-  conn: Connection
+  conn: Connection,
 ): Model<AnnouncementType> => {
   return (
     conn.models.Announcement ||

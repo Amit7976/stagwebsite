@@ -1,9 +1,8 @@
-import Footer from '@/components/core/Footer/Footer';
-import Header from '@/components/core/Header/Header';
-import MainContent from './MainContent';
+import Footer from "@/components/core/Footer/Footer";
+import Header from "@/components/core/Header/Header";
+import MainContent from "./MainContent";
 
 function page() {
- 
   return (
     <>
       <Header />
@@ -12,7 +11,7 @@ function page() {
 
       <Footer />
     </>
-  )
+  );
 }
 
-export default page
+export default page;

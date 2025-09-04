@@ -1,10 +1,15 @@
-"use client"
+"use client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import React from "react";
 import { CiLink } from "react-icons/ci";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa6";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
@@ -23,14 +28,10 @@ import { MdOutlineAccountCircle } from "react-icons/md";
 import { BsChatDots, BsDatabase } from "react-icons/bs";
 import { useRouter } from "next/navigation";
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 function MainContent() {
-
-
   const popularQuestions = [
     {
       title: "What is Hirebie?",
@@ -57,11 +58,8 @@ function MainContent() {
       link: "/s/faqs/Does Hirebie offer project revisions",
     },
   ];
-  
-
 
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   const popularLinks = [
     {
@@ -91,9 +89,7 @@ function MainContent() {
     },
   ];
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   const helpLinks = [
     {
@@ -115,7 +111,8 @@ function MainContent() {
     {
       title: "Privacy Policy",
       link: "/s/privacy",
-      description: "Review our privacy policy to learn how we protect and manage your personal information.",
+      description:
+        "Review our privacy policy to learn how we protect and manage your personal information.",
       icon: <MdOutlinePolicy className="w-1/4 h-auto p-3" />,
       image: "",
     },
@@ -138,7 +135,8 @@ function MainContent() {
     {
       title: "FAQ",
       link: "/s/faqs",
-      description: "Explore frequently asked questions to get quick answers about using Hirebie.",
+      description:
+        "Explore frequently asked questions to get quick answers about using Hirebie.",
       icon: <LuMessagesSquare className="w-1/4 h-auto p-3" />,
       image: "",
     },
@@ -153,14 +151,16 @@ function MainContent() {
     {
       title: "Mobile App",
       link: "/s/mobileApp",
-      description: "Get started with the Hirebie mobile app and stay connected on the go.",
+      description:
+        "Get started with the Hirebie mobile app and stay connected on the go.",
       icon: <MdOutlineInstallDesktop className="w-1/4 h-auto p-3" />,
       image: "",
     },
     {
       title: "Feature Updates",
       link: "/s/announcement",
-      description: "Stay informed about the latest features and enhancements to Hirebie.",
+      description:
+        "Stay informed about the latest features and enhancements to Hirebie.",
       icon: <CiViewList className="w-1/4 h-auto p-3" />,
       image: "",
     },
@@ -174,7 +174,8 @@ function MainContent() {
     {
       title: "Feedback",
       link: "/s/feedback",
-      description: "Share your thoughts and suggestions to help us improve Hirebie.",
+      description:
+        "Share your thoughts and suggestions to help us improve Hirebie.",
       icon: <VscFeedback className="w-1/4 h-auto p-3" />,
       image: "",
     },
@@ -195,7 +196,8 @@ function MainContent() {
     {
       title: "Password Reset",
       link: "/s/passwordReset",
-      description: "Reset your password if you’ve forgotten it or want to update it.",
+      description:
+        "Reset your password if you’ve forgotten it or want to update it.",
       icon: <PiPassword className="w-1/4 h-auto p-3" />,
       image: "",
     },
@@ -208,30 +210,26 @@ function MainContent() {
     },
   ];
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   const router = useRouter();
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
   const handleSearch = () => {
-    const searchInputElement = document.getElementById('searchInput') as HTMLInputElement | null;
+    const searchInputElement = document.getElementById(
+      "searchInput",
+    ) as HTMLInputElement | null;
     if (searchInputElement) {
       const searchInput = searchInputElement.value;
-      if (searchInput.trim() !== '') {
+      if (searchInput.trim() !== "") {
         // Navigate to /faq with the search query as a parameter
         router.push(`/faqs/${encodeURIComponent(searchInput)}`);
       }
     }
   };
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   return (
     <>
@@ -323,7 +321,12 @@ function MainContent() {
         </div>
 
         <div id="importantLinks" className="mt-32 px-10">
-          <h3 className="text-4xl font-semibold mb-10 flex items-center gap-3">Important <span className="underline">Links</span><Link href={'#importantLinks'}><PiLinkSimpleBold className="hover:text-blue-500" /></Link></h3>
+          <h3 className="text-4xl font-semibold mb-10 flex items-center gap-3">
+            Important <span className="underline">Links</span>
+            <Link href={"#importantLinks"}>
+              <PiLinkSimpleBold className="hover:text-blue-500" />
+            </Link>
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
             {helpLinks.map((item, index) => (
               <Link

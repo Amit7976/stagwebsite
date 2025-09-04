@@ -21,14 +21,14 @@ function MainContent() {
     <>
       <div className="py-32 w-full max-w-6xl mx-auto font-sans leading-relaxed text-xl">
         <header className="space-y-10 ">
-          <Link href={'/'}>
-              <Image
-            src={"/images/logo/logo.svg"}
-            alt="Jobboost Logo"
-            width={800}
-            height={800}
-            className="w-56 h-auto"
-          />
+          <Link href={"/"}>
+            <Image
+              src={"/images/logo/logo.svg"}
+              alt="Jobboost Logo"
+              width={800}
+              height={800}
+              className="w-56 h-auto"
+            />
           </Link>
           <h2 className="text-[9rem] leading-[8rem] font-bold text-gray-400">
             <span className="text-5xl text-black dark:text-white">Privacy</span>
@@ -36,18 +36,18 @@ function MainContent() {
             Policy
           </h2>
         </header>
-        
+
         <Introduction />
         <InformationCollection />
         <DataUsage />
         <DataProtectionRights />
         <DataRetentionPolicies />
         <CookiesAndTrackingTechnologies />
-        <ThirdPartyServices/>
+        <ThirdPartyServices />
         <InternationalDataTransfers />
         <DataProtectionForMinors />
         <SecurityMeasures />
-        <YourRightsRegardingData/>
+        <YourRightsRegardingData />
         <DataProtectionForUsers />
         <LegalCompliance />
         <UpdatesToThePrivacyPolicy />

@@ -1,9 +1,7 @@
 import mongoose, { Connection, InferSchemaType, Model } from "mongoose";
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 const TestimonialSchema = new mongoose.Schema({
   active: { type: Boolean, default: true },
@@ -27,7 +25,7 @@ export type TestimonialType = InferSchemaType<typeof TestimonialSchema>;
 
 // Dynamic model getter
 export const getTestimonialModel = (
-  conn: Connection
+  conn: Connection,
 ): Model<TestimonialType> => {
   return (
     conn.models.Testimonial ||

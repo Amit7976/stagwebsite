@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -51,7 +51,7 @@ const userSchema = new mongoose.Schema(
       type: [{ type: String }],
       set: function (userProvidedAccess: string[]) {
         return Array.from(
-          new Set([...(userProvidedAccess || []), ...DEFAULT_ACCESS])
+          new Set([...(userProvidedAccess || []), ...DEFAULT_ACCESS]),
         );
       },
       default: DEFAULT_ACCESS,
@@ -59,9 +59,8 @@ const userSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-  }
+  },
 );
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // SAVE THE MODEL

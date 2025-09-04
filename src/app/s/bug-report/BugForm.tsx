@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Textarea } from "@/components/ui/textarea";
@@ -10,21 +10,16 @@ import { z } from "zod";
 import { bugFormSchema } from "./bugFormSchema";
 import { toast } from "sonner";
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 function BugForm() {
-
   const [file, setFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(false);
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-  // SET INITIALLY DATA 
+  // SET INITIALLY DATA
   const [data, setData] = useState({
     reason: "",
     explain: "",
@@ -33,25 +28,22 @@ function BugForm() {
     addInfo: "",
   });
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   // CLEAR FORM FUNCTION
   function clearForm() {
-    setData({ // set data initial state
+    setData({
+      // set data initial state
       reason: "",
       explain: "",
       priority: "",
       pageUrl: "",
       addInfo: "",
-    })
+    });
     setFile(null);
   }
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   // HANDLE FILE UPLOADING
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -70,49 +62,40 @@ function BugForm() {
     }
   };
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
   // SET DATA WHEN INPUT
-  const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const onChangeHandler = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const name = event.target.name;
     const value = event.target.value;
-    setData(data => ({ ...data, [name]: value }));
+    setData((data) => ({ ...data, [name]: value }));
     console.log(data);
   };
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-  // SET DATA WHEN CLICK ON REASON TOGGLE BUTTON 
+  // SET DATA WHEN CLICK ON REASON TOGGLE BUTTON
   const onReasonToggleHandler = (reason: string) => {
-    setData(data => ({ ...data, reason: reason }));
+    setData((data) => ({ ...data, reason: reason }));
   };
-
-
 
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-  // SET DATA WHEN CLICK ON PRIORITY TOGGLE BUTTON 
+  // SET DATA WHEN CLICK ON PRIORITY TOGGLE BUTTON
   const onPriorityToggleHandler = (priority: string) => {
-    setData(data => ({ ...data, priority: priority }));
+    setData((data) => ({ ...data, priority: priority }));
   };
 
-
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  
+
   const onSubmitHandler = async (
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ): Promise<void> => {
     e.preventDefault();
 
     setLoading(true);
-
-
 
     try {
       // validate with Zod
@@ -151,13 +134,14 @@ function BugForm() {
     }
   };
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   return (
     <>
-      <section id="bugForm" className="w-full max-w-7xl mx-auto px-4 lg:-0 py-10 lg:py-32 my-10">
+      <section
+        id="bugForm"
+        className="w-full max-w-7xl mx-auto px-4 lg:-0 py-10 lg:py-32 my-10"
+      >
         <h4 className="text-5xl font-semibold">Bug Report Form</h4>
 
         <div className="mt-14 lg:mt-28">
@@ -167,7 +151,7 @@ function BugForm() {
             <ToggleGroup type="single">
               <ToggleGroupItem
                 name="reason"
-                onClick={() => onReasonToggleHandler('Functionality Issue')}
+                onClick={() => onReasonToggleHandler("Functionality Issue")}
                 value="Functionality Issue"
                 aria-label="Toggle Functionality Issue"
                 className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
@@ -176,7 +160,7 @@ function BugForm() {
               </ToggleGroupItem>
               <ToggleGroupItem
                 name="reason"
-                onClick={() => onReasonToggleHandler('Visual/Aesthetic')}
+                onClick={() => onReasonToggleHandler("Visual/Aesthetic")}
                 value="Visual/Aesthetic"
                 aria-label="Toggle Visual/Aesthetic"
                 className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
@@ -185,7 +169,7 @@ function BugForm() {
               </ToggleGroupItem>
               <ToggleGroupItem
                 name="reason"
-                onClick={() => onReasonToggleHandler('Performance Issue')}
+                onClick={() => onReasonToggleHandler("Performance Issue")}
                 value="Performance Issue"
                 aria-label="Toggle Performance Issue"
                 className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
@@ -194,7 +178,7 @@ function BugForm() {
               </ToggleGroupItem>
               <ToggleGroupItem
                 name="reason"
-                onClick={() => onReasonToggleHandler('Security Issue')}
+                onClick={() => onReasonToggleHandler("Security Issue")}
                 value="Security Issue"
                 aria-label="Toggle Security Issue"
                 className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
@@ -203,7 +187,7 @@ function BugForm() {
               </ToggleGroupItem>
               <ToggleGroupItem
                 name="reason"
-                onClick={() => onReasonToggleHandler('Data/Content issue')}
+                onClick={() => onReasonToggleHandler("Data/Content issue")}
                 value="Data/Content issue"
                 aria-label="Toggle Data/Content issue"
                 className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
@@ -212,7 +196,7 @@ function BugForm() {
               </ToggleGroupItem>
               <ToggleGroupItem
                 name="reason"
-                onClick={() => onReasonToggleHandler('Crash/Error Issue')}
+                onClick={() => onReasonToggleHandler("Crash/Error Issue")}
                 value="Crash/Error Issue"
                 aria-label="Toggle Crash/Error Issue"
                 className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
@@ -221,7 +205,11 @@ function BugForm() {
               </ToggleGroupItem>
               <ToggleGroupItem
                 name="reason"
-                onClick={() => onReasonToggleHandler('Localization/Internationalization Issue')}
+                onClick={() =>
+                  onReasonToggleHandler(
+                    "Localization/Internationalization Issue",
+                  )
+                }
                 value="Localization/Internationalization Issue"
                 aria-label="Toggle Localization/Internationalization Issue"
                 className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
@@ -230,7 +218,7 @@ function BugForm() {
               </ToggleGroupItem>
               <ToggleGroupItem
                 name="reason"
-                onClick={() => onReasonToggleHandler('Usability/UX Issue')}
+                onClick={() => onReasonToggleHandler("Usability/UX Issue")}
                 value="Usability/UX Issue"
                 aria-label="Toggle Usability/UX Issue"
                 className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
@@ -239,7 +227,7 @@ function BugForm() {
               </ToggleGroupItem>
               <ToggleGroupItem
                 name="reason"
-                onClick={() => onReasonToggleHandler('Other')}
+                onClick={() => onReasonToggleHandler("Other")}
                 value="Other"
                 aria-label="Toggle Other"
                 className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
@@ -248,7 +236,6 @@ function BugForm() {
               </ToggleGroupItem>
             </ToggleGroup>
           </div>
-
         </div>
         <div className="my-16">
           <h6 className="text-xl font-medium">
@@ -260,7 +247,7 @@ function BugForm() {
             relevant information or observations
           </p>
           <Textarea
-            name='explain'
+            name="explain"
             onChange={onChangeHandler}
             value={data.explain}
             placeholder="Type your observations here."
@@ -278,7 +265,7 @@ function BugForm() {
             <ToggleGroup type="single">
               <ToggleGroupItem
                 name="priority"
-                onClick={() => onPriorityToggleHandler('Basic')}
+                onClick={() => onPriorityToggleHandler("Basic")}
                 value="Basic"
                 aria-label="Toggle Basic"
                 className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
@@ -287,7 +274,7 @@ function BugForm() {
               </ToggleGroupItem>
               <ToggleGroupItem
                 name="priority"
-                onClick={() => onPriorityToggleHandler('Update')}
+                onClick={() => onPriorityToggleHandler("Update")}
                 value="Update"
                 aria-label="Toggle Update"
                 className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
@@ -296,7 +283,7 @@ function BugForm() {
               </ToggleGroupItem>
               <ToggleGroupItem
                 name="priority"
-                onClick={() => onPriorityToggleHandler('Low Priority')}
+                onClick={() => onPriorityToggleHandler("Low Priority")}
                 value="Low Priority"
                 aria-label="Toggle Low Priority"
                 className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
@@ -305,7 +292,7 @@ function BugForm() {
               </ToggleGroupItem>
               <ToggleGroupItem
                 name="priority"
-                onClick={() => onPriorityToggleHandler('Medium Priority')}
+                onClick={() => onPriorityToggleHandler("Medium Priority")}
                 value="Medium Priority"
                 aria-label="Toggle Medium Priority"
                 className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
@@ -314,7 +301,7 @@ function BugForm() {
               </ToggleGroupItem>
               <ToggleGroupItem
                 name="priority"
-                onClick={() => onPriorityToggleHandler('High Priority')}
+                onClick={() => onPriorityToggleHandler("High Priority")}
                 value="High Priority"
                 aria-label="Toggle High Priority"
                 className="flex-shrink-0 bg-transparent border-2 rounded-full px-14 py-3.5 h-auto font-medium border-orange-300 dark:border-orange-900 cursor-pointer duration-300"
@@ -323,7 +310,6 @@ function BugForm() {
               </ToggleGroupItem>
             </ToggleGroup>
           </div>
-
         </div>
         <div className="my-16">
           <h6 className="text-xl font-medium">Page URL</h6>
@@ -332,7 +318,7 @@ function BugForm() {
             helpful in resolving the bug faster
           </p>
           <Input
-            name='pageUrl'
+            name="pageUrl"
             onChange={onChangeHandler}
             value={data.pageUrl}
             placeholder="Bugs appeared page URL"
@@ -351,7 +337,8 @@ function BugForm() {
             <Input
               id="file"
               name="file"
-              type="file" accept=".jpeg,.jpg,.png,.pdf,.mp4,.webm,.ogg"
+              type="file"
+              accept=".jpeg,.jpg,.png,.pdf,.mp4,.webm,.ogg"
               onChange={handleFileUpload}
               className="flex-shrink-0 bg-gray-200 border-gray-400 border-2 rounded-full px-10 py-4 h-auto font-medium text-red-500 cursor-pointer pl-12"
             />
@@ -366,7 +353,7 @@ function BugForm() {
             URLS
           </p>
           <Textarea
-            name='addInfo'
+            name="addInfo"
             onChange={onChangeHandler}
             value={data.addInfo}
             placeholder="Error logs, console outputs, relevant
@@ -384,23 +371,20 @@ function BugForm() {
           >
             Cancel
           </Button>
-          {
-            loading ? (
-              <div className="min-w-40 px-10 cursor-progress select-none font-semibold rounded-full h-auto border-2 duration-500 shadow-xl hover:shadow-lg flex items-center gap-3">
-                <div className="loader scale-50"></div>
-                <p>Submitting</p>
-              </div>
-            ) : (
-              <Button
-                variant={"outline"}
-                onClick={onSubmitHandler}
-                  className="min-w-40 px-16 py-3 font-semibold rounded-full h-auto hover:bg-black hover:text-white border-[3px] border-black hover:border-black duration-500"
-              >
-                Submit your Report
-              </Button>
-            )
-          }
-
+          {loading ? (
+            <div className="min-w-40 px-10 cursor-progress select-none font-semibold rounded-full h-auto border-2 duration-500 shadow-xl hover:shadow-lg flex items-center gap-3">
+              <div className="loader scale-50"></div>
+              <p>Submitting</p>
+            </div>
+          ) : (
+            <Button
+              variant={"outline"}
+              onClick={onSubmitHandler}
+              className="min-w-40 px-16 py-3 font-semibold rounded-full h-auto hover:bg-black hover:text-white border-[3px] border-black hover:border-black duration-500"
+            >
+              Submit your Report
+            </Button>
+          )}
         </div>
       </section>
     </>

@@ -83,88 +83,88 @@ function Testimonial() {
       jobTitle: "Freelance React Developer",
     },
   ];
-const testimonials2 = [
-  {
-    stars: 5,
-    text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-    imgSrc:
-      "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
-    name: "Leslie Alexander",
-    jobTitle: "Freelance React Developer",
-  },
-  {
-    stars: 4,
-    text: "The service was excellent. The site looks amazing and works perfectly.",
-    imgSrc:
-      "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female-2.png",
-    name: "Jane Doe",
-    jobTitle: "Product Manager",
-  },
-  {
-    stars: 5,
-    text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-    imgSrc:
-      "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
-    name: "Leslie Alexander",
-    jobTitle: "Freelance React Developer",
-  },
-  {
-    stars: 5,
-    text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-    imgSrc:
-      "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
-    name: "Leslie Alexander",
-    jobTitle: "Freelance React Developer",
-  },
-  {
-    stars: 5,
-    text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-    imgSrc:
-      "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
-    name: "Leslie Alexander",
-    jobTitle: "Freelance React Developer",
-  },
-  {
-    stars: 5,
-    text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-    imgSrc:
-      "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
-    name: "Leslie Alexander",
-    jobTitle: "Freelance React Developer",
-  },
-  {
-    stars: 5,
-    text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-    imgSrc:
-      "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
-    name: "Leslie Alexander",
-    jobTitle: "Freelance React Developer",
-  },
-  {
-    stars: 5,
-    text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-    imgSrc:
-      "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
-    name: "Leslie Alexander",
-    jobTitle: "Freelance React Developer",
-  },
-  {
-    stars: 5,
-    text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-    imgSrc:
-      "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
-    name: "Leslie Alexander",
-    jobTitle: "Freelance React Developer",
-  },
-  {
-    stars: 5,
-    text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
-    imgSrc:
-      "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
-    name: "Leslie Alexander",
-    jobTitle: "Freelance React Developer",
-  },
-];
+  const testimonials2 = [
+    {
+      stars: 5,
+      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
+      imgSrc:
+        "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
+      name: "Leslie Alexander",
+      jobTitle: "Freelance React Developer",
+    },
+    {
+      stars: 4,
+      text: "The service was excellent. The site looks amazing and works perfectly.",
+      imgSrc:
+        "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female-2.png",
+      name: "Jane Doe",
+      jobTitle: "Product Manager",
+    },
+    {
+      stars: 5,
+      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
+      imgSrc:
+        "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
+      name: "Leslie Alexander",
+      jobTitle: "Freelance React Developer",
+    },
+    {
+      stars: 5,
+      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
+      imgSrc:
+        "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
+      name: "Leslie Alexander",
+      jobTitle: "Freelance React Developer",
+    },
+    {
+      stars: 5,
+      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
+      imgSrc:
+        "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
+      name: "Leslie Alexander",
+      jobTitle: "Freelance React Developer",
+    },
+    {
+      stars: 5,
+      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
+      imgSrc:
+        "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
+      name: "Leslie Alexander",
+      jobTitle: "Freelance React Developer",
+    },
+    {
+      stars: 5,
+      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
+      imgSrc:
+        "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
+      name: "Leslie Alexander",
+      jobTitle: "Freelance React Developer",
+    },
+    {
+      stars: 5,
+      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
+      imgSrc:
+        "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
+      name: "Leslie Alexander",
+      jobTitle: "Freelance React Developer",
+    },
+    {
+      stars: 5,
+      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
+      imgSrc:
+        "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
+      name: "Leslie Alexander",
+      jobTitle: "Freelance React Developer",
+    },
+    {
+      stars: 5,
+      text: "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.",
+      imgSrc:
+        "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png",
+      name: "Leslie Alexander",
+      jobTitle: "Freelance React Developer",
+    },
+  ];
   return (
     <>
       <section className="py-12 bg-gradient-to-b from-gray-50 sm:py-16 lg:pb-20 lg:pt-32 mb-20">

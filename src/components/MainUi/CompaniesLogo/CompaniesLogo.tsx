@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import styles from "./CompaniesLogo.module.css";
 import Image from "next/image";
@@ -88,19 +88,19 @@ function CompaniesLogo() {
         </ul>
       </div>
       <style jsx>{`
-.animate-marquee {
-    display: inline-flex;
-    animation: marquee 30s linear infinite;
-    }
-    
-    @keyframes marquee {
-        0% {
+        .animate-marquee {
+          display: inline-flex;
+          animation: marquee 30s linear infinite;
+        }
+
+        @keyframes marquee {
+          0% {
             transform: translateX(0%);
-            }
-            100% {
-                transform: translateX(-50%);
-                }
-                }
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
       `}</style>
     </section>
   );

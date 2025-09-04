@@ -1,9 +1,7 @@
 import mongoose, { Connection } from "mongoose";
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 let db6Connection: Connection | undefined = global.mongoose_sixth_conn;
 
@@ -15,7 +13,7 @@ const connect6 = async (): Promise<Connection> => {
   }
 
   // ---------------------------------------------------------------------------------------------------------
-  
+
   try {
     const conn = await mongoose
       .createConnection(process.env.MONGO_URI6!, {})

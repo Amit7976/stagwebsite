@@ -1,9 +1,7 @@
 import { Connection, InferSchemaType, Model, Schema } from "mongoose";
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 const CareerSchema = new Schema(
   {
@@ -12,7 +10,7 @@ const CareerSchema = new Schema(
     applyLink: { type: String, required: true },
     openDate: { type: Date, required: true },
     closeDate: { type: Date, required: true },
-    location: { type: String},
+    location: { type: String },
     salary: { type: String },
     openings: { type: Number, default: 1 },
     locationType: {
@@ -27,7 +25,7 @@ const CareerSchema = new Schema(
     },
     active: { type: Boolean, default: true },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////

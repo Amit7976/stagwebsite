@@ -6,11 +6,19 @@ function MainContent() {
   return (
     <>
       <section className="w-full py-20 lg:py-0 lg:h-screen flex items-center justify-center">
-        <h4 className="sr-only">At Hirebie, we empower businesses and individuals with tailored solutions and trusted services. Hear from our clients about how our work has transformed their journeys and helped them grow.</h4>
+        <h4 className="sr-only">
+          At Hirebie, we empower businesses and individuals with tailored
+          solutions and trusted services. Hear from our clients about how our
+          work has transformed their journeys and helped them grow.
+        </h4>
         <h4 className="text-[3.5vw] font-bold text-center text-wrap whitespace-nowrap duration-500">
           <span className="text-nowrap block">
             At
-            <Link href={'/'} className="text-[#F75000]"> Hirebie</Link>, we empower
+            <Link href={"/"} className="text-[#F75000]">
+              {" "}
+              Hirebie
+            </Link>
+            , we empower
             <span className="hover:text-7xl font-extrabold duration-500 pl-2 select-none bg-clip-text text-transparent bg-[url('/images/Home/business.jpg')] bg-bottom bg-contain">
               businesses
             </span>
@@ -50,7 +58,6 @@ function MainContent() {
           </span>
         </h4>
       </section>
-
     </>
   );
 }

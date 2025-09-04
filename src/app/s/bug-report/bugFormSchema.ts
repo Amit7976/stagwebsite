@@ -20,10 +20,10 @@ export const bugFormSchema = z.object({
           "video/webm",
           "video/ogg",
         ].includes(file.type),
-      "Invalid file type"
+      "Invalid file type",
     )
     .refine(
       (file) => !file || file.size <= 10 * 1024 * 1024,
-      "File size must be under 10MB"
+      "File size must be under 10MB",
     ),
 });

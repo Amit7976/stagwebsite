@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      backgroundImage: {
+        'hero-bg': "url('/images/business-bg.png')", // Add your image path here
+      },
     },
   },
   plugins: [],

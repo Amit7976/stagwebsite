@@ -9,30 +9,28 @@ import LiquidChromeImage from "@/components/ui/LiquidChrome";
 import MobileFeatures from "@/components/core/ServicesPages/IT/MobileFeatures";
 import Carousel from "@/components/core/ServicesPages/IT/Carousel";
 import CTA from "@/components/core/ServicesPages/IT/CTA";
-import WhyChoose from "@/components/core/ServicesPages/IT/WhyChoose";
 import BusinessBenefits from "@/components/core/ServicesPages/IT/BusinessBenefits";
+import WhyChoose from "@/components/core/ServicesPages/IT/WhyChoose";
 import { allPricingData, Business, contentData, WhyChooseHirebie, FeaturesData } from "./Data";
 
 
-
 function MainContent() {
-  const mobileAppData = allPricingData.find(
+  const UIUXData = allPricingData.find(
     (p) => p.id === "Pricing"
   );
 
-  const mobileAppBenefits = Business.find(
-    (benefit) => benefit.id === "Businessbenefits"
+  const UIUXBenefits = Business.find(
+    (benefit) => benefit.id === "Benefits"
   );
 
-  const mobileAppContent = contentData.find(
+  const UIUXContent = contentData.find(
     (content) => content.id === "Content"
   );
 
-  const mobileAppWhyChoose = WhyChooseHirebie.find(
+  const UIUXWhyChoose = WhyChooseHirebie.find(
     (choose) => choose.id === "WhyChooseHirebie"
   );
-
-  const mobileAppFeatures = FeaturesData.find((features) => features.id === "Features");
+  const UIUXFeatures = FeaturesData.find((features) => features.id === "Features");
 
 
   return (
@@ -48,26 +46,28 @@ function MainContent() {
         <Hero
           heading={
             <>
-              Mobile App <span className="text-orange-600">Development</span>
+              <span className="text-orange-600">UI/UX</span> Design & Prototyping
             </>
           }
           stacksList={[
-            "iOS & Android Apps",
-            "Cross-Platform ",
-            "UI/UX Design",
-            "App Store Deployment",
+            "User Research",
+            "Wireframing",
+            "UI Design",
+            "Prototyping",
+            "Usability Testing",
+            "Design Systems",
           ]}
         />
       </div>
       <div id="main" className="mt-20 mb-0">
-        {mobileAppContent && <Content {...mobileAppContent} />}
+        {UIUXContent && <Content {...UIUXContent} />}
       </div>
       <div className="my-20">
-        <ScrollBasedVelocity text={" Mobile App Development "} />
+        <ScrollBasedVelocity text={" UI/UX Design & Prototyping "} />
       </div>
       <div className="my-40">
-        {mobileAppBenefits && (
-          <BusinessBenefits {...mobileAppBenefits} />
+        {UIUXBenefits && (
+          <BusinessBenefits {...UIUXBenefits} />
         )}
       </div>
       <div className="mt-40">
@@ -80,18 +80,18 @@ function MainContent() {
         <CTA />
       </div>
       <div className="mt-0 mb-40">
-        {<MobileFeatures {...mobileAppFeatures} />}
+        <MobileFeatures {...UIUXFeatures} />
       </div>
-          <div className="mt-0 mb-40">
-            {mobileAppData && <Pricing {...mobileAppData} />}
-          </div>
-          <div className="mt-0 mb-40">
-        {mobileAppWhyChoose && <WhyChoose {...mobileAppWhyChoose} />}
+      <div className="mt-0 mb-40">
+        {UIUXData && <Pricing {...UIUXData} />}
+      </div>
+      <div className="mt-0 mb-40">
+        {UIUXWhyChoose && <WhyChoose {...UIUXWhyChoose} />}
       </div>
       <div className="mb-40">
         <DiscoverMore
           description={
-            "Add a touch of magic to your day. Explore our mobile app development services."
+            "Add a touch of magic to your day. Explore our UI/UX design & prototyping services."
           }
         />
       </div>
@@ -99,19 +99,9 @@ function MainContent() {
         <FinalThoughts
           description={
             <>
-              In a world where mobile-first is the new standard, your business’s
-              growth potential is directly tied to how effectively you can reach
-              users on their smartphones. A high-quality mobile app can help you
-              attract, engage, and retain customers while streamlining business
-              operations and boosting revenue.
+              In today’s competitive market, great functionality is not enough—users expect engaging, intuitive, and seamless experiences. UI/UX design and prototyping bridge the gap between ideas and reality, reducing risk, improving engagement, and driving business success.
               <br />
-              At Hirebie, we combine creativity, technology, and strategy to
-              deliver mobile apps that work flawlessly, look stunning, and
-              deliver measurable results. Whether you’re a startup with a fresh
-              idea or an established brand looking to expand digitally, our
-              Mobile App Development Services are designed to bring your vision
-              to life—and your business to the fingertips of your customers.
-            </>
+              Hirebie’s UI/UX Design & Prototyping Services combine research, creativity, and strategy to deliver experiences that users love and businesses rely on. From concept to clickable prototype, we ensure your product is designed to delight, convert, and scale.            </>
           }
         />
       </div>

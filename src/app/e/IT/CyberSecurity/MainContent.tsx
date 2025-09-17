@@ -13,11 +13,13 @@ import BusinessBenefits from "@/components/core/ServicesPages/IT/BusinessBenefit
 import { allPricingData, Business, contentData, FeaturesData } from "./Data";
 
 function MainContent() {
-  const webDevelopmentData = allPricingData.find((p) => p.id === "Pricing");
-  const webDevBenefits = Business.find((benefit) => benefit.id === "Businessbenefits");
-  const webDevContent = contentData.find((content) => content.id === "Content");
-  const webDevFeatures = FeaturesData.find((features) => features.id === "Features");
+  const CyberSecurityData = allPricingData.find((p) => p.id === "Pricing");
 
+  const CyberSecurityBenefits = Business.find((benefit) => benefit.id === "Businessbenefits");
+
+  const CyberSecurityContent = contentData.find((content) => content.id === "Content");
+  const CyberSecurityFeatures = FeaturesData.find((features) => features.id === "Features");
+  
 
   return (
     <>
@@ -29,17 +31,29 @@ function MainContent() {
       />
 
       <div>
-        <Hero />
+        <Hero
+          heading={
+            <>
+              CyberSecurity <span className="text-orange-600">Solutions</span>
+            </>
+          }
+          stacksList={[
+            "Threat Detection",
+            "Incident Response",
+            "Compliance Management",
+            "Risk Assessment"
+          ]}
+        />
       </div>
 
       <div id="main" className="mt-20 mb-0">
-        {webDevContent && <Content {...webDevContent} />}
+        {CyberSecurityContent && <Content {...CyberSecurityContent} />}
       </div>
       <div className="my-20">
-        <ScrollBasedVelocity text={" Website Development Web Development "} />
+        <ScrollBasedVelocity text={" CyberSecurity Solutions "} />
       </div>
       <div className="my-40">
-        {webDevBenefits && <BusinessBenefits {...webDevBenefits} />}
+        {CyberSecurityBenefits && <BusinessBenefits {...CyberSecurityBenefits} />}
       </div>
       <div className="mt-40">
         <CardsCarousel />
@@ -51,17 +65,19 @@ function MainContent() {
         <CTA />
       </div>
       <div className="my-40">
-      {webDevFeatures && <Features {...webDevFeatures} />}
-
+        <Features {...CyberSecurityFeatures} />
       </div>
       <div className="mt-0 mb-40">
-          {webDevelopmentData && <Pricing {...webDevelopmentData} />}
+        {CyberSecurityData && <Pricing {...CyberSecurityData} />}
       </div>
       <div className="mb-40">
-        <DiscoverMore />
+        <DiscoverMore
+          description={
+            "Add a touch of magic to your day. Explore our CyberSecurity solutions."
+          } />
       </div>
-      <div className="mb=40">
-        <FinalThoughts description="In an era where digital presence = business presence, a professional website or web application is no longer optional—it’s essential. Whether you’re a startup aiming for your first launch or an enterprise looking to upgrade, Hirebie’s Website & Web App Development Services are designed to deliver results that are visually stunning, technically sound, and business-driven. From concept to code, from launch to long-term support—we build digital platforms that grow with you." />
+      <div className="mb-40">
+        <FinalThoughts description="In an era where data = trust, robust cybersecurity is no longer optional—it’s essential. Whether you’re a startup safeguarding your first users or an enterprise protecting critical infrastructure, Hirebie’s Cybersecurity Solutions are designed to deliver security that is proactive, adaptive, and business-driven. From threat assessment to incident response, from compliance to continuous monitoring—we build digital defenses that grow with you." />
       </div>
     </>
   );

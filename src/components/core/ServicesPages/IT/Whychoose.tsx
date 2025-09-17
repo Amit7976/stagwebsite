@@ -1,42 +1,24 @@
 import React from "react";
-import { Wrench, Layers, Cpu, Briefcase, MessageSquare } from "lucide-react";
 
-const WhyChooseHirebie = () => {
-  const points = [
-    {
-      icon: <Wrench className="w-6 h-6" />,
-      title: "Custom Solutions",
-      desc: "We don’t believe in one-size-fits-all. Every app is tailored to your unique needs.",
-    },
-    {
-      icon: <Layers className="w-6 h-6 " />,
-      title: "End-to-End Service",
-      desc: "From concept to launch and beyond, we handle it all.",
-    },
-    {
-      icon: <Cpu className="w-6 h-6" />,
-      title: "Cutting-Edge Technologies",
-      desc: "We work with the latest tools and frameworks like Flutter, React Native, Swift, Kotlin, and more.",
-    },
-    {
-      icon: <Briefcase className="w-6 h-6 " />,
-      title: "Proven Expertise",
-      desc: "Our portfolio spans industries like e-commerce, healthcare, education, and logistics.",
-    },
-    {
-      icon: <MessageSquare className="w-6 h-6" />,
-      title: "Transparent Communication",
-      desc: "You’ll always be in the loop with regular updates and progress reports.",
-    },
-  ];
+interface Card {
+  icon: React.ReactNode;
+  title: string;
+  desc: string;
+}
 
+interface WhyChooseProps {
+  heading: string;
+  points: Card[];
+}
+
+const WhyChoose: React.FC<WhyChooseProps> = ({ heading,points }) => {
   return (
     <section className="py-20 px-6 bg-white dark:bg-black transition-colors duration-300">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-black dark:text-white">
-          Why Choose{" "}
-          <span className="text-orange-600 dark:text-orange-600">Hirebie</span>{" "}
-          for Mobile App Development?
+          <span className="text-black dark:text-white">Why Choose </span>
+          <span className="text-orange-600 dark:text-orange-600">Hirebie </span>
+          {heading}{" "}
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 text-center">
           {points.map((item, idx) => (
@@ -60,5 +42,6 @@ const WhyChooseHirebie = () => {
     </section>
   );
 };
+export default WhyChoose;
 
-export default WhyChooseHirebie;
+

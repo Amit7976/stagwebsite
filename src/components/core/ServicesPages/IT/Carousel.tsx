@@ -69,7 +69,7 @@ export default function MobileAppCarousel() {
                 key={idx}
                 className="min-w-[260px] md:min-w-[340px] bg-white dark:bg-neutral-800 rounded-2xl shadow-md hover:shadow-xl overflow-hidden hover:scale-[1.03] transition-transform duration-300"
               >
-                <div className="relative w-full h-48 md:h-56">
+                <div className="relative w-full h-80 md:h-90">
                   <Image
                     src={item.src}
                     alt={item.title}

@@ -14,7 +14,6 @@ CheckCircle,
 KanbanSquare,
 Palette,
 Search} from "lucide-react";
-import { features } from "process";
 
 export const Business = [
   {

@@ -7,7 +7,7 @@ import Pricing from "@/components/core/ServicesPages/IT/Pricing";
 import { FinalThoughts } from "@/components/core/ServicesPages/IT/FinalThoughts";
 import LiquidChromeImage from "@/components/ui/LiquidChrome";
 import MobileFeatures from "@/components/core/ServicesPages/IT/MobileFeatures";
-import Carousel from "@/components/core/ServicesPages/IT/Carousel";
+import Carousel from "@/components/core/ServicesPages/IT/Carouselcards";
 import CTA from "@/components/core/ServicesPages/IT/CTA";
 import BusinessBenefits from "@/components/core/ServicesPages/IT/BusinessBenefits";
 import WhyChoose from "@/components/core/ServicesPages/IT/WhyChoose";
@@ -15,23 +15,11 @@ import { allPricingData, Business, contentData, WhyChooseHirebie, FeaturesData }
 
 
 function MainContent() {
-  const UIUXData = allPricingData.find(
-    (p) => p.id === "Pricing"
-  );
-
-  const UIUXBenefits = Business.find(
-    (benefit) => benefit.id === "Benefits"
-  );
-
-  const UIUXContent = contentData.find(
-    (content) => content.id === "Content"
-  );
-
-  const UIUXWhyChoose = WhyChooseHirebie.find(
-    (choose) => choose.id === "WhyChooseHirebie"
-  );
+  const UIUXData = allPricingData.find((p) => p.id === "Pricing");
+  const UIUXBenefits = Business.find((benefit) => benefit.id === "Benefits");
+  const UIUXContent = contentData.find((content) => content.id === "Content");
+  const UIUXWhyChoose = WhyChooseHirebie.find((choose) => choose.id === "WhyChooseHirebie");
   const UIUXFeatures = FeaturesData.find((features) => features.id === "Features");
-
 
   return (
     <>

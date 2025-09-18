@@ -7,11 +7,11 @@ import Pricing from "@/components/core/ServicesPages/IT/Pricing";
 import { FinalThoughts } from "@/components/core/ServicesPages/IT/FinalThoughts";
 import LiquidChromeImage from "@/components/ui/LiquidChrome";
 import{ Features} from "@/components/core/ServicesPages/IT/Features";
-import Carousel from "@/components/core/ServicesPages/IT/Carousel";
 import CTA from "@/components/core/ServicesPages/IT/CTA";
 import BusinessBenefits from "@/components/core/ServicesPages/IT/BusinessBenefits";
 import { allPricingData, Business, contentData, WhyChooseHirebie, FeaturesData } from "./Data";
 import WhyChoose from "@/components/core/ServicesPages/IT/WhyChoose";
+import { CardsCarousel } from "@/components/core/ServicesPages/IT/CC";
 
 
 function MainContent() {
@@ -76,7 +76,7 @@ function MainContent() {
         )}
       </div>
       <div className="mt-40">
-        <Carousel />
+        <CardsCarousel />
       </div>
       <div className="my-0">
         <PlatformIndependent />

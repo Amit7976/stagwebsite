@@ -28,6 +28,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "lib/global.d.ts"
-  ],
+, "src/components/core/ServicesPages/IT/Businessbenefits.tsx"  ],
   "exclude": ["node_modules"]
 }

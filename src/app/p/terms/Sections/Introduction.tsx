@@ -22,8 +22,8 @@ function Introduction() {
             the scope of our services, and outline the general terms under which
             we operate.
           </p>
-              </div>
-              
+        </div>
+
         <div className="space-y-6">
           <h3 className="font-bold text-2xl text-gray-700">
             1.1. About JobBoost

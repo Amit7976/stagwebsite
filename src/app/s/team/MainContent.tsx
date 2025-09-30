@@ -1,4 +1,4 @@
-"use client"
+"use client";
 // import Team from "@/components/MainUi/Team/Team";
 import Team from "@/components/MainUi/Team/Team";
 import Image from "next/image";
@@ -15,48 +15,45 @@ interface Admin {
 }
 
 function MainContent() {
+  const [team, setMembers] = useState<Admin[]>([]);
+  const [loading, setLoading] = useState(true);
 
-    const [team, setMembers] = useState<Admin[]>([]);
-    const [loading, setLoading] = useState(true);
-  
-    // ✅ Fetch job type team
-    const fetchMembers = async () => {
-      try {
-        const res = await fetch("/api/team?type=intern");
-        const data = await res.json();
-        if (data.success) {
-          setMembers(data.data);
-        }
-      } catch (error) {
-        console.error("Error fetching job team:", error);
-      } finally {
-        setLoading(false);
+  // ✅ Fetch job type team
+  const fetchMembers = async () => {
+    try {
+      const res = await fetch("/api/team?type=intern");
+      const data = await res.json();
+      if (data.success) {
+        setMembers(data.data);
       }
-    };
-  
-    useEffect(() => {
-      fetchMembers();
-    }, []);
-  
-  
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  
-    if (loading) {
-      return (
-        <div className="flex items-center justify-center h-96 col-span-2">
-          <div className="loader"></div>
-        </div>
-      )
+    } catch (error) {
+      console.error("Error fetching job team:", error);
+    } finally {
+      setLoading(false);
     }
-  
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  
+  };
+
+  useEffect(() => {
+    fetchMembers();
+  }, []);
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-96 col-span-2">
+        <div className="loader"></div>
+      </div>
+    );
+  }
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
   return (
     <>
       <section className="px-8 py-14 md:py-24 mx-auto md:px-12 lg:px-32 w-full">
         <Team />
       </section>
-
 
       <section className="py-12 bg-white dark:bg-neutral-950 sm:py-16 lg:py-40">
         <div className="px-4 mx-auto max-w-7xl md:px-6 lg:px-8">
@@ -83,8 +80,6 @@ function MainContent() {
               </p>
             </div>
           </div>
-
-
 
           <div className="max-w-3xl mx-auto mt-12 space-y-8 sm:space-y-0 sm:flex sm:items-center sm:justify-center sm:mt-16 sm:gap-x-16">
             <div>
@@ -133,7 +128,8 @@ function MainContent() {
               Real people, ready to help you build a powerful brand
             </h2>
             <p className="mt-6 text-lg text-gray-900 dark:text-neutral-400">
-              Our team of experts is here to guide you at every step-so you can focus on growth, while we help your brand stand out.
+              Our team of experts is here to guide you at every step-so you can
+              focus on growth, while we help your brand stand out.
             </p>
 
             <Link

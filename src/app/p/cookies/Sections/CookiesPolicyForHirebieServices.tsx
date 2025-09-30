@@ -1,6 +1,6 @@
-import { Separator } from '@/components/ui/separator'
-import Link from 'next/link'
-import React from 'react'
+import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
+import React from "react";
 
 function CookiesPolicyForHirebieServices() {
   return (
@@ -8,19 +8,18 @@ function CookiesPolicyForHirebieServices() {
       <Separator className="my-20 bg-gray-500 rounded-full" />
       <div className="p-10 space-y-10">
         <h3 className="font-bold text-4xl">
-          6. Cookies Policy for{' '}
+          6. Cookies Policy for{" "}
           <Link href="/" className="text-orange-600">
             Hirebie
-          </Link>{' '}
+          </Link>{" "}
           Services
         </h3>
 
-        
         <div className="space-y-6">
-        
-          <p><Link href="/" className="text-orange-600">
+          <p>
+            <Link href="/" className="text-orange-600">
               Hirebie
-            </Link>{' '}
+            </Link>{" "}
             uses general cookies for analytics, site security, and user
             preferences to deliver a functional and user-friendly website.
           </p>
@@ -34,8 +33,8 @@ function CookiesPolicyForHirebieServices() {
               help us improve site performance and user experience.
               <ul className="list-disc px-10 space-y-2">
                 <li>
-                  <b>Examples:</b> Cookies like{' '}
-                  <code>analytics_session</code> or Google Analytics cookies.
+                  <b>Examples:</b> Cookies like <code>analytics_session</code>{" "}
+                  or Google Analytics cookies.
                 </li>
               </ul>
             </li>
@@ -81,7 +80,7 @@ function CookiesPolicyForHirebieServices() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default CookiesPolicyForHirebieServices
+export default CookiesPolicyForHirebieServices;

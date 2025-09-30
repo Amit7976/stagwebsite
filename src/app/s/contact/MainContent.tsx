@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { ICompanyMail } from "@/models/companyMailModel";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -8,13 +8,10 @@ import { PiChatsDuotone } from "react-icons/pi";
 import { TfiAnnouncement } from "react-icons/tfi";
 import ContactForm from "./ContactForm";
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 function MainContent() {
-
   const [allEmails, setAllEmails] = useState<ICompanyMail[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -36,7 +33,6 @@ function MainContent() {
     fetchAllEmails();
   }, []);
 
-
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   if (loading) {
@@ -44,11 +40,10 @@ function MainContent() {
       <div className="flex items-center justify-center h-96 col-span-2">
         <div className="loader"></div>
       </div>
-    )
+    );
   }
 
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   return (
     <>
@@ -109,8 +104,8 @@ function MainContent() {
                   We&#39;re hiring
                 </h3>
                 <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">
-                  We&#39;re thrilled to announce that we&#39;re expanding our team and
-                  looking for talented individuals like you to join us.
+                  We&#39;re thrilled to announce that we&#39;re expanding our
+                  team and looking for talented individuals like you to join us.
                 </p>
                 <p className="group inline-flex items-center gap-x-2 font-medium text-sm text-[#FD4D05] decoration-2 hover:underline focus:outline-none focus:underline mt-2">
                   Job openings

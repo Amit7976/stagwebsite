@@ -1,15 +1,12 @@
 import { Connection, InferSchemaType, Model, Schema } from "mongoose";
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 const NewsletterSchema = new Schema({
   email: { type: String, required: true, unique: true },
   createdAt: { type: Date, default: Date.now },
 });
-
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -24,5 +21,8 @@ export type NewsletterType = InferSchemaType<typeof NewsletterSchema>;
 
 // Dynamic model getter
 export const getNewsletterModel = (conn: Connection): Model<NewsletterType> => {
-  return conn.models.Newsletter || conn.model<NewsletterType>("Newsletter", NewsletterSchema);
+  return (
+    conn.models.Newsletter ||
+    conn.model<NewsletterType>("Newsletter", NewsletterSchema)
+  );
 };

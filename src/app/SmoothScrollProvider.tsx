@@ -5,23 +5,20 @@ import LocomotiveScroll, { ILocomotiveScrollOptions } from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 
 export default function SmoothScrollProvider() {
-    const scrollRef = useRef<HTMLDivElement | null>(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
 
-    useEffect(() => {
-        if (!scrollRef.current) return;
+  useEffect(() => {
+    if (!scrollRef.current) return;
 
-        const scroll = new LocomotiveScroll({
-            el: scrollRef.current,
-            smooth: true,
-        } as ILocomotiveScrollOptions & { el: HTMLElement });
+    const scroll = new LocomotiveScroll({
+      el: scrollRef.current,
+      smooth: true,
+    } as ILocomotiveScrollOptions & { el: HTMLElement });
 
-        return () => {
-            scroll.destroy();
-        };
-    }, []);
+    return () => {
+      scroll.destroy();
+    };
+  }, []);
 
-    return (
-        <div data-scroll-container ref={scrollRef}>
-        </div>
-    );
+  return <div data-scroll-container ref={scrollRef}></div>;
 }

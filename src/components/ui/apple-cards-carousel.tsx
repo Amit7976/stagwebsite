@@ -34,16 +34,13 @@ export const CarouselContext = createContext<{
   onCardClose: (index: number) => void;
   currentIndex: number;
 }>({
-  onCardClose: () => { },
+  onCardClose: () => {},
   currentIndex: 0,
 });
 
-
-
-
 function useOutsideClick<T extends HTMLElement>(
   ref: RefObject<T | null>,
-  handler: () => void
+  handler: () => void,
 ) {
   useEffect(() => {
     function listener(event: MouseEvent) {
@@ -59,7 +56,6 @@ function useOutsideClick<T extends HTMLElement>(
     };
   }, [ref, handler]);
 }
-
 
 export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   const carouselRef = React.useRef<HTMLDivElement>(null);
@@ -94,11 +90,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     }
   };
 
-
   const containerRef = useRef<HTMLDivElement>(null);
-
-
-
 
   const handleCardClose = (index: number) => {
     if (carouselRef.current) {
@@ -113,10 +105,9 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     }
   };
 
-
-  useOutsideClick(containerRef as RefObject<HTMLElement>, () => handleCardClose(0));
-
-
+  useOutsideClick(containerRef as RefObject<HTMLElement>, () =>
+    handleCardClose(0),
+  );
 
   const isMobile = () => {
     return window && window.innerWidth < 768;
@@ -296,7 +287,6 @@ export const Card = ({
     </>
   );
 };
-
 
 export const BlurImage = ({
   height,

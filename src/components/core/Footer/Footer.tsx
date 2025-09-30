@@ -1,7 +1,19 @@
-"use client"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+"use client";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Form, FormControl, FormDescription, FormField, FormItem, FormMessage } from "@/components/ui/form";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormMessage,
+} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { LoaderLink } from "@/components/ui/loaderLinks";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -13,34 +25,28 @@ import { LuCircleDashed } from "react-icons/lu";
 import { toast } from "sonner";
 import { z } from "zod";
 
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 // FROM SCHEMA FOR VALIDATION
 const FormSchema = z.object({
-  newsletter: z.string().min(12, { message: "Email must be at least 12 characters." }).email({ message: 'Must be a valid email' }),
-})
-
+  newsletter: z
+    .string()
+    .min(12, { message: "Email must be at least 12 characters." })
+    .email({ message: "Must be a valid email" }),
+});
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
 function Footer() {
-
-
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
       newsletter: "",
     },
-  })
-
+  });
 
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   // POST SUBSCRIBER EMAIL WHEN SUBMIT THE FORM
   async function onSubmit(formData: z.infer<typeof FormSchema>) {
@@ -48,15 +54,16 @@ function Footer() {
 
     try {
       const formDataToSend = new FormData();
-      formDataToSend.append('email', formData.newsletter);
+      formDataToSend.append("email", formData.newsletter);
 
-      const response = await axios.post('/api/newsletter', formDataToSend);
+      const response = await axios.post("/api/newsletter", formDataToSend);
       const responseData = response.data;
 
       if (responseData.success) {
-        toast.success('Hurray🎉 You Subscribed Hirebie', {
-          description: 'You have successfully subscribed to the Hirebie newsletter.',
-        })
+        toast.success("Hurray🎉 You Subscribed Hirebie", {
+          description:
+            "You have successfully subscribed to the Hirebie newsletter.",
+        });
       } else {
         toast.error("Submission Failed", {
           description: responseData.msg,
@@ -66,13 +73,13 @@ function Footer() {
       if (error && typeof error === "object") {
         const err = error as AxiosError<{ msg: string }>;
 
-        console.log('====================================');
+        console.log("====================================");
         console.log(err);
-        console.log('====================================');
+        console.log("====================================");
         if (err.response?.status === 409) {
           if (err.response.data.msg === "Already subscribed") {
             toast.error("Already subscribed");
-          } else { 
+          } else {
             toast.error("Submission Failed###", {
               description: err.response.data?.msg,
             });
@@ -90,19 +97,14 @@ function Footer() {
     } finally {
       setLoading(false);
     }
-
   }
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   // MAKE LOADING STATE OF BUTTON WHEN API IS WORKING
   const [loading, setLoading] = useState(false);
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   // FOOTER ALL LINKS
   const menuItems = {
@@ -176,18 +178,17 @@ function Footer() {
       { text: "Instagram", link: "https://www.instagram.com/hirebie_team" },
       { text: "Facebook", link: "https://www.facebook.com/Hirebie.team" },
       { text: "X (Twitter)", link: "https://x.com/hirebie_it" },
-      { text: "WhatsApp", link: "https://www.whatsapp.com/channel/0029Vb6D884C1FuGbIvocK38" },
+      {
+        text: "WhatsApp",
+        link: "https://www.whatsapp.com/channel/0029Vb6D884C1FuGbIvocK38",
+      },
     ],
   };
 
-
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   return (
     <footer className="mt-10 p-0 lg:p-10">
-
       {/* <Toaster /> */}
 
       <div className="container mx-auto px-4">
@@ -228,10 +229,15 @@ function Footer() {
           {Object.entries(menuItems).map(([section, items]) => (
             <Accordion key={section} type="single" collapsible>
               <AccordionItem value="{section}">
-                <AccordionTrigger className="hover:no-underline text-xl font-semibold text-black dark:text-white/70">{section}</AccordionTrigger>
+                <AccordionTrigger className="hover:no-underline text-xl font-semibold text-black dark:text-white/70">
+                  {section}
+                </AccordionTrigger>
                 <AccordionContent>
                   {items.map(({ text, link }) => (
-                    <div key={text} className={`w-full ${link ? "opacity-100" : "opacity-40"}`}>
+                    <div
+                      key={text}
+                      className={`w-full ${link ? "opacity-100" : "opacity-40"}`}
+                    >
                       {link ? (
                         <LoaderLink
                           href={link}
@@ -240,7 +246,9 @@ function Footer() {
                           {text}
                         </LoaderLink>
                       ) : (
-                        <span className="text-xl font-medium text-black dark:text-white w-full h-full block py-2.5 pl-5">{text}</span>
+                        <span className="text-xl font-medium text-black dark:text-white w-full h-full block py-2.5 pl-5">
+                          {text}
+                        </span>
                       )}
                     </div>
                   ))}
@@ -250,12 +258,13 @@ function Footer() {
           ))}
         </div>
 
-
-
         {/* Footer Bottom Section */}
         <div className="bg-neutral-100 text-neutral-100 dark:bg-neutral-900 rounded-xl p-9 my-10 ">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-            <LoaderLink href="/" className="flex-col items-start gap-2 hidden md:flex">
+            <LoaderLink
+              href="/"
+              className="flex-col items-start gap-2 hidden md:flex"
+            >
               <Image
                 src="/images/logo/logo.svg"
                 alt="Hirebie Logo"
@@ -264,22 +273,32 @@ function Footer() {
                 className="w-40 h-auto"
               />
               <div>
-                <h3 className="text-2xl font-bold text-[#ED1C24] sr-only">Hirebie</h3>
-                <p className="text-base mt-1 text-neutral-400 dark:text-white font-medium">IT Services and IT Consulting</p>
+                <h3 className="text-2xl font-bold text-[#ED1C24] sr-only">
+                  Hirebie
+                </h3>
+                <p className="text-base mt-1 text-neutral-400 dark:text-white font-medium">
+                  IT Services and IT Consulting
+                </p>
               </div>
             </LoaderLink>
 
             <div>
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-4 flex flex-col items-end">
+                <form
+                  onSubmit={form.handleSubmit(onSubmit)}
+                  className="w-full space-y-4 flex flex-col items-end"
+                >
                   <FormField
                     control={form.control}
                     name="newsletter"
                     render={({ field }) => (
                       <FormItem>
-                        <h3 className="text-3xl lg:text-2xl font-bold text-black dark:text-white">Newsletter</h3>
+                        <h3 className="text-3xl lg:text-2xl font-bold text-black dark:text-white">
+                          Newsletter
+                        </h3>
                         <FormDescription className="text-xl lg:text-lg font-medium text-neutral-500 mt-1 w-full">
-                          Subscribe to our newsletter to get latest updates and news
+                          Subscribe to our newsletter to get latest updates and
+                          news
                         </FormDescription>
                         <div className="gap-4 items-center mt-3">
                           <div className="px-3 text-lg relative">
@@ -290,7 +309,8 @@ function Footer() {
                               type="email"
                               placeholder="What is your work email"
                               className="text-base px-6 h-14 lg:h-12 rounded-full outline-none border-2 border-neutral-400 text-white shadow-none min-w-full lg:min-w-96 font-medium tracking-wider"
-                              {...field} />
+                              {...field}
+                            />
                           </FormControl>
                         </div>
                       </FormItem>
@@ -304,7 +324,8 @@ function Footer() {
                     {loading ? (
                       <>
                         <div className="flex items-center gap-2 px-5 text-white">
-                          <LuCircleDashed className="h-4 w-4 animate-spin font-bold mb-0.5" /> Please wait...
+                          <LuCircleDashed className="h-4 w-4 animate-spin font-bold mb-0.5" />{" "}
+                          Please wait...
                         </div>
                       </>
                     ) : (
@@ -317,14 +338,14 @@ function Footer() {
           </div>
         </div>
 
-
         <div className="w-full border-t border-neutral-800 py-10">
           <p className="mt-2 font-normal font-sans2 text-base text-neutral-500">
             © 2025 <LoaderLink href={"/"}>Hirebie</LoaderLink> Pvt. Ltd.{" "}
             <LoaderLink href={"/"}>Hirebie</LoaderLink> and the{" "}
-            <LoaderLink href={"/"}>Hirebie</LoaderLink> logo are registered trademarks of
-            the company. All services are currently available only within
-            India. For any inquiries or support, please contact us through our{" "}
+            <LoaderLink href={"/"}>Hirebie</LoaderLink> logo are registered
+            trademarks of the company. All services are currently available only
+            within India. For any inquiries or support, please contact us
+            through our{" "}
             <LoaderLink href={"/s/contact"} className="text-[#FF4A02]">
               Contact Page
             </LoaderLink>
@@ -356,7 +377,7 @@ function Footer() {
           </p>
         </div>
       </div>
-    </footer >
+    </footer>
   );
 }
 

@@ -4,7 +4,6 @@ import axios from "axios";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -16,19 +15,13 @@ interface FAQ {
   date: Date;
 }
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
 const FAQSearch: React.FC = () => {
-
-
   const searchInputRef = useRef<HTMLInputElement | null>(null);
   const qnaContainerRef = useRef<HTMLDivElement | null>(null);
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   // FETCH ALL FAQS
   const [faqs, setFaqs] = useState<FAQ[]>([]);
@@ -51,15 +44,13 @@ const FAQSearch: React.FC = () => {
     fetchFaqs();
   }, []);
 
-
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   // HANDEL FILTER DATA WHEN SEARCH
   useEffect(() => {
+    const inputElement = searchInputRef.current;
     const handleSearchInput = () => {
-      const query = searchInputRef.current?.value.trim().toLowerCase() || "";
+      const query = inputElement?.value.trim().toLowerCase() || "";
       const terms = query.split(/\s+/); // Tokenize the query into terms
 
       // Function to count matches of search terms in a given text
@@ -77,7 +68,7 @@ const FAQSearch: React.FC = () => {
       const filtered = faqs
         .map((faq) => ({
           ...faq,
-          matchCount: countMatches(faq.question) + countMatches(faq.answer)
+          matchCount: countMatches(faq.question) + countMatches(faq.answer),
         }))
         .filter((faq) => faq.matchCount > 0)
         .sort((a, b) => b.matchCount - a.matchCount);
@@ -97,15 +88,10 @@ const FAQSearch: React.FC = () => {
     };
   }, [faqs]);
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
   return (
-    <section
-      id="mainArea"
-      className="duration-300 py-28 w-full relative"
-    >
+    <section id="mainArea" className="duration-300 py-28 w-full relative">
       <div id="mainContentSection" className="p-3 py-10 mx-auto max-w-6xl">
         <h2 className="text-2xl w-full text-center font-bold leading-tight text-black dark:text-white sm:text-4xl lg:text-5xl">
           Frequently Asked Questions
@@ -136,7 +122,7 @@ const FAQSearch: React.FC = () => {
               />
             </div>
           ) : (
-              <div className="divide-y divide-gray-200 last:divide-none dark:divide-neutral-700 -my-9">
+            <div className="divide-y divide-gray-200 last:divide-none dark:divide-neutral-700 -my-9">
               {filteredFaqs.length > 0 ? (
                 filteredFaqs.map((faq, index) => (
                   <div key={index} className="py-9 FAQCard">
@@ -145,7 +131,10 @@ const FAQSearch: React.FC = () => {
                     </p>
 
                     {faq && (
-                      <p className="my-4 text-base text-gray-600 dark:text-neutral-400 allQuestionAnswer" dangerouslySetInnerHTML={{ __html: faq.answer }}></p>
+                      <p
+                        className="my-4 text-base text-gray-600 dark:text-neutral-400 allQuestionAnswer"
+                        dangerouslySetInnerHTML={{ __html: faq.answer }}
+                      ></p>
                     )}
                   </div>
                 ))

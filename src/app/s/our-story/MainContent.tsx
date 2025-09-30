@@ -7,35 +7,35 @@ function MainContent() {
     {
       title: "Be World-Class",
       description:
-        "We aim for nothing less than exceptional. Good enough isn’t good enough - we push for work that stands out and delivers results."
+        "We aim for nothing less than exceptional. Good enough isn’t good enough - we push for work that stands out and delivers results.",
     },
     {
       title: "Share Everything You Know",
       description:
-        "Knowledge grows when it’s shared. We believe in open collaboration, helping each other learn, and growing as a team."
+        "Knowledge grows when it’s shared. We believe in open collaboration, helping each other learn, and growing as a team.",
     },
     {
       title: "Always Be Learning",
       description:
-        "We’re curious by nature - staying updated, exploring new ideas, and embracing change to stay ahead."
+        "We’re curious by nature - staying updated, exploring new ideas, and embracing change to stay ahead.",
     },
     {
       title: "Be Supportive",
       description:
-        "We lift each other up. We celebrate wins, help through challenges, and build trusted partnerships with our clients."
+        "We lift each other up. We celebrate wins, help through challenges, and build trusted partnerships with our clients.",
     },
     {
       title: "Take Responsibility",
       description:
-        "We own our actions and outcomes. We’re accountable, transparent, and ready to go the extra mile."
+        "We own our actions and outcomes. We’re accountable, transparent, and ready to go the extra mile.",
     },
     {
       title: "Enjoy Downtime",
       description:
-        "We work hard and rest well. Balance keeps us creative, fresh, and ready for what’s next."
+        "We work hard and rest well. Balance keeps us creative, fresh, and ready for what’s next.",
     },
   ];
-  
+
   return (
     <>
       <section className="relative isolate px-6 py-10 lg:py-0 sm:py-2 overflow-hidden lg:px-0">
@@ -56,7 +56,11 @@ function MainContent() {
                 <path d="M100 200V.5M.5 .5H200" fill="none" />
               </pattern>
             </defs>
-            <svg x="50%" y={-1} className="overflow-visible fill-gray-50 dark:fill-neutral-800">
+            <svg
+              x="50%"
+              y={-1}
+              className="overflow-visible fill-gray-50 dark:fill-neutral-800"
+            >
               <path
                 d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
                 strokeWidth={0}
@@ -78,11 +82,13 @@ function MainContent() {
                   We’re changing the way businesses grow.
                 </h2>
                 <p className="my-8 text-xl text-neutral-500 dark:text-neutral-400 dark:text-dark-6 leading-8">
-                  At Hirebie, we empower businesses and individuals with smart, tailored solutions that drive real impact.
-                  From creative design and development to strategic support, our team works closely with clients to turn ideas into results.
-                  Discover how we help you build, scale, and succeed - your growth is our mission.
+                  At Hirebie, we empower businesses and individuals with smart,
+                  tailored solutions that drive real impact. From creative
+                  design and development to strategic support, our team works
+                  closely with clients to turn ideas into results. Discover how
+                  we help you build, scale, and succeed - your growth is our
+                  mission.
                 </p>
-
               </div>
             </div>
             <div className="w-full lg:w-6/12">
@@ -155,24 +161,26 @@ function MainContent() {
 
       <section className="relative isolate px-6 py-24 sm:py-2 overflow-hidden lg:px-14 my-10 md:my-20 grid grid-cols-1 lg:grid-cols-5 gap-y-20 gap-x-40">
         <div className="col-span-1 lg:col-span-3 space-y-12">
-          <h3 className="text-5xl font-bold text-black dark:text-white">Our Mission</h3>
+          <h3 className="text-5xl font-bold text-black dark:text-white">
+            Our Mission
+          </h3>
           <p className="text-2xl font-normal text-neutral-500 dark:text-neutral-400 leading-10">
-            At Hirebie, our mission is to empower businesses and individuals with
-            innovative solutions that fuel growth and success. We believe in building
-            trusted partnerships, delivering high-quality work, and transforming ideas
-            into real results.
+            At Hirebie, our mission is to empower businesses and individuals
+            with innovative solutions that fuel growth and success. We believe
+            in building trusted partnerships, delivering high-quality work, and
+            transforming ideas into real results.
           </p>
           <p className="text-lg font-normal text-neutral-500 dark:text-neutral-400 leading-8">
-            From web development and design to branding and strategic consulting,
-            we’re dedicated to providing tailored services that make a difference.
-            We don’t just deliver projects - we help you create a roadmap for
-            sustainable growth and lasting impact.
+            From web development and design to branding and strategic
+            consulting, we’re dedicated to providing tailored services that make
+            a difference. We don’t just deliver projects - we help you create a
+            roadmap for sustainable growth and lasting impact.
           </p>
           <p className="text-lg font-normal text-neutral-500 dark:text-neutral-400 leading-8">
             We’re passionate about helping startups, small businesses, and
-            entrepreneurs scale their ideas with confidence. Our team works closely
-            with you every step of the way, ensuring your goals become our goals -
-            because your success is our success.
+            entrepreneurs scale their ideas with confidence. Our team works
+            closely with you every step of the way, ensuring your goals become
+            our goals - because your success is our success.
           </p>
         </div>
 
@@ -196,14 +204,11 @@ function MainContent() {
             </p>
           </div>
         </div>
-
       </section>
 
       <section className="borer-2 p-10 md:pt-20">
         <Image
-          src={
-            "/images/logo/logo.svg"
-          }
+          src={"/images/logo/logo.svg"}
           alt="Jobboost Team"
           width={800}
           height={800}
@@ -213,11 +218,13 @@ function MainContent() {
 
       <section className="my-10 lg:my-10 relative isolate px-6 py-14 md:py-24 sm:py-2 overflow-hidden lg:px-14">
         <div className="w-full max-w-4xl space-y-4">
-          <h3 className="text-5xl font-bold text-black dark:text-white">Our Values</h3>
+          <h3 className="text-5xl font-bold text-black dark:text-white">
+            Our Values
+          </h3>
           <p className="text-[1.35rem] font-normal text-neutral-500 dark:text-neutral-400 leading-10">
-            At Hirebie, our values guide how we work, create, and grow - together.
-            We believe in staying curious, supporting each other, and delivering
-            excellence with honesty and heart.
+            At Hirebie, our values guide how we work, create, and grow -
+            together. We believe in staying curious, supporting each other, and
+            delivering excellence with honesty and heart.
           </p>
         </div>
 
@@ -243,7 +250,6 @@ function MainContent() {
         <Team />
       </section>
 
-      
       <BlogSection />
     </>
   );

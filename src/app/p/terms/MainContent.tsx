@@ -25,14 +25,14 @@ function MainContent() {
     <>
       <div className="py-32 w-full max-w-6xl mx-auto font-sans leading-relaxed text-xl">
         <header className="space-y-10">
-          <Link href={'/'}>
-              <Image
-            src={"/images/logo/logo.svg"}
-            alt="Jobboost Logo"
-            width={800}
-            height={800}
-            className="w-56 h-auto"
-          />
+          <Link href={"/"}>
+            <Image
+              src={"/images/logo/logo.svg"}
+              alt="Jobboost Logo"
+              width={800}
+              height={800}
+              className="w-56 h-auto"
+            />
           </Link>
           <h2 className="text-[9rem] leading-[8rem] font-bold">
             <span className="text-8xl text-gray-400">Terms and</span>
@@ -43,25 +43,25 @@ function MainContent() {
         <Separator className="my-20 bg-gray-500 rounded-full" />
         <div className="p-10 space-y-10">
           <p className="font-medium">
-            Welcome to JobBoost! These Terms and Conditions (&#34;Terms&#34;) govern
-            your use of the JobBoost website and services. By accessing or using
-            our services, you agree to these Terms. If you do not agree with
-            these Terms, please do not use our services.
+            Welcome to JobBoost! These Terms and Conditions (&#34;Terms&#34;)
+            govern your use of the JobBoost website and services. By accessing
+            or using our services, you agree to these Terms. If you do not agree
+            with these Terms, please do not use our services.
           </p>
           <p>
             JobBoost, an innovative platform in the realm of Indian recruitment,
             provides a comprehensive suite of services designed to connect job
             seekers with employers across various industries. These Terms and
             Conditions outline the legal agreement between you (referred to as
-            &#34;User,&#34; &#34;Client,&#34; or &#34;You&#34;) and JobBoost regarding the use of our
-            website, located at jobboost.in, and all associated services
-            provided therein.
+            &#34;User,&#34; &#34;Client,&#34; or &#34;You&#34;) and JobBoost
+            regarding the use of our website, located at jobboost.in, and all
+            associated services provided therein.
           </p>
         </div>
         <Introduction />
         <UserRegistration />
         <JobListingsAndApplications />
-        <FeesAndPayments/>
+        <FeesAndPayments />
         <IntellectualPropertyRights />
         <UserConduct />
         <LimitationOfLiability />
@@ -71,10 +71,10 @@ function MainContent() {
         <ChangesToTheTerms />
         <ContactInformation />
         <Disclaimers />
-        <TermsOfUseForSpecificFeatures/>
+        <TermsOfUseForSpecificFeatures />
         <Miscellaneous />
         <AdditionalTermsForMobileApplications />
-        <UserFeedbackAndSuggestions/>
+        <UserFeedbackAndSuggestions />
       </div>
     </>
   );

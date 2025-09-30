@@ -16,12 +16,7 @@ function CompanyTestimonialCard({ stars, text, imgSrc, name }: Testimonial) {
           <div className="flex-1">
             <div className="flex items-center">
               {[...Array(stars)].map((_, index) => (
-                <FaStar
-                  key={index}
-                  color="#FDB241"
-                  width={20}
-                  height={20}
-                />
+                <FaStar key={index} color="#FDB241" width={20} height={20} />
               ))}
             </div>
 

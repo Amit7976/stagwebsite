@@ -1,9 +1,7 @@
 import mongoose, { Connection, InferSchemaType, Model } from "mongoose";
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 const WishlistSchema = new mongoose.Schema(
   {
@@ -34,7 +32,7 @@ const WishlistSchema = new mongoose.Schema(
   },
   {
     timestamps: true, // Adds createdAt and updatedAt
-  }
+  },
 );
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -52,5 +50,7 @@ export type WishlistType = InferSchemaType<typeof WishlistSchema>;
 
 // Dynamic model getter
 export const getWishlistModel = (conn: Connection): Model<WishlistType> => {
-  return conn.models.Wishlist || conn.model<WishlistType>("Wishlist", WishlistSchema);
+  return (
+    conn.models.Wishlist || conn.model<WishlistType>("Wishlist", WishlistSchema)
+  );
 };

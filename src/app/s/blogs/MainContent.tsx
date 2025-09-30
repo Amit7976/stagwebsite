@@ -7,10 +7,8 @@ import { Blog } from "@/lib/utils";
 import BlogCard from "@/components/core/Blogs/BlogCard";
 import Category from "../../../components/core/Blogs/Category";
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 function AllBlogPlaceholder() {
   return (
@@ -34,30 +32,23 @@ function AllBlogPlaceholder() {
   );
 }
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
 function MainContent() {
-
-
   const [blogs, setBlogs] = useState<Blog[]>([]);
   const [loadingBlogs, setLoadingBlogs] = useState(true);
   const fetchBlogs = async () => {
     try {
-      const response = await axios.get('/api/blogs/fetchAllBlogs');
+      const response = await axios.get("/api/blogs/fetchAllBlogs");
       setBlogs(response.data.blogs);
     } catch (error) {
-      console.error('Error fetching blogs:', error);
+      console.error("Error fetching blogs:", error);
     } finally {
       setLoadingBlogs(false);
     }
   };
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   useEffect(() => {
     const fetchData = async () => {
@@ -66,13 +57,10 @@ function MainContent() {
     fetchData();
   }, []);
 
-
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   return (
     <>
-
       <PriorityBlogs blogs={blogs} loadingBlogs={loadingBlogs} />
 
       <Category />
@@ -82,28 +70,24 @@ function MainContent() {
           All Blogs
         </h4>
         <div className="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
-          {loadingBlogs ? (
-            Array.from({ length: 4 }).map((_, index) => (
-              <AllBlogPlaceholder key={index} />
-            ))
-          ) : (
-            blogs.map((blog, index) => (
-              <BlogCard
-                key={index}
-                title={blog.title}
-                shortDescription={blog.shortDescription}
-                imageUrl={blog.image}
-                href={blog._id}
-                category={blog.category}
-              />
-            ))
-          )}
+          {loadingBlogs
+            ? Array.from({ length: 4 }).map((_, index) => (
+                <AllBlogPlaceholder key={index} />
+              ))
+            : blogs.map((blog, index) => (
+                <BlogCard
+                  key={index}
+                  title={blog.title}
+                  shortDescription={blog.shortDescription}
+                  imageUrl={blog.image}
+                  href={blog._id}
+                  category={blog.category}
+                />
+              ))}
         </div>
       </div>
-
     </>
   );
 }
 
 export default MainContent;
-

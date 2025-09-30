@@ -1,12 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import {Tooltip,TooltipContent,TooltipProvider,TooltipTrigger} from "@/components/ui/tooltip";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import Link from "next/link";
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 function Hero() {
   return (
@@ -31,7 +34,6 @@ function Hero() {
             Use this page to report bugs and contribute to a better <br />
             Hirebie experience for everyone.
           </p>
-
 
           <div className="flex flex-col w-max gap-6 mx-auto mt-10">
             <Link

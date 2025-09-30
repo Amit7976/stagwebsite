@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import CompanyTestimonialCard from "@/components/core/Testimonial/CompanyTestimonialCard";
 import { TestimonialType } from "@/models/TestimonialModel";
 import { useEffect, useState } from "react";
@@ -25,7 +25,6 @@ function CandidateTestimonials() {
     fetchTestimonials();
   }, []);
 
-
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   if (loading) {
@@ -33,11 +32,10 @@ function CandidateTestimonials() {
       <div className="flex items-center justify-center h-96 col-span-2">
         <div className="loader"></div>
       </div>
-    )
+    );
   }
 
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
   return (
     <>
@@ -47,8 +45,8 @@ function CandidateTestimonials() {
             Testimonials from top companies
           </p>
           <h2 className="mt-4 text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl xl:text-5xl">
-            <span className="text-[#FB4C04] font-semibold">Hirebie</span>{" "}
-            is appreciated by companies
+            <span className="text-[#FB4C04] font-semibold">Hirebie</span> is
+            appreciated by companies
           </h2>
         </div>
 

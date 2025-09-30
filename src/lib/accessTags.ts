@@ -95,10 +95,8 @@ const AccessTags = {
 };
 export default AccessTags;
 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 export const AccessTagsForManagerAdmin = {
   main: ["pages", "help"],
@@ -157,11 +155,7 @@ export const AccessTagsForManagerAdmin = {
       "revoke_task",
       "export_task",
     ],
-    adminReport: [
-      "admin_report",
-      "delete_admin_report",
-      "export_admin_report",
-    ],
+    adminReport: ["admin_report", "delete_admin_report", "export_admin_report"],
   },
 
   help: {
@@ -186,7 +180,6 @@ export const AccessTagsForManagerAdmin = {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
 export const AccessTagsForEmployerAdmin = {
   main: ["pages", "help"],
   blogs: ["blogs", "add_blogs", "update_blogs", "delete_blogs"],
@@ -194,17 +187,15 @@ export const AccessTagsForEmployerAdmin = {
 
   pages: {
     reviews: ["reviews", "add_reviews"],
-    career: ["career", "add_career", "delete_career","update_career","show_hide_career"],
-    newsletter: [
-      "newsletter",
-      "add_newsletter",
-      "delete_newsletter",
+    career: [
+      "career",
+      "add_career",
+      "delete_career",
+      "update_career",
+      "show_hide_career",
     ],
-    wishlist: [
-      "wishlist",
-      "add_wishlist",
-      "delete_wishlist",
-    ],
+    newsletter: ["newsletter", "add_newsletter", "delete_newsletter"],
+    wishlist: ["wishlist", "add_wishlist", "delete_wishlist"],
     event: [
       "event",
       "add_event",
@@ -222,11 +213,7 @@ export const AccessTagsForEmployerAdmin = {
   },
 
   employees: {
-    adminReport: [
-      "admin_report",
-      "delete_admin_report",
-      "export_admin_report",
-    ],
+    adminReport: ["admin_report", "delete_admin_report", "export_admin_report"],
   },
 
   help: {

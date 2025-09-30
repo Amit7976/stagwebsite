@@ -70,8 +70,6 @@ const faqItems: FaqItem[] = [
   },
 ];
 
-
-
 const FAQ = ({
   description = "Find answers to common questions about our products. Can't find what you're looking for? Contact our support team.",
   items = faqItems,
@@ -89,7 +87,9 @@ const FAQ = ({
           <h2 className="mb-3 text-3xl font-semibold md:mb-4 lg:mb-6 lg:text-6xl">
             FAQ<span className="text-orange-600">s</span>
           </h2>
-          <p className="text-muted-foreground text-xl font-medium">{description}</p>
+          <p className="text-muted-foreground text-xl font-medium">
+            {description}
+          </p>
         </div>
         <Accordion
           type="single"
@@ -97,7 +97,11 @@ const FAQ = ({
           className="mx-auto w-full lg:max-w-7xl"
         >
           {items.map((item) => (
-            <AccordionItem key={item.id} value={item.id} className="border-gray-300 dark:border-neutral-800">
+            <AccordionItem
+              key={item.id}
+              value={item.id}
+              className="border-gray-300 dark:border-neutral-800"
+            >
               <AccordionTrigger className="transition-opacity duration-200 hover:no-underline hover:opacity-60 cursor-pointer mt-3">
                 <div className="font-medium font-sans2 sm:py-1 lg:py-4 text-lg">
                   {item.question}
@@ -133,12 +137,18 @@ const FAQ = ({
             {supportDescription}
           </p>
           <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
-            <Button className="w-full sm:w-auto text-lg lg:text-base text-orange-600 border-2 border-orange-600 bg-transparent hover:bg-orange-600 hover:text-white hover:border-orange-700 duration-300 h-14 lg:h-11 rounded-full px-10" asChild>
+            <Button
+              className="w-full sm:w-auto text-lg lg:text-base text-orange-600 border-2 border-orange-600 bg-transparent hover:bg-orange-600 hover:text-white hover:border-orange-700 duration-300 h-14 lg:h-11 rounded-full px-10"
+              asChild
+            >
               <a href={faqsButtonUrl} target="_blank">
                 {faqsButtonText}
               </a>
             </Button>
-            <Button className="w-full sm:w-auto text-lg lg:text-base text-white bg-orange-600 h-14 lg:h-11 rounded-full px-8" asChild>
+            <Button
+              className="w-full sm:w-auto text-lg lg:text-base text-white bg-orange-600 h-14 lg:h-11 rounded-full px-8"
+              asChild
+            >
               <a href={supportButtonUrl} target="_blank">
                 {supportButtonText}
               </a>

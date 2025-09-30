@@ -2,12 +2,12 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Toaster } from "@/components/ui/sonner"
+import { Toaster } from "@/components/ui/sonner";
 import SmoothScrollProvider from "./SmoothScrollProvider";
-import { GoogleAnalytics } from '@next/third-parties/google'
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import RootMainLayout from "./RootMainLayout";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +18,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 
 export const metadata: Metadata = {
   title: "Hirebie | IT Services & Solutions",
@@ -50,7 +49,7 @@ export const metadata: Metadata = {
     "affordable tech services",
     "freelance developer hiring",
     "remote team hiring solutions",
-    "student skill development platform"
+    "student skill development platform",
   ],
   alternates: {
     canonical: "https://hirebie.com",
@@ -58,10 +57,10 @@ export const metadata: Metadata = {
   other: {
     "next-size-adjust": "100%",
   },
-  manifest: '/manifest.json',
+  manifest: "/manifest.json",
   icons: {
-    icon: '/favicon/android-icon-192x192.png',
-    apple: '/favicon/android-icon-192x192.png',
+    icon: "/favicon/android-icon-192x192.png",
+    apple: "/favicon/android-icon-192x192.png",
   },
   authors: [{ name: "Hirebie Team", url: "https://hirebie.com" }],
   creator: "Hirebie Team",
@@ -92,30 +91,21 @@ export const metadata: Metadata = {
   },
 };
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 export const viewport: Viewport = {
-  themeColor: '#0A0A0A, #ffffff',
-  width: 'device-width',
+  themeColor: "#0A0A0A, #ffffff",
+  width: "device-width",
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-}
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+};
 
 const updatedTime = "2025-07-07T10:00:00+05:30";
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <meta property="og:updated_time" content={updatedTime} />
@@ -127,30 +117,29 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebApplication",
-              "name": "Hirebie",
-              "url": "https://hirebie.com",
-              "description":
+              name: "Hirebie",
+              url: "https://hirebie.com",
+              description:
                 "Hirebie is a next-gen IT Services company helping businesses grow through tech, talent, and branding.",
-              "applicationCategory": "EducationApplication",
-              "operatingSystem": "All",
-              "inLanguage": "en",
-              "offers": {
+              applicationCategory: "EducationApplication",
+              operatingSystem: "All",
+              inLanguage: "en",
+              offers: {
                 "@type": "Offer",
-                "price": "0.00",
-                "priceCurrency": "INR"
+                price: "0.00",
+                priceCurrency: "INR",
               },
-              "creator": {
+              creator: {
                 "@type": "Organization",
-                "name": "Hirebie"
-              }
-            })
+                name: "Hirebie",
+              },
+            }),
           }}
         />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -160,9 +149,7 @@ export default function RootLayout({
           <SmoothScrollProvider />
           <Toaster />
           <Analytics />
-          <RootMainLayout>
-            {children}
-          </RootMainLayout>
+          <RootMainLayout>{children}</RootMainLayout>
         </ThemeProvider>
       </body>
       <GoogleAnalytics gaId="G-JX9QKCDYX0" />

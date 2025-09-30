@@ -27,7 +27,7 @@ const subIcons = [
 
 export default function DiscoverMore({
   heading = "Discover More",
-  description = "Add a touch of magic to your day. Explore our web development services.",
+  description = "Add a touch of magic to your day. Explore our services.",
   main = mainIcons,
   sub = subIcons,
 }: {

@@ -33,7 +33,7 @@ function MainContent() {
         <Hero
           heading={
             <>
-              API <span className="text-orange-600">Development</span> & Integration
+              API Development<span className="text-orange-600"> & Integration</span>
             </>
           }
           stacksList={[

@@ -354,3 +354,12 @@
   }
 }
 
+/* ///////////////////////// */
+/* n8n chat widget customization */
+.chat-window-toggle{
+  transform: scale(0.7);
+}
+.chat-inputs textarea {
+  background-color: white !important;
+  color:black !important;
+}

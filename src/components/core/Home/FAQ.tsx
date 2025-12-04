@@ -138,7 +138,7 @@ const FAQ = ({
                 {faqsButtonText}
               </a>
             </Button>
-            <Button className="w-full sm:w-auto text-lg lg:text-base text-white bg-orange-600 h-14 lg:h-11 rounded-full px-8" asChild>
+            <Button className="w-full sm:w-auto text-lg lg:text-base text-white bg-orange-600 hover:bg-orange-800 h-14 lg:h-11 rounded-full px-8" asChild>
               <a href={supportButtonUrl} target="_blank">
                 {supportButtonText}
               </a>

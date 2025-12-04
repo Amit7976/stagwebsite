@@ -50,7 +50,7 @@ function Team() {
       <div>
         <div className="text-start">
           <h1 className="text-4xl font-semibold tracking-tighter text-gray-900 dark:text-neutral-300 lg:text-5xl">
-            Meet Our Team
+            Meet Our Core Team
             <span className="block text-gray-600 dark:text-neutral-400">
               Diverse<span className="text-orange-600">.</span> Skilled<span className="text-orange-600">.</span> United<span className="text-orange-600">.</span>
             </span>

@@ -298,7 +298,7 @@ function Footer() {
                   />
                   <Button
                     type="submit"
-                    className="bg-[#FC4C02] border-orange-900 border-2 font-medium font-sans2 rounded-full items-center text-lg lg:text-base py-2 mt-2 w-full lg:w-fit h-14 lg:h-11 disabled:opacity-90"
+                    className="bg-[#FC4C02] border-orange-900 hover:bg-orange-800 border-2 font-medium font-sans2 rounded-full items-center text-lg lg:text-base py-2 mt-2 w-full lg:w-fit h-14 lg:h-11 disabled:opacity-90"
                     disabled={loading} // Disable the button when loading
                   >
                     {loading ? (

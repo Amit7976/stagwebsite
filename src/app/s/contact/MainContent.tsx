@@ -13,7 +13,7 @@ import ContactForm from "./ContactForm";
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-function MainContent() {
+function MainContent({ service }: { service: string | string[] | null }) {
 
   const [allEmails, setAllEmails] = useState<ICompanyMail[]>([]);
   const [loading, setLoading] = useState(true);
@@ -53,7 +53,7 @@ function MainContent() {
   return (
     <>
       <section className="h-fit w-full grid grid-cols-1 lg:grid-cols-5 gap-2 p-5 md:p-10">
-        <div className="col-span-2 p-4 md:p-16 md:px-10 order-last lg:order-first">
+        <div className="col-span-2 p-4 md:p-16 md:px-10 order-last lg:order-first sticky top-20 self-start rounded-xl">
           <div className="divide-y divide-gray-200 dark:divide-neutral-800">
             <div className="flex gap-x-7 py-6">
               <FaRss className="flex-shrink-0 size-6 mt-1.5 text-gray-800 dark:text-neutral-200" />
@@ -120,8 +120,7 @@ function MainContent() {
             </div>
           </div>
         </div>
-
-        <ContactForm />
+        <ContactForm service={service} />
       </section>
 
       <section className="mt-10">

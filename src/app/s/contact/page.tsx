@@ -1,16 +1,24 @@
-import Footer from "@/components/core/Footer/Footer";
 import Header from "@/components/core/Header/Header";
+import Footer from "@/components/core/Footer/Footer";
 import MainContent from "./MainContent";
 
+export default async function Page({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const params = await searchParams;
+  const serviceEncoded = params.service;
 
-function page() {
+  const service = serviceEncoded
+    ? decodeURIComponent(serviceEncoded.toString())
+    : null;
+
   return (
     <>
       <Header />
-      <MainContent />
+      <MainContent service={service} />
       <Footer />
     </>
   );
 }
-
-export default page;

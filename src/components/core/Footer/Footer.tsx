@@ -190,7 +190,7 @@ function Footer() {
 
       {/* <Toaster /> */}
 
-      <div className="container mx-auto px-4">
+      <div className="mx-auto px-4">
         {/* Desktop View */}
         <div className="hidden md:grid md:grid-cols-5 gap-10">
           {Object.entries(menuItems).map(([section, items]) => (

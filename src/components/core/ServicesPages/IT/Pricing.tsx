@@ -76,7 +76,7 @@
 // }) {
 //     return (
 //         <section className="dark:bg-black/20 py-32">
-//             <div className="container px-20 space-y-16">
+//             <div className="px-20 space-y-16">
 //                 {/* Section Heading */}
 //                 <div className="space-y-4 text-center">
 //                     <h2 className="text-3xl font-semibold tracking-tight md:text-4xl lg:text-5xl">

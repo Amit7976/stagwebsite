@@ -16,7 +16,7 @@
 //         <section className="px-20 w-full">
 //             {/* Hero Section */}
 //             <div className="relative bg-cover bg-center bg-no-repeat py-10 md:py-16 xl:px-6 xl:py-28 after:absolute after:rounded-4xl after:inset-0 after:z-1 after:block after:size-full after:bg-black/40 after:content-[''] h-[70vh] flex items-center rounded-4xl hero-bg">
-//                 <div className="container z-[2]">
+//                 <div className="z-[2]">
 //                     <div className="flex flex-col items-center justify-center gap-12 text-center">
 //                         <div className="flex max-w-3xl flex-col gap-8">
 //                             <h2 className="text-2xl tracking-tight text-white md:text-7xl scale-105 font-medium">
@@ -31,7 +31,7 @@
 //             </div>
 
 //             {/* Features Section */}
-//             <div className="container">
+//             <div className="">
 //                 {/* First 4 Features */}
 //                 <div className="grid items-stretch gap-8 py-20 md:grid-cols-2 lg:grid-cols-4">
 //                     {features.slice(0, 4).map((item, idx) => (

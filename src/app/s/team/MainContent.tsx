@@ -148,7 +148,7 @@ function MainContent() {
           </div>
         </div>
 
-        <div className="container mx-auto 2xl:px-12">
+        <div className="mx-auto 2xl:px-12">
           <Image
             width={800}
             height={800}

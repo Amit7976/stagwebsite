@@ -5,7 +5,6 @@ import { FAQ } from '@/components/core/Home/FAQ'
 import ProcessSteps from '@/components/core/Home/ProcessSteps'
 import SampleProducts from '@/components/core/Home/SampleProducts'
 import ServicesMarquee from '@/components/core/Home/ServicesMarquee'
-import Showcase from '@/components/core/Home/Showcase'
 import WebsiteSolutions from '@/components/core/Home/WebsiteSolutions'
 import WhyChoose from '@/components/core/Home/WhyChoose'
 import HirebieHowWeWork from '../../../components/core/Work/HirebieHowWeWork'
@@ -20,9 +19,6 @@ function page() {
             <Header />
             <SampleProducts />
             <ServicesMarquee />
-            <div className='w-full overflow-hidden'>
-                <div className='mt-12 lg:mt-40 lg:mb-44 md:scale-200'><Showcase /></div>
-            </div>
             <div className='my-28 lg:my-40'><WebsiteSolutions /></div>
             <div className='my-28 lg:my-40'><HirebieHowWeWork /></div>
             <div className='my-28 lg:my-40'><Section1 /></div>

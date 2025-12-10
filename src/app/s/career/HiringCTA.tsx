@@ -16,7 +16,7 @@ export default function HiringCTA() {
 
     return (
         <section className="bg-background">
-            <div className="container flex flex-col items-center justify-center py-32">
+            <div className="flex flex-col items-center justify-center py-32">
                 {/* Avatars */}
                 <div className="flex">
                     {avatars.map((src, idx) => (

@@ -8,12 +8,14 @@ import WebsiteSolutions from '@/components/core/Home/WebsiteSolutions'
 import WhyChoose from '@/components/core/Home/WhyChoose'
 import MainContent from './MainContent'
 import Tactics from '@/components/core/Services/Tactics'
+import Showcase from '@/components/core/Home/Showcase'
 
 function page() {
     return (
         <div>
             <Header />
             <MainContent />
+            <div className='my-10'><Showcase /></div>
             <div className='my-28 lg:my-40'><WebsiteSolutions /></div>
             <div className="my-28 lg:my-40"><SectionOverview /></div>
             <div className="my-28 lg:my-40"><Services /></div>

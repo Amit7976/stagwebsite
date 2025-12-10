@@ -84,7 +84,7 @@ export default function InAppFeature() {
 
     return (
         <section className="feature-section">
-            <div className="relative container flex flex-col items-center overflow-hidden px-5 md:px-0">
+            <div className="relative flex flex-col items-center overflow-hidden px-5 md:px-0">
                 <div className="mx-auto max-w-2xl text-start md:text-center">
                     <h1 className="text-3xl font-semibold tracking-tighter text-foreground md:text-6xl">
                         App Loaded with <span className="text-orange-600">Features</span>

@@ -13,23 +13,88 @@ import Link from "next/link";
 
 export default function Showcase() {
     const features = [
-        { title: "Web Development", description: "₹12,000 – ₹15,000 (Initial) + 10% + GST", icon: <IconTerminal2 /> },
-        { title: "SEO Services (On-Page / Off-Page)", description: "Custom scope based + 10% + GST", icon: <IconEaseInOut /> },
-        { title: "Digital Marketing Strategy", description: "Full digital strategy + execution", icon: <IconCloud /> },
-        { title: "Social Media Management", description: "₹12,000 – ₹15,000 + 10% + GST", icon: <IconRouteAltLeft /> },
-        { title: "Social Media Post Creation", description: "₹500 per post + 10% + GST", icon: <IconHelp /> },
-        { title: "Content Marketing & Blogging", description: "Blog / article writing + SEO content", icon: <IconHeart /> },
-        { title: "Email Marketing & Newsletter", description: "Campaigns + subscriber management", icon: <IconAdjustmentsBolt /> },
-        { title: "Video & Media Marketing", description: "Short-videos / ads / media content", icon: <IconCloud /> },
-        { title: "Branding Kit & Logo Design", description: "₹8,000 + 10% + GST", icon: <IconEaseInOut /> },
-        { title: "Website Maintenance & Hosting", description: "Monthly / yearly plans", icon: <IconTerminal2 /> },
-        { title: "E-commerce Store Setup & Management", description: "Catalog + product management + shop setup", icon: <IconCurrencyDollar /> },
-        { title: "Online Reputation & Review Management", description: "Reviews, feedback & ORM services", icon: <IconHelp /> },
-        { title: "Consultancy & Business Strategy Calls", description: "₹2,500 (3-call pack)", icon: <IconAdjustmentsBolt /> },
-        { title: "ISO / Certification Assistance", description: "₹8,000 + 10% + GST", icon: <IconHeart /> },
-        { title: "HR & Recruitment Services", description: "₹12,000 + 10% + GST", icon: <IconRouteAltLeft /> },
-        { title: "Accounting / Bookkeeping Services", description: "Based on client needs (e.g. Zoho-Books)", icon: <IconCurrencyDollar /> },
+        {
+            title: "Web Development",
+            description: "₹13,200 – ₹16,500 (one-time, 2–4 weeks)",
+            icon: <IconTerminal2 />,
+        },
+        {
+            title: "SEO Services (On-Page / Off-Page)",
+            description: "Scope-based pricing (monthly plans, minimum 1 month)",
+            icon: <IconEaseInOut />,
+        },
+        {
+            title: "Digital Marketing Strategy",
+            description: "Complete strategy + execution (1–3 months)",
+            icon: <IconCloud />,
+        },
+        {
+            title: "Social Media Management",
+            description: "₹13,200 – ₹16,500 per month",
+            icon: <IconRouteAltLeft />,
+        },
+        {
+            title: "Social Media Post Creation",
+            description: "₹550 per post (delivery within 2–3 days)",
+            icon: <IconHelp />,
+        },
+        {
+            title: "Content Marketing & Blogging",
+            description: "SEO blogs & articles (₹ per article, 3–5 days turnaround)",
+            icon: <IconHeart />,
+        },
+        {
+            title: "Email Marketing & Newsletter",
+            description: "Campaign setup + subscriber management (monthly)",
+            icon: <IconAdjustmentsBolt />,
+        },
+        {
+            title: "Video & Media Marketing",
+            description: "Short videos / ads / media content (1–2 weeks per asset)",
+            icon: <IconCloud />,
+        },
+        {
+            title: "Branding Kit & Logo Design",
+            description: "₹8,800 (7–10 days)",
+            icon: <IconEaseInOut />,
+        },
+        {
+            title: "Website Maintenance & Hosting",
+            description: "Monthly / yearly plans (ongoing support)",
+            icon: <IconTerminal2 />,
+        },
+        {
+            title: "E-commerce Store Setup & Management",
+            description: "Store setup + catalog management (2–4 weeks)",
+            icon: <IconCurrencyDollar />,
+        },
+        {
+            title: "Online Reputation & Review Management",
+            description: "Reviews, feedback & ORM (monthly)",
+            icon: <IconHelp />,
+        },
+        {
+            title: "Consultancy & Business Strategy Calls",
+            description: "₹2,500 (3-call pack, valid for 1 month)",
+            icon: <IconAdjustmentsBolt />,
+        },
+        {
+            title: "ISO / Certification Assistance",
+            description: "₹8,800 (2–4 weeks, depends on certification)",
+            icon: <IconHeart />,
+        },
+        {
+            title: "HR & Recruitment Services",
+            description: "₹13,200 (per hiring cycle / monthly)",
+            icon: <IconRouteAltLeft />,
+        },
+        {
+            title: "Accounting / Bookkeeping Services",
+            description: "Client-need based (monthly, tools like Zoho Books)",
+            icon: <IconCurrencyDollar />,
+        },
     ];
+
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 p-10">
             {features.map((feature, index) => (

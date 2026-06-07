@@ -7,13 +7,14 @@ import { GoMail } from "react-icons/go";
 import { PiChatsDuotone } from "react-icons/pi";
 import { TfiAnnouncement } from "react-icons/tfi";
 import ContactForm from "./ContactForm";
+import { WhatsappIcon } from "@/lib/icons/icons";
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-function MainContent() {
+function MainContent({ service }: { service: string | string[] | null }) {
 
   const [allEmails, setAllEmails] = useState<ICompanyMail[]>([]);
   const [loading, setLoading] = useState(true);
@@ -53,7 +54,7 @@ function MainContent() {
   return (
     <>
       <section className="h-fit w-full grid grid-cols-1 lg:grid-cols-5 gap-2 p-5 md:p-10">
-        <div className="col-span-2 p-4 md:p-16 md:px-10 order-last lg:order-first">
+        <div className="col-span-2 p-4 md:p-16 md:px-10 order-last lg:order-first sticky top-20 self-start rounded-xl">
           <div className="divide-y divide-gray-200 dark:divide-neutral-800">
             <div className="flex gap-x-7 py-6">
               <FaRss className="flex-shrink-0 size-6 mt-1.5 text-gray-800 dark:text-neutral-200" />
@@ -118,10 +119,25 @@ function MainContent() {
                 </p>
               </Link>
             </div>
+
+            <div className=" flex gap-x-7 py-6">
+              <WhatsappIcon className="flex-shrink-0 size-6 mt-1.5 text-gray-800 dark:text-neutral-200" />
+              <Link href={"https://wa.me/916350625317?text=Hello%20Hirebie%20Team,%0A%0AI'm%20interested%20in%20your%20services.%20Please%20share%20more%20details.%0A%0AThank%20you."} className="grow">
+                <h3 className="font-semibold text-gray-800 dark:text-neutral-200">
+                  Connect on WhatsApp
+                </h3>
+                <p className="mt-1 text-sm text-gray-500 dark:text-neutral-500">
+                  Chat with us live on WhatsApp for instant support.
+                </p>
+                <p className="group inline-flex items-center gap-x-2 font-medium text-sm text-[#FD4D05] decoration-2 hover:underline focus:outline-none focus:underline mt-2">
+                  Chat Now
+                  <FaArrowRightLong className="flex-shrink-0 size-4 transition group-hover:translate-x-0.5 group-focus:translate-x-0.5" />
+                </p>
+              </Link>
+            </div>
           </div>
         </div>
-
-        <ContactForm />
+        <ContactForm service={service} />
       </section>
 
       <section className="mt-10">

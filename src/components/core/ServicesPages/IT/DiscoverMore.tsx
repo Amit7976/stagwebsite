@@ -4,7 +4,7 @@ import { Megaphone, Rocket, Bug, Search, Code2, Database, Server, ShieldCheck } 
 export default function DiscoverMore() {
     return (
         <section className="relative bg-background py-24 md:py-40">
-            <div className="relative z-0 container">
+            <div className="relative z-0">
                 <div className="flex w-full flex-col items-center gap-8">
                     {/* Icons Grid */}
                     <div className="w-full max-w-[43.125rem]">

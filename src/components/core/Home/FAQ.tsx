@@ -84,7 +84,7 @@ const FAQ = ({
 }: FAQProps) => {
   return (
     <section className="px-4 md:px-10">
-      <div className="container space-y-5">
+      <div className="space-y-5">
         <div className="mx-auto flex max-w-3xl flex-col text-left md:text-center">
           <h2 className="mb-3 text-3xl font-semibold md:mb-4 lg:mb-6 lg:text-6xl">
             FAQ<span className="text-orange-600">s</span>
@@ -138,7 +138,7 @@ const FAQ = ({
                 {faqsButtonText}
               </a>
             </Button>
-            <Button className="w-full sm:w-auto text-lg lg:text-base text-white bg-orange-600 h-14 lg:h-11 rounded-full px-8" asChild>
+            <Button className="w-full sm:w-auto text-lg lg:text-base text-white bg-orange-600 hover:bg-orange-800 h-14 lg:h-11 rounded-full px-8" asChild>
               <a href={supportButtonUrl} target="_blank">
                 {supportButtonText}
               </a>

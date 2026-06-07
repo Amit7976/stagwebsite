@@ -13,7 +13,7 @@ const AiInclude = () => {
                         "url('https://library.shadcnblocks.com/images/block/photos/futuristic-device-design-qcufu.png')",
                 }}
             >
-                <div className="container z-[2]">
+                <div className="z-[2]">
                     <div className="flex flex-col items-center justify-center gap-12 text-center">
                         <div className="flex max-w-3xl flex-col gap-8">
                             <h2 className="text-2xl tracking-tight text-white md:text-7xl scale-105 font-medium">
@@ -28,7 +28,7 @@ const AiInclude = () => {
             </div>
 
             {/* Features Section */}
-            <div className="container">
+            <div className="">
                 <div className="grid items-start gap-8 py-20 lg:grid-cols-3">
                     <div className="flex flex-col items-center justify-center gap-4">
                         <Keyboard className="stroke-muted-foreground size-7" />

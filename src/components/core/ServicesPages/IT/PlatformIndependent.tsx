@@ -47,7 +47,7 @@ const PlatformIndependent = ({
 }: PlatformIndependentProps) => {
     return (
         <section className="py-32">
-            <div className="container">
+            <div className="">
                 {/* Header Section */}
                 <div className="mb-20 text-center">
                     <h2 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">

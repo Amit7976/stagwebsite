@@ -52,7 +52,7 @@ const steps = [
 export default function ProcessSteps() {
     return (
         <section>
-            <div className="container px-4 md:px-10">
+            <div className="px-4 md:px-10">
                 <div className="text-left">
                     <h2 className="mb-2 text-3xl font-semibold lg:text-6xl">
                         Our <span className="text-orange-600">Process</span>

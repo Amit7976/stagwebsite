@@ -6,15 +6,8 @@ import Banner from '@/components/core/Home/Banner';
 import BlogSection from '@/components/core/Home/BlogSection';
 import { FAQ } from '@/components/core/Home/FAQ';
 import FindUsOnline from '@/components/core/Home/FindUsOnline';
-import InAppFeature from '@/components/core/Home/InAppFeature';
 import ProcessSteps from '@/components/core/Home/ProcessSteps';
-import Products from '@/components/core/Home/Products';
-import SampleProducts from '@/components/core/Home/SampleProducts';
-import Services from '@/components/core/Home/Services';
-import ServicesMarquee from '@/components/core/Home/ServicesMarquee';
-import Showcase from '@/components/core/Home/Showcase';
 import Testimonial from '@/components/core/Home/Testimonial';
-import WebsiteSolutions from '@/components/core/Home/WebsiteSolutions';
 import WhyChoose from '@/components/core/Home/WhyChoose';
 import "locomotive-scroll/dist/locomotive-scroll.css";
 function Home() {
@@ -24,16 +17,16 @@ function Home() {
             <main className='relative min-h-screen w-full bg-white dark:bg-neutral-950'>
                 <HomeHeader />
                 <HomeHero />
-                <ServicesMarquee />
-                <div className='my-10'><Showcase /></div>
-                <div className='my-20'><Products /></div>
-                <div className='my-40'><WebsiteSolutions /></div>
-                <div className='mb-20 mt-40 sm:my-40'><InAppFeature /></div>
-                <div className="mt-20 mb-40 sm:my-40"><SampleProducts /></div>
+                {/* <ServicesMarquee /> */}
+                {/* <div className='my-10'><Showcase /></div> */}
+                {/* <div className='my-20'><Products /></div> */}
+                {/* <div className='my-40'><WebsiteSolutions /></div> */}
+                {/* <div className='mb-20 mt-40 sm:my-40'><InAppFeature /></div> */}
+                {/* <div className="mt-20 mb-40 sm:my-40"><SampleProducts /></div> */}
                 <div className="my-40"><Banner /></div>
                 {/* <div className="my-40"><SectionOverview /></div> */}
                 <div className="my-40"><WhyChoose /></div>
-                <div className="my-40"><Services /></div>
+                {/* <div className="my-40"><Services /></div> */}
                 <div className="my-40"><ProcessSteps /></div>
                 <div className="my-40"><Testimonial /></div>
                 <div className="mt-40 mb-20 md:my-40"><BlogSection /></div>

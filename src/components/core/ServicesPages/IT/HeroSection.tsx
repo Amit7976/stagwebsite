@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
 
     return (
         <section className="dark relative h-svh max-h-screen w-full bg-transparent pointer-events-none">
-            <div className="container relative z-10 flex size-full max-w-[103.125rem] flex-col justify-between pb-14 pt-24 md:justify-end">
+            <div className="relative z-10 flex size-full max-w-[103.125rem] flex-col justify-between pb-14 pt-24 md:justify-end">
                 <div className="flex h-full flex-col justify-between gap-6 md:justify-end px-10 pb-0">
                     {/* Heading */}
                     <h1 className="text-foreground lg:leading-[3rem]! xl:leading-[5.5rem]! text-4xl font-bold leading-[2.25rem] lg:text-5xl xl:text-7xl">

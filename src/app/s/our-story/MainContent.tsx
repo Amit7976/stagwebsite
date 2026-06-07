@@ -1,6 +1,4 @@
-import BlogSection from "@/components/core/Home/BlogSection";
 import CompaniesLogo from "@/components/MainUi/CompaniesLogo/CompaniesLogo";
-import Team from "@/components/MainUi/Team/Team";
 import Image from "next/image";
 function MainContent() {
   const values = [
@@ -239,12 +237,12 @@ function MainContent() {
         <CompaniesLogo />
       </section>
 
-      <section className="px-8 py-24 mx-auto md:px-12 lg:px-12 w-full my-10">
+      {/* <section className="px-8 py-24 mx-auto md:px-12 lg:px-12 w-full my-10">
         <Team />
-      </section>
+      </section> */}
 
       
-      <BlogSection />
+      {/* <BlogSection /> */}
     </>
   );
 }

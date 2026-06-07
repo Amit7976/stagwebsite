@@ -153,8 +153,9 @@ export default function RootLayout({
 
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="light"
+          enableSystem={false}
+          forcedTheme="light"
           disableTransitionOnChange
         >
           <SmoothScrollProvider />
@@ -164,6 +165,7 @@ export default function RootLayout({
             {children}
           </RootMainLayout>
         </ThemeProvider>
+
       </body>
       <GoogleAnalytics gaId="G-JX9QKCDYX0" />
       <SpeedInsights />

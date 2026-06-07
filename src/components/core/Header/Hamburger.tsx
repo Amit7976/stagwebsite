@@ -1,6 +1,5 @@
 "use client";
 import { LoaderLink } from '@/components/ui/loaderLinks';
-import { ModeToggle } from '@/components/ui/ModeToggle';
 import { useEffect, useState } from 'react';
 import { CiMenuFries } from "react-icons/ci";
 
@@ -37,13 +36,9 @@ function Hamburger() {
         </div>
         <LoaderLink className='text-right w-full h-20' href={'/'}>Home</LoaderLink>
         <LoaderLink className='text-right w-full h-20' href={'/s/services'}>Our Services</LoaderLink>
-        <LoaderLink className='text-right w-full h-20' href={'/s/showcase'}>Showcase</LoaderLink>
-        <LoaderLink className='text-right w-full h-20' href={'/s/work'}>Our Work</LoaderLink>
         <LoaderLink className='text-right w-full h-20' href={'/s/blogs'}>Blogs</LoaderLink>
         <LoaderLink className='py-1 text-right w-full h-20' href={'/s/our-story'}>About Us</LoaderLink>
-        <div className='scale-200 my-5'>
-          <ModeToggle />
-        </div>
+
           <LoaderLink className='text-2xl text-red-600 font-semibold font-sans2 block py-1 uppercase mb-2 h-20' href={'/s/contact'}>Get A Quote</LoaderLink>
       </div>
     </div>

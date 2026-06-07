@@ -106,70 +106,70 @@ function Footer() {
 
   // FOOTER ALL LINKS
   const menuItems = {
-    Services: [
-      { text: "Idea Validation", link: "" },
-      { text: "MVP Development", link: "" },
-      { text: "Web & Mobile Apps", link: "" },
-      { text: "UI/UX Design", link: "" },
-      { text: "Product Engineering", link: "" },
-      { text: "Cloud & DevOps", link: "" },
-      { text: "Cybersecurity", link: "" },
-      { text: "IT Consulting", link: "" },
-    ],
-    Launch: [
-      { text: "Branding & Identity", link: "" },
-      { text: "Website Development", link: "" },
-      { text: "E-commerce Solutions", link: "" },
-      { text: "Custom SaaS Platforms", link: "" },
-      { text: "Marketplace Solutions", link: "" },
-    ],
-    Growth: [
-      { text: "Digital Marketing", link: "" },
-      { text: "SEO & Content", link: "" },
-      { text: "Performance Marketing", link: "" },
-      { text: "CRM & Automation", link: "" },
-      { text: "Business Analytics", link: "" },
-    ],
-    Solutions: [
-      { text: "Startups", link: "" },
-      { text: "SMBs", link: "" },
-      { text: "Enterprises", link: "" },
-      { text: "Healthcare", link: "" },
-      { text: "EdTech", link: "" },
-      { text: "FinTech", link: "" },
-    ],
+    // Services: [
+    //   { text: "Idea Validation", link: "" },
+    //   { text: "MVP Development", link: "" },
+    //   { text: "Web & Mobile Apps", link: "" },
+    //   { text: "UI/UX Design", link: "" },
+    //   { text: "Product Engineering", link: "" },
+    //   { text: "Cloud & DevOps", link: "" },
+    //   { text: "Cybersecurity", link: "" },
+    //   { text: "IT Consulting", link: "" },
+    // ],
+    // Launch: [
+    //   { text: "Branding & Identity", link: "" },
+    //   { text: "Website Development", link: "" },
+    //   { text: "E-commerce Solutions", link: "" },
+    //   { text: "Custom SaaS Platforms", link: "" },
+    //   { text: "Marketplace Solutions", link: "" },
+    // ],
+    // Growth: [
+    //   { text: "Digital Marketing", link: "" },
+    //   { text: "SEO & Content", link: "" },
+    //   { text: "Performance Marketing", link: "" },
+    //   { text: "CRM & Automation", link: "" },
+    //   { text: "Business Analytics", link: "" },
+    // ],
+    // Solutions: [
+    //   { text: "Startups", link: "" },
+    //   { text: "SMBs", link: "" },
+    //   { text: "Enterprises", link: "" },
+    //   { text: "Healthcare", link: "" },
+    //   { text: "EdTech", link: "" },
+    //   { text: "FinTech", link: "" },
+    // ],
     Company: [
       { text: "Our Story", link: "/s/our-story" },
-      { text: "Team & Culture", link: "/s/team" },
-      { text: "Press & Media", link: "/s/press-media" },
+      // { text: "Team & Culture", link: "/s/team" },
+      // { text: "Press & Media", link: "/s/press-media" },
       { text: "Contact Us", link: "/s/contact" },
-      { text: "Success Stories", link: "" },
+      // { text: "Success Stories", link: "" },
     ],
-    Career: [
-      { text: "Careers", link: "/s/career" },
-      { text: "Corporate Training", link: "" },
-      { text: "Project Certification", link: "" },
-      { text: "Projects Store", link: "/s/store" },
-    ],
+    // Career: [
+    //   { text: "Careers", link: "/s/career" },
+    //   { text: "Corporate Training", link: "" },
+    //   { text: "Project Certification", link: "" },
+    //   { text: "Projects Store", link: "/s/store" },
+    // ],
     Support: [
       { text: "Help Center", link: "/s/help-center" },
-      { text: "Security Tips", link: "/s/security-tips" },
+      // { text: "Security Tips", link: "/s/security-tips" },
       { text: "FAQs", link: "/s/faqs" },
       { text: "Report an Issue", link: "/s/bug-report" },
-      { text: "Testimonials", link: "/s/testimonials" },
+      // { text: "Testimonials", link: "/s/testimonials" },
     ],
     Policies: [
       { text: "Terms & Conditions", link: "/p/terms" },
       { text: "Privacy Policy", link: "/p/privacy" },
-      { text: "Security Policy", link: "" },
+      // { text: "Security Policy", link: "" },
       { text: "Cookies Policy", link: "/p/cookies" },
     ],
     Community: [
       { text: "Blog", link: "/s/blogs" },
-      { text: "Announcement", link: "/s/announcement" },
-      { text: "Events", link: "/s/events" },
-      { text: "Hirebie Forum", link: "" },
-      { text: "Startup Accelerator", link: "" },
+      // { text: "Announcement", link: "/s/announcement" },
+      // { text: "Events", link: "/s/events" },
+      // { text: "Hirebie Forum", link: "" },
+      // { text: "Startup Accelerator", link: "" },
     ],
     Social: [
       { text: "LinkedIn", link: "https://www.linkedin.com/company/hirebie" },
@@ -289,7 +289,7 @@ function Footer() {
                             <Input
                               type="email"
                               placeholder="What is your work email"
-                              className="text-base px-6 h-14 lg:h-12 rounded-full outline-none border-2 border-neutral-400 text-white shadow-none min-w-full lg:min-w-96 font-medium tracking-wider"
+                              className="text-base px-6 h-14 lg:h-12 rounded-full outline-none border-2 border-neutral-400 text-black dark:text-white shadow-none min-w-full lg:min-w-96 font-medium tracking-wider"
                               {...field} />
                           </FormControl>
                         </div>
